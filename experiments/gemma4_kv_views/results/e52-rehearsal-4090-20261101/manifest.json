@@ -1,0 +1,480 @@
+{
+ "run_id": "e52-rehearsal-4090-20261101",
+ "experiment": "E-52",
+ "idea": "I-182",
+ "status": "ok",
+ "label": "e52-rehearsal-4090-20261101",
+ "design_commit": "3130fcd",
+ "config": {
+  "cells": "19:2048,19:32768,11:2048,11:65536,4:2048",
+  "fail_fast": "off",
+  "calls": 20,
+  "replays": 30,
+  "central": 20,
+  "repeats": 5
+ },
+ "started_at": "2026-11-01T09:33:06Z",
+ "finished_at": "2026-11-01T09:46:13Z",
+ "hardware": {
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "gpu_count": 1,
+  "driver": "595.91.07",
+  "cuda": "13.2",
+  "capability": "8.9",
+  "gpu_uuid": "9942b443-1530-2e6e-461d-5a8a7735a927",
+  "pod_id": "<pod-id>",
+  "data_center": "EU-RO-1",
+  "price_per_hour": 0.89,
+  "copy_gbps": 918.25
+ },
+ "software": {
+  "torch": "2.14.0+cu130",
+  "triton": "3.8.0",
+  "vllm": "0.33.0rc1.dev229+g3966924d5",
+  "image": "vllm/vllm-openai@sha256:f255c4fad2f30ff5ee80db14d3a03afe9ae0f10d3470339864ff04745fe44cb3"
+ },
+ "metrics": {
+  "us_triton_std_fp8h_16_4_16_3_B19_L2048": {
+   "values": [
+    209.25,
+    209.24,
+    209.18,
+    209.4,
+    209.31
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_16_4_16_3_B19_L32768": {
+   "values": [
+    2743.83,
+    2744.01,
+    2743.98,
+    2747.06,
+    2745.5
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_16_4_16_3_B19_L2048": {
+   "values": [
+    140.13,
+    140.13,
+    140.13,
+    140.84,
+    140.57
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_16_4_16_3_B19_L32768": {
+   "values": [
+    1753.49,
+    1753.79,
+    1753.82,
+    1755.57,
+    1755.44
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_16_2_16_3_B19_L2048": {
+   "values": [
+    143.87,
+    143.87,
+    143.92,
+    144.46,
+    144.18
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_16_2_16_3_B19_L32768": {
+   "values": [
+    1752.62,
+    1752.16,
+    1752.52,
+    1756.34,
+    1754.29
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_alias_16_4_16_3_B19_L2048": {
+   "values": [
+    112.79,
+    112.79,
+    112.79,
+    113.2,
+    113.12
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_pool_16_4_16_3_B19_L2048": {
+   "values": [
+    85.43,
+    86.07,
+    84.68,
+    86.02,
+    85.47
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_pool_16_4_16_3_B19_L2048": {
+   "values": [
+    86.73,
+    85.68,
+    87.49,
+    85.34,
+    86.09
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_16_4_16_2_B19_L2048": {
+   "values": [
+    209.1,
+    209.09,
+    209.13,
+    209.51,
+    209.35
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_16_4_16_2_B19_L2048": {
+   "values": [
+    209.19,
+    209.15,
+    209.2,
+    209.56,
+    209.45
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_16_4_16_3_B19_L2048": {
+   "values": [
+    209.3,
+    209.34,
+    209.25,
+    210.2,
+    209.51
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_alias_16_4_16_3_B19_L32768": {
+   "values": [
+    1446.68,
+    1448.11,
+    1447.91,
+    1449.01,
+    1448.32
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_pool_16_4_16_3_B19_L32768": {
+   "values": [
+    1189.79,
+    1189.86,
+    1189.89,
+    1186.14,
+    1190.43
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_pool_16_4_16_3_B19_L32768": {
+   "values": [
+    1192.78,
+    1192.6,
+    1193.34,
+    1189.91,
+    1192.7
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_16_4_16_2_B19_L32768": {
+   "values": [
+    2752.28,
+    2752.0,
+    2751.98,
+    2754.94,
+    2751.96
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_16_4_16_2_B19_L32768": {
+   "values": [
+    2752.36,
+    2751.92,
+    2752.05,
+    2757.83,
+    2751.99
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_16_4_16_3_B19_L32768": {
+   "values": [
+    2744.08,
+    2744.28,
+    2744.76,
+    2746.44,
+    2744.11
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_16_2_32_2_B11_L2048": {
+   "values": [
+    120.88,
+    120.87,
+    120.95,
+    122.5,
+    120.83
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_16_2_32_2_B11_L65536": {
+   "values": [
+    3142.48,
+    3142.3,
+    3142.88,
+    3147.21,
+    3142.43
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_16_2_32_2_B11_L2048": {
+   "values": [
+    68.4,
+    68.37,
+    68.45,
+    68.56,
+    68.4
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_16_2_32_2_B11_L65536": {
+   "values": [
+    2177.74,
+    2177.65,
+    2178.69,
+    2180.63,
+    2179.43
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_16_8_64_3_B11_L2048": {
+   "values": [
+    49.31,
+    49.31,
+    49.41,
+    49.6,
+    49.4
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_16_8_64_3_B11_L65536": {
+   "values": [
+    2001.36,
+    2001.29,
+    2006.7,
+    2003.66,
+    2003.74
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_alias_16_2_32_2_B11_L2048": {
+   "values": [
+    64.99,
+    64.97,
+    65.08,
+    65.17,
+    65.12
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_pool_16_2_32_2_B11_L2048": {
+   "values": [
+    64.92,
+    64.94,
+    65.28,
+    65.15,
+    65.25
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_pool_16_2_32_2_B11_L2048": {
+   "values": [
+    65.28,
+    65.33,
+    65.47,
+    66.68,
+    65.58
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_16_2_32_3_B11_L2048": {
+   "values": [
+    137.47,
+    137.46,
+    138.29,
+    138.29,
+    137.93
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_16_2_32_2_B11_L2048": {
+   "values": [
+    122.08,
+    122.1,
+    122.52,
+    122.27,
+    122.34
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_16_2_32_3_B11_L2048": {
+   "values": [
+    141.98,
+    141.98,
+    142.38,
+    142.13,
+    142.15
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_alias_16_2_32_2_B11_L65536": {
+   "values": [
+    1888.02,
+    1888.04,
+    1890.56,
+    1892.74,
+    1890.84
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_pool_16_2_32_2_B11_L65536": {
+   "values": [
+    1563.01,
+    1563.24,
+    1566.35,
+    1566.75,
+    1564.18
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_pool_16_2_32_2_B11_L65536": {
+   "values": [
+    1562.49,
+    1562.72,
+    1562.56,
+    1564.41,
+    1563.25
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_16_2_32_3_B11_L65536": {
+   "values": [
+    3648.86,
+    3647.44,
+    3651.87,
+    3650.02,
+    3651.66
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_16_2_32_2_B11_L65536": {
+   "values": [
+    3148.75,
+    3148.69,
+    3150.25,
+    3152.9,
+    3151.33
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_16_2_32_3_B11_L65536": {
+   "values": [
+    3811.51,
+    3811.89,
+    3812.84,
+    3813.12,
+    3814.81
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_std_fp8_X32768": {
+   "values": [
+    2534.58,
+    2534.77,
+    2534.8,
+    2537.66,
+    2536.19
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_cmp_fp8_X32768": {
+   "values": [
+    1613.36,
+    1613.66,
+    1613.69,
+    1614.73,
+    1614.87
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_std_fp8_X65536": {
+   "values": [
+    3021.6,
+    3021.43,
+    3021.93,
+    3024.71,
+    3021.6
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_cmp_fp8_X65536": {
+   "values": [
+    2109.34,
+    2109.28,
+    2110.24,
+    2112.07,
+    2111.03
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  }
+ },
+ "results_path": "experiments/gemma4_kv_views/results/e52-rehearsal-4090-20261101/",
+ "notes": "E-52 S5 rehearsal on an RTX 4090 (Triton only; the stock FP8 path needs SM90). decision=INVALID (V1, V2, V3)"
+}

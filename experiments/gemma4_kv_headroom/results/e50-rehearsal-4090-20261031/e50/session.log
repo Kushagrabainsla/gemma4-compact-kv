@@ -1,0 +1,8 @@
+06:00:06 setup done after 42 s; versions: vllm 0.33.0rc1.dev229+g3966924d5 torch 2.14.0+cu130 vllm_flash_attn unknown VLLM_BUILD_COMMIT=unset 
+06:09:18 m31f8: exit 0 after 594 s
+06:09:18 GPU free (1 MiB in use)
+06:09:18 m26: not selected
+06:09:18 m31bf: not selected
+06:09:21 decision: INVALID (m31f8: V1, V5, V11)
+06:09:21 done after 597 s
+06:09:21 AUTO_STOP in 180 s; copy the results now

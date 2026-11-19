@@ -1,0 +1,19 @@
+{
+ "source": "experiments/gemma4_kv_graphs/results/e59-a100-20261105/e59",
+ "budget": 2048,
+ "stock": {
+  "a_s": 0.6138007730999516,
+  "b_s_per_1024": 0.036419102292330495,
+  "n": 42,
+  "max_abs_residual_s": 0.012036977340245336,
+  "max_rel_residual": 0.018861328589322136
+ },
+ "compact": {
+  "a_s": 0.6394381555642902,
+  "b_s_per_1024": 0.039096066740131684,
+  "n": 28,
+  "max_abs_residual_s": 0.012514820325720488,
+  "max_rel_residual": 0.018790474104117313
+ },
+ "compact_over_stock_at_16k": 1.0572239421950984
+}

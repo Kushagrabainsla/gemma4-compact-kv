@@ -1,0 +1,62 @@
+{
+ "checks": {
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5_pairs": {
+   "S-C/C-C": true,
+   "S-R/C-R": true
+  },
+  "V5": true,
+  "V6": true
+ },
+ "arms": {
+  "C-C": "ok",
+  "S-C": "ok",
+  "S-R": "ok",
+  "C-R": "ok",
+  "C-C0": "not run",
+  "C-CX": "not run",
+  "C-C64": "not run"
+ },
+ "C-C": {
+  "coverage": {
+   "preempted_events": 63,
+   "decode_events": 45,
+   "median_c": 0.9774058577405857,
+   "min_c": 0.9347826086956522,
+   "max_c": 0.9992902767920511,
+   "zero_hit_events": 0,
+   "hit_rate_tokens": 0.9971338859627107
+  },
+  "mismatched_blocks": 0,
+  "a1_strict_mismatch": 135,
+  "recomputed_first_version": 135,
+  "recomputed_third": 0,
+  "checked_reloads": 24,
+  "same_id_share": 0.0,
+  "load_gb_per_s": 23.78945487635922,
+  "tier_fill": 0.6593942642211914
+ },
+ "S-C": {
+  "coverage": {
+   "preempted_events": 79,
+   "decode_events": 60,
+   "median_c": 0.9841324143482417,
+   "min_c": 0.9375,
+   "max_c": 0.9987515605493134,
+   "zero_hit_events": 0,
+   "hit_rate_tokens": 0.9980992071417298
+  },
+  "mismatched_blocks": 0,
+  "a1_strict_mismatch": 45,
+  "recomputed_first_version": 45,
+  "recomputed_third": 0,
+  "checked_reloads": 24,
+  "same_id_share": 0.0,
+  "load_gb_per_s": 23.201033492685657,
+  "tier_fill": 0.682525634765625
+ },
+ "word": "CONNECTOR-WORKS (A3)"
+}

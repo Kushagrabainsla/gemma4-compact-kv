@@ -1,0 +1,46 @@
+{
+ "run_id": "e72-20261117T004531Z",
+ "started_at": "2026-11-17T00:46:07Z",
+ "env": {
+  "MODAL_CLOUD_PROVIDER": "CLOUD_PROVIDER_AZURE",
+  "MODAL_REGION": "uk",
+  "MODAL_TASK_ID": "ta-01M7KFFHK21PYFQYHSPY93PZHR",
+  "MODAL_IMAGE_ID": "im-fB0BiHeiQzJNWXeG5yLwb3",
+  "NVIDIA_VISIBLE_DEVICES": "GPU-8faab31b-1a9e-0609-43ee-4afdb8713ae2,GPU-b19a1274-2be3-8393-9750-70e587f1d4e5"
+ },
+ "launcher_sha": {
+  "modal_e72.py": "610c0b881b594d980581ba0dd14d1a463d6c02537e7e5007ffb93d976b18ba9e",
+  "e72_stage.py": "19044c61bb7ba0d04aa8176204ce268d9940d4703c8ca66500986d1c95126c56"
+ },
+ "arms": {
+  "EV": {
+   "d": 0,
+   "p": 0,
+   "seconds": 213.6,
+   "status": {
+    "p": "ok",
+    "d": "ok"
+   }
+  },
+  "C2": {
+   "d": 0,
+   "p": 0,
+   "seconds": 1807.0,
+   "status": {
+    "p": "ok",
+    "d": "ok"
+   }
+  }
+ },
+ "manifest_ok": true,
+ "gpus": [
+  "GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-8faab31b-1a9e-0609-43ee-4afdb8713ae2)",
+  "GPU 1: NVIDIA A100-SXM4-80GB (UUID: GPU-b19a1274-2be3-8393-9750-70e587f1d4e5)"
+ ],
+ "snapshot": "/__modal/volumes/vo-D6JSYsmqdCQL1RQ3aMNeyx/hub/models--google--gemma-4-31B-it/snapshots/842da3794eaa0b77d5f08bae87a17459d91ff475",
+ "decision": "E-72: Q1 REPEATS (d 0.00062590306492738) | Q2 STEP-CONFIRMS-CLEAN (R_clean 1.3765663930822218) | Q3 EXACT (8 of 8 same; gold {'EV': 8, 'C2': 8}) | lease lines {'EV': 0, 'C2': 0} | checks {'W1': True, 'W2': True, 'W3c': True, 'W3': True, 'W4': True, 'W5': True, 'W6': True, 'W7': True, 'W8': True}",
+ "ok": true,
+ "seconds": 2029.9,
+ "launcher_sha_match": true,
+ "wall_s_local": 2068.4368567466736
+}

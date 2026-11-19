@@ -1,0 +1,189 @@
+{
+ "workload": "D3Q",
+ "pool": 6143,
+ "warmup": 2000,
+ "horizon": 22000,
+ "max_len": 144000,
+ "cells": [
+  {
+   "depth": 2,
+   "seed": 0,
+   "r_step": 1.2285163355890274,
+   "Q_graph": 1.1702737928365308,
+   "Q_eager": 1.1285119271312212,
+   "running_stock": 8.2458,
+   "running_compact": 10.1301,
+   "preempt_stock": 8,
+   "preempt_compact": 9
+  },
+  {
+   "depth": 2,
+   "seed": 1,
+   "r_step": 1.2078856878151334,
+   "Q_graph": 1.1441579393177455,
+   "Q_eager": 1.1025078451843557,
+   "running_stock": 8.41905,
+   "running_compact": 10.16925,
+   "preempt_stock": 14,
+   "preempt_compact": 6
+  },
+  {
+   "depth": 2,
+   "seed": 2,
+   "r_step": 1.2212337127771313,
+   "Q_graph": 1.1607520393308508,
+   "Q_eager": 1.1187067833268285,
+   "running_stock": 8.80675,
+   "running_compact": 10.7551,
+   "preempt_stock": 14,
+   "preempt_compact": 10
+  },
+  {
+   "depth": 2,
+   "seed": 3,
+   "r_step": 1.2242819403796845,
+   "Q_graph": 1.116492133701163,
+   "Q_eager": 1.079282327229549,
+   "running_stock": 7.7222,
+   "running_compact": 9.45415,
+   "preempt_stock": 8,
+   "preempt_compact": 20
+  },
+  {
+   "depth": 2,
+   "seed": 4,
+   "r_step": 1.2017958985560004,
+   "Q_graph": 1.1367796220163118,
+   "Q_eager": 1.0959166266138105,
+   "running_stock": 8.65305,
+   "running_compact": 10.3992,
+   "preempt_stock": 14,
+   "preempt_compact": 11
+  },
+  {
+   "depth": 3,
+   "seed": 0,
+   "r_step": 1.2285270772570445,
+   "Q_graph": 1.1702787506400147,
+   "Q_eager": 1.1285170296355302,
+   "running_stock": 8.24585,
+   "running_compact": 10.13025,
+   "preempt_stock": 8,
+   "preempt_compact": 9
+  },
+  {
+   "depth": 3,
+   "seed": 1,
+   "r_step": 1.2145288427087066,
+   "Q_graph": 1.1700551472763274,
+   "Q_eager": 1.1273795555568296,
+   "running_stock": 8.373,
+   "running_compact": 10.16925,
+   "preempt_stock": 16,
+   "preempt_compact": 7
+  },
+  {
+   "depth": 3,
+   "seed": 2,
+   "r_step": 1.2211965346141183,
+   "Q_graph": 1.1607120248139606,
+   "Q_eager": 1.1186692125504758,
+   "running_stock": 8.8071,
+   "running_compact": 10.7552,
+   "preempt_stock": 14,
+   "preempt_compact": 10
+  },
+  {
+   "depth": 3,
+   "seed": 3,
+   "r_step": 1.1949147604032453,
+   "Q_graph": 1.0792434780258657,
+   "Q_eager": 1.0438934456774092,
+   "running_stock": 7.72235,
+   "running_compact": 9.22755,
+   "preempt_stock": 8,
+   "preempt_compact": 26
+  },
+  {
+   "depth": 3,
+   "seed": 4,
+   "r_step": 1.1693969178497754,
+   "Q_graph": 1.0527400556337068,
+   "Q_eager": 1.018121431054522,
+   "running_stock": 8.65305,
+   "running_compact": 10.11885,
+   "preempt_stock": 14,
+   "preempt_compact": 23
+  },
+  {
+   "depth": 8,
+   "seed": 0,
+   "r_step": 1.228584941698652,
+   "Q_graph": 1.1703158202092299,
+   "Q_eager": 1.1285538773856834,
+   "running_stock": 8.24595,
+   "running_compact": 10.13085,
+   "preempt_stock": 8,
+   "preempt_compact": 9
+  },
+  {
+   "depth": 8,
+   "seed": 1,
+   "r_step": 1.2144686949511838,
+   "Q_graph": 1.1701737058928998,
+   "Q_eager": 1.1273332840309884,
+   "running_stock": 8.37325,
+   "running_compact": 10.16905,
+   "preempt_stock": 17,
+   "preempt_compact": 7
+  },
+  {
+   "depth": 8,
+   "seed": 2,
+   "r_step": 1.2212179876577554,
+   "Q_graph": 1.1606687679772674,
+   "Q_eager": 1.1186850783801257,
+   "running_stock": 8.80715,
+   "running_compact": 10.75545,
+   "preempt_stock": 14,
+   "preempt_compact": 11
+  },
+  {
+   "depth": 8,
+   "seed": 3,
+   "r_step": 1.1949291361014174,
+   "Q_graph": 1.0793450486352907,
+   "Q_eager": 1.0439034120461654,
+   "running_stock": 7.72255,
+   "running_compact": 9.2279,
+   "preempt_stock": 9,
+   "preempt_compact": 26
+  },
+  {
+   "depth": 8,
+   "seed": 4,
+   "r_step": 1.1694297254661759,
+   "Q_graph": 1.052815576831249,
+   "Q_eager": 1.0181455819944714,
+   "running_stock": 8.65285,
+   "running_compact": 10.1189,
+   "preempt_stock": 14,
+   "preempt_compact": 22
+  }
+ ],
+ "r_step_interval": [
+  1.1693969178497754,
+  1.228584941698652
+ ],
+ "r_step_seed0_depth3": 1.2285270772570445,
+ "Q_graph_interval": [
+  1.0527400556337068,
+  1.1703158202092299
+ ],
+ "Q_graph_seed0_depth3": 1.1702787506400147,
+ "Q_eager_interval": [
+  1.018121431054522,
+  1.1285538773856834
+ ],
+ "Q_eager_seed0_depth3": 1.1285170296355302
+}

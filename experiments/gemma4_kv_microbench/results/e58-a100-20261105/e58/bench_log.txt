@@ -1,0 +1,40 @@
+W1105 17:10:32.277000 1065 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1105 17:10:32.278000 1065 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1105 17:10:32.279000 1065 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+USDT:2026-11-05 17:10:50 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:10:50 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+/usr/local/lib/python3.12/dist-packages/torch/cuda/graphs.py:630: UserWarning: The CUDA Graph is empty. This usually means that the graph was attempted to be captured on wrong device or stream. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:249.)
+  super().capture_end_pre()
+USDT:2026-11-05 17:10:51 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:10:51 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-05 17:10:52 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:10:52 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-05 17:10:52 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:10:52 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-05 17:10:56 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:10:56 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-05 17:10:57 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:10:57 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-05 17:10:59 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:10:59 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-05 17:11:01 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:11:01 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-05 17:11:11 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:11:11 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+/usr/local/lib/python3.12/dist-packages/torch/cuda/graphs.py:630: UserWarning: The CUDA Graph is empty. This usually means that the graph was attempted to be captured on wrong device or stream. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/cuda/CUDAGraph.cpp:249.)
+  super().capture_end_pre()
+USDT:2026-11-05 17:11:12 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:11:12 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-05 17:11:13 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:11:13 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-05 17:11:14 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:11:14 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-05 17:11:17 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:11:17 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-05 17:11:19 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:11:19 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-05 17:11:21 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:11:21 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-11-05 17:11:24 1065:1065 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-05 17:11:24 1065:1065 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{"status": "ok", "shapes": ["D32", "D64"], "errors": {"D32": [], "D64": []}}

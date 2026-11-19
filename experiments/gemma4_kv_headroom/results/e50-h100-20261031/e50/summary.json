@@ -1,0 +1,2095 @@
+{
+ "arms": {
+  "m31f8": {
+   "status": "ok",
+   "valid": true,
+   "why": [],
+   "checks": {
+    "V1": true,
+    "V2": true,
+    "V3": true,
+    "V4a": true,
+    "V5": true,
+    "V7": true,
+    "V9": true,
+    "V11": true
+   },
+   "fit": {
+    "b": 7.841698494820377e-05,
+    "c": 17.263267249572323,
+    "b_low": 7.520831389071092e-05,
+    "b_up": 8.162565600569661e-05,
+    "se_b": 1.5050051864412997e-06,
+    "r2": 0.9985287844958525,
+    "n": 6,
+    "df": 4
+   },
+   "fit_blocks": {
+    "b": 7.855021584240165e-05,
+    "c": 17.250090825571817,
+    "b_low": 7.71941578384707e-05,
+    "b_up": 7.99062738463326e-05,
+    "se_b": 7.766655234427012e-07,
+    "r2": 0.998438239346977,
+    "n": 18,
+    "df": 16
+   },
+   "median_ms": {
+    "2048": 17.319,
+    "8192": 17.9134,
+    "32768": 19.92765,
+    "65536": 22.35615
+   },
+   "residuals": {
+    "2048": -0.0061,
+    "8192": 0.0004,
+    "32768": 0.0048,
+    "65536": -0.0021
+   },
+   "local_slope_ratio": 0.9451,
+   "spread": {
+    "2048:4": 0.0031,
+    "8192:4": 0.0021,
+    "32768:4": 0.0036,
+    "65536:4": 0.0027,
+    "65536:4:1": 0.0045,
+    "32768:4:1": 0.0029
+   },
+   "preempted": [],
+   "attribution": {
+    "V4a": true,
+    "V4b": true,
+    "V4c": true,
+    "split": {
+     "2048": {
+      "ok": true,
+      "groups": 480,
+      "match": 1.0,
+      "sliding_ms": 2.0767,
+      "global_ms": 0.5986
+     },
+     "32768": {
+      "ok": true,
+      "groups": 480,
+      "match": 1.0,
+      "sliding_ms": 2.0879,
+      "global_ms": 3.0394
+     },
+     "65536": {
+      "ok": true,
+      "groups": 480,
+      "match": 1.0,
+      "sliding_ms": 2.0796,
+      "global_ms": 5.4924
+     }
+    },
+    "device_growth_ms": 2.4744,
+    "wall_growth_ms": 2.6087,
+    "attention_growth_ms": 2.4536,
+    "top_growth": [
+     [
+      "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o811121081_tens",
+      2.4155
+     ],
+     [
+      "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemal",
+      0.0253
+     ],
+     [
+      "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+      0.0212
+     ],
+     [
+      "void cutlass::device_kernel<flash::enable_sm90_or_later<flash::FlashAttnFwdSm90<flash::CollectiveMainloopFwdSm90<2, cute",
+      0.0101
+     ],
+     [
+      "triton_per_fused__to_copy_add_cat_clamp_index_select_mul_reciprocal_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+      0.0029
+     ]
+    ],
+    "sliding_change": {
+     "32768": 0.0054,
+     "65536": 0.0014
+    }
+   },
+   "V4b": true,
+   "V4c": true,
+   "M1": true,
+   "M2": true,
+   "bw_global_gbps": 2089.3,
+   "copy_gbps": 3045.0,
+   "decide": {
+    "32768": {
+     "T_ms": 19.9276,
+     "S": 0.0484,
+     "S_low": 0.0464,
+     "S_up": 0.0503,
+     "S_block_low": 0.0476,
+     "S_prof": 0.0572,
+     "S_prof_gap": false
+    },
+    "65536": {
+     "T_ms": 22.3561,
+     "S": 0.0862,
+     "S_low": 0.0827,
+     "S_up": 0.0897,
+     "S_block_low": 0.0849,
+     "S_prof": 0.0921,
+     "S_prof_gap": false
+    }
+   },
+   "exploratory": {},
+   "gsm8k": {
+    "n": 32,
+    "correct": 29,
+    "accuracy": 0.9062,
+    "bos_removed": true
+   },
+   "kv": {
+    "num_gpu_blocks": 8018,
+    "block_size": 64,
+    "cache_dtype": "fp8",
+    "num_blocks": 8018,
+    "groups": [
+     {
+      "layers": 10,
+      "spec": "SlidingWindowSpec",
+      "block_size": 64,
+      "page_bytes": 524288
+     },
+     {
+      "layers": 10,
+      "spec": "SlidingWindowSpec",
+      "block_size": 64,
+      "page_bytes": 524288
+     },
+     {
+      "layers": 10,
+      "spec": "SlidingWindowSpec",
+      "block_size": 64,
+      "page_bytes": 524288
+     },
+     {
+      "layers": 10,
+      "spec": "SlidingWindowSpec",
+      "block_size": 64,
+      "page_bytes": 524288
+     },
+     {
+      "layers": 10,
+      "spec": "SlidingWindowSpec",
+      "block_size": 64,
+      "page_bytes": 524288
+     },
+     {
+      "layers": 10,
+      "spec": "FullAttentionSpec",
+      "block_size": 128,
+      "page_bytes": 524288
+     }
+    ]
+   },
+   "model": {
+    "layer_types": [
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention"
+    ],
+    "is_multimodal_model": true,
+    "is_mm_prefix_lm": false,
+    "mm_limits": "{'image': ImageDummyOptions(count=0, width=None, height=None), 'audio': AudioDummyOptions(count=0, length=None), 'video': VideoDummyOptions(count=0, num_frames=None, width=None, height=None)}",
+    "cudagraph_sizes": [
+     1,
+     2,
+     4,
+     8,
+     16,
+     24,
+     32,
+     40,
+     48,
+     56,
+     64
+    ]
+   },
+   "kv_tokens_logged": 580802,
+   "max_concurrency_logged": 8.59,
+   "engine_lines": [
+    "(MainProcess pid=2180) INFO 10-31 06:32:18 [model.py:971] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.",
+    "(MainProcess pid=2180) INFO 10-31 06:32:18 [model.py:1028] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.",
+    "(MainProcess pid=2180) INFO 10-31 06:32:19 [config.py:342] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using per-layer FA3/FA4 selection for FP8 KV cache on SM90.",
+    "(MainProcess pid=2180) INFO 10-31 06:32:24 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='RedHatAI/gemma-4-31B-it-FP8-dynamic', speculative_config=None, tokenizer='RedHatAI/gemma-4-31B-it-FP8-d",
+    "(MainProcess pid=2180) INFO 10-31 06:32:24 [parallel_state.py:1931] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_e00dd7cb39704d69807b535a7706e309 backend=nccl",
+    "(MainProcess pid=2180) INFO 10-31 06:32:26 [cuda.py:512] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN'].",
+    "(MainProcess pid=2180) INFO 10-31 06:32:26 [flash_attn.py:1122] Using FlashAttention version 3",
+    "(MainProcess pid=2180) INFO 10-31 06:32:26 [fa_utils.py:162] FA3 does not support head_size=512 on SM90: upgrading FlashAttention 3 -> 4",
+    "(MainProcess pid=2180) INFO 10-31 06:32:26 [flash_attn.py:1122] Using FlashAttention version 4",
+    "(MainProcess pid=2180) INFO 10-31 06:32:39 [interface.py:781] Setting kv cache block size to 64 for FLASH_ATTN backend(s).",
+    "(MainProcess pid=2180) INFO 10-31 06:33:01 [backends.py:1125] [backbone] Using cache directory: /workspace/cache/vllm/torch_compile_cache/4e70cb62c2/rank_0_0/backbone for vLLM's torch.compile",
+    "(MainProcess pid=2180) INFO 10-31 06:33:01 [backends.py:1187] [backbone] Dynamo bytecode transform time: 20.71 s",
+    "(MainProcess pid=2180) INFO 10-31 06:33:26 [backends.py:417] [backbone] Compiling a graph for compile range (1, 2048) takes 24.28 s",
+    "(MainProcess pid=2180) INFO 10-31 06:33:40 [backends.py:948] collected artifacts: 61 entries, 5 artifacts, 21298475 bytes total",
+    "Capturing CUDA graphs (PIECEWISE):   0%|          | 0/11 [00:00<?, ?it/s]/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be converted ",
+    "/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncutefl"
+   ],
+   "waste": {
+    "2048:4": {
+     "classes": {
+      "gemm": 0.7885,
+      "attention": 0.162,
+      "norm_act_rope": 0.0266,
+      "copy_cache": 0.0185,
+      "other": 0.0022,
+      "logits_sampling": 0.0021
+     },
+     "device_ms_per_step": 17.179,
+     "wall_ms_per_step": 17.319,
+     "idle_share": 0.0081,
+     "profile_wall_ms_per_step": 36.604,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.62112
+      ],
+      [
+       "void cutlass::device_kernel<flash::enable_sm90_or_later<flash::FlashAttnFwdSm90<flash::CollectiveMai",
+       0.11131
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.05426
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.04188
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.039
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.03249
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.0259
+      ],
+      [
+       "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, unsigned char, (vllm::Fp8KVCacheDataType)1>",
+       0.01669
+      ]
+     ]
+    },
+    "32768:4": {
+     "classes": {
+      "gemm": 0.6899,
+      "attention": 0.2665,
+      "norm_act_rope": 0.0235,
+      "copy_cache": 0.0162,
+      "other": 0.002,
+      "logits_sampling": 0.0019
+     },
+     "device_ms_per_step": 19.653,
+     "wall_ms_per_step": 19.929,
+     "idle_share": 0.0139,
+     "profile_wall_ms_per_step": 33.614,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.54228
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.15131
+      ],
+      [
+       "void cutlass::device_kernel<flash::enable_sm90_or_later<flash::FlashAttnFwdSm90<flash::CollectiveMai",
+       0.09781
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.04741
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.03675
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.03517
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.02269
+      ],
+      [
+       "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, unsigned char, (vllm::Fp8KVCacheDataType)1>",
+       0.01464
+      ]
+     ]
+    },
+    "65536:4": {
+     "classes": {
+      "gemm": 0.6136,
+      "attention": 0.348,
+      "norm_act_rope": 0.0208,
+      "copy_cache": 0.0144,
+      "other": 0.0017,
+      "logits_sampling": 0.0016
+     },
+     "device_ms_per_step": 22.075,
+     "wall_ms_per_step": 22.356,
+     "idle_share": 0.0126,
+     "profile_wall_ms_per_step": 36.344,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.48231
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.24577
+      ],
+      [
+       "void cutlass::device_kernel<flash::enable_sm90_or_later<flash::FlashAttnFwdSm90<flash::CollectiveMai",
+       0.08667
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.04227
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.03266
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.03116
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.0202
+      ],
+      [
+       "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, unsigned char, (vllm::Fp8KVCacheDataType)1>",
+       0.01295
+      ]
+     ]
+    },
+    "2048:a32768": {
+     "classes": {
+      "gemm": 0.571,
+      "attention": 0.3924,
+      "norm_act_rope": 0.0193,
+      "copy_cache": 0.0119,
+      "logits_sampling": 0.0035,
+      "other": 0.0019
+     },
+     "device_ms_per_step": 25.505,
+     "wall_ms_per_step": null,
+     "idle_share": null,
+     "profile_wall_ms_per_step": 40.256,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.45805
+      ],
+      [
+       "void cutlass::device_kernel<flash::enable_sm90_or_later<flash::FlashAttnFwdSm90<flash::CollectiveMai",
+       0.28981
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.08858
+      ],
+      [
+       "nvjet_sm90_tst_512x24_64x3_2x1_v_bz_TNT",
+       0.03727
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.02743
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.02634
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.01681
+      ],
+      [
+       "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, unsigned char, (vllm::Fp8KVCacheDataType)1>",
+       0.01066
+      ]
+     ]
+    },
+    "32768:a32768": {
+     "classes": {
+      "attention": 0.578,
+      "gemm": 0.3965,
+      "norm_act_rope": 0.0134,
+      "copy_cache": 0.0083,
+      "logits_sampling": 0.0025,
+      "other": 0.0013
+     },
+     "device_ms_per_step": 36.7,
+     "wall_ms_per_step": null,
+     "idle_share": null,
+     "profile_wall_ms_per_step": 51.519,
+     "top": [
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.36542
+      ],
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.3178
+      ],
+      [
+       "void cutlass::device_kernel<flash::enable_sm90_or_later<flash::FlashAttnFwdSm90<flash::CollectiveMai",
+       0.20154
+      ],
+      [
+       "nvjet_sm90_tst_512x24_64x3_2x1_v_bz_TNT",
+       0.02567
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.01937
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.0183
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.01176
+      ],
+      [
+       "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, unsigned char, (vllm::Fp8KVCacheDataType)1>",
+       0.0074
+      ]
+     ]
+    },
+    "2048:a65536": {
+     "classes": {
+      "gemm": 0.6372,
+      "attention": 0.3196,
+      "norm_act_rope": 0.0229,
+      "copy_cache": 0.0145,
+      "logits_sampling": 0.0038,
+      "other": 0.0021
+     },
+     "device_ms_per_step": 21.329,
+     "wall_ms_per_step": null,
+     "idle_share": null,
+     "profile_wall_ms_per_step": 35.744,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.50351
+      ],
+      [
+       "void cutlass::device_kernel<flash::enable_sm90_or_later<flash::FlashAttnFwdSm90<flash::CollectiveMai",
+       0.24172
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.06365
+      ],
+      [
+       "nvjet_sm90_tst_512x16_64x3_2x1_v_bz_TNT",
+       0.0442
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.03211
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.03138
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.02
+      ],
+      [
+       "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, unsigned char, (vllm::Fp8KVCacheDataType)1>",
+       0.013
+      ]
+     ]
+    },
+    "65536:a65536": {
+     "classes": {
+      "attention": 0.5853,
+      "gemm": 0.3885,
+      "norm_act_rope": 0.014,
+      "copy_cache": 0.0088,
+      "logits_sampling": 0.0022,
+      "other": 0.0013
+     },
+     "device_ms_per_step": 34.941,
+     "wall_ms_per_step": null,
+     "idle_share": null,
+     "profile_wall_ms_per_step": 49.926,
+     "top": [
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.4283
+      ],
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.30635
+      ],
+      [
+       "void cutlass::device_kernel<flash::enable_sm90_or_later<flash::FlashAttnFwdSm90<flash::CollectiveMai",
+       0.14732
+      ],
+      [
+       "nvjet_sm90_tst_512x16_64x3_2x1_v_bz_TNT",
+       0.02685
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.02013
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.01917
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.0123
+      ],
+      [
+       "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, unsigned char, (vllm::Fp8KVCacheDataType)1>",
+       0.00791
+      ]
+     ]
+    }
+   },
+   "triton_kernels": [],
+   "accuracy_caveat": false,
+   "groups": {
+    "32768": {
+     "lost": [],
+     "cells": 4,
+     "usable": true,
+     "finished": {},
+     "ok": true,
+     "batch": 19,
+     "B_max_est": 23.27,
+     "pool_share": 0.816,
+     "fit": {
+      "b": 0.0003632645817645582,
+      "c": 24.93559076305221,
+      "b_low": 0.00036055230955045627,
+      "b_up": 0.00036597685397866015,
+      "se_b": 9.288603472951898e-07,
+      "r2": 0.999986923875378,
+      "n": 4,
+      "df": 2
+     },
+     "median_ms": {
+      "2048": 25.702,
+      "8192": 27.8834,
+      "32768": 36.84185
+     },
+     "residuals": {
+      "2048": 0.0009,
+      "8192": -0.001,
+      "32768": 0.0001
+     },
+     "spread": {
+      "2048:a32768": 0.0048,
+      "8192:a32768": 0.0023,
+      "32768:a32768": 0.0017,
+      "32768:a32768:1": 0.0017
+     },
+     "checks": {
+      "V2": true,
+      "V3": true,
+      "V4a": true,
+      "V5": true,
+      "V7": true,
+      "profiles": true
+     },
+     "why": [],
+     "local_slope_ratio": 1.0035,
+     "M1": true,
+     "M2": true,
+     "bw_global_gbps": 2142.4,
+     "attribution": {
+      "V4a": true,
+      "V4b": true,
+      "V4c": true,
+      "device_growth_ms": 11.1953,
+      "wall_growth_ms": 11.1446,
+      "attention_growth_ms": 11.2034,
+      "split": {
+       "2048": {
+        "ok": true,
+        "groups": 480,
+        "match": 1.0,
+        "sliding_ms": 7.5104,
+        "global_ms": 2.3833,
+        "method": "order"
+       },
+       "32768": {
+        "ok": true,
+        "groups": 480,
+        "match": 1.0,
+        "sliding_ms": 7.5146,
+        "global_ms": 13.5814,
+        "method": "order"
+       }
+      },
+      "sliding_change": 0.0006
+     },
+     "V4b": true,
+     "V4c": true,
+     "T_ms": 36.8419,
+     "S": 0.1212,
+     "S_low": 0.1203,
+     "S_up": 0.1221,
+     "S_att": 0.1216,
+     "S_att_gap": false,
+     "b_per_seq_ratio": 0.9753
+    },
+    "65536": {
+     "lost": [],
+     "cells": 5,
+     "usable": true,
+     "finished": {},
+     "ok": true,
+     "batch": 11,
+     "B_max_est": 13.32,
+     "pool_share": 0.826,
+     "fit": {
+      "b": 0.00021479096434432078,
+      "c": 21.075237785388126,
+      "b_low": 0.0002129363932350808,
+      "b_up": 0.00021664553545356076,
+      "se_b": 7.881730171015603e-07,
+      "r2": 0.9999596061897082,
+      "n": 5,
+      "df": 3
+     },
+     "median_ms": {
+      "2048": 21.5607,
+      "8192": 22.8207,
+      "32768": 28.0499,
+      "65536": 35.16785
+     },
+     "residuals": {
+      "2048": 0.0021,
+      "8192": -0.0006,
+      "32768": -0.0023,
+      "65536": 0.0005
+     },
+     "spread": {
+      "2048:a65536": 0.0042,
+      "8192:a65536": 0.0029,
+      "32768:a65536": 0.0043,
+      "65536:a65536": 0.0015,
+      "65536:a65536:1": 0.0014
+     },
+     "checks": {
+      "V2": true,
+      "V3": true,
+      "V4a": true,
+      "V5": true,
+      "V7": true,
+      "profiles": true
+     },
+     "why": [],
+     "local_slope_ratio": 1.0113,
+     "M1": true,
+     "M2": true,
+     "bw_global_gbps": 2097.7,
+     "attribution": {
+      "V4a": true,
+      "V4b": true,
+      "V4c": true,
+      "device_growth_ms": 13.6124,
+      "wall_growth_ms": 13.605,
+      "attention_growth_ms": 13.6346,
+      "split": {
+       "2048": {
+        "ok": true,
+        "groups": 480,
+        "match": 1.0,
+        "sliding_ms": 5.2697,
+        "global_ms": 1.432,
+        "method": "order"
+       },
+       "65536": {
+        "ok": true,
+        "groups": 480,
+        "match": 1.0,
+        "sliding_ms": 5.2634,
+        "global_ms": 15.0719,
+        "method": "order"
+       }
+      },
+      "sliding_change": -0.0012
+     },
+     "V4b": true,
+     "V4c": true,
+     "T_ms": 35.1679,
+     "S": 0.1501,
+     "S_low": 0.1488,
+     "S_up": 0.1514,
+     "S_att": 0.1501,
+     "S_att_gap": false,
+     "b_per_seq_ratio": 0.996
+    }
+   },
+   "status_cells": {
+    "2048:4": "ok",
+    "8192:4": "ok",
+    "32768:4": "ok",
+    "65536:4": "ok",
+    "65536:4:1": "ok",
+    "32768:4:1": "ok",
+    "2048:a32768": "ok",
+    "8192:a32768": "ok",
+    "32768:a32768": "ok",
+    "32768:a32768:1": "ok",
+    "2048:a65536": "ok",
+    "8192:a65536": "ok",
+    "32768:a65536": "ok",
+    "65536:a65536": "ok",
+    "65536:a65536:1": "ok"
+   },
+   "jit_during_inference": [],
+   "e49_pass": {
+    "32768": false,
+    "65536": true
+   }
+  },
+  "m31bf": {
+   "status": "ok",
+   "valid": true,
+   "why": [],
+   "checks": {
+    "V1": true,
+    "V2": true,
+    "V3": true,
+    "V4a": true,
+    "V5": true,
+    "V6": true,
+    "V7": true,
+    "V9": true,
+    "V11": true
+   },
+   "fit": {
+    "b": 0.00010378312266840063,
+    "c": 16.18561618327028,
+    "b_low": 0.0001012351386681791,
+    "b_up": 0.00010633110666862216,
+    "se_b": 8.725972603498389e-07,
+    "r2": 0.9998586346997836,
+    "n": 4,
+    "df": 2
+   },
+   "fit_blocks": {
+    "b": 0.00010361525845724746,
+    "c": 16.17757134650413,
+    "b_low": 0.00010265516262387462,
+    "b_up": 0.00010457535429062029,
+    "se_b": 5.298542126781639e-07,
+    "r2": 0.9997385721793879,
+    "n": 12,
+    "df": 10
+   },
+   "median_ms": {
+    "2048": 16.3722,
+    "8192": 17.0358,
+    "32768": 19.6367,
+    "65536": 22.9628
+   },
+   "residuals": {
+    "2048": -0.0016,
+    "8192": -0.0,
+    "32768": 0.0026,
+    "65536": -0.0011
+   },
+   "local_slope_ratio": 0.978,
+   "spread": {
+    "2048:4": 0.0045,
+    "8192:4": 0.0033,
+    "32768:4": 0.0029,
+    "65536:4": 0.0027
+   },
+   "preempted": [],
+   "attribution": {
+    "V4a": true,
+    "V4b": true,
+    "V4c": true,
+    "split": {
+     "2048": {
+      "ok": true,
+      "groups": 480,
+      "match": 1.0,
+      "sliding_ms": 1.6885,
+      "global_ms": 0.375
+     },
+     "32768": {
+      "ok": true,
+      "groups": 480,
+      "match": 1.0,
+      "sliding_ms": 1.6502,
+      "global_ms": 3.5588
+     },
+     "65536": {
+      "ok": true,
+      "groups": 480,
+      "match": 1.0,
+      "sliding_ms": 1.629,
+      "global_ms": 6.9178
+     }
+    },
+    "device_growth_ms": 3.1757,
+    "wall_growth_ms": 3.2645,
+    "attention_growth_ms": 3.1456,
+    "top_growth": [
+     [
+      "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o811121081_tens",
+      3.1795
+     ],
+     [
+      "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+      0.0194
+     ],
+     [
+      "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_t, vllm::c3x::Scaled",
+      0.0068
+     ],
+     [
+      "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemal",
+      0.0044
+     ],
+     [
+      "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemal",
+      0.003
+     ]
+    ],
+    "sliding_change": {
+     "32768": -0.0227,
+     "65536": -0.0352
+    }
+   },
+   "V4b": true,
+   "V4c": true,
+   "M1": true,
+   "M2": true,
+   "bw_global_gbps": 3157.4,
+   "copy_gbps": 3045.0,
+   "decide": {
+    "32768": {
+     "T_ms": 19.6367,
+     "S": 0.0649,
+     "S_low": 0.0633,
+     "S_up": 0.0665,
+     "S_block_low": 0.0642,
+     "S_prof": 0.068,
+     "S_prof_gap": false
+    },
+    "65536": {
+     "T_ms": 22.9628,
+     "S": 0.1111,
+     "S_low": 0.1083,
+     "S_up": 0.1138,
+     "S_block_low": 0.1099,
+     "S_prof": 0.113,
+     "S_prof_gap": false
+    }
+   },
+   "exploratory": {},
+   "gsm8k": {
+    "n": 32,
+    "correct": 28,
+    "accuracy": 0.875,
+    "bos_removed": true
+   },
+   "kv": {
+    "num_gpu_blocks": 16096,
+    "block_size": 16,
+    "cache_dtype": "auto",
+    "num_blocks": 16096,
+    "groups": [
+     {
+      "layers": 10,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 262144
+     },
+     {
+      "layers": 10,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 262144
+     },
+     {
+      "layers": 10,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 262144
+     },
+     {
+      "layers": 10,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 262144
+     },
+     {
+      "layers": 10,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 262144
+     },
+     {
+      "layers": 10,
+      "spec": "FullAttentionSpec",
+      "block_size": 32,
+      "page_bytes": 262144
+     }
+    ]
+   },
+   "model": {
+    "layer_types": [
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention"
+    ],
+    "is_multimodal_model": true,
+    "is_mm_prefix_lm": false,
+    "mm_limits": "{'image': ImageDummyOptions(count=0, width=None, height=None), 'audio': AudioDummyOptions(count=0, length=None), 'video': VideoDummyOptions(count=0, num_frames=None, width=None, height=None)}",
+    "cudagraph_sizes": [
+     1,
+     2,
+     4,
+     8,
+     16,
+     24,
+     32,
+     40,
+     48,
+     56,
+     64
+    ]
+   },
+   "kv_tokens_logged": 292663,
+   "max_concurrency_logged": 4.33,
+   "engine_lines": [
+    "(MainProcess pid=3840) INFO 10-31 06:50:40 [model.py:971] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.",
+    "(MainProcess pid=3840) INFO 10-31 06:50:40 [model.py:1028] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.",
+    "(MainProcess pid=3840) INFO 10-31 06:50:41 [config.py:349] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.",
+    "(MainProcess pid=3840) INFO 10-31 06:50:46 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='RedHatAI/gemma-4-31B-it-FP8-dynamic', speculative_config=None, tokenizer='RedHatAI/gemma-4-31B-it-FP8-d",
+    "(MainProcess pid=3840) INFO 10-31 06:50:46 [parallel_state.py:1931] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_dcaed1491f504fe491a45f67dbbbb15e backend=nccl",
+    "(MainProcess pid=3840) INFO 10-31 06:50:48 [cuda.py:512] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].",
+    "(MainProcess pid=3840) INFO 10-31 06:50:48 [flash_attn.py:1122] Using FlashAttention version 4",
+    "(MainProcess pid=3840) INFO 10-31 06:52:20 [backends.py:1125] [backbone] Using cache directory: /workspace/cache/vllm/torch_compile_cache/fe6d633951/rank_0_0/backbone for vLLM's torch.compile",
+    "(MainProcess pid=3840) INFO 10-31 06:52:20 [backends.py:1187] [backbone] Dynamo bytecode transform time: 20.07 s",
+    "(MainProcess pid=3840) INFO 10-31 06:52:36 [backends.py:417] [backbone] Compiling a graph for compile range (1, 2048) takes 15.84 s",
+    "(MainProcess pid=3840) INFO 10-31 06:52:49 [backends.py:948] collected artifacts: 61 entries, 5 artifacts, 21093392 bytes total",
+    "Capturing CUDA graphs (PIECEWISE):   0%|          | 0/11 [00:00<?, ?it/s]/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be converted ",
+    "JIT kernel warmup (5 compile keys):   0%|          | 0/1 [00:00<?, ?kernel/s]/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be conver",
+    "JIT kernel warmup (5 compile keys): 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 1/1 [00:04<00:00,  4.92s/kernel, FA4DenseAttentionKernel (5 keys)]",
+    "Capturing CUDA graphs (FULL):  43%|\u2588\u2588\u2588\u2588\u258e     | 3/7 [00:00<00:00,  7.13it/s]/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be converte",
+    "(MainProcess pid=3840) WARNING 10-31 06:53:22 [jit_monitor.py:140] CuTeDSL JIT compilation during inference: FlashAttentionForwardSm90. This causes a latency spike; consider extending warmup to cover this shape/config.",
+    "/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncutefl"
+   ],
+   "waste": {
+    "2048:4": {
+     "classes": {
+      "gemm": 0.8314,
+      "attention": 0.1283,
+      "norm_act_rope": 0.028,
+      "copy_cache": 0.0089,
+      "other": 0.0018,
+      "logits_sampling": 0.0017
+     },
+     "device_ms_per_step": 16.083,
+     "wall_ms_per_step": 16.372,
+     "idle_share": 0.0177,
+     "profile_wall_ms_per_step": 33.889,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.65241
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.09723
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.05796
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.04476
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.04185
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.0276
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.02145
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+       0.01143
+      ]
+     ]
+    },
+    "32768:4": {
+     "classes": {
+      "gemm": 0.6958,
+      "attention": 0.2705,
+      "norm_act_rope": 0.0234,
+      "copy_cache": 0.0074,
+      "logits_sampling": 0.0015,
+      "other": 0.0014
+     },
+     "device_ms_per_step": 19.259,
+     "wall_ms_per_step": 19.637,
+     "idle_share": 0.0192,
+     "profile_wall_ms_per_step": 31.73,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.54518
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.18301
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.07906
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.04839
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.03745
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.03596
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.02317
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+       0.00963
+      ]
+     ]
+    },
+    "65536:4": {
+     "classes": {
+      "gemm": 0.5932,
+      "attention": 0.3781,
+      "norm_act_rope": 0.0199,
+      "copy_cache": 0.0063,
+      "other": 0.0013,
+      "logits_sampling": 0.0012
+     },
+     "device_ms_per_step": 22.602,
+     "wall_ms_per_step": 22.963,
+     "idle_share": 0.0157,
+     "profile_wall_ms_per_step": 35.155,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.46504
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.30454
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.06643
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.04118
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.03188
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.03056
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.01969
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+       0.00819
+      ]
+     ]
+    },
+    "2048:a32768": {
+     "classes": {
+      "gemm": 0.6994,
+      "attention": 0.2629,
+      "norm_act_rope": 0.0251,
+      "copy_cache": 0.0079,
+      "logits_sampling": 0.0028,
+      "other": 0.0019
+     },
+     "device_ms_per_step": 19.156,
+     "wall_ms_per_step": null,
+     "idle_share": null,
+     "profile_wall_ms_per_step": 31.57,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.55083
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.21752
+      ],
+      [
+       "nvjet_sm90_tst_512x16_64x3_2x1_v_bz_TNT",
+       0.0492
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.04396
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.03567
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.0349
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.02218
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+       0.01005
+      ]
+     ]
+    },
+    "32768:a32768": {
+     "classes": {
+      "attention": 0.5155,
+      "gemm": 0.4599,
+      "norm_act_rope": 0.0165,
+      "copy_cache": 0.0052,
+      "logits_sampling": 0.0018,
+      "other": 0.0011
+     },
+     "device_ms_per_step": 29.246,
+     "wall_ms_per_step": null,
+     "idle_share": null,
+     "profile_wall_ms_per_step": 42.447,
+     "top": [
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.3728
+      ],
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.36193
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.14177
+      ],
+      [
+       "nvjet_sm90_tst_512x16_64x3_2x1_v_bz_TNT",
+       0.03204
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.024
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.02293
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.01463
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+       0.00663
+      ]
+     ]
+    },
+    "2048:a65536": {
+     "classes": {
+      "gemm": 0.8093,
+      "attention": 0.1492,
+      "norm_act_rope": 0.0281,
+      "copy_cache": 0.0087,
+      "logits_sampling": 0.003,
+      "other": 0.0018
+     },
+     "device_ms_per_step": 16.607,
+     "wall_ms_per_step": null,
+     "idle_share": null,
+     "profile_wall_ms_per_step": 29.13,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.6325
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.11907
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.05634
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.04348
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.04323
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.02861
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.02666
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+       0.01114
+      ]
+     ]
+    },
+    "65536:a65536": {
+     "classes": {
+      "gemm": 0.5028,
+      "attention": 0.4715,
+      "norm_act_rope": 0.0174,
+      "copy_cache": 0.0054,
+      "logits_sampling": 0.0018,
+      "other": 0.0011
+     },
+     "device_ms_per_step": 26.766,
+     "wall_ms_per_step": null,
+     "idle_share": null,
+     "profile_wall_ms_per_step": 39.96,
+     "top": [
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.39834
+      ],
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.39272
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.0721
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.03482
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.02728
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.02687
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.01664
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+       0.00694
+      ]
+     ]
+    }
+   },
+   "triton_kernels": [],
+   "groups": {
+    "32768": {
+     "lost": [],
+     "cells": 3,
+     "usable": true,
+     "finished": {},
+     "ok": true,
+     "batch": 10,
+     "B_max_est": 11.85,
+     "pool_share": 0.844,
+     "fit": {
+      "b": 0.0003291806175595237,
+      "c": 18.768833333333333,
+      "b_low": 0.00032397630856074837,
+      "b_up": 0.000334384926558299,
+      "se_b": 8.242491287258993e-07,
+      "r2": 0.9999937303144569,
+      "n": 3,
+      "df": 1
+     },
+     "median_ms": {
+      "2048": 19.4313,
+      "8192": 21.4801,
+      "32768": 29.5525
+     },
+     "residuals": {
+      "2048": -0.0006,
+      "8192": 0.0007,
+      "32768": -0.0001
+     },
+     "spread": {
+      "2048:a32768": 0.0056,
+      "8192:a32768": 0.005,
+      "32768:a32768": 0.0044
+     },
+     "checks": {
+      "V2": true,
+      "V3": true,
+      "V4a": true,
+      "V5": true,
+      "V7": true,
+      "profiles": true
+     },
+     "why": [],
+     "local_slope_ratio": 0.9978,
+     "M1": true,
+     "M2": true,
+     "bw_global_gbps": 2488.6,
+     "attribution": {
+      "V4a": true,
+      "V4b": true,
+      "V4c": true,
+      "device_growth_ms": 10.0904,
+      "wall_growth_ms": 10.1212,
+      "attention_growth_ms": 10.0404,
+      "split": {
+       "2048": {
+        "ok": true,
+        "groups": 480,
+        "match": 1.0,
+        "sliding_ms": 4.1667,
+        "global_ms": 0.8694,
+        "method": "order"
+       },
+       "32768": {
+        "ok": true,
+        "groups": 480,
+        "match": 1.0,
+        "sliding_ms": 4.1462,
+        "global_ms": 10.9303,
+        "method": "order"
+       }
+      },
+      "sliding_change": -0.0049
+     },
+     "V4b": true,
+     "V4c": true,
+     "T_ms": 29.5525,
+     "S": 0.1369,
+     "S_low": 0.1347,
+     "S_up": 0.139,
+     "S_att": 0.1362,
+     "S_att_gap": false,
+     "b_per_seq_ratio": 1.2687
+    },
+    "65536": {
+     "lost": [],
+     "cells": 4,
+     "usable": true,
+     "finished": {},
+     "ok": true,
+     "batch": 5,
+     "B_max_est": 6.73,
+     "pool_share": 0.743,
+     "fit": {
+      "b": 0.00016002530277952923,
+      "c": 16.62495338377469,
+      "b_low": 0.0001583019815543604,
+      "b_up": 0.00016174862400469806,
+      "se_b": 5.901785017701462e-07,
+      "r2": 0.9999727975739976,
+      "n": 4,
+      "df": 2
+     },
+     "median_ms": {
+      "2048": 16.9367,
+      "8192": 17.9663,
+      "32768": 21.8464,
+      "65536": 27.1202
+     },
+     "residuals": {
+      "2048": -0.0009,
+      "8192": 0.0017,
+      "32768": -0.001,
+      "65536": 0.0003
+     },
+     "spread": {
+      "2048:a65536": 0.004,
+      "8192:a65536": 0.0038,
+      "32768:a65536": 0.0033,
+      "65536:a65536": 0.0019
+     },
+     "checks": {
+      "V2": true,
+      "V3": true,
+      "V4a": true,
+      "V5": true,
+      "V7": true,
+      "profiles": true
+     },
+     "why": [],
+     "local_slope_ratio": 1.0057,
+     "M1": true,
+     "M2": true,
+     "bw_global_gbps": 2559.6,
+     "attribution": {
+      "V4a": true,
+      "V4b": true,
+      "V4c": true,
+      "device_growth_ms": 10.1589,
+      "wall_growth_ms": 10.1835,
+      "attention_growth_ms": 10.1409,
+      "split": {
+       "2048": {
+        "ok": true,
+        "groups": 480,
+        "match": 1.0,
+        "sliding_ms": 1.9773,
+        "global_ms": 0.501,
+        "method": "order"
+       },
+       "65536": {
+        "ok": true,
+        "groups": 480,
+        "match": 1.0,
+        "sliding_ms": 1.9298,
+        "global_ms": 10.6894,
+        "method": "order"
+       }
+      },
+      "sliding_change": -0.024
+     },
+     "V4b": true,
+     "V4c": true,
+     "T_ms": 27.1202,
+     "S": 0.145,
+     "S_low": 0.1435,
+     "S_up": 0.1466,
+     "S_att": 0.1454,
+     "S_att_gap": false,
+     "b_per_seq_ratio": 1.2335
+    }
+   },
+   "status_cells": {
+    "2048:4": "ok",
+    "8192:4": "ok",
+    "32768:4": "ok",
+    "65536:4": "ok",
+    "2048:a32768": "ok",
+    "8192:a32768": "ok",
+    "32768:a32768": "ok",
+    "2048:a65536": "ok",
+    "8192:a65536": "ok",
+    "32768:a65536": "ok",
+    "65536:a65536": "ok"
+   },
+   "jit_during_inference": [
+    "(MainProcess pid=3840) WARNING 10-31 06:53:22 [jit_monitor.py:140] CuTeDSL JIT compilation during inference: FlashAttentionForwardSm90. This causes a latency sp"
+   ],
+   "e49_pass": {
+    "32768": true,
+    "65536": true
+   }
+  },
+  "m26": {
+   "status": "ok",
+   "valid": true,
+   "why": [],
+   "checks": {
+    "V1": true,
+    "V2": true,
+    "V3": true,
+    "V4a": true,
+    "V5": true,
+    "V6": true,
+    "V7": true,
+    "V9": true,
+    "V11": true
+   },
+   "fit": {
+    "b": 5.346071772239118e-05,
+    "c": 9.064092910093139,
+    "b_low": 5.030089616497488e-05,
+    "b_up": 5.6620539279807486e-05,
+    "se_b": 1.4820926629532363e-06,
+    "r2": 0.9969351582977584,
+    "n": 6,
+    "df": 4
+   },
+   "fit_blocks": {
+    "b": 5.326649730425933e-05,
+    "c": 9.065516372045872,
+    "b_low": 5.163338547342021e-05,
+    "b_up": 5.489960913509845e-05,
+    "se_b": 9.353446912022455e-07,
+    "r2": 0.9950907205792582,
+    "n": 18,
+    "df": 16
+   },
+   "median_ms": {
+    "2048": 9.06,
+    "8192": 9.6399,
+    "32768": 10.805299999999999,
+    "65536": 12.56615
+   },
+   "residuals": {
+    "2048": -0.0125,
+    "8192": 0.0143,
+    "32768": -0.001,
+    "65536": -0.0001
+   },
+   "local_slope_ratio": 1.0052,
+   "spread": {
+    "2048:8": 0.0092,
+    "8192:8": 0.0094,
+    "32768:8": 0.0071,
+    "65536:8": 0.0127,
+    "65536:8:1": 0.0099,
+    "32768:8:1": 0.0171
+   },
+   "preempted": [],
+   "attribution": {
+    "V4a": true,
+    "V4b": true,
+    "V4c": true,
+    "split": {
+     "2048": {
+      "ok": true,
+      "groups": 240,
+      "match": 1.0,
+      "sliding_ms": 0.8502,
+      "global_ms": 0.1904
+     },
+     "32768": {
+      "ok": true,
+      "groups": 240,
+      "match": 1.0,
+      "sliding_ms": 0.8384,
+      "global_ms": 1.7854
+     },
+     "65536": {
+      "ok": true,
+      "groups": 240,
+      "match": 1.0,
+      "sliding_ms": 0.8257,
+      "global_ms": 3.4775
+     }
+    },
+    "device_growth_ms": 1.9598,
+    "wall_growth_ms": 1.7453,
+    "attention_growth_ms": 1.5832,
+    "top_growth": [
+     [
+      "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o811121081_tens",
+      1.5927
+     ],
+     [
+      "fused_moe_kernel",
+      0.3789
+     ],
+     [
+      "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemal",
+      0.0023
+     ],
+     [
+      "nvjet_sm90_tst_64x8_64x16_2x1_v_bz_TNT",
+      0.0012
+     ],
+     [
+      "triton_red_fused_add_mul_rms_norm_2",
+      0.001
+     ]
+    ],
+    "sliding_change": {
+     "32768": -0.0139,
+     "65536": -0.0288
+    }
+   },
+   "V4b": true,
+   "V4c": true,
+   "M1": true,
+   "M2": true,
+   "bw_global_gbps": 3064.7,
+   "copy_gbps": 3045.0,
+   "decide": {
+    "32768": {
+     "T_ms": 10.8053,
+     "S": 0.0608,
+     "S_low": 0.0572,
+     "S_up": 0.0644,
+     "S_block_low": 0.0587,
+     "S_prof": 0.062,
+     "S_prof_gap": false
+    },
+    "65536": {
+     "T_ms": 12.5662,
+     "S": 0.1046,
+     "S_low": 0.0984,
+     "S_up": 0.1107,
+     "S_block_low": 0.101,
+     "S_prof": 0.1038,
+     "S_prof_gap": false
+    }
+   },
+   "exploratory": {},
+   "gsm8k": {
+    "n": 32,
+    "correct": 31,
+    "accuracy": 0.9688,
+    "bos_removed": true
+   },
+   "kv": {
+    "num_gpu_blocks": 38888,
+    "block_size": 16,
+    "cache_dtype": "auto",
+    "num_blocks": 38888,
+    "groups": [
+     {
+      "layers": 5,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 131072
+     },
+     {
+      "layers": 5,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 131072
+     },
+     {
+      "layers": 5,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 131072
+     },
+     {
+      "layers": 5,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 131072
+     },
+     {
+      "layers": 5,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 131072
+     },
+     {
+      "layers": 5,
+      "spec": "FullAttentionSpec",
+      "block_size": 32,
+      "page_bytes": 131072
+     }
+    ]
+   },
+   "model": {
+    "layer_types": [
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention"
+    ],
+    "is_multimodal_model": true,
+    "is_mm_prefix_lm": false,
+    "mm_limits": "{'image': ImageDummyOptions(count=0, width=None, height=None), 'audio': AudioDummyOptions(count=0, length=None), 'video': VideoDummyOptions(count=0, num_frames=None, width=None, height=None)}",
+    "cudagraph_sizes": [
+     1,
+     2,
+     4,
+     8,
+     16,
+     24,
+     32,
+     40,
+     48,
+     56,
+     64
+    ]
+   },
+   "kv_tokens_logged": 707077,
+   "max_concurrency_logged": 10.46,
+   "engine_lines": [
+    "(MainProcess pid=3074) INFO 10-31 06:43:53 [model.py:971] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.",
+    "(MainProcess pid=3074) INFO 10-31 06:43:53 [model.py:1028] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.",
+    "(MainProcess pid=3074) INFO 10-31 06:43:53 [config.py:349] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.",
+    "(MainProcess pid=3074) INFO 10-31 06:43:59 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='google/gemma-4-26B-A4B-it', speculative_config=None, tokenizer='google/gemma-4-26B-A4B-it', skip_tokeni",
+    "(MainProcess pid=3074) INFO 10-31 06:43:59 [parallel_state.py:1931] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_c68d6ca63596419097efc5b9169c72b6 backend=nccl",
+    "(MainProcess pid=3074) INFO 10-31 06:44:01 [cuda.py:512] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].",
+    "(MainProcess pid=3074) INFO 10-31 06:44:01 [flash_attn.py:1122] Using FlashAttention version 4",
+    "(MainProcess pid=3074) INFO 10-31 06:44:01 [unquantized.py:365] Using TRITON Unquantized MoE backend out of potential backends: ['TRITON', 'BATCHED_TRITON', 'FlashInfer TRTLLM', 'FlashInfer CUTLASS'].",
+    "(MainProcess pid=3074) INFO 10-31 06:47:49 [unquantized.py:530] Using TritonExperts MoE backend",
+    "(MainProcess pid=3074) INFO 10-31 06:47:58 [backends.py:1125] [backbone] Using cache directory: /workspace/cache/vllm/torch_compile_cache/6ea6c0f427/rank_0_0/backbone for vLLM's torch.compile",
+    "(MainProcess pid=3074) INFO 10-31 06:47:58 [backends.py:1187] [backbone] Dynamo bytecode transform time: 7.74 s",
+    "(MainProcess pid=3074) INFO 10-31 06:48:18 [backends.py:417] [backbone] Compiling a graph for compile range (1, 2048) takes 20.01 s",
+    "(MainProcess pid=3074) INFO 10-31 06:48:22 [backends.py:948] collected artifacts: 31 entries, 5 artifacts, 18274177 bytes total",
+    "Capturing CUDA graphs (PIECEWISE):   0%|          | 0/11 [00:00<?, ?it/s]/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be converted ",
+    "Capturing CUDA graphs (FULL):   0%|          | 0/2 [00:00<?, ?it/s]/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be converted to a J",
+    "JIT kernel warmup (5 compile keys): 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 1/1 [00:01<00:00,  1.42s/kernel, FA4DenseAttentionKernel (5 keys)]",
+    "(MainProcess pid=3074) WARNING 10-31 06:49:02 [jit_monitor.py:140] CuTeDSL JIT compilation during inference: FlashAttentionForwardSm90. This causes a latency spike; consider extending warmup to cover this shape/config.",
+    "/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncutefl"
+   ],
+   "waste": {
+    "2048:8": {
+     "classes": {
+      "moe": 0.5175,
+      "gemm": 0.2636,
+      "attention": 0.1236,
+      "norm_act_rope": 0.0772,
+      "copy_cache": 0.0092,
+      "logits_sampling": 0.0051,
+      "other": 0.0038
+     },
+     "device_ms_per_step": 8.417,
+     "wall_ms_per_step": 9.06,
+     "idle_share": 0.071,
+     "profile_wall_ms_per_step": 21.936,
+     "top": [
+      [
+       "fused_moe_kernel",
+       0.46719
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.09376
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_TNT",
+       0.06243
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.05839
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_2x1_v_bz_TNT",
+       0.05348
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_2",
+       0.03734
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_splitK_TNT",
+       0.02995
+      ],
+      [
+       "triton_red_fused_add_moe_forward_mul_rms_norm_0",
+       0.0268
+      ]
+     ]
+    },
+    "32768:8": {
+     "classes": {
+      "moe": 0.4562,
+      "attention": 0.2528,
+      "gemm": 0.2139,
+      "norm_act_rope": 0.0628,
+      "copy_cache": 0.0074,
+      "logits_sampling": 0.0039,
+      "other": 0.0029
+     },
+     "device_ms_per_step": 10.377,
+     "wall_ms_per_step": 10.814,
+     "idle_share": 0.0404,
+     "profile_wall_ms_per_step": 18.551,
+     "top": [
+      [
+       "fused_moe_kernel",
+       0.41547
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.17042
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.07492
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_TNT",
+       0.05068
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.04725
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_2x1_v_bz_TNT",
+       0.0435
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_2",
+       0.03038
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_splitK_TNT",
+       0.02433
+      ]
+     ]
+    },
+    "65536:8": {
+     "classes": {
+      "moe": 0.3931,
+      "attention": 0.3566,
+      "gemm": 0.1839,
+      "norm_act_rope": 0.054,
+      "copy_cache": 0.0064,
+      "logits_sampling": 0.0035,
+      "other": 0.0025
+     },
+     "device_ms_per_step": 12.069,
+     "wall_ms_per_step": 12.57,
+     "idle_share": 0.0399,
+     "profile_wall_ms_per_step": 21.023,
+     "top": [
+      [
+       "fused_moe_kernel",
+       0.35812
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.28676
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.06337
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_TNT",
+       0.04365
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.04062
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_2x1_v_bz_TNT",
+       0.03746
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_2",
+       0.02615
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_splitK_TNT",
+       0.02084
+      ]
+     ]
+    }
+   },
+   "triton_kernels": [],
+   "groups": {},
+   "status_cells": {
+    "2048:8": "ok",
+    "8192:8": "ok",
+    "32768:8": "ok",
+    "65536:8": "ok",
+    "65536:8:1": "ok",
+    "32768:8:1": "ok"
+   },
+   "jit_during_inference": [
+    "(MainProcess pid=3074) WARNING 10-31 06:49:02 [jit_monitor.py:140] CuTeDSL JIT compilation during inference: FlashAttentionForwardSm90. This causes a latency sp",
+    "(MainProcess pid=3074) WARNING 10-31 06:49:16 [jit_monitor.py:140] Triton kernel JIT compilation during inference: fused_moe_kernel. This causes a latency spike"
+   ],
+   "e49_pass": {
+    "32768": true,
+    "65536": true
+   }
+  }
+ },
+ "V8": true,
+ "copy_gbps": 3045.0,
+ "fp8_saving_B4": {
+  "2048": -0.0578,
+  "8192": -0.0515,
+  "32768": -0.0148,
+  "65536": 0.0264
+ },
+ "decision": "GO (32768: S 0.121 (low 0.120, up 0.122) at B=19; 65536: S 0.150 (low 0.149, up 0.151) at B=11)"
+}

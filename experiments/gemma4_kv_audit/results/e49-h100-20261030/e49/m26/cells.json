@@ -1,0 +1,462 @@
+[
+ {
+  "context": 2048,
+  "batch": 8,
+  "rep": 0,
+  "prefill_s": 0.355,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 35757,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   9.0044,
+   9.0605,
+   9.0877
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 35743,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "slope"
+ },
+ {
+  "context": 8192,
+  "batch": 8,
+  "rep": 0,
+  "prefill_s": 2.45,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 34196,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   9.6578,
+   9.5624,
+   9.644
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 34206,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "slope"
+ },
+ {
+  "context": 32768,
+  "batch": 8,
+  "rep": 0,
+  "prefill_s": 8.514,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 27935,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   10.7742,
+   10.8603,
+   10.8099
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 28051,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "slope"
+ },
+ {
+  "context": 65536,
+  "batch": 8,
+  "rep": 0,
+  "prefill_s": 21.56,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 19587,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   11.8657,
+   11.3213,
+   10.7461,
+   9.7303,
+   8.6335
+  ],
+  "advance_min_max": [
+   [
+    6,
+    32
+   ],
+   [
+    0,
+    32
+   ],
+   [
+    0,
+    32
+   ],
+   [
+    0,
+    32
+   ],
+   [
+    0,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 3,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 31747,
+   "known": true,
+   "ok": false
+  },
+  "status": "preempted",
+  "kind": "slope"
+ },
+ {
+  "context": 65536,
+  "batch": 8,
+  "rep": 1,
+  "prefill_s": 20.771,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 19587,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   11.9195,
+   11.3846,
+   10.7523,
+   9.8485,
+   8.6676
+  ],
+  "advance_min_max": [
+   [
+    6,
+    32
+   ],
+   [
+    0,
+    32
+   ],
+   [
+    0,
+    32
+   ],
+   [
+    0,
+    32
+   ],
+   [
+    0,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 3,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 31747,
+   "known": true,
+   "ok": false
+  },
+  "status": "preempted",
+  "kind": "slope"
+ },
+ {
+  "context": 32768,
+  "batch": 8,
+  "rep": 1,
+  "prefill_s": 7.867,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 27935,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   10.776,
+   10.7998,
+   10.9676
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 28051,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "slope"
+ },
+ {
+  "context": 1024,
+  "batch": 1,
+  "rep": 0,
+  "prefill_s": 0.073,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 1,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 38529,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   5.1801,
+   5.1365,
+   5.1236
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 1,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 38526,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "waste"
+ },
+ {
+  "context": 1024,
+  "batch": 8,
+  "rep": 0,
+  "prefill_s": 0.185,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 36023,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   9.0815,
+   8.9956,
+   8.9875
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 35999,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "waste"
+ },
+ {
+  "context": 1024,
+  "batch": 32,
+  "rep": 0,
+  "prefill_s": 0.732,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 32,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 27431,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   14.1478,
+   14.2273,
+   14.1392
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 32,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 27335,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "waste"
+ },
+ {
+  "context": 16384,
+  "batch": 16,
+  "rep": 0,
+  "prefill_s": 6.725,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 16,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 25155,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   13.0308,
+   12.9914,
+   12.8772
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 16,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 25407,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "waste"
+ }
+]

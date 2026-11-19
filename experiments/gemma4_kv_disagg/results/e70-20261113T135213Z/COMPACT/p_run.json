@@ -1,0 +1,705 @@
+{
+ "role": "p",
+ "pair": "COMPACT",
+ "started_at": "2026-11-13T14:03:37Z",
+ "status": "ok",
+ "manifest_ok": true,
+ "gpu": "NVIDIA L40S",
+ "layout_env": "LBHNC",
+ "spec": {
+  "applied": true,
+  "layers": [
+   "language_model.model.layers.5.self_attn.attn",
+   "language_model.model.layers.11.self_attn.attn",
+   "language_model.model.layers.17.self_attn.attn",
+   "language_model.model.layers.23.self_attn.attn",
+   "language_model.model.layers.29.self_attn.attn",
+   "language_model.model.layers.35.self_attn.attn",
+   "language_model.model.layers.41.self_attn.attn",
+   "language_model.model.layers.47.self_attn.attn"
+  ],
+  "k_eq_v": true,
+  "block": 96,
+  "kv_heads": 1,
+  "dtype_bytes": 2,
+  "stock_block": 16,
+  "sliding_page": 131072,
+  "compact_page": 122880
+ },
+ "patched": [
+  [
+   "language_model.model.layers.5.self_attn.attn",
+   [
+    8192,
+    1,
+    96,
+    640
+   ],
+   [
+    65536,
+    61440,
+    640,
+    1
+   ],
+   "torch.bfloat16",
+   [
+    8192,
+    131072
+   ]
+  ],
+  [
+   "language_model.model.layers.11.self_attn.attn",
+   [
+    8192,
+    1,
+    96,
+    640
+   ],
+   [
+    65536,
+    61440,
+    640,
+    1
+   ],
+   "torch.bfloat16",
+   [
+    8192,
+    131072
+   ]
+  ],
+  [
+   "language_model.model.layers.17.self_attn.attn",
+   [
+    8192,
+    1,
+    96,
+    640
+   ],
+   [
+    65536,
+    61440,
+    640,
+    1
+   ],
+   "torch.bfloat16",
+   [
+    8192,
+    131072
+   ]
+  ],
+  [
+   "language_model.model.layers.23.self_attn.attn",
+   [
+    8192,
+    1,
+    96,
+    640
+   ],
+   [
+    65536,
+    61440,
+    640,
+    1
+   ],
+   "torch.bfloat16",
+   [
+    8192,
+    131072
+   ]
+  ],
+  [
+   "language_model.model.layers.29.self_attn.attn",
+   [
+    8192,
+    1,
+    96,
+    640
+   ],
+   [
+    65536,
+    61440,
+    640,
+    1
+   ],
+   "torch.bfloat16",
+   [
+    8192,
+    131072
+   ]
+  ],
+  [
+   "language_model.model.layers.35.self_attn.attn",
+   [
+    8192,
+    1,
+    96,
+    640
+   ],
+   [
+    65536,
+    61440,
+    640,
+    1
+   ],
+   "torch.bfloat16",
+   [
+    8192,
+    131072
+   ]
+  ],
+  [
+   "language_model.model.layers.41.self_attn.attn",
+   [
+    8192,
+    1,
+    96,
+    640
+   ],
+   [
+    65536,
+    61440,
+    640,
+    1
+   ],
+   "torch.bfloat16",
+   [
+    8192,
+    131072
+   ]
+  ],
+  [
+   "language_model.model.layers.47.self_attn.attn",
+   [
+    8192,
+    1,
+    96,
+    640
+   ],
+   [
+    65536,
+    61440,
+    640,
+    1
+   ],
+   "torch.bfloat16",
+   [
+    8192,
+    131072
+   ]
+  ]
+ ],
+ "skipped": [],
+ "engine_seconds": 56.6,
+ "kv": {
+  "num_blocks": 8192,
+  "pool_blocks": 8192,
+  "free_blocks": 8191,
+  "groups": [
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.0.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.1.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.2.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.3.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.4.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "FullAttentionSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.5.self_attn.attn",
+    "block_size": 96,
+    "page_bytes": 131072,
+    "real_page_bytes": 122880,
+    "page_size_padded": 131072,
+    "state_content_bytes": 1280,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "sliding_window": null
+   }
+  ],
+  "bytes_per_block": 1048576,
+  "layout": "LBHNC",
+  "tensors": 6
+ },
+ "hooks": {
+  "hooked": [
+   {
+    "layer": 5,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.060546875,
+    "w_unrot_max": 0.060546875,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 11,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.061767578125,
+    "w_unrot_max": 0.061767578125,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 17,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.060546875,
+    "w_unrot_max": 0.060546875,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 23,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.06396484375,
+    "w_unrot_max": 0.06396484375,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 29,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0654296875,
+    "w_unrot_max": 0.0654296875,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 35,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0625,
+    "w_unrot_max": 0.0625,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 41,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.06396484375,
+    "w_unrot_max": 0.06396484375,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 47,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0615234375,
+    "w_unrot_max": 0.0615234375,
+    "impl": "TritonAttentionImpl"
+   }
+  ],
+  "problems": []
+ },
+ "ref": [
+  {
+   "id": "N01",
+   "tokens": [
+    1963,
+    236772,
+    236810,
+    236828,
+    236771,
+    236819,
+    106,
+    106,
+    106,
+    45518,
+    107,
+    101,
+    1963,
+    236772,
+    236810,
+    236828,
+    236771,
+    236819,
+    106,
+    106,
+    106,
+    45518,
+    107,
+    101,
+    1963,
+    236772,
+    236810,
+    236828,
+    236771,
+    236819,
+    106,
+    106
+   ],
+   "text": "ember-5809thought\nember-5809thought\nember-5809",
+   "gold_in_text": true
+  },
+  {
+   "id": "N02",
+   "tokens": [
+    236751,
+    144833,
+    236772,
+    236825,
+    236771,
+    236828,
+    236800,
+    106,
+    106,
+    106,
+    45518,
+    107,
+    101,
+    236751,
+    144833,
+    236772,
+    236825,
+    236771,
+    236828,
+    236800,
+    106,
+    106,
+    45518,
+    107,
+    101,
+    236751,
+    144833,
+    236772,
+    236825,
+    236771,
+    236828,
+    236800
+   ],
+   "text": "saffron-6083thought\nsaffron-6083thought\nsaffron-6083",
+   "gold_in_text": true
+  },
+  {
+   "id": "N03",
+   "tokens": [
+    236767,
+    133868,
+    236772,
+    236800,
+    236828,
+    236778,
+    236770,
+    106,
+    106,
+    106,
+    107,
+    106,
+    45518,
+    107,
+    101,
+    236767,
+    133868,
+    236772,
+    236800,
+    236828,
+    236778,
+    236770,
+    106,
+    106,
+    106,
+    107,
+    1,
+    107,
+    1,
+    107,
+    236743,
+    107
+   ],
+   "text": "kestrel-3821\nthought\nkestrel-3821\n\n\n \n",
+   "gold_in_text": true
+  },
+  {
+   "id": "N04",
+   "tokens": [
+    100904,
+    3404,
+    236772,
+    236812,
+    236819,
+    236828,
+    236771,
+    106,
+    106,
+    106,
+    107,
+    106,
+    45518,
+    107,
+    101,
+    100904,
+    3404,
+    236772,
+    236812,
+    236819,
+    236828,
+    236771,
+    106,
+    106,
+    106,
+    107,
+    1,
+    107,
+    100,
+    45518,
+    107,
+    101
+   ],
+   "text": "cobalt-4980\nthought\ncobalt-4980\n\nthought\n",
+   "gold_in_text": true
+  },
+  {
+   "id": "N05",
+   "tokens": [
+    16132,
+    572,
+    236772,
+    236778,
+    236778,
+    236800,
+    236819,
+    106,
+    106,
+    106,
+    45518,
+    107,
+    101,
+    16132,
+    572,
+    236772,
+    236778,
+    236778,
+    236800,
+    236819,
+    106,
+    106,
+    106,
+    45518,
+    107,
+    101,
+    16132,
+    572,
+    236772,
+    236778,
+    236778,
+    236800
+   ],
+   "text": "willow-2239thought\nwillow-2239thought\nwillow-223",
+   "gold_in_text": true
+  },
+  {
+   "id": "N06",
+   "tokens": [
+    87875,
+    236772,
+    236800,
+    236825,
+    236771,
+    236771,
+    106,
+    106,
+    106,
+    45518,
+    107,
+    101,
+    87875,
+    236772,
+    236800,
+    236825,
+    236771,
+    236771,
+    106,
+    106,
+    106,
+    45518,
+    107,
+    101,
+    87875,
+    236772,
+    236800,
+    236825,
+    236771,
+    236771,
+    106,
+    106
+   ],
+   "text": "raven-3600thought\nraven-3600thought\nraven-3600",
+   "gold_in_text": true
+  },
+  {
+   "id": "N07",
+   "tokens": [
+    635,
+    73735,
+    236772,
+    236812,
+    236800,
+    236771,
+    236771,
+    106,
+    106,
+    106,
+    45518,
+    107,
+    101,
+    635,
+    73735,
+    236772,
+    236812,
+    236800,
+    236771,
+    236771,
+    106,
+    106,
+    106,
+    45518,
+    107,
+    101,
+    635,
+    73735,
+    236772,
+    236812,
+    236800,
+    236771
+   ],
+   "text": "pebble-4300thought\npebble-4300thought\npebble-430",
+   "gold_in_text": true
+  },
+  {
+   "id": "N08",
+   "tokens": [
+    236635,
+    236772,
+    236828,
+    236800,
+    236812,
+    236810,
+    106,
+    106,
+    106,
+    45518,
+    107,
+    101,
+    236635,
+    236772,
+    236828,
+    236800,
+    236812,
+    236810,
+    106,
+    106,
+    106,
+    45518,
+    107,
+    101,
+    236635,
+    236772,
+    236828,
+    236800,
+    236812,
+    236810,
+    106,
+    106
+   ],
+   "text": "fjord-8345thought\nfjord-8345thought\nfjord-8345",
+   "gold_in_text": true
+  }
+ ],
+ "ref_seconds": 13.5,
+ "prefill_seconds": 8.7,
+ "p_hook_keys": [
+  "0",
+  "1",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9"
+ ],
+ "p_hashed": 8,
+ "p_params": 8,
+ "d_done_seen": true,
+ "hook_errors": [],
+ "finished_at": "2026-11-13T14:05:23Z"
+}

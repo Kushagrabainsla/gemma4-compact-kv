@@ -1,0 +1,389 @@
+{
+ "copy_gbps": 919.6500000000001,
+ "run_status": "ok",
+ "fail_fast": null,
+ "late_error": null,
+ "gpu": {
+  "name": "NVIDIA GeForce RTX 4090",
+  "capability": "8.9",
+  "uuid": "f217c83c-55d0-43aa-40e0-71aeb6907b70"
+ },
+ "versions": {
+  "torch": "2.14.0+cu130",
+  "triton": "3.8.0",
+  "vllm": "0.33.0rc1.dev229+g3966924d5"
+ },
+ "checks": {
+  "V1": false,
+  "V2": false,
+  "V3": false,
+  "V4": true,
+  "V5": false,
+  "V6": true,
+  "_failures": [
+   "stock_fp8_s32"
+  ],
+  "_engine_ratio": {
+   "19:2048": null,
+   "19:32768": null,
+   "11:2048": null,
+   "11:65536": null,
+   "dt 19:32768": null,
+   "dt 11:65536": null
+  },
+  "_decision_rows": 8,
+  "_max_spread": 0.0081,
+  "_max_gbps": 1061.1
+ },
+ "fp8": {
+  "32768": {
+   "batch": 19,
+   "stock": null,
+   "triton_std": {
+    "kernel": "triton_std_fp8",
+    "config": {
+     "splits": 4,
+     "warps": 8,
+     "tile": 64
+    },
+    "sweep": {
+     "us": 2718.29,
+     "gbps": 938.1,
+     "regs": 255,
+     "spills": 0,
+     "shared": 83968,
+     "stages": 2
+    },
+    "dt_us": 2535.49,
+    "dt_rep": [
+     2524.82,
+     2535.44,
+     2535.54,
+     2535.74,
+     2535.49
+    ],
+    "t2k_us": 186.2,
+    "tX_us": 2721.64
+   },
+   "triton_cmp": {
+    "kernel": "triton_cmp_fp8",
+    "config": {
+     "splits": 8,
+     "warps": 8,
+     "tile": 64
+    },
+    "sweep": {
+     "us": 1738.19,
+     "gbps": 917.0,
+     "regs": 255,
+     "spills": 0,
+     "shared": 94208,
+     "stages": 2
+    },
+    "dt_us": 1604.97,
+    "dt_rep": [
+     1604.87,
+     1604.92,
+     1605.11,
+     1605.27,
+     1604.97
+    ],
+    "t2k_us": 133.32,
+    "tX_us": 1738.29
+   },
+   "ok": false,
+   "why": "a kernel family is missing, unconfirmed or has no growth"
+  },
+  "65536": {
+   "batch": 11,
+   "stock": null,
+   "triton_std": {
+    "kernel": "triton_std_fp8",
+    "config": {
+     "splits": 8,
+     "warps": 8,
+     "tile": 64
+    },
+    "sweep": {
+     "us": 3121.51,
+     "gbps": 945.9,
+     "regs": 255,
+     "spills": 0,
+     "shared": 83968,
+     "stages": 2
+    },
+    "dt_us": 3026.49,
+    "dt_rep": [
+     3027.15,
+     3026.28,
+     3026.43,
+     3026.49,
+     3026.69
+    ],
+    "t2k_us": 108.44,
+    "tX_us": 3134.92
+   },
+   "triton_cmp": {
+    "kernel": "triton_cmp_fp8",
+    "config": {
+     "splits": 8,
+     "warps": 8,
+     "tile": 64
+    },
+    "sweep": {
+     "us": 2006.93,
+     "gbps": 919.6,
+     "regs": 255,
+     "spills": 0,
+     "shared": 94208,
+     "stages": 2
+    },
+    "dt_us": 1953.03,
+    "dt_rep": [
+     1953.1,
+     1953.33,
+     1952.98,
+     1952.93,
+     1953.03
+    ],
+    "t2k_us": 54.35,
+    "tX_us": 2007.4
+   },
+   "ok": false,
+   "why": "a kernel family is missing, unconfirmed or has no growth"
+  }
+ },
+ "bf16": {
+  "32768": {
+   "batch": 19,
+   "stock": null,
+   "triton_std": {
+    "kernel": "triton_std_bf16",
+    "config": {
+     "splits": 16,
+     "warps": 4,
+     "tile": 32
+    },
+    "sweep": {
+     "us": 5434.15,
+     "gbps": 938.6,
+     "regs": 187,
+     "spills": 0,
+     "shared": 81920,
+     "stages": 1
+    },
+    "dt_us": 5046.47,
+    "dt_rep": [],
+    "t2k_us": 387.68,
+    "tX_us": 5434.15
+   },
+   "triton_cmp": {
+    "kernel": "triton_cmp_bf16",
+    "config": {
+     "splits": 16,
+     "warps": 4,
+     "tile": 32
+    },
+    "sweep": {
+     "us": 3459.69,
+     "gbps": 921.4,
+     "regs": 178,
+     "spills": 0,
+     "shared": 86016,
+     "stages": 1
+    },
+    "dt_us": 3202.67,
+    "dt_rep": [],
+    "t2k_us": 257.02,
+    "tX_us": 3459.69
+   },
+   "ok": false,
+   "why": "a kernel family is missing, unconfirmed or has no growth"
+  },
+  "65536": {
+   "batch": 11,
+   "stock": null,
+   "triton_std": {
+    "kernel": "triton_std_bf16",
+    "config": {
+     "splits": 16,
+     "warps": 4,
+     "tile": 32
+    },
+    "sweep": {
+     "us": 6219.26,
+     "gbps": 949.6,
+     "regs": 187,
+     "spills": 0,
+     "shared": 81920,
+     "stages": 1
+    },
+    "dt_us": 5996.64,
+    "dt_rep": [],
+    "t2k_us": 222.62,
+    "tX_us": 6219.26
+   },
+   "triton_cmp": {
+    "kernel": "triton_cmp_bf16",
+    "config": {
+     "splits": 32,
+     "warps": 4,
+     "tile": 32
+    },
+    "sweep": {
+     "us": 3954.43,
+     "gbps": 933.4,
+     "regs": 178,
+     "spills": 0,
+     "shared": 86016,
+     "stages": 1
+    },
+    "dt_us": 3788.14,
+    "dt_rep": [],
+    "t2k_us": 166.29,
+    "tX_us": 3954.43
+   },
+   "ok": false,
+   "why": "a kernel family is missing, unconfirmed or has no growth"
+  }
+ },
+ "common_config": {
+  "32768": {
+   "config": {
+    "splits": 8,
+    "tile": 64,
+    "warps": 8
+   },
+   "sigma_layout": 0.3662
+  },
+  "65536": {
+   "config": {
+    "splits": 8,
+    "tile": 64,
+    "warps": 8
+   },
+   "sigma_layout": 0.352
+  }
+ },
+ "linearity": {},
+ "dropped_rows": 16,
+ "correctness": {
+  "fp8": {
+   "exact_err_ref_standard": 0.023278575390577316,
+   "exact_err_ref_compact": 0.023186275735497475,
+   "stock_fp8_s32": {
+    "error": "AssertionError: q.dtype torch.bfloat16 != k.dtype torch.float8_e4m3fn"
+   },
+   "stock_fp8_auto": {
+    "error": "AssertionError: q.dtype torch.bfloat16 != k.dtype torch.float8_e4m3fn"
+   },
+   "triton_std_fp8": {
+    "by_config": {
+     "4/4/32": 0.001886859186924994,
+     "4/4/64": 0.0018885064637288451,
+     "4/8/32": 0.001886859186924994,
+     "4/8/64": 0.0018885070458054543,
+     "8/4/32": 0.0018719020299613476,
+     "8/4/64": 0.0018756118370220065,
+     "8/8/32": 0.0018719020299613476,
+     "8/8/64": 0.0018756118370220065,
+     "16/4/32": 0.0018518666038289666,
+     "16/4/64": 0.0018546858336776495,
+     "16/8/32": 0.0018518666038289666,
+     "16/8/64": 0.001854569069109857,
+     "32/4/32": 0.0018333281623199582,
+     "32/4/64": 0.0018425318412482738,
+     "32/8/32": 0.0018333281623199582,
+     "32/8/64": 0.0018425314920023084
+    },
+    "err_max": 0.0018885070458054543,
+    "exact_err_max": 0.02337822876870632
+   },
+   "triton_cmp_fp8": {
+    "by_config": {
+     "4/4/32": 0.0018829784821718931,
+     "4/4/64": 0.0018905518809333444,
+     "4/8/32": 0.0018829784821718931,
+     "4/8/64": 0.0018905518809333444,
+     "8/4/32": 0.001870097708888352,
+     "8/4/64": 0.001874067122116685,
+     "8/8/32": 0.001870097708888352,
+     "8/8/64": 0.0018740444211289287,
+     "16/4/32": 0.0018485754262655973,
+     "16/4/64": 0.0018570005195215344,
+     "16/8/32": 0.0018485754262655973,
+     "16/8/64": 0.0018570005195215344,
+     "32/4/32": 0.0018448454793542624,
+     "32/4/64": 0.0018545343773439527,
+     "32/8/32": 0.0018448454793542624,
+     "32/8/64": 0.0018543651094660163
+    },
+    "err_max": 0.0018905518809333444,
+    "exact_err_max": 0.023265186697244644
+   }
+  },
+  "bf16": {
+   "exact_err_ref_standard": 0.0022284004371613264,
+   "exact_err_ref_compact": 0.0022137719206511974,
+   "stock_bf16_auto": {
+    "error": "AssertionError: paged KV not supported on SM 8.0"
+   },
+   "stock_bf16_s32": {
+    "error": "AssertionError: paged KV not supported on SM 8.0"
+   },
+   "triton_std_bf16": {
+    "by_config": {
+     "16/4/32": 0.0018600589828565717,
+     "16/8/32": 0.0018600589828565717,
+     "32/4/32": 0.0018495549447834492,
+     "32/8/32": 0.0018495549447834492
+    },
+    "err_max": 0.0018600589828565717,
+    "exact_err_max": 0.0029016730841249228
+   },
+   "triton_cmp_bf16": {
+    "by_config": {
+     "16/4/32": 0.0018532085232436657,
+     "16/8/32": 0.0018532085232436657,
+     "32/4/32": 0.0018427255563437939,
+     "32/8/32": 0.0018427255563437939
+    },
+    "err_max": 0.0018532085232436657,
+    "exact_err_max": 0.002886767266318202
+   }
+  }
+ },
+ "batch4_us": {
+  "stock_fp8_s32": {
+   "2048": null,
+   "32768": null,
+   "65536": null
+  },
+  "stock_fp8_auto": {
+   "2048": null,
+   "32768": null,
+   "65536": null
+  },
+  "triton_std_fp8": {
+   "2048": null,
+   "32768": null,
+   "65536": null
+  },
+  "triton_cmp_fp8": {
+   "2048": null,
+   "32768": null,
+   "65536": null
+  },
+  "stock_bf16_auto": {
+   "2048": null,
+   "32768": null,
+   "65536": null
+  },
+  "stock_bf16_s32": {
+   "2048": null,
+   "32768": null,
+   "65536": null
+  }
+ },
+ "decision": "INVALID (V1, V2, V3, V5)"
+}

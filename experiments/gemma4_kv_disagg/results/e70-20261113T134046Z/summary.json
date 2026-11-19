@@ -1,0 +1,30 @@
+{
+ "pairs": {
+  "STOCK": {
+   "p": "failed",
+   "d": "failed",
+   "p_error": "nixlBackendError: NIXL_ERR_BACKEND",
+   "d_error": "nixlBackendError: NIXL_ERR_BACKEND"
+  },
+  "COMPACT-NOPATCH": {
+   "p": "not run",
+   "d": "not run",
+   "p_error": "",
+   "d_error": ""
+  },
+  "COMPACT": {
+   "p": "not run",
+   "d": "not run",
+   "p_error": "",
+   "d_error": ""
+  }
+ },
+ "checks": {
+  "V1": true,
+  "V2": true,
+  "V3": false,
+  "V4": true
+ },
+ "gap": "GAP-UNCLEAR",
+ "word": "INVALID (ENV: the stock pair did not transfer byte for byte)"
+}

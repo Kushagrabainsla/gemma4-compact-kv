@@ -1,0 +1,117 @@
+{
+ "note": "exploratory sizing for E-71; horizon 60,000, warmup 12,000; pool 6,144",
+ "workloads": {
+  "D3": {
+   "Q_M_per_seed": [
+    1.2433782205963275,
+    1.296524834788104,
+    1.311360148017267,
+    1.4170187029983576,
+    1.431347249168673
+   ],
+   "Q_M_by_seed": {
+    "0": 1.296524834788104,
+    "1": 1.4170187029983576,
+    "2": 1.311360148017267,
+    "3": 1.2433782205963275,
+    "4": 1.431347249168673
+   },
+   "Q_M": {
+    "median": 1.311360148017267,
+    "min": 1.2433782205963275,
+    "max": 1.431347249168673
+   },
+   "Q_M_gemm_median": 1.3076667106468816,
+   "Q_M_pf_equal_median": 1.3113605194886782,
+   "r_step": 1.3866864232750882,
+   "included": 5,
+   "preempt_per_kstep_stock": 0.10416666666666667,
+   "readmits_stock": 5,
+   "hit_share_stock": 1.0,
+   "decode_tok_s_stock": 60.25862329877406,
+   "pool_bound_stock": 1.0,
+   "preempt_per_kstep_compact": 0.1875,
+   "readmits_compact": 9,
+   "hit_share_compact": 1.0,
+   "decode_tok_s_compact": 80.95169760046143,
+   "pool_bound_compact": 1.0,
+   "prefill_tok_s_needed_stock": 964.137972780385,
+   "prefill_tok_s_needed_compact": 1295.2271616073829
+  },
+  "D3H": {
+   "Q_M_per_seed": [
+    1.2506537687846746,
+    1.2831868232054962,
+    1.2858425988560875,
+    1.335060669538063,
+    1.3353585563904544
+   ],
+   "Q_M_by_seed": {
+    "0": 1.335060669538063,
+    "1": 1.2858425988560875,
+    "2": 1.3353585563904544,
+    "3": 1.2506537687846746,
+    "4": 1.2831868232054962
+   },
+   "Q_M": {
+    "median": 1.2858425988560875,
+    "min": 1.2506537687846746,
+    "max": 1.3353585563904544
+   },
+   "Q_M_gemm_median": 1.2797458977448637,
+   "Q_M_pf_equal_median": 1.285843574601773,
+   "r_step": 1.326810968844115,
+   "included": 5,
+   "preempt_per_kstep_stock": 0.375,
+   "readmits_stock": 17,
+   "hit_share_stock": 1.0,
+   "decode_tok_s_stock": 100.52914004870566,
+   "pool_bound_stock": 1.0,
+   "preempt_per_kstep_compact": 0.2916666666666667,
+   "readmits_compact": 14,
+   "hit_share_compact": 1.0,
+   "decode_tok_s_compact": 128.5962269782076,
+   "pool_bound_compact": 1.0,
+   "prefill_tok_s_needed_stock": 804.2331203896453,
+   "prefill_tok_s_needed_compact": 1028.7698158256608
+  },
+  "D3Q": {
+   "Q_M_per_seed": [
+    1.1014167875076295,
+    1.153006978465667,
+    1.1696889884561636,
+    1.1794028794349163,
+    1.1848722110724492
+   ],
+   "Q_M_by_seed": {
+    "0": 1.1848722110724492,
+    "1": 1.1696889884561636,
+    "2": 1.1794028794349163,
+    "3": 1.153006978465667,
+    "4": 1.1014167875076295
+   },
+   "Q_M": {
+    "median": 1.1696889884561636,
+    "min": 1.1014167875076295,
+    "max": 1.1848722110724492
+   },
+   "Q_M_gemm_median": 1.1644237872948817,
+   "Q_M_pf_equal_median": 1.1699473588150289,
+   "r_step": 1.2315711209901021,
+   "included": 5,
+   "preempt_per_kstep_stock": 0.7291666666666667,
+   "readmits_stock": 35,
+   "hit_share_stock": 1.0,
+   "decode_tok_s_stock": 156.37463741321702,
+   "pool_bound_stock": 1.0,
+   "preempt_per_kstep_compact": 0.9166666666666666,
+   "readmits_compact": 44,
+   "hit_share_compact": 0.6818181818181818,
+   "decode_tok_s_compact": 178.30491845920315,
+   "pool_bound_compact": 1.0,
+   "prefill_tok_s_needed_stock": 625.4985496528681,
+   "prefill_tok_s_needed_compact": 713.2196738368126
+  }
+ },
+ "seconds": 56
+}

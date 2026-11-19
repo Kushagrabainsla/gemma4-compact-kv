@@ -1,0 +1,7 @@
+{
+ "recorded_at": "2026-10-30T20:21:47Z",
+ "gpu": "NVIDIA H100 80GB HBM3",
+ "bf16_gemm_tflops_median": 797.3,
+ "copy_gb_per_s_median": 3045.6,
+ "status": "ok"
+}

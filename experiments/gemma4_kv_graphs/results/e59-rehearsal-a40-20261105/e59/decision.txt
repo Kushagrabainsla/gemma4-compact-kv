@@ -1,0 +1,9 @@
+V1: graph: COMPACT against EMULV: a row is missing
+V3: G1: no scratch record
+V4: G1: status preflight ['no Triton metadata builder found']
+V4: G1: rows [], planned [('STOCK', 3), ('STOCK', 3)]
+V4: G2: no record
+V4: G3: no record
+V4: G4: no record
+V5: the noise is not measured (a_g None, p_g None)
+E-59: REHEARSAL | OG NA (band +2.00%; S_g None ms, C_g None ms) | graph HG NA KG NA process and drift p_g NA | eager HE NA KE NA p_e NA | NA NA | GS NA | TG NA | failed checks: V1, V3, V4, V5

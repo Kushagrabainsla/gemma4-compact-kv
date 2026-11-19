@@ -1,0 +1,13 @@
+GPU 0: NVIDIA A100 80GB PCIe (UUID: GPU-e1d9ab3d-a123-3757-89e2-b49f8c76d666)
+	 Link 0: 25 GB/s
+	 Link 1: 25 GB/s
+	 Link 2: 25 GB/s
+	 Link 3: 25 GB/s
+	 Link 4: 25 GB/s
+	 Link 5: 25 GB/s
+	 Link 6: 25 GB/s
+	 Link 7: 25 GB/s
+	 Link 8: 25 GB/s
+	 Link 9: 25 GB/s
+	 Link 10: 25 GB/s
+	 Link 11: 25 GB/s

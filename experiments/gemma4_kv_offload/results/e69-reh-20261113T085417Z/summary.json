@@ -1,0 +1,97 @@
+{
+ "checks": {
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true,
+  "V5_pairs": {
+   "S-C/C-C": true
+  },
+  "V5": true,
+  "V6": true
+ },
+ "arms": {
+  "C-C": "ok",
+  "S-C": "ok",
+  "S-R": "not run",
+  "C-R": "not run",
+  "C-C0": "ok",
+  "C-CX": "ok",
+  "C-C64": "ok"
+ },
+ "C-C": {
+  "coverage": {
+   "preempted_events": 48,
+   "decode_events": 36,
+   "median_c": 0.9606005104879823,
+   "min_c": 0.9041372351160444,
+   "max_c": 0.998992950654582,
+   "zero_hit_events": 0,
+   "hit_rate_tokens": 0.9912136211807192
+  },
+  "mismatched_blocks": 185,
+  "checked_reloads": 24,
+  "same_id_share": 0.0,
+  "load_gb_per_s": 13.324933884433872
+ },
+ "S-C": {
+  "coverage": {
+   "preempted_events": 48,
+   "decode_events": 36,
+   "median_c": 0.9620029565405455,
+   "min_c": 0.9214659685863874,
+   "max_c": 0.9896907216494846,
+   "zero_hit_events": 0,
+   "hit_rate_tokens": 0.9917007381332346
+  },
+  "mismatched_blocks": 165,
+  "checked_reloads": 24,
+  "same_id_share": 0.0002185792349726776,
+  "load_gb_per_s": 13.328457989815774
+ },
+ "C-C0": {
+  "coverage": {
+   "preempted_events": 48,
+   "decode_events": 36,
+   "median_c": 0.0,
+   "min_c": 0.0,
+   "max_c": 0.0,
+   "zero_hit_events": 0,
+   "hit_rate_tokens": 0.8122447780487089
+  },
+  "mismatched_blocks": 0,
+  "checked_reloads": 24,
+  "same_id_share": 0.0,
+  "load_gb_per_s": 13.334049215722482
+ },
+ "C-CX": {
+  "coverage": {
+   "preempted_events": 48,
+   "decode_events": 36,
+   "median_c": 0.9509742231053706,
+   "min_c": 0.8421052631578947,
+   "max_c": 0.9979879275653923,
+   "zero_hit_events": 0,
+   "hit_rate_tokens": 0.990336325963963
+  },
+  "mismatched_blocks": 121,
+  "checked_reloads": 24,
+  "same_id_share": 0.0,
+  "load_gb_per_s": 13.293704491916747
+ },
+ "verify": {
+  "C-C0_prompt_only": true,
+  "C-CX_mismatch_found": true,
+  "C-C64_start_s": 65.4,
+  "C-C64_ok": true,
+  "load_bytes": true,
+  "layout_lines": [],
+  "kernel_block": {
+   "attn_groups": "[[AttentionGroup(backend=<class 'vllm.v1.attention.backends.triton_attn.TritonAttentionBackend'>, layer_names=['language_model.model.layers.0.self_attn.attn', 'language_model.model.layers.6.self_attn.attn', 'language_model.model.layers.12.self_attn.attn', 'language_model.model.layers.18.self_attn.attn', 'language_model.model.layers.24.self_attn.attn', 'language_model.model.layers.30.self_attn.attn', 'language_model.model.layers.36.self_attn.attn', 'language_model.model.layers.42.self_attn.attn'], kv_cache_spec=SlidingWindowSpec(block_size=16, dcp_sharded=True, block_stride_alignment=None, is_draft=False, max_tp_shards=None, num_kv_heads=8, head_size=256, dtype=torch.bfloat16, head_size_v=256, kv_quant_mode=<KVQuantMode.NONE: 0>, page_size_padded=None, num_head_slots=None, state_content_bytes=None, tokens_per_state=1, sliding_window=1024, extra_retained_tokens=0), kv_cache_group_id=0, kernel_block_size=None, kernel_block_stride=0, kernel_block_table=None, kernel_block_offsets=None, metadata_builders=[<vllm.v1.attention.backends.triton_attn.TritonAttentionMetadataBuilder object at 0x2af812f2bfe0>])], [AttentionGroup(backend=<class 'vllm.v1.attention.backends.triton_attn.TritonAttentionBackend'>, layer_names=['language_model.model.layers.1.self_attn.attn', 'language_model.model.layers.7.self_attn.attn', 'language_model.model.layers.13.self_attn.attn', 'language_model.model.layers.19.self_attn.attn', 'language_model.model.layers.25.self_attn.attn', 'language_model.model.layers.31",
+   "kernel_block_sizes": "[16, 16, 16, 16, 16, 96]",
+   "runner": "GPUModelRunner"
+  },
+  "all_pass": true
+ },
+ "word": "REHEARSAL | CONNECTOR-FAILS"
+}

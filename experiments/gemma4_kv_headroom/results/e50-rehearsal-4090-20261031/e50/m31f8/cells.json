@@ -1,0 +1,566 @@
+[
+ {
+  "context": 2048,
+  "batch": 4,
+  "rep": 0,
+  "max_tokens": 210,
+  "steps_per_block": 32,
+  "step_ms": [
+   7.1171,
+   7.1203,
+   7.1215
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 1.738,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 174422,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 5,
+  "budget_left": 205,
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 174402,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "slope",
+  "blocks_per_request": 198.0
+ },
+ {
+  "context": 8192,
+  "batch": 4,
+  "rep": 0,
+  "max_tokens": 219,
+  "steps_per_block": 32,
+  "step_ms": [
+   7.6699,
+   7.6228,
+   7.586
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 1.091,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 172886,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 14,
+  "budget_left": 205,
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 172865,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "slope",
+  "blocks_per_request": 582.0
+ },
+ {
+  "context": 32768,
+  "batch": 4,
+  "rep": 0,
+  "max_tokens": 255,
+  "steps_per_block": 32,
+  "step_ms": [
+   8.4982,
+   8.4859,
+   8.5012
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 6.106,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 166728,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 50,
+  "budget_left": 205,
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 166716,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "slope",
+  "blocks_per_request": 2121.5
+ },
+ {
+  "context": 65536,
+  "batch": 4,
+  "rep": 0,
+  "max_tokens": 303,
+  "steps_per_block": 32,
+  "step_ms": [
+   9.5296,
+   9.5259,
+   9.5223
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 16.983,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 158518,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 98,
+  "budget_left": 205,
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 158518,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "slope",
+  "blocks_per_request": 4174.0
+ },
+ {
+  "context": 65536,
+  "batch": 4,
+  "rep": 1,
+  "max_tokens": 303,
+  "steps_per_block": 32,
+  "step_ms": [
+   9.523,
+   9.5236,
+   9.5247
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 17.045,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 158518,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 98,
+  "budget_left": 205,
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 158518,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "slope"
+ },
+ {
+  "context": 32768,
+  "batch": 4,
+  "rep": 1,
+  "max_tokens": 255,
+  "steps_per_block": 32,
+  "step_ms": [
+   8.4982,
+   8.4996,
+   8.4936
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 6.161,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 166728,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 50,
+  "budget_left": 205,
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 166716,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "slope"
+ },
+ {
+  "context": 2048,
+  "batch": 35,
+  "rep": 0,
+  "max_tokens": 272,
+  "steps_per_block": 32,
+  "step_ms": [
+   8.0701,
+   8.0712,
+   8.095
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 2.17,
+  "sched": {
+   "running": 35,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 168225,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 36,
+  "budget_left": 236,
+  "sched_after": {
+   "running": 35,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 168079,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "pair",
+  "spec": "2048:a65536",
+  "auto_for": 65536
+ },
+ {
+  "context": 8192,
+  "batch": 35,
+  "rep": 0,
+  "max_tokens": 374,
+  "steps_per_block": 32,
+  "step_ms": [
+   10.2044,
+   10.1472,
+   10.1047
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 9.704,
+  "sched": {
+   "running": 35,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 154699,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 139,
+  "budget_left": 235,
+  "sched_after": {
+   "running": 35,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 154525,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "pair",
+  "spec": "8192:a65536",
+  "auto_for": 65536
+ },
+ {
+  "context": 32768,
+  "batch": 35,
+  "rep": 0,
+  "max_tokens": 782,
+  "steps_per_block": 32,
+  "step_ms": [
+   17.0556,
+   17.0601,
+   17.0683
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 55.283,
+  "sched": {
+   "running": 35,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 100348,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 550,
+  "budget_left": 232,
+  "sched_after": {
+   "running": 35,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 100314,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "pair",
+  "spec": "32768:a65536",
+  "auto_for": 65536
+ },
+ {
+  "context": 65536,
+  "batch": 35,
+  "rep": 0,
+  "max_tokens": 1326,
+  "steps_per_block": 32,
+  "step_ms": [
+   26.1735,
+   26.1877,
+   26.1611
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 155.231,
+  "sched": {
+   "running": 35,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 28149,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 1099,
+  "budget_left": 227,
+  "sched_after": {
+   "running": 35,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 28039,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "pair",
+  "spec": "65536:a65536",
+  "auto_for": 65536
+ },
+ {
+  "context": 65536,
+  "batch": 35,
+  "rep": 1,
+  "max_tokens": 1326,
+  "steps_per_block": 32,
+  "step_ms": [
+   26.2254,
+   26.2425,
+   26.2489
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 155.23,
+  "sched": {
+   "running": 35,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 28149,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 1099,
+  "budget_left": 227,
+  "sched_after": {
+   "running": 35,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 28039,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "pair",
+  "spec": "65536:a65536:1",
+  "auto_for": 65536
+ }
+]

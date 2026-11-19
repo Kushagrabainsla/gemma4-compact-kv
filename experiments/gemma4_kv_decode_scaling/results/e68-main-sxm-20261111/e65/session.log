@@ -1,0 +1,8 @@
+23:17:41 setup done after 15 s; versions: vllm 0.33.0rc1.dev229+g3966924d5 torch 2.14.0+cu130 triton 3.8.0 VLLM_BUILD_COMMIT=unset 
+23:17:41 deadline in 885 s (session watchdog 900 s; boot watchdog end 1794440249, margin 120 s)
+23:19:30 bench: exit 0 after 124 s; {"status": "ok", "points": 35, "errors": []}
+23:19:30 decision: E-65 GPU: INVALID | Phi 0.121 over 11 points | T_OTHER 40.11 ms | checks {'V1': True, 'V2': True, 'V3': False, 'V3_failed_points': [(3, 32768), (8, 16384), (64, 4096), (8, 32768), (8, 65536), (4, 131072), (64, 4096, 'SL')], 'V5': True, 'V5_missing_core': [], 'extrapolated': [], 'V4_values_ms': [5.049, 4.564, 5.076, 4.582], 'V4': True, 'V6_report_ms': [0.393, 0.396], 'tie_status': 'ok after 1 tries'} | failed ['V3']
+23:19:30 results: 4053 KB in /workspace/results/e65
+23:19:30 done after 124 s
+23:19:30 AUTO_STOP in 90 s; copy RES now
+23:21:01 AUTO_STOP (exit): 200

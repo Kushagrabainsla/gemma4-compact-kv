@@ -1,0 +1,83 @@
+{
+ "run_id": "e69-reh-cc-20261113T092622Z",
+ "stage": "reh",
+ "started_at": "2026-11-13T09:27:51Z",
+ "env": {
+  "MODAL_CLOUD_PROVIDER": "CLOUD_PROVIDER_OCI",
+  "MODAL_REGION": "us-east",
+  "MODAL_TASK_ID": "ta-01M7A3R2V3JD46NGF8YFR61MZR",
+  "MODAL_IMAGE_ID": "im-fB0BiHeiQzJNWXeG5yLwb3",
+  "MODAL_ENVIRONMENT": "main",
+  "NVIDIA_VISIBLE_DEVICES": "GPU-b491f497-6523-6c60-e053-8e29ffa0b9ad",
+  "CUDA_VERSION": "13.0.2"
+ },
+ "launcher_sha": {
+  "modal_e69.py": "d23d366ea5838e4dcaf17603c83fae5ebd60d6bc7a42d8701cc4c254915aa18e",
+  "e69_stage.py": "a90cafe3fcdde32a14bca22bd3ecc33dc1109f4a114822e2b6c0813be99cf234"
+ },
+ "arms": {
+  "C-C": {
+   "exit": 0,
+   "seconds": 184.4,
+   "try": 1,
+   "line": "E-69 C-C: ok | preemptions 37 | reload 24 checked, 0 bad | coverage {'preempted_events': 36, 'decode_events': 24, 'median_c': 0.9485147290109386, 'min_c': 0.9032258064516129, 'max_c': 0.9979879275653923, 'zero_hit_events': 0, 'hit_rate_tokens': 0.9890146806866664} | ",
+   "verify_lines": [
+    "(MainProcess pid=62) INFO 11-13 09:29:22 [utils.py:397] Using LBHNC KV cache layout.",
+    "(MainProcess pid=62) INFO 11-13 09:29:26 [shared_offload_region.py:177] Created mmap file /dev/shm/vllm_offload_5bfa60a6-7f78-421c-b48b-6b5b50d51f0f.mmap (17.18 GB)",
+    "(MainProcess pid=62) INFO 11-13 09:29:26 [shared_offload_region.py:198] Unlinked mmap file /dev/shm/vllm_offload_5bfa60a6-7f78-421c-b48b-6b5b50d51f0f.mmap",
+    "(MainProcess pid=62) WARNING 11-13 09:29:26 [shared_offload_region.py:79] MADV_POPULATE_WRITE is not supported; falling back to per-page writes for mmap pre-population. Startup may be slower.",
+    "(MainProcess pid=62) INFO 11-13 09:29:31 [gpu_worker.py:232] Registering full CPU offload region rank=0 (row=1048576, slot=1048576 bytes): less than 3145728 bytes saved per row"
+   ]
+  }
+ },
+ "manifest_ok": true,
+ "probe": {
+  "versions": {
+   "vllm": "0.33.0rc1.dev229+g3966924d5",
+   "torch": "2.14.0+cu130",
+   "triton": "3.8.0"
+  },
+  "dev_shm": {
+   "total_gib": 1006.944091796875,
+   "free_gib": 1006.944091796875
+  },
+  "cgroup_memory": "973078183936",
+  "memlock": [
+   42949672960,
+   42949672960
+  ],
+  "cpus": 24,
+  "mem_total_gib": 906.2496795654297,
+  "hooks": {
+   "Scheduler.make_stats": true,
+   "Scheduler._preempt_request": true,
+   "Scheduler._update_waiting_for_remote_kv": true,
+   "Scheduler.schedule": true,
+   "KVCacheManager.get_block_ids": true,
+   "KVCacheManager.allocate_slots": true,
+   "OffloadingConnectorWorker.register_kv_caches": true,
+   "GPUModelRunner.get_kv_cache_spec": true
+  },
+  "hooks_ok": true
+ },
+ "snapshot": "/__modal/volumes/vo-D6JSYsmqdCQL1RQ3aMNeyx/hub/models--google--gemma-4-12B-it/snapshots/43c9d014b231474fa7212dbb48a762566c2b255d",
+ "download_s": 21.5,
+ "decision": "E-69: REHEARSAL | INVALID (S-C did not complete, OTHER; CONNECTOR-FAILS-STOCK, exploratory) | checks {'V1': True, 'V2': True, 'V3': True, 'V4': False, 'V5': False, 'V6': True} | C-C {'coverage': {'preempted_events': 36, 'decode_events': 24, 'median_c': 0.9485147290109386, 'min_c': 0.9032258064516129, 'max_c': 0.9979879275653923, 'zero_hit_events': 0, 'hit_rate_tokens': 0.9890146806866664}, 'mismatched_blocks': 0, 'a1_strict_mismatch': 235, 'recomputed_first_version': 235, 'recomputed_third': 0, 'checked_reloads': 24, 'same_id_share': 0.0, 'load_gb_per_s': 24.540517512330347, 'tier_fill': 1.0522842407226562} | S-C None | verify {all_pass: False}",
+ "ok": true,
+ "seconds": 207.4,
+ "sha256": {
+  "C-C/run_e69.json": "54b205c92387ff997e2795646b0df53a2b2f37304826816b36e598241e49660c",
+  "C-C/stdout.txt": "069dc7c2338319eb4fd4d36bfe24fe139f1a07b344bf23b5e3d6c274d503cd91",
+  "C-C/w_tokens.json": "df428520db1e1a232acb91bae772c67f1ebbc93261d706c153ad0bb69296eb4c",
+  "download.txt": "0f0e0cc2f71e1d5278c41f0cd21f642fb5bcd765ca009d938e25927a4dc122f4",
+  "manifest_check.txt": "864f3e6e3cf175028b7b896744bda781b816e5e65ffd53a51062b17bed36acf8",
+  "modal_record.json": "f6719d187a45a06472b5bfb1ef00a9e69cbba2fc2c5aa83cb52f188d52015e8d",
+  "nvidia-smi.txt": "cf1d7f5826125b7e3f4a500dc870c33b0312a57211507575598efa5d4fbc1554",
+  "probe.txt": "83a2ae3afe93921a2e26307bd8856bb59c52cd1209b06d0d1c7c75cf43b61ad0",
+  "started.txt": "c1cf8757967278646f386e7e668e2abdf84c887f2d3a695f75974e311794e0c7",
+  "summary.json": "504d9bbb79c12b39be0a616364e97d6e5700bdac8c723211a45da72f1fb9d569",
+  "telemetry.csv": "23065357bc6447790191db8e99033931a3a9a2729ede4daff0ad9f796350be7a"
+ },
+ "launcher_sha_match": true,
+ "wall_s_local": 297.55010318756104
+}

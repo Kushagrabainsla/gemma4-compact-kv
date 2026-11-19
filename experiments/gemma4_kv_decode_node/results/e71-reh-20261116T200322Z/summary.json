@@ -1,0 +1,123 @@
+{
+ "arms": {
+  "C0": {
+   "p": "ok",
+   "d": "ok",
+   "window": {
+    "work_steps": 300,
+    "seconds": 20.65,
+    "decode_tokens": 2636,
+    "decode_tok_s": 127.66001548659993,
+    "tokens_per_step": 8.786666666666667,
+    "running_per_step": 8.816666666666666,
+    "saturated_share": 0.05,
+    "preemptions": 0,
+    "all_steps": 4879,
+    "added": 14,
+    "early_finishes": 0,
+    "completed": 0,
+    "q_depth_mean": 0.0
+   },
+   "produced": 14,
+   "error": ""
+  },
+  "S1": {
+   "p": "ok",
+   "d": "ok",
+   "window": {
+    "work_steps": 1500,
+    "seconds": 86.79,
+    "decode_tokens": 16420,
+    "decode_tok_s": 189.18896988445937,
+    "tokens_per_step": 10.946666666666667,
+    "running_per_step": 10.948,
+    "saturated_share": 0.9653333333333334,
+    "preemptions": 0,
+    "all_steps": 4534,
+    "added": 19,
+    "early_finishes": 0,
+    "completed": 5,
+    "q_depth_mean": 1.3333333333333333
+   },
+   "produced": 21,
+   "error": ""
+  },
+  "C": {
+   "p": "ok",
+   "d": "ok",
+   "window": {
+    "work_steps": 1500,
+    "seconds": 90.1,
+    "decode_tokens": 18363,
+    "decode_tok_s": 203.8100833606745,
+    "tokens_per_step": 12.242,
+    "running_per_step": 12.249333333333333,
+    "saturated_share": 0.8853333333333333,
+    "preemptions": 0,
+    "all_steps": 2281,
+    "added": 19,
+    "early_finishes": 0,
+    "completed": 4,
+    "q_depth_mean": 1.3333333333333333
+   },
+   "produced": 21,
+   "error": ""
+  },
+  "S2": {
+   "p": "ok",
+   "d": "ok",
+   "window": {
+    "work_steps": 1500,
+    "seconds": 84.77,
+    "decode_tokens": 16267,
+    "decode_tok_s": 191.90658507273525,
+    "tokens_per_step": 10.844666666666667,
+    "running_per_step": 10.846666666666666,
+    "saturated_share": 0.92,
+    "preemptions": 0,
+    "all_steps": 2582,
+    "added": 18,
+    "early_finishes": 0,
+    "completed": 4,
+    "q_depth_mean": 1.4
+   },
+   "produced": 20,
+   "error": ""
+  }
+ },
+ "prediction": {
+  "r_step_interval": [
+   1.3083199944324588,
+   1.3638388968855721
+  ],
+  "Q_graph_interval": [
+   1.2716493631092172,
+   1.324576575245639
+  ],
+  "Q_eager_interval": [
+   1.2253286421454668,
+   1.2759533229618492
+  ]
+ },
+ "R_step": 1.1235659436473215,
+ "aa_step": 0.009361519870284852,
+ "R": 1.0696009476340749,
+ "aa_tput": 0.014262119580907385,
+ "secondary": {
+  "graph": "below",
+  "eager": "below",
+  "gate_1.25": false,
+  "aa_tput_ok": true
+ },
+ "checks": {
+  "V1": true,
+  "V2": true,
+  "V3": false,
+  "V4": true,
+  "V5": true,
+  "V6": true,
+  "V7": false,
+  "V8": true
+ },
+ "word": "REHEARSAL | INVALID (V3, V7)"
+}

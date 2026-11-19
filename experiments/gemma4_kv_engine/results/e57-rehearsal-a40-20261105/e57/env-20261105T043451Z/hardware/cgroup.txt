@@ -1,0 +1,2 @@
+/sys/fs/cgroup/cpu.max: 765000 100000
+/sys/fs/cgroup/memory.max: 49999998976

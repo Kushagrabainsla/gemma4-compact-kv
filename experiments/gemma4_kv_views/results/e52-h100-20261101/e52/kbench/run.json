@@ -1,0 +1,63 @@
+{
+ "args": {
+  "out": "/workspace/results/e52/kbench",
+  "cells": "19:2048,19:32768,11:2048,11:65536,19:8192,11:8192,4:2048,4:32768",
+  "fail_fast": "auto",
+  "asm": "True",
+  "skip_correctness": "False",
+  "stub": "False",
+  "stub_seed": "0",
+  "stub_bw": "3045.0",
+  "stub_stock_eff": "0.7",
+  "stub_stock_bf16_eff": "1.0",
+  "stub_std_eff": "0.95",
+  "stub_cmp_eff": "0.95",
+  "stub_fixed_us": "30.0",
+  "stub_engine_ratio": "1.0",
+  "stub_onchip_bf16_ns": "0.435",
+  "stub_onchip_fp16_ns": "0.1",
+  "stub_fused_ns": "0.2",
+  "stub_stock_alias_gain": "0.1",
+  "stub_stock_views_gain": "0.075",
+  "stub_pool_gain": "0.1",
+  "stub_repeat_noise": "0.002",
+  "stub_spread": "0.004",
+  "stub_bad_config": "",
+  "stub_bad_correct": "False",
+  "stub_hang_after_groups": "0.0",
+  "stub_fail": "False",
+  "stub_sticky": "False",
+  "deadline": "720",
+  "compile_check": "/workspace/results/e52/compile_check.json"
+ },
+ "started_at": "2026-11-01T10:10:59Z",
+ "status": "ok",
+ "phases": {
+  "correctness": 39.9,
+  "cell 19:2048": 60.7,
+  "cell 19:32768": 216.6,
+  "cell 11:2048": 225.7,
+  "cell 11:65536": 406.0,
+  "confirm": 539.3,
+  "cell 19:8192": 544.5,
+  "cell 11:8192": 547.4,
+  "cell 4:2048": 547.9,
+  "cell 4:32768": 551.7
+ },
+ "lite_cells": [],
+ "gpu": {
+  "name": "NVIDIA H100 80GB HBM3",
+  "capability": "9.0",
+  "uuid": "05d343a2-23fa-c679-0960-431ddaf0826e"
+ },
+ "torch": "2.14.0+cu130",
+ "nvml_clock": [
+  1980,
+  0
+ ],
+ "triton": "3.8.0",
+ "vllm": "0.33.0rc1.dev229+g3966924d5",
+ "fail_fast_mode": "on",
+ "finished_at": "2026-11-01T10:20:11Z",
+ "errors": []
+}

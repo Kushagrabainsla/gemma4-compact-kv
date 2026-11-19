@@ -1,0 +1,63 @@
+{
+ "run_id": "e71-reh-20261116T200322Z",
+ "stage": "reh",
+ "started_at": "2026-11-16T20:08:58Z",
+ "env": {
+  "MODAL_CLOUD_PROVIDER": "CLOUD_PROVIDER_AZURE",
+  "MODAL_REGION": "eu-south",
+  "MODAL_TASK_ID": "ta-01M7JZM135C7MK42CBCMPDKCRR",
+  "MODAL_IMAGE_ID": "im-fB0BiHeiQzJNWXeG5yLwb3",
+  "NVIDIA_VISIBLE_DEVICES": "GPU-0fc5a0dd-b9cc-b67c-9090-27072c4bdeca,GPU-24707bea-564b-3181-4374-f1580438b963"
+ },
+ "launcher_sha": {
+  "modal_e71.py": "6e1d8b786143af4110f8dfb5b7bf932761ef1eb8bcca496201ef728151112d1c",
+  "e71_stage.py": "8ebf13c68f81f18003889de3cef6bf03cd23e269a760ce12354ee6db974cfdad"
+ },
+ "arms": {
+  "C0": {
+   "d": 0,
+   "p": 0,
+   "seconds": 177.5,
+   "status": {
+    "p": "ok",
+    "d": "ok"
+   }
+  },
+  "S1": {
+   "d": 0,
+   "p": 0,
+   "seconds": 202.6,
+   "status": {
+    "p": "ok",
+    "d": "ok"
+   }
+  },
+  "C": {
+   "d": 0,
+   "p": 0,
+   "seconds": 199.3,
+   "status": {
+    "p": "ok",
+    "d": "ok"
+   }
+  },
+  "S2": {
+   "d": 0,
+   "p": 0,
+   "seconds": 194.9,
+   "status": {
+    "p": "ok",
+    "d": "ok"
+   }
+  }
+ },
+ "manifest_ok": true,
+ "gpus": [
+  "GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-0fc5a0dd-b9cc-b67c-9090-27072c4bdeca)",
+  "GPU 1: NVIDIA A100-SXM4-80GB (UUID: GPU-24707bea-564b-3181-4374-f1580438b963)"
+ ],
+ "snapshot": "/__modal/volumes/vo-D6JSYsmqdCQL1RQ3aMNeyx/hub/models--google--gemma-4-12B-it/snapshots/43c9d014b231474fa7212dbb48a762566c2b255d",
+ "decision": "E-71: REHEARSAL | INVALID (V3, V7) | R_step 1.1235659436473215 | A/A step 0.009361519870284852 | R 1.0696009476340749 | secondary {'graph': 'below', 'eager': 'below', 'gate_1.25': False, 'aa_tput_ok': True} | checks {'V1': True, 'V2': True, 'V3': False, 'V4': True, 'V5': True, 'V6': True, 'V7': False, 'V8': True}",
+ "ok": true,
+ "seconds": 789.5
+}

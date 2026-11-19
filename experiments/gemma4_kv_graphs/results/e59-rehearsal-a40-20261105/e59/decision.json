@@ -1,0 +1,64 @@
+{
+ "word": "REHEARSAL",
+ "hook_word": "NA",
+ "cache_word": "NA",
+ "process_flag": false,
+ "flags": [],
+ "numbers": {
+  "S_g": null,
+  "E_g": null,
+  "C_g": null,
+  "C4_g": null,
+  "OG": null,
+  "HG": null,
+  "KG": null,
+  "a_g": null,
+  "p_g": null,
+  "B_g": 0.02,
+  "HE": null,
+  "KE": null,
+  "p_e": null,
+  "a_e": null,
+  "B_e": 0.02,
+  "GS": null,
+  "TG": null
+ },
+ "validity": {
+  "V1": [
+   "graph: COMPACT against EMULV: a row is missing"
+  ],
+  "V2": [],
+  "V3": [
+   "G1: no scratch record"
+  ],
+  "V4": [
+   "G1: status preflight ['no Triton metadata builder found']",
+   "G1: rows [], planned [('STOCK', 3), ('STOCK', 3)]",
+   "G2: no record",
+   "G3: no record",
+   "G4: no record"
+  ],
+  "V5": [
+   "the noise is not measured (a_g None, p_g None)"
+  ]
+ },
+ "v1": {
+  "graph": "a row is missing",
+  "eager": "not run"
+ },
+ "rows": {
+  "G1": []
+ },
+ "profiles": {},
+ "status": {
+  "G1": "preflight",
+  "G2": null,
+  "G3": null,
+  "G4": null,
+  "E1": null,
+  "E2": null,
+  "E3": null
+ },
+ "rehearsal": true,
+ "stub": false
+}

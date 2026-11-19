@@ -1,0 +1,10 @@
+Filesystem                                                                 Size  Used Avail Use% Mounted on
+overlay                                                                     60G   92M   60G   1% /
+tmpfs                                                                       64M     0   64M   0% /dev
+shm                                                                         24G     0   24G   0% /dev/shm
+/dev/mapper/ubuntu--vg-ubuntu--lv                                          455G   15G  417G   4% /usr/bin/nvidia-smi
+tmpfs                                                                       51G  5.5M   51G   1% /run/nvidia-persistenced/socket
+ca-mtl-1-vast.runpod.net:/runpodfs/podvolumes/wcsabnl2bj1t/<pod-id>   19G     0   19G   0% /workspace
+/dev/md127                                                                 7.0T  750G  6.3T  11% /etc/hosts
+tmpfs                                                                      4.0K  4.0K     0 100% /run/nvidia-ctk-hook/df1e0802-efd4-43b6-b0ed-55b26638202d
+tmpfs                                                                      4.0K     0  4.0K   0% /proc/acpi

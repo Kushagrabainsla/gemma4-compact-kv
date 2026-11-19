@@ -1,0 +1,39 @@
+{
+ "args": {
+  "out": "/workspace/results/e51/kbench",
+  "cells": "19:2048,19:32768,11:2048,11:65536,19:8192,11:8192,11:32768,4:2048,4:32768,4:65536",
+  "stages": "2",
+  "stages_bf16": "0",
+  "fail_fast": "auto",
+  "skip_correctness": "False",
+  "stub": "False",
+  "stub_seed": "0",
+  "stub_bw": "3045.0",
+  "stub_stock_eff": "0.7",
+  "stub_stock_bf16_eff": "0.85",
+  "stub_std_eff": "0.7",
+  "stub_cmp_eff": "0.7",
+  "stub_fixed_us": "30.0",
+  "stub_engine_ratio": "1.0",
+  "stub_onchip_ns": "0.0",
+  "stub_stock_alias_gain": "0.4",
+  "stub_repeat_noise": "0.002",
+  "stub_bad_config": "",
+  "stub_bad_correct": "False",
+  "stub_hang_after_groups": "0.0",
+  "stub_fail": "False"
+ },
+ "started_at": "2026-11-01T03:29:21Z",
+ "status": "ok",
+ "gpu": {
+  "name": "NVIDIA H100 80GB HBM3",
+  "capability": "9.0",
+  "uuid": "d51f23d5-09c6-8fae-d3e1-b81afe227b60"
+ },
+ "torch": "2.14.0+cu130",
+ "triton": "3.8.0",
+ "vllm": "0.33.0rc1.dev229+g3966924d5",
+ "fail_fast_mode": "on",
+ "finished_at": "2026-11-01T03:32:47Z",
+ "errors": []
+}

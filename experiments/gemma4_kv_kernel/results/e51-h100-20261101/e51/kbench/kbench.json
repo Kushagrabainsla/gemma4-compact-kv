@@ -1,0 +1,7808 @@
+{
+ "cells": [
+  {
+   "kernel": "stock_fp8_s32",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 159383552,
+   "us": 203.24,
+   "spread": 0.0079,
+   "status": "ok",
+   "gbps": 784.2
+  },
+  {
+   "kernel": "stock_fp8_auto",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 159383552,
+   "us": 123.27,
+   "spread": 0.0095,
+   "status": "ok",
+   "gbps": 1293.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 105.01,
+   "spread": 0.0053,
+   "status": "ok",
+   "gbps": 1517.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 151.65,
+   "spread": 0.0196,
+   "status": "ok",
+   "gbps": 1051.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 135.96,
+   "spread": 0.0047,
+   "status": "ok",
+   "gbps": 1172.3
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 117.98,
+   "spread": 0.0043,
+   "status": "ok",
+   "gbps": 1350.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 93.09,
+   "spread": 0.0137,
+   "status": "ok",
+   "gbps": 1712.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 128.08,
+   "spread": 0.0256,
+   "status": "ok",
+   "gbps": 1244.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 113.09,
+   "spread": 0.0025,
+   "status": "ok",
+   "gbps": 1409.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 107.88,
+   "spread": 0.0042,
+   "status": "ok",
+   "gbps": 1477.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 94.0,
+   "spread": 0.0081,
+   "status": "ok",
+   "gbps": 1695.6
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 121.95,
+   "spread": 0.0034,
+   "status": "ok",
+   "gbps": 1307.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 116.33,
+   "spread": 0.0031,
+   "status": "ok",
+   "gbps": 1370.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 119.36,
+   "spread": 0.002,
+   "status": "ok",
+   "gbps": 1335.3
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 111.31,
+   "spread": 0.0038,
+   "status": "ok",
+   "gbps": 1431.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 136.79,
+   "spread": 0.004,
+   "status": "ok",
+   "gbps": 1165.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 132.78,
+   "spread": 0.0032,
+   "status": "ok",
+   "gbps": 1200.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 159383552,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 145.4,
+   "spread": 0.0019,
+   "status": "ok",
+   "gbps": 1096.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 135.59,
+   "spread": 0.0383,
+   "status": "ok",
+   "gbps": 734.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 161.6,
+   "spread": 0.0035,
+   "status": "ok",
+   "gbps": 616.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 191.58,
+   "spread": 0.0058,
+   "status": "ok",
+   "gbps": 520.0
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 152.73,
+   "spread": 0.0089,
+   "status": "ok",
+   "gbps": 652.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 112.18,
+   "spread": 0.002,
+   "status": "ok",
+   "gbps": 888.0
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 133.23,
+   "spread": 0.0027,
+   "status": "ok",
+   "gbps": 747.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 161.74,
+   "spread": 0.0026,
+   "status": "ok",
+   "gbps": 615.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 135.32,
+   "spread": 0.0062,
+   "status": "ok",
+   "gbps": 736.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 113.64,
+   "spread": 0.0015,
+   "status": "ok",
+   "gbps": 876.6
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 135.19,
+   "spread": 0.0036,
+   "status": "ok",
+   "gbps": 736.8
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 172.17,
+   "spread": 0.0016,
+   "status": "ok",
+   "gbps": 578.6
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 140.84,
+   "spread": 0.0044,
+   "status": "ok",
+   "gbps": 707.3
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 127.48,
+   "spread": 0.0019,
+   "status": "ok",
+   "gbps": 781.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 164.68,
+   "spread": 0.0048,
+   "status": "ok",
+   "gbps": 604.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 189.73,
+   "spread": 0.0016,
+   "status": "ok",
+   "gbps": 525.0
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 99614720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 167.31,
+   "spread": 0.0087,
+   "status": "ok",
+   "gbps": 595.4
+  },
+  {
+   "kernel": "stock_bf16_auto",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 318767104,
+   "us": 120.96,
+   "spread": 0.0055,
+   "status": "ok",
+   "gbps": 2635.3
+  },
+  {
+   "kernel": "stock_bf16_s32",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 318767104,
+   "us": 165.1,
+   "spread": 0.0031,
+   "status": "ok",
+   "gbps": 1930.8
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 318767104,
+   "regs": 151,
+   "spills": 0,
+   "shared": 82944,
+   "us": 127.78,
+   "spread": 0.0065,
+   "status": "ok",
+   "gbps": 2494.7
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 318767104,
+   "regs": 86,
+   "spills": 0,
+   "shared": 82944,
+   "us": 128.93,
+   "spread": 0.004,
+   "status": "ok",
+   "gbps": 2472.4
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 318767104,
+   "regs": 151,
+   "spills": 0,
+   "shared": 82944,
+   "us": 139.97,
+   "spread": 0.0029,
+   "status": "ok",
+   "gbps": 2277.4
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 318767104,
+   "regs": 86,
+   "spills": 0,
+   "shared": 82944,
+   "us": 140.36,
+   "spread": 0.0017,
+   "status": "ok",
+   "gbps": 2271.1
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 199229440,
+   "regs": 133,
+   "spills": 0,
+   "shared": 62464,
+   "us": 93.76,
+   "spread": 0.0058,
+   "status": "ok",
+   "gbps": 2124.9
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 199229440,
+   "regs": 102,
+   "spills": 0,
+   "shared": 62464,
+   "us": 107.82,
+   "spread": 0.0031,
+   "status": "ok",
+   "gbps": 1847.8
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 199229440,
+   "regs": 133,
+   "spills": 0,
+   "shared": 62464,
+   "us": 102.22,
+   "spread": 0.0033,
+   "status": "ok",
+   "gbps": 1949.0
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 199229440,
+   "regs": 102,
+   "spills": 0,
+   "shared": 62464,
+   "us": 121.82,
+   "spread": 0.0027,
+   "status": "ok",
+   "gbps": 1635.4
+  },
+  {
+   "kernel": "stock_fp8_s32",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 2550136832,
+   "us": 1333.56,
+   "spread": 0.0311,
+   "status": "ok",
+   "gbps": 1912.3
+  },
+  {
+   "kernel": "stock_fp8_auto",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 2550136832,
+   "us": 1764.05,
+   "spread": 0.0308,
+   "status": "ok",
+   "gbps": 1445.6
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1538.21,
+   "spread": 0.0072,
+   "status": "ok",
+   "gbps": 1657.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 2157.07,
+   "spread": 0.0275,
+   "status": "ok",
+   "gbps": 1182.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1979.23,
+   "spread": 0.0119,
+   "status": "ok",
+   "gbps": 1288.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 1620.28,
+   "spread": 0.0271,
+   "status": "ok",
+   "gbps": 1573.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1233.18,
+   "spread": 0.0026,
+   "status": "ok",
+   "gbps": 2067.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 1634.72,
+   "spread": 0.0052,
+   "status": "ok",
+   "gbps": 1560.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1576.01,
+   "spread": 0.0289,
+   "status": "ok",
+   "gbps": 1618.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 1384.52,
+   "spread": 0.0066,
+   "status": "ok",
+   "gbps": 1841.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1152.24,
+   "spread": 0.0274,
+   "status": "ok",
+   "gbps": 2213.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 1525.26,
+   "spread": 0.0015,
+   "status": "ok",
+   "gbps": 1671.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1570.99,
+   "spread": 0.0025,
+   "status": "ok",
+   "gbps": 1623.3
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 1398.88,
+   "spread": 0.0314,
+   "status": "ok",
+   "gbps": 1823.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1129.44,
+   "spread": 0.0014,
+   "status": "ok",
+   "gbps": 2257.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 1492.79,
+   "spread": 0.0217,
+   "status": "ok",
+   "gbps": 1708.3
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1480.76,
+   "spread": 0.0206,
+   "status": "ok",
+   "gbps": 1722.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2550136832,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 1349.94,
+   "spread": 0.0022,
+   "status": "ok",
+   "gbps": 1889.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 2027.06,
+   "spread": 0.0037,
+   "status": "ok",
+   "gbps": 786.3
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 2251.77,
+   "spread": 0.0013,
+   "status": "ok",
+   "gbps": 707.8
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 2792.84,
+   "spread": 0.0054,
+   "status": "ok",
+   "gbps": 570.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 2187.9,
+   "spread": 0.0019,
+   "status": "ok",
+   "gbps": 728.5
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 1574.81,
+   "spread": 0.0023,
+   "status": "ok",
+   "gbps": 1012.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 1739.63,
+   "spread": 0.0012,
+   "status": "ok",
+   "gbps": 916.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 2329.15,
+   "spread": 0.0006,
+   "status": "ok",
+   "gbps": 684.3
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 1855.58,
+   "spread": 0.0028,
+   "status": "ok",
+   "gbps": 858.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 1488.76,
+   "spread": 0.0376,
+   "status": "ok",
+   "gbps": 1070.6
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 1642.73,
+   "spread": 0.0277,
+   "status": "ok",
+   "gbps": 970.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 2338.58,
+   "spread": 0.0005,
+   "status": "ok",
+   "gbps": 681.5
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 1833.38,
+   "spread": 0.0025,
+   "status": "ok",
+   "gbps": 869.3
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 1426.22,
+   "spread": 0.0005,
+   "status": "ok",
+   "gbps": 1117.5
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 1573.01,
+   "spread": 0.0007,
+   "status": "ok",
+   "gbps": 1013.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 2250.09,
+   "spread": 0.0005,
+   "status": "ok",
+   "gbps": 708.3
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1593835520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 1736.45,
+   "spread": 0.0034,
+   "status": "ok",
+   "gbps": 917.9
+  },
+  {
+   "kernel": "stock_bf16_auto",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 5100273664,
+   "us": 1761.26,
+   "spread": 0.0165,
+   "status": "ok",
+   "gbps": 2895.8
+  },
+  {
+   "kernel": "stock_bf16_s32",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 5100273664,
+   "us": 1701.02,
+   "spread": 0.0145,
+   "status": "ok",
+   "gbps": 2998.4
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 5100273664,
+   "regs": 151,
+   "spills": 0,
+   "shared": 82944,
+   "us": 1651.92,
+   "spread": 0.0021,
+   "status": "ok",
+   "gbps": 3087.5
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 5100273664,
+   "regs": 86,
+   "spills": 0,
+   "shared": 82944,
+   "us": 1662.84,
+   "spread": 0.0013,
+   "status": "ok",
+   "gbps": 3067.2
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 5100273664,
+   "regs": 151,
+   "spills": 0,
+   "shared": 82944,
+   "us": 1696.08,
+   "spread": 0.0037,
+   "status": "ok",
+   "gbps": 3007.1
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 5100273664,
+   "regs": 86,
+   "spills": 0,
+   "shared": 82944,
+   "us": 1707.61,
+   "spread": 0.0011,
+   "status": "ok",
+   "gbps": 2986.8
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 3187671040,
+   "regs": 133,
+   "spills": 0,
+   "shared": 62464,
+   "us": 1176.73,
+   "spread": 0.009,
+   "status": "ok",
+   "gbps": 2708.9
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 3187671040,
+   "regs": 102,
+   "spills": 0,
+   "shared": 62464,
+   "us": 1309.23,
+   "spread": 0.0116,
+   "status": "ok",
+   "gbps": 2434.8
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 3187671040,
+   "regs": 133,
+   "spills": 0,
+   "shared": 62464,
+   "us": 1112.04,
+   "spread": 0.0024,
+   "status": "ok",
+   "gbps": 2866.5
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 3187671040,
+   "regs": 102,
+   "spills": 0,
+   "shared": 62464,
+   "us": 1341.84,
+   "spread": 0.0015,
+   "status": "ok",
+   "gbps": 2375.6
+  },
+  {
+   "kernel": "stock_fp8_s32",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 92274688,
+   "us": 121.44,
+   "spread": 0.0196,
+   "status": "ok",
+   "gbps": 759.8
+  },
+  {
+   "kernel": "stock_fp8_auto",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 92274688,
+   "us": 60.27,
+   "spread": 0.007,
+   "status": "ok",
+   "gbps": 1531.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 63.88,
+   "spread": 0.0033,
+   "status": "ok",
+   "gbps": 1444.5
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 83.91,
+   "spread": 0.0026,
+   "status": "ok",
+   "gbps": 1099.7
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 89.57,
+   "spread": 0.0072,
+   "status": "ok",
+   "gbps": 1030.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 76.84,
+   "spread": 0.0039,
+   "status": "ok",
+   "gbps": 1200.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 59.27,
+   "spread": 0.0193,
+   "status": "ok",
+   "gbps": 1556.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 84.56,
+   "spread": 0.0119,
+   "status": "ok",
+   "gbps": 1091.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 72.44,
+   "spread": 0.0035,
+   "status": "ok",
+   "gbps": 1273.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 67.03,
+   "spread": 0.0051,
+   "status": "ok",
+   "gbps": 1376.6
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 59.04,
+   "spread": 0.0043,
+   "status": "ok",
+   "gbps": 1562.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 77.03,
+   "spread": 0.005,
+   "status": "ok",
+   "gbps": 1197.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 73.95,
+   "spread": 0.0044,
+   "status": "ok",
+   "gbps": 1247.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 74.65,
+   "spread": 0.0032,
+   "status": "ok",
+   "gbps": 1236.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 68.64,
+   "spread": 0.0037,
+   "status": "ok",
+   "gbps": 1344.3
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 85.52,
+   "spread": 0.0061,
+   "status": "ok",
+   "gbps": 1079.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 81.44,
+   "spread": 0.0036,
+   "status": "ok",
+   "gbps": 1133.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 92274688,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 88.7,
+   "spread": 0.003,
+   "status": "ok",
+   "gbps": 1040.3
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 82.81,
+   "spread": 0.0018,
+   "status": "ok",
+   "gbps": 696.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 92.4,
+   "spread": 0.0077,
+   "status": "ok",
+   "gbps": 624.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 125.52,
+   "spread": 0.0026,
+   "status": "ok",
+   "gbps": 459.5
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 99.89,
+   "spread": 0.0057,
+   "status": "ok",
+   "gbps": 577.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 73.66,
+   "spread": 0.0029,
+   "status": "ok",
+   "gbps": 782.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 87.01,
+   "spread": 0.0028,
+   "status": "ok",
+   "gbps": 662.8
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 99.61,
+   "spread": 0.0035,
+   "status": "ok",
+   "gbps": 579.0
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 82.64,
+   "spread": 0.0031,
+   "status": "ok",
+   "gbps": 697.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 70.35,
+   "spread": 0.0036,
+   "status": "ok",
+   "gbps": 819.8
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 85.47,
+   "spread": 0.0056,
+   "status": "ok",
+   "gbps": 674.8
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 105.97,
+   "spread": 0.0027,
+   "status": "ok",
+   "gbps": 544.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 90.93,
+   "spread": 0.0032,
+   "status": "ok",
+   "gbps": 634.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 77.24,
+   "spread": 0.0026,
+   "status": "ok",
+   "gbps": 746.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 102.51,
+   "spread": 0.0045,
+   "status": "ok",
+   "gbps": 562.6
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 113.96,
+   "spread": 0.0022,
+   "status": "ok",
+   "gbps": 506.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 57671680,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 100.55,
+   "spread": 0.005,
+   "status": "ok",
+   "gbps": 573.6
+  },
+  {
+   "kernel": "stock_bf16_auto",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 184549376,
+   "us": 74.01,
+   "spread": 0.0061,
+   "status": "ok",
+   "gbps": 2493.6
+  },
+  {
+   "kernel": "stock_bf16_s32",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 184549376,
+   "us": 99.27,
+   "spread": 0.0054,
+   "status": "ok",
+   "gbps": 1859.1
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 184549376,
+   "regs": 151,
+   "spills": 0,
+   "shared": 82944,
+   "us": 78.36,
+   "spread": 0.0076,
+   "status": "ok",
+   "gbps": 2355.1
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 184549376,
+   "regs": 86,
+   "spills": 0,
+   "shared": 82944,
+   "us": 79.16,
+   "spread": 0.0037,
+   "status": "ok",
+   "gbps": 2331.3
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 184549376,
+   "regs": 151,
+   "spills": 0,
+   "shared": 82944,
+   "us": 85.67,
+   "spread": 0.0048,
+   "status": "ok",
+   "gbps": 2154.2
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 184549376,
+   "regs": 86,
+   "spills": 0,
+   "shared": 82944,
+   "us": 86.3,
+   "spread": 0.004,
+   "status": "ok",
+   "gbps": 2138.5
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 115343360,
+   "regs": 133,
+   "spills": 0,
+   "shared": 62464,
+   "us": 56.94,
+   "spread": 0.0076,
+   "status": "ok",
+   "gbps": 2025.7
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 115343360,
+   "regs": 102,
+   "spills": 0,
+   "shared": 62464,
+   "us": 67.64,
+   "spread": 0.0041,
+   "status": "ok",
+   "gbps": 1705.3
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 115343360,
+   "regs": 133,
+   "spills": 0,
+   "shared": 62464,
+   "us": 63.83,
+   "spread": 0.0063,
+   "status": "ok",
+   "gbps": 1807.0
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 115343360,
+   "regs": 102,
+   "spills": 0,
+   "shared": 62464,
+   "us": 75.76,
+   "spread": 0.0059,
+   "status": "ok",
+   "gbps": 1522.5
+  },
+  {
+   "kernel": "stock_fp8_s32",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 2952790016,
+   "us": 1446.38,
+   "spread": 0.0013,
+   "status": "ok",
+   "gbps": 2041.5
+  },
+  {
+   "kernel": "stock_fp8_auto",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 2952790016,
+   "us": 1500.95,
+   "spread": 0.1697,
+   "status": "ok",
+   "gbps": 1967.3
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1731.62,
+   "spread": 0.0261,
+   "status": "ok",
+   "gbps": 1705.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 2310.72,
+   "spread": 0.0018,
+   "status": "ok",
+   "gbps": 1277.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 2532.81,
+   "spread": 0.0008,
+   "status": "ok",
+   "gbps": 1165.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 2145.29,
+   "spread": 0.003,
+   "status": "ok",
+   "gbps": 1376.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1564.03,
+   "spread": 0.0148,
+   "status": "ok",
+   "gbps": 1887.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 2133.16,
+   "spread": 0.0025,
+   "status": "ok",
+   "gbps": 1384.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1921.44,
+   "spread": 0.0014,
+   "status": "ok",
+   "gbps": 1536.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 1670.71,
+   "spread": 0.0027,
+   "status": "ok",
+   "gbps": 1767.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1358.57,
+   "spread": 0.0018,
+   "status": "ok",
+   "gbps": 2173.5
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 1790.49,
+   "spread": 0.0141,
+   "status": "ok",
+   "gbps": 1649.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1874.61,
+   "spread": 0.0159,
+   "status": "ok",
+   "gbps": 1575.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 1659.02,
+   "spread": 0.0052,
+   "status": "ok",
+   "gbps": 1779.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1296.76,
+   "spread": 0.017,
+   "status": "ok",
+   "gbps": 2277.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 1709.38,
+   "spread": 0.005,
+   "status": "ok",
+   "gbps": 1727.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1676.53,
+   "spread": 0.0004,
+   "status": "ok",
+   "gbps": 1761.3
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 2952790016,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 1545.87,
+   "spread": 0.0035,
+   "status": "ok",
+   "gbps": 1910.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 2398.05,
+   "spread": 0.0005,
+   "status": "ok",
+   "gbps": 769.6
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 2539.94,
+   "spread": 0.001,
+   "status": "ok",
+   "gbps": 726.6
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 3748.65,
+   "spread": 0.0034,
+   "status": "ok",
+   "gbps": 492.3
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 2859.37,
+   "spread": 0.0024,
+   "status": "ok",
+   "gbps": 645.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 2009.36,
+   "spread": 0.0022,
+   "status": "ok",
+   "gbps": 918.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 2234.96,
+   "spread": 0.0013,
+   "status": "ok",
+   "gbps": 825.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 2789.85,
+   "spread": 0.0004,
+   "status": "ok",
+   "gbps": 661.5
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 2200.66,
+   "spread": 0.0046,
+   "status": "ok",
+   "gbps": 838.6
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 1786.13,
+   "spread": 0.0008,
+   "status": "ok",
+   "gbps": 1033.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 1922.12,
+   "spread": 0.0008,
+   "status": "ok",
+   "gbps": 960.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 2794.04,
+   "spread": 0.0013,
+   "status": "ok",
+   "gbps": 660.5
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 2214.82,
+   "spread": 0.0027,
+   "status": "ok",
+   "gbps": 833.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 1653.28,
+   "spread": 0.0007,
+   "status": "ok",
+   "gbps": 1116.3
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 1821.74,
+   "spread": 0.0065,
+   "status": "ok",
+   "gbps": 1013.0
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 2593.04,
+   "spread": 0.0007,
+   "status": "ok",
+   "gbps": 711.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1845493760,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 2060.5,
+   "spread": 0.0034,
+   "status": "ok",
+   "gbps": 895.7
+  },
+  {
+   "kernel": "stock_bf16_auto",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 5905580032,
+   "us": 1864.18,
+   "spread": 0.0012,
+   "status": "ok",
+   "gbps": 3167.9
+  },
+  {
+   "kernel": "stock_bf16_s32",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 5905580032,
+   "us": 1915.82,
+   "spread": 0.0278,
+   "status": "ok",
+   "gbps": 3082.5
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 5905580032,
+   "regs": 151,
+   "spills": 0,
+   "shared": 82944,
+   "us": 1885.43,
+   "spread": 0.0027,
+   "status": "ok",
+   "gbps": 3132.2
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 5905580032,
+   "regs": 86,
+   "spills": 0,
+   "shared": 82944,
+   "us": 1908.37,
+   "spread": 0.0014,
+   "status": "ok",
+   "gbps": 3094.6
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 5905580032,
+   "regs": 151,
+   "spills": 0,
+   "shared": 82944,
+   "us": 1982.41,
+   "spread": 0.0017,
+   "status": "ok",
+   "gbps": 2979.0
+  },
+  {
+   "kernel": "triton_std_bf16",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 5905580032,
+   "regs": 86,
+   "spills": 0,
+   "shared": 82944,
+   "us": 1978.21,
+   "spread": 0.0018,
+   "status": "ok",
+   "gbps": 2985.3
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 3690987520,
+   "regs": 133,
+   "spills": 0,
+   "shared": 62464,
+   "us": 1199.83,
+   "spread": 0.0025,
+   "status": "ok",
+   "gbps": 3076.3
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 3690987520,
+   "regs": 102,
+   "spills": 0,
+   "shared": 62464,
+   "us": 1533.92,
+   "spread": 0.0166,
+   "status": "ok",
+   "gbps": 2406.2
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 3690987520,
+   "regs": 133,
+   "spills": 0,
+   "shared": 62464,
+   "us": 1242.65,
+   "spread": 0.0027,
+   "status": "ok",
+   "gbps": 2970.3
+  },
+  {
+   "kernel": "triton_cmp_bf16",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 3690987520,
+   "regs": 102,
+   "spills": 0,
+   "shared": 62464,
+   "us": 1576.21,
+   "spread": 0.0021,
+   "status": "ok",
+   "gbps": 2341.7
+  },
+  {
+   "kernel": "stock_fp8_s32",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 637534208,
+   "us": 419.22,
+   "spread": 0.0098,
+   "status": "ok",
+   "gbps": 1520.8
+  },
+  {
+   "kernel": "stock_fp8_auto",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 637534208,
+   "us": 462.61,
+   "spread": 0.0223,
+   "status": "ok",
+   "gbps": 1378.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 394.72,
+   "spread": 0.0202,
+   "status": "ok",
+   "gbps": 1615.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 559.11,
+   "spread": 0.0051,
+   "status": "ok",
+   "gbps": 1140.3
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 501.51,
+   "spread": 0.0073,
+   "status": "ok",
+   "gbps": 1271.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 426.96,
+   "spread": 0.0043,
+   "status": "ok",
+   "gbps": 1493.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 319.67,
+   "spread": 0.0041,
+   "status": "ok",
+   "gbps": 1994.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 438.7,
+   "spread": 0.0057,
+   "status": "ok",
+   "gbps": 1453.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 410.78,
+   "spread": 0.0025,
+   "status": "ok",
+   "gbps": 1552.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 366.02,
+   "spread": 0.0105,
+   "status": "ok",
+   "gbps": 1741.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 300.37,
+   "spread": 0.0037,
+   "status": "ok",
+   "gbps": 2122.5
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 406.13,
+   "spread": 0.0129,
+   "status": "ok",
+   "gbps": 1569.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 412.4,
+   "spread": 0.0169,
+   "status": "ok",
+   "gbps": 1545.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 380.86,
+   "spread": 0.015,
+   "status": "ok",
+   "gbps": 1673.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 315.43,
+   "spread": 0.0067,
+   "status": "ok",
+   "gbps": 2021.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 418.12,
+   "spread": 0.0024,
+   "status": "ok",
+   "gbps": 1524.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 403.66,
+   "spread": 0.0021,
+   "status": "ok",
+   "gbps": 1579.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 637534208,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 392.93,
+   "spread": 0.002,
+   "status": "ok",
+   "gbps": 1622.5
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 529.59,
+   "spread": 0.0255,
+   "status": "ok",
+   "gbps": 752.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 592.74,
+   "spread": 0.0039,
+   "status": "ok",
+   "gbps": 672.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 715.46,
+   "spread": 0.022,
+   "status": "ok",
+   "gbps": 556.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 557.18,
+   "spread": 0.0054,
+   "status": "ok",
+   "gbps": 715.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 408.75,
+   "spread": 0.0023,
+   "status": "ok",
+   "gbps": 974.8
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 468.92,
+   "spread": 0.02,
+   "status": "ok",
+   "gbps": 849.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 600.1,
+   "spread": 0.0061,
+   "status": "ok",
+   "gbps": 664.0
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 480.54,
+   "spread": 0.003,
+   "status": "ok",
+   "gbps": 829.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 392.83,
+   "spread": 0.001,
+   "status": "ok",
+   "gbps": 1014.3
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 434.41,
+   "spread": 0.0012,
+   "status": "ok",
+   "gbps": 917.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 611.96,
+   "spread": 0.0008,
+   "status": "ok",
+   "gbps": 651.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 478.59,
+   "spread": 0.0058,
+   "status": "ok",
+   "gbps": 832.6
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 392.94,
+   "spread": 0.0012,
+   "status": "ok",
+   "gbps": 1014.0
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 451.16,
+   "spread": 0.0015,
+   "status": "ok",
+   "gbps": 883.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 608.0,
+   "spread": 0.0006,
+   "status": "ok",
+   "gbps": 655.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 398458880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 481.02,
+   "spread": 0.0038,
+   "status": "ok",
+   "gbps": 828.4
+  },
+  {
+   "kernel": "stock_bf16_auto",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 1275068416,
+   "us": 444.71,
+   "spread": 0.0023,
+   "status": "ok",
+   "gbps": 2867.2
+  },
+  {
+   "kernel": "stock_bf16_s32",
+   "batch": 19,
+   "context": 8192,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 1275068416,
+   "us": 486.56,
+   "spread": 0.0051,
+   "status": "ok",
+   "gbps": 2620.6
+  },
+  {
+   "kernel": "stock_fp8_s32",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 369098752,
+   "us": 246.35,
+   "spread": 0.0026,
+   "status": "ok",
+   "gbps": 1498.3
+  },
+  {
+   "kernel": "stock_fp8_auto",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 369098752,
+   "us": 187.91,
+   "spread": 0.0107,
+   "status": "ok",
+   "gbps": 1964.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 228.75,
+   "spread": 0.0017,
+   "status": "ok",
+   "gbps": 1613.5
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 303.32,
+   "spread": 0.0144,
+   "status": "ok",
+   "gbps": 1216.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 333.88,
+   "spread": 0.0163,
+   "status": "ok",
+   "gbps": 1105.5
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 284.1,
+   "spread": 0.0053,
+   "status": "ok",
+   "gbps": 1299.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 206.19,
+   "spread": 0.0043,
+   "status": "ok",
+   "gbps": 1790.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 288.42,
+   "spread": 0.0055,
+   "status": "ok",
+   "gbps": 1279.7
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 257.94,
+   "spread": 0.0024,
+   "status": "ok",
+   "gbps": 1430.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 222.79,
+   "spread": 0.0122,
+   "status": "ok",
+   "gbps": 1656.7
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 183.19,
+   "spread": 0.0148,
+   "status": "ok",
+   "gbps": 2014.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 249.71,
+   "spread": 0.0053,
+   "status": "ok",
+   "gbps": 1478.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 249.26,
+   "spread": 0.0022,
+   "status": "ok",
+   "gbps": 1480.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 231.67,
+   "spread": 0.0036,
+   "status": "ok",
+   "gbps": 1593.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 190.32,
+   "spread": 0.0146,
+   "status": "ok",
+   "gbps": 1939.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 254.94,
+   "spread": 0.0073,
+   "status": "ok",
+   "gbps": 1447.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 239.77,
+   "spread": 0.0018,
+   "status": "ok",
+   "gbps": 1539.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 369098752,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 231.89,
+   "spread": 0.0026,
+   "status": "ok",
+   "gbps": 1591.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 307.36,
+   "spread": 0.0011,
+   "status": "ok",
+   "gbps": 750.5
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 331.14,
+   "spread": 0.0019,
+   "status": "ok",
+   "gbps": 696.6
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 477.67,
+   "spread": 0.0032,
+   "status": "ok",
+   "gbps": 482.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 367.88,
+   "spread": 0.0051,
+   "status": "ok",
+   "gbps": 627.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 264.55,
+   "spread": 0.0013,
+   "status": "ok",
+   "gbps": 872.0
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 300.53,
+   "spread": 0.003,
+   "status": "ok",
+   "gbps": 767.6
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 370.66,
+   "spread": 0.0165,
+   "status": "ok",
+   "gbps": 622.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 294.6,
+   "spread": 0.0089,
+   "status": "ok",
+   "gbps": 783.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 238.88,
+   "spread": 0.0011,
+   "status": "ok",
+   "gbps": 965.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 265.86,
+   "spread": 0.002,
+   "status": "ok",
+   "gbps": 867.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 369.74,
+   "spread": 0.0014,
+   "status": "ok",
+   "gbps": 623.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 296.87,
+   "spread": 0.0034,
+   "status": "ok",
+   "gbps": 777.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 234.75,
+   "spread": 0.0009,
+   "status": "ok",
+   "gbps": 982.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 274.79,
+   "spread": 0.0057,
+   "status": "ok",
+   "gbps": 839.5
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 356.16,
+   "spread": 0.0008,
+   "status": "ok",
+   "gbps": 647.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 230686720,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 292.73,
+   "spread": 0.0033,
+   "status": "ok",
+   "gbps": 788.1
+  },
+  {
+   "kernel": "stock_bf16_auto",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 738197504,
+   "us": 246.97,
+   "spread": 0.0037,
+   "status": "ok",
+   "gbps": 2989.0
+  },
+  {
+   "kernel": "stock_bf16_s32",
+   "batch": 11,
+   "context": 8192,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 738197504,
+   "us": 289.56,
+   "spread": 0.0039,
+   "status": "ok",
+   "gbps": 2549.4
+  },
+  {
+   "kernel": "stock_fp8_s32",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 1476395008,
+   "us": 775.88,
+   "spread": 0.0265,
+   "status": "ok",
+   "gbps": 1902.9
+  },
+  {
+   "kernel": "stock_fp8_auto",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 1476395008,
+   "us": 707.3,
+   "spread": 0.0103,
+   "status": "ok",
+   "gbps": 2087.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 891.9,
+   "spread": 0.0031,
+   "status": "ok",
+   "gbps": 1655.3
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 1164.65,
+   "spread": 0.0244,
+   "status": "ok",
+   "gbps": 1267.7
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1286.28,
+   "spread": 0.0223,
+   "status": "ok",
+   "gbps": 1147.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 1099.9,
+   "spread": 0.0195,
+   "status": "ok",
+   "gbps": 1342.3
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 788.31,
+   "spread": 0.0051,
+   "status": "ok",
+   "gbps": 1872.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 1084.17,
+   "spread": 0.0138,
+   "status": "ok",
+   "gbps": 1361.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 987.89,
+   "spread": 0.0019,
+   "status": "ok",
+   "gbps": 1494.5
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 844.25,
+   "spread": 0.0087,
+   "status": "ok",
+   "gbps": 1748.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 689.31,
+   "spread": 0.0039,
+   "status": "ok",
+   "gbps": 2141.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 915.24,
+   "spread": 0.0024,
+   "status": "ok",
+   "gbps": 1613.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 952.6,
+   "spread": 0.0073,
+   "status": "ok",
+   "gbps": 1549.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 855.08,
+   "spread": 0.0155,
+   "status": "ok",
+   "gbps": 1726.6
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 664.32,
+   "spread": 0.012,
+   "status": "ok",
+   "gbps": 2222.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 892.46,
+   "spread": 0.0131,
+   "status": "ok",
+   "gbps": 1654.3
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 856.6,
+   "spread": 0.0065,
+   "status": "ok",
+   "gbps": 1723.6
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1476395008,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 788.39,
+   "spread": 0.0033,
+   "status": "ok",
+   "gbps": 1872.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 1203.61,
+   "spread": 0.0007,
+   "status": "ok",
+   "gbps": 766.6
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 1277.76,
+   "spread": 0.0008,
+   "status": "ok",
+   "gbps": 722.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 1879.36,
+   "spread": 0.0034,
+   "status": "ok",
+   "gbps": 491.0
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 1444.72,
+   "spread": 0.0027,
+   "status": "ok",
+   "gbps": 638.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 1016.85,
+   "spread": 0.0014,
+   "status": "ok",
+   "gbps": 907.5
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 1149.23,
+   "spread": 0.0203,
+   "status": "ok",
+   "gbps": 802.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 1411.34,
+   "spread": 0.0064,
+   "status": "ok",
+   "gbps": 653.8
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 1118.45,
+   "spread": 0.0041,
+   "status": "ok",
+   "gbps": 825.0
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 918.11,
+   "spread": 0.0225,
+   "status": "ok",
+   "gbps": 1005.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 1000.23,
+   "spread": 0.0153,
+   "status": "ok",
+   "gbps": 922.5
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 1416.31,
+   "spread": 0.0063,
+   "status": "ok",
+   "gbps": 651.5
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 1122.04,
+   "spread": 0.0031,
+   "status": "ok",
+   "gbps": 822.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 847.8,
+   "spread": 0.0007,
+   "status": "ok",
+   "gbps": 1088.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 943.38,
+   "spread": 0.0016,
+   "status": "ok",
+   "gbps": 978.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 1314.27,
+   "spread": 0.0005,
+   "status": "ok",
+   "gbps": 702.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 922746880,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 1040.05,
+   "spread": 0.0027,
+   "status": "ok",
+   "gbps": 887.2
+  },
+  {
+   "kernel": "stock_bf16_auto",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 2952790016,
+   "us": 941.54,
+   "spread": 0.0013,
+   "status": "ok",
+   "gbps": 3136.1
+  },
+  {
+   "kernel": "stock_bf16_s32",
+   "batch": 11,
+   "context": 32768,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 2952790016,
+   "us": 982.26,
+   "spread": 0.0012,
+   "status": "ok",
+   "gbps": 3006.1
+  },
+  {
+   "kernel": "stock_fp8_s32",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 33554432,
+   "us": 48.4,
+   "spread": 0.0061,
+   "status": "ok",
+   "gbps": 693.3
+  },
+  {
+   "kernel": "stock_fp8_auto",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 33554432,
+   "us": 27.22,
+   "spread": 0.008,
+   "status": "ok",
+   "gbps": 1232.7
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 41.41,
+   "spread": 0.015,
+   "status": "ok",
+   "gbps": 810.3
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 59.86,
+   "spread": 0.0053,
+   "status": "ok",
+   "gbps": 560.5
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 50.16,
+   "spread": 0.0063,
+   "status": "ok",
+   "gbps": 668.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 35.21,
+   "spread": 0.004,
+   "status": "ok",
+   "gbps": 953.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 24.64,
+   "spread": 0.0079,
+   "status": "ok",
+   "gbps": 1361.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 34.8,
+   "spread": 0.0051,
+   "status": "ok",
+   "gbps": 964.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 29.28,
+   "spread": 0.0033,
+   "status": "ok",
+   "gbps": 1146.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 21.73,
+   "spread": 0.0045,
+   "status": "ok",
+   "gbps": 1544.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 21.17,
+   "spread": 0.0057,
+   "status": "ok",
+   "gbps": 1585.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 28.5,
+   "spread": 0.0064,
+   "status": "ok",
+   "gbps": 1177.3
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 27.86,
+   "spread": 0.0032,
+   "status": "ok",
+   "gbps": 1204.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 26.58,
+   "spread": 0.023,
+   "status": "ok",
+   "gbps": 1262.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 27.32,
+   "spread": 0.0105,
+   "status": "ok",
+   "gbps": 1228.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 35.34,
+   "spread": 0.0063,
+   "status": "ok",
+   "gbps": 949.5
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 32.91,
+   "spread": 0.0079,
+   "status": "ok",
+   "gbps": 1019.6
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 33554432,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 36.11,
+   "spread": 0.0063,
+   "status": "ok",
+   "gbps": 929.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 58.53,
+   "spread": 0.0014,
+   "status": "ok",
+   "gbps": 358.3
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 65.23,
+   "spread": 0.0021,
+   "status": "ok",
+   "gbps": 321.5
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 59.79,
+   "spread": 0.0031,
+   "status": "ok",
+   "gbps": 350.8
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 45.22,
+   "spread": 0.0011,
+   "status": "ok",
+   "gbps": 463.8
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 31.95,
+   "spread": 0.0056,
+   "status": "ok",
+   "gbps": 656.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 37.85,
+   "spread": 0.0043,
+   "status": "ok",
+   "gbps": 554.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 32.49,
+   "spread": 0.0031,
+   "status": "ok",
+   "gbps": 645.5
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 25.53,
+   "spread": 0.0023,
+   "status": "ok",
+   "gbps": 821.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 24.69,
+   "spread": 0.0021,
+   "status": "ok",
+   "gbps": 849.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 32.62,
+   "spread": 0.0026,
+   "status": "ok",
+   "gbps": 642.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 35.22,
+   "spread": 0.0051,
+   "status": "ok",
+   "gbps": 595.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 28.27,
+   "spread": 0.0059,
+   "status": "ok",
+   "gbps": 741.8
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 28.68,
+   "spread": 0.0044,
+   "status": "ok",
+   "gbps": 731.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 42.4,
+   "spread": 0.0041,
+   "status": "ok",
+   "gbps": 494.6
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 39.9,
+   "spread": 0.0031,
+   "status": "ok",
+   "gbps": 525.6
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 20971520,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 32.76,
+   "spread": 0.0052,
+   "status": "ok",
+   "gbps": 640.2
+  },
+  {
+   "kernel": "stock_bf16_auto",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 67108864,
+   "us": 36.69,
+   "spread": 0.0117,
+   "status": "ok",
+   "gbps": 1829.1
+  },
+  {
+   "kernel": "stock_bf16_s32",
+   "batch": 4,
+   "context": 2048,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 67108864,
+   "us": 44.78,
+   "spread": 0.0039,
+   "status": "ok",
+   "gbps": 1498.6
+  },
+  {
+   "kernel": "stock_fp8_s32",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 536870912,
+   "us": 287.59,
+   "spread": 0.0029,
+   "status": "ok",
+   "gbps": 1866.8
+  },
+  {
+   "kernel": "stock_fp8_auto",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 536870912,
+   "us": 269.5,
+   "spread": 0.0145,
+   "status": "ok",
+   "gbps": 1992.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 652.63,
+   "spread": 0.0076,
+   "status": "ok",
+   "gbps": 822.6
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 1016.7,
+   "spread": 0.0044,
+   "status": "ok",
+   "gbps": 528.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 785.15,
+   "spread": 0.0021,
+   "status": "ok",
+   "gbps": 683.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 529.15,
+   "spread": 0.0012,
+   "status": "ok",
+   "gbps": 1014.6
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 359.09,
+   "spread": 0.0054,
+   "status": "ok",
+   "gbps": 1495.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 512.32,
+   "spread": 0.0015,
+   "status": "ok",
+   "gbps": 1047.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 412.43,
+   "spread": 0.0052,
+   "status": "ok",
+   "gbps": 1301.7
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 293.89,
+   "spread": 0.0091,
+   "status": "ok",
+   "gbps": 1826.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 235.77,
+   "spread": 0.0123,
+   "status": "ok",
+   "gbps": 2277.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 317.95,
+   "spread": 0.0069,
+   "status": "ok",
+   "gbps": 1688.5
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 333.3,
+   "spread": 0.0039,
+   "status": "ok",
+   "gbps": 1610.8
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 295.13,
+   "spread": 0.0077,
+   "status": "ok",
+   "gbps": 1819.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 239.98,
+   "spread": 0.0027,
+   "status": "ok",
+   "gbps": 2237.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 327.73,
+   "spread": 0.0153,
+   "status": "ok",
+   "gbps": 1638.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 331.27,
+   "spread": 0.0059,
+   "status": "ok",
+   "gbps": 1620.6
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 536870912,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 296.13,
+   "spread": 0.0069,
+   "status": "ok",
+   "gbps": 1813.0
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 904.58,
+   "spread": 0.0011,
+   "status": "ok",
+   "gbps": 370.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 1028.63,
+   "spread": 0.008,
+   "status": "ok",
+   "gbps": 326.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 936.32,
+   "spread": 0.0008,
+   "status": "ok",
+   "gbps": 358.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 684.16,
+   "spread": 0.0051,
+   "status": "ok",
+   "gbps": 490.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 456.77,
+   "spread": 0.001,
+   "status": "ok",
+   "gbps": 734.6
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 525.23,
+   "spread": 0.0025,
+   "status": "ok",
+   "gbps": 638.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 474.64,
+   "spread": 0.0012,
+   "status": "ok",
+   "gbps": 706.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 387.04,
+   "spread": 0.0017,
+   "status": "ok",
+   "gbps": 866.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 309.07,
+   "spread": 0.0011,
+   "status": "ok",
+   "gbps": 1085.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 339.58,
+   "spread": 0.0026,
+   "status": "ok",
+   "gbps": 988.1
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 477.69,
+   "spread": 0.0007,
+   "status": "ok",
+   "gbps": 702.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 389.52,
+   "spread": 0.0016,
+   "status": "ok",
+   "gbps": 861.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 313.67,
+   "spread": 0.0007,
+   "status": "ok",
+   "gbps": 1069.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 346.37,
+   "spread": 0.0017,
+   "status": "ok",
+   "gbps": 968.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 482.86,
+   "spread": 0.0012,
+   "status": "ok",
+   "gbps": 694.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 335544320,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 393.69,
+   "spread": 0.0033,
+   "status": "ok",
+   "gbps": 852.3
+  },
+  {
+   "kernel": "stock_bf16_auto",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 1073741824,
+   "us": 352.38,
+   "spread": 0.0026,
+   "status": "ok",
+   "gbps": 3047.1
+  },
+  {
+   "kernel": "stock_bf16_s32",
+   "batch": 4,
+   "context": 32768,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 1073741824,
+   "us": 366.64,
+   "spread": 0.0037,
+   "status": "ok",
+   "gbps": 2928.6
+  },
+  {
+   "kernel": "stock_fp8_s32",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 1073741824,
+   "us": 539.11,
+   "spread": 0.0138,
+   "status": "ok",
+   "gbps": 1991.7
+  },
+  {
+   "kernel": "stock_fp8_auto",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 1073741824,
+   "us": 521.74,
+   "spread": 0.0037,
+   "status": "ok",
+   "gbps": 2058.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1296.38,
+   "spread": 0.0079,
+   "status": "ok",
+   "gbps": 828.3
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 2015.02,
+   "spread": 0.0011,
+   "status": "ok",
+   "gbps": 532.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 1561.0,
+   "spread": 0.0011,
+   "status": "ok",
+   "gbps": 687.9
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 1052.0,
+   "spread": 0.0007,
+   "status": "ok",
+   "gbps": 1020.7
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 706.69,
+   "spread": 0.0029,
+   "status": "ok",
+   "gbps": 1519.4
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 1011.32,
+   "spread": 0.001,
+   "status": "ok",
+   "gbps": 1061.7
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 812.06,
+   "spread": 0.0042,
+   "status": "ok",
+   "gbps": 1322.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 572.98,
+   "spread": 0.0065,
+   "status": "ok",
+   "gbps": 1874.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 466.41,
+   "spread": 0.0293,
+   "status": "ok",
+   "gbps": 2302.1
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 624.19,
+   "spread": 0.0153,
+   "status": "ok",
+   "gbps": 1720.2
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 653.54,
+   "spread": 0.0064,
+   "status": "ok",
+   "gbps": 1643.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 576.43,
+   "spread": 0.0076,
+   "status": "ok",
+   "gbps": 1862.7
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 255,
+   "spills": 0,
+   "shared": 50176,
+   "us": 462.82,
+   "spread": 0.0179,
+   "status": "ok",
+   "gbps": 2320.0
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 255,
+   "spills": 26,
+   "shared": 83968,
+   "us": 625.14,
+   "spread": 0.0161,
+   "status": "ok",
+   "gbps": 1717.6
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 128,
+   "spills": 0,
+   "shared": 50176,
+   "us": 648.65,
+   "spread": 0.0146,
+   "status": "ok",
+   "gbps": 1655.3
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 1073741824,
+   "regs": 255,
+   "spills": 0,
+   "shared": 83968,
+   "us": 576.72,
+   "spread": 0.0127,
+   "status": "ok",
+   "gbps": 1861.8
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 1787.88,
+   "spread": 0.0079,
+   "status": "ok",
+   "gbps": 375.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 2044.76,
+   "spread": 0.0013,
+   "status": "ok",
+   "gbps": 328.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 1864.06,
+   "spread": 0.0007,
+   "status": "ok",
+   "gbps": 360.0
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 4,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 1349.58,
+   "spread": 0.0037,
+   "status": "ok",
+   "gbps": 497.3
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 903.31,
+   "spread": 0.001,
+   "status": "ok",
+   "gbps": 742.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 1032.61,
+   "spread": 0.0016,
+   "status": "ok",
+   "gbps": 649.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 940.25,
+   "spread": 0.0012,
+   "status": "ok",
+   "gbps": 713.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 8,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 766.19,
+   "spread": 0.0027,
+   "status": "ok",
+   "gbps": 875.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 607.51,
+   "spread": 0.0016,
+   "status": "ok",
+   "gbps": 1104.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 661.57,
+   "spread": 0.0015,
+   "status": "ok",
+   "gbps": 1014.4
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 943.44,
+   "spread": 0.0009,
+   "status": "ok",
+   "gbps": 711.3
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 16,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 768.96,
+   "spread": 0.0021,
+   "status": "ok",
+   "gbps": 872.7
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 255,
+   "spills": 0,
+   "shared": 57344,
+   "us": 610.5,
+   "spread": 0.0006,
+   "status": "ok",
+   "gbps": 1099.2
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 255,
+   "spills": 74,
+   "shared": 77824,
+   "us": 668.44,
+   "spread": 0.0021,
+   "status": "ok",
+   "gbps": 1004.0
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 32
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 172,
+   "spills": 0,
+   "shared": 57344,
+   "us": 946.7,
+   "spread": 0.0016,
+   "status": "ok",
+   "gbps": 708.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 8,
+    "tile": 64
+   },
+   "stages": 2,
+   "bytes": 671088640,
+   "regs": 255,
+   "spills": 0,
+   "shared": 94208,
+   "us": 764.44,
+   "spread": 0.0034,
+   "status": "ok",
+   "gbps": 877.9
+  },
+  {
+   "kernel": "stock_bf16_auto",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "num_splits": 0
+   },
+   "bytes": 2147483648,
+   "us": 689.86,
+   "spread": 0.0014,
+   "status": "ok",
+   "gbps": 3112.9
+  },
+  {
+   "kernel": "stock_bf16_s32",
+   "batch": 4,
+   "context": 65536,
+   "config": {
+    "num_splits": 32
+   },
+   "bytes": 2147483648,
+   "us": 704.17,
+   "spread": 0.0021,
+   "status": "ok",
+   "gbps": 3049.7
+  }
+ ],
+ "correctness": {
+  "fp8": {
+   "exact_err_ref_standard": 0.023278577253222466,
+   "exact_err_ref_compact": 0.02318626455962658,
+   "stock_fp8_s32": {
+    "err": 0.0016616876237094402,
+    "exact_err": 0.0233340784907341
+   },
+   "stock_fp8_auto": {
+    "err": 0.0016619687667116523,
+    "exact_err": 0.023336095735430717
+   },
+   "triton_std_fp8": {
+    "by_config": {
+     "4/4/32": 0.0018869643099606037,
+     "4/4/64": 0.001888340339064598,
+     "4/8/32": 0.0018869643099606037,
+     "4/8/64": 0.0018883411539718509,
+     "8/4/32": 0.001871827058494091,
+     "8/4/64": 0.0018754543270915747,
+     "8/8/32": 0.001871827058494091,
+     "8/8/64": 0.0018754543270915747,
+     "16/4/32": 0.0018518231809139252,
+     "16/4/64": 0.0018545974744483829,
+     "16/8/32": 0.0018518231809139252,
+     "16/8/64": 0.0018544938648119569,
+     "32/4/32": 0.001833221991546452,
+     "32/4/64": 0.0018428652547299862,
+     "32/8/32": 0.001833221991546452,
+     "32/8/64": 0.0018428650218993425
+    },
+    "err_max": 0.0018883411539718509,
+    "exact_err_max": 0.02337857522070408
+   },
+   "triton_cmp_fp8": {
+    "by_config": {
+     "4/4/32": 0.001883010845631361,
+     "4/4/64": 0.0018904198659583926,
+     "4/8/32": 0.001883010845631361,
+     "4/8/64": 0.0018904198659583926,
+     "8/4/32": 0.0018702582456171513,
+     "8/4/64": 0.001873670262284577,
+     "8/8/32": 0.0018702582456171513,
+     "8/8/64": 0.0018736477941274643,
+     "16/4/32": 0.001848601852543652,
+     "16/4/64": 0.0018569575622677803,
+     "16/8/32": 0.001848601852543652,
+     "16/8/64": 0.0018569646636024117,
+     "32/4/32": 0.0018448525806888938,
+     "32/4/64": 0.001854632282629609,
+     "32/8/32": 0.0018448525806888938,
+     "32/8/64": 0.0018544624326750636
+    },
+    "err_max": 0.0018904198659583926,
+    "exact_err_max": 0.023264586925506592
+   }
+  },
+  "bf16": {
+   "exact_err_ref_standard": 0.002228397876024246,
+   "exact_err_ref_compact": 0.0022137819323688745,
+   "stock_bf16_auto": {
+    "err": 0.0018708559218794107,
+    "exact_err": 0.002906613517552614
+   },
+   "stock_bf16_s32": {
+    "err": 0.0018551498651504517,
+    "exact_err": 0.002903899410739541
+   },
+   "triton_std_bf16": {
+    "by_config": {
+     "16/4/32": 0.0018596044974401593,
+     "16/8/32": 0.0018596044974401593,
+     "32/4/32": 0.0018499433062970638,
+     "32/8/32": 0.0018499433062970638
+    },
+    "err_max": 0.0018596044974401593,
+    "exact_err_max": 0.002903044456616044
+   },
+   "triton_cmp_bf16": {
+    "by_config": {
+     "16/4/32": 0.0018526511266827583,
+     "16/8/32": 0.0018526511266827583,
+     "32/4/32": 0.0018426859751343727,
+     "32/8/32": 0.0018426859751343727
+    },
+    "err_max": 0.0018526511266827583,
+    "exact_err_max": 0.002888757735490799
+   }
+  }
+ },
+ "confirm": [
+  {
+   "kernel": "stock_fp8_s32",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "num_splits": 32
+   },
+   "repeats": [
+    199.5,
+    199.36,
+    197.85,
+    200.53,
+    197.99
+   ],
+   "spreads": [
+    0.0185,
+    0.0377,
+    0.0048,
+    0.0703,
+    0.006
+   ],
+   "status": "ok",
+   "us": 199.36
+  },
+  {
+   "kernel": "stock_fp8_s32",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "num_splits": 32
+   },
+   "repeats": [
+    1322.76,
+    1344.96,
+    1352.2,
+    1348.33,
+    1351.31
+   ],
+   "spreads": [
+    0.0389,
+    0.0329,
+    0.0477,
+    0.0539,
+    0.0419
+   ],
+   "status": "ok",
+   "us": 1348.33
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "repeats": [
+    117.53,
+    113.95,
+    113.17,
+    113.78,
+    113.09
+   ],
+   "spreads": [
+    0.0484,
+    0.0029,
+    0.0253,
+    0.0076,
+    0.0191
+   ],
+   "status": "ok",
+   "us": 113.78
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "repeats": [
+    1136.48,
+    1122.59,
+    1128.75,
+    1122.7,
+    1128.88
+   ],
+   "spreads": [
+    0.0306,
+    0.017,
+    0.021,
+    0.0148,
+    0.0065
+   ],
+   "status": "ok",
+   "us": 1128.75
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "repeats": [
+    131.86,
+    128.53,
+    130.87,
+    128.43,
+    131.11
+   ],
+   "spreads": [
+    0.0012,
+    0.0031,
+    0.0019,
+    0.0039,
+    0.005
+   ],
+   "status": "ok",
+   "us": 130.87
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "repeats": [
+    1436.35,
+    1436.33,
+    1436.23,
+    1436.36,
+    1436.27
+   ],
+   "spreads": [
+    0.0135,
+    0.0054,
+    0.0136,
+    0.0095,
+    0.0114
+   ],
+   "status": "ok",
+   "us": 1436.33
+  },
+  {
+   "kernel": "stock_fp8_s32_alias",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "num_splits": 32
+   },
+   "repeats": [
+    198.26,
+    203.28,
+    198.13,
+    203.92,
+    198.36
+   ],
+   "spreads": [
+    0.0046,
+    0.006,
+    0.0058,
+    0.0246,
+    0.0053
+   ],
+   "status": "ok",
+   "us": 198.36
+  },
+  {
+   "kernel": "triton_std_fp8_alias",
+   "batch": 19,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "repeats": [
+    105.94,
+    107.84,
+    105.92,
+    108.26,
+    105.92
+   ],
+   "spreads": [
+    0.0037,
+    0.0056,
+    0.0039,
+    0.0028,
+    0.0037
+   ],
+   "status": "ok",
+   "us": 105.94
+  },
+  {
+   "kernel": "stock_fp8_s32_alias",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "num_splits": 32
+   },
+   "repeats": [
+    1230.32,
+    1223.03,
+    1229.87,
+    1224.37,
+    1230.66
+   ],
+   "spreads": [
+    0.0288,
+    0.0026,
+    0.028,
+    0.0073,
+    0.0191
+   ],
+   "status": "ok",
+   "us": 1229.87
+  },
+  {
+   "kernel": "triton_std_fp8_alias",
+   "batch": 19,
+   "context": 32768,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "repeats": [
+    1031.9,
+    1023.14,
+    1030.85,
+    1023.58,
+    1031.85
+   ],
+   "spreads": [
+    0.0017,
+    0.0245,
+    0.0017,
+    0.0217,
+    0.0226
+   ],
+   "status": "ok",
+   "us": 1030.85
+  },
+  {
+   "kernel": "stock_fp8_s32",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "num_splits": 32
+   },
+   "repeats": [
+    123.59,
+    126.11,
+    123.64,
+    126.04,
+    123.46
+   ],
+   "spreads": [
+    0.0044,
+    0.0296,
+    0.0082,
+    0.0179,
+    0.006
+   ],
+   "status": "ok",
+   "us": 123.64
+  },
+  {
+   "kernel": "stock_fp8_s32",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "num_splits": 32
+   },
+   "repeats": [
+    1468.52,
+    1468.75,
+    1467.77,
+    1477.2,
+    1469.32
+   ],
+   "spreads": [
+    0.0199,
+    0.0277,
+    0.027,
+    0.0328,
+    0.0171
+   ],
+   "status": "ok",
+   "us": 1468.75
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "repeats": [
+    70.23,
+    69.52,
+    69.98,
+    69.61,
+    70.64
+   ],
+   "spreads": [
+    0.0076,
+    0.0042,
+    0.0093,
+    0.0044,
+    0.0052
+   ],
+   "status": "ok",
+   "us": 69.98
+  },
+  {
+   "kernel": "triton_std_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "repeats": [
+    1303.48,
+    1296.34,
+    1300.49,
+    1296.56,
+    1303.43
+   ],
+   "spreads": [
+    0.03,
+    0.0154,
+    0.0056,
+    0.0174,
+    0.0355
+   ],
+   "status": "ok",
+   "us": 1300.49
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "repeats": [
+    79.48,
+    77.28,
+    78.9,
+    77.27,
+    79.51
+   ],
+   "spreads": [
+    0.0029,
+    0.0034,
+    0.0019,
+    0.0028,
+    0.0029
+   ],
+   "status": "ok",
+   "us": 78.9
+  },
+  {
+   "kernel": "triton_cmp_fp8",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "repeats": [
+    1664.77,
+    1664.57,
+    1664.57,
+    1664.31,
+    1664.29
+   ],
+   "spreads": [
+    0.0134,
+    0.0005,
+    0.0065,
+    0.0003,
+    0.0106
+   ],
+   "status": "ok",
+   "us": 1664.57
+  },
+  {
+   "kernel": "stock_fp8_s32_alias",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "num_splits": 32
+   },
+   "repeats": [
+    119.75,
+    120.47,
+    119.87,
+    120.7,
+    119.74
+   ],
+   "spreads": [
+    0.0029,
+    0.0277,
+    0.0074,
+    0.0058,
+    0.0057
+   ],
+   "status": "ok",
+   "us": 119.87
+  },
+  {
+   "kernel": "triton_std_fp8_alias",
+   "batch": 11,
+   "context": 2048,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "repeats": [
+    63.24,
+    64.37,
+    63.22,
+    64.2,
+    63.2
+   ],
+   "spreads": [
+    0.0033,
+    0.0036,
+    0.0055,
+    0.0061,
+    0.0054
+   ],
+   "status": "ok",
+   "us": 63.24
+  },
+  {
+   "kernel": "stock_fp8_s32_alias",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "num_splits": 32
+   },
+   "repeats": [
+    1353.51,
+    1352.94,
+    1353.67,
+    1354.28,
+    1354.67
+   ],
+   "spreads": [
+    0.0211,
+    0.0255,
+    0.0165,
+    0.0209,
+    0.0361
+   ],
+   "status": "ok",
+   "us": 1353.67
+  },
+  {
+   "kernel": "triton_std_fp8_alias",
+   "batch": 11,
+   "context": 65536,
+   "config": {
+    "splits": 32,
+    "warps": 4,
+    "tile": 32
+   },
+   "repeats": [
+    1172.44,
+    1171.39,
+    1173.28,
+    1176.68,
+    1174.97
+   ],
+   "spreads": [
+    0.0147,
+    0.0146,
+    0.0145,
+    0.0148,
+    0.0148
+   ],
+   "status": "ok",
+   "us": 1173.28
+  }
+ ]
+}

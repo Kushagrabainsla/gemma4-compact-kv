@@ -1,0 +1,154 @@
+{
+ "run_id": "E-49-H100-m31-20261030",
+ "experiment": "E-49",
+ "idea": "I-182",
+ "status": "ok",
+ "label": "E-49-H100",
+ "design_commit": "8edb552",
+ "config": {
+  "model": "RedHatAI/gemma-4-31B-it-FP8-dynamic",
+  "revision": "d4ab4f579dd3516f97d8a6a4c98d0653480bad15",
+  "cells": "2048:4,8192:4,32768:4,65536:4,65536:4:1,32768:4:1",
+  "waste_cells": "1024:1,1024:8,1024:32,16384:8",
+  "profile_cells": "2048:4,32768:4,65536:4,1024:1,1024:8,1024:32",
+  "max_num_batched_tokens": 2048,
+  "max_model_len": 66048,
+  "max_num_seqs": 32,
+  "gpu_memory_utilization": 0.92,
+  "steps_per_block": 32,
+  "text_only": true
+ },
+ "started_at": "2026-10-30T20:06:57Z",
+ "finished_at": "2026-10-30T20:14:14Z",
+ "hardware": {
+  "gpu_name": "NVIDIA H100 80GB HBM3",
+  "gpu_count": 1,
+  "driver": "595.91.07",
+  "cuda": "13.2",
+  "gpu_uuid": "16eb9727-4328-f2dc-4045-81394241874e",
+  "pod_id": "<pod-id>",
+  "data_center": "US-NE-1",
+  "price_per_hour": 3.99
+ },
+ "software": {
+  "vllm": "0.33.0rc1.dev229+g3966924d5",
+  "torch": "2.14.0+cu130",
+  "image": "vllm/vllm-openai@sha256:f255c4fad2f30ff5ee80db14d3a03afe9ae0f10d3470339864ff04745fe44cb3",
+  "engine_lines": [
+   "(MainProcess pid=2067) INFO 10-30 20:07:12 [model.py:971] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.",
+   "(MainProcess pid=2067) INFO 10-30 20:07:12 [model.py:1028] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.",
+   "(MainProcess pid=2067) INFO 10-30 20:07:13 [config.py:349] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.",
+   "(MainProcess pid=2067) INFO 10-30 20:07:19 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='RedHatAI/gemma-4-31B-it-FP8-dynamic', speculative_config=None, tokenizer='RedHatAI/gemma-4-31B-it-FP8-d",
+   "(MainProcess pid=2067) INFO 10-30 20:07:19 [parallel_state.py:1931] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_37ccd44b4cf1494fbe5e97dff7cc5bc1 backend=nccl",
+   "(MainProcess pid=2067) INFO 10-30 20:07:20 [cuda.py:512] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION']."
+  ]
+ },
+ "metrics": {
+  "step_ms_L2048_B4": {
+   "values": [
+    15.9777,
+    16.0017,
+    15.9862
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L8192_B4": {
+   "values": [
+    16.6629,
+    16.6673,
+    16.7321
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L32768_B4": {
+   "values": [
+    19.2534,
+    19.3012,
+    19.3219
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L65536_B4": {
+   "values": [
+    22.5814,
+    22.6508,
+    22.6658
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L65536_B4_r1": {
+   "values": [
+    22.6034,
+    22.6215,
+    22.6334
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L32768_B4_r1": {
+   "values": [
+    19.2477,
+    19.2959,
+    19.3141
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L1024_B1": {
+   "values": [
+    14.8949,
+    14.916,
+    14.9151
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L1024_B8": {
+   "values": [
+    17.2602,
+    17.3404,
+    17.3105
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L1024_B32": {
+   "values": [
+    25.9754,
+    26.1041,
+    26.1246
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L16384_B8": {
+   "values": [
+    20.457,
+    20.5305,
+    20.5595
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "engine_init_s": {
+   "values": [
+    276.7
+   ],
+   "unit": "s",
+   "higher_is_better": false
+  },
+  "gsm8k_accuracy": {
+   "values": [
+    0.875
+   ],
+   "unit": "fraction",
+   "higher_is_better": true
+  }
+ },
+ "results_path": "experiments/gemma4_kv_audit/results/e49-h100-20261030/",
+ "notes": "S6 H100 session (D-74; floor 30 by D-75). Frozen decision PIVOT (one model or one cell only). m26 64K cells: 5 of 8 requests left after about 10 tokens (labelled preempted by the guard; HYPOTHESIS: a generation-config end token). Session cost about 2.20 for both models (time x price). Model decision fields: valid=True, why=[], decide={\"32768\": {\"T_ms\": 19.2985, \"S\": 0.0665, \"S_low\": 0.0653, \"S_up\": 0.0676, \"S_block_low\": 0.0657, \"S_prof\": 0.0692, \"S_prof_gap\": false}, \"65536\": {\"T_ms\": 22.6362, \"S\": 0.1133, \"S_low\": 0.1114, \"S_up\": 0.1153, \"S_block_low\": 0.1121, \"S_prof\": 0.1144, \"S_prof_gap\": false}}"
+}

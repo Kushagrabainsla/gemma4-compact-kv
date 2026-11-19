@@ -1,0 +1,51 @@
+{
+ "pairs": {
+  "STOCK2": {
+   "p": "ok",
+   "d": "ok",
+   "error": "",
+   "nixl_checked": 3512,
+   "nixl_mismatch": 0,
+   "nixl_compared": 8,
+   "median_c": 0.9393471414728682,
+   "min_c": 0.8953488372093024,
+   "zero_hit_events": 0,
+   "decode_events": 32,
+   "checked_reloads": 24,
+   "mismatched_blocks": 0,
+   "a1_strict_mismatch": 240,
+   "recomputed_first_version": 240,
+   "preemptions": 40,
+   "load_gb_per_s": 24.731764128172856,
+   "complete": 8,
+   "gold": 8
+  },
+  "COMPACT2": {
+   "p": "ok",
+   "d": "ok",
+   "error": "",
+   "nixl_checked": 3192,
+   "nixl_mismatch": 0,
+   "nixl_compared": 8,
+   "median_c": 0.9533422237669246,
+   "min_c": 0.8851612903225806,
+   "zero_hit_events": 0,
+   "decode_events": 32,
+   "checked_reloads": 24,
+   "mismatched_blocks": 0,
+   "a1_strict_mismatch": 160,
+   "recomputed_first_version": 160,
+   "preemptions": 40,
+   "load_gb_per_s": 24.70890898897861,
+   "complete": 8,
+   "gold": 8
+  }
+ },
+ "checks": {
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true
+ },
+ "word": "RELOAD-WORKS"
+}

@@ -1,0 +1,71 @@
+{
+ "band": [
+  1.1577029486712775,
+  1.2408707911156387
+ ],
+ "model_seed0": 1.2285270772570445,
+ "lease_lines": {
+  "S": 0,
+  "C": 0
+ },
+ "checks": {
+  "W1": true,
+  "W2": true,
+  "W3": true,
+  "W4": true,
+  "W5": true,
+  "W6": true,
+  "W7": true
+ },
+ "windows": {
+  "S": {
+   "work_steps": 20000,
+   "seconds": 1357.35,
+   "decode_tokens": 163844,
+   "decode_tok_s": 120.70901080136319,
+   "tokens_per_step": 8.1922,
+   "running_per_step": 8.19505,
+   "saturated_share": 0.9999,
+   "preemptions": 12,
+   "all_steps": 22048,
+   "added": 79,
+   "early_finishes": 0,
+   "completed": 62,
+   "q_depth_mean": 1.715
+  },
+  "C": {
+   "work_steps": 20000,
+   "seconds": 1511.89,
+   "decode_tokens": 202652,
+   "decode_tok_s": 134.03843570357375,
+   "tokens_per_step": 10.1326,
+   "running_per_step": 10.1368,
+   "saturated_share": 1.0,
+   "preemptions": 16,
+   "all_steps": 22047,
+   "added": 97,
+   "early_finishes": 0,
+   "completed": 79,
+   "q_depth_mean": 1.645
+  }
+ },
+ "R_step": 1.2368594516735432,
+ "shift_engine": 0.13928054832645675,
+ "shift_model": 0.13526847626117688,
+ "shift_ratio": 1.0296600669732787,
+ "excess": 0.006782410067104561,
+ "excess_D3H": 0.009366833942832553,
+ "R_tput": 1.1104260967240072,
+ "R_tput_vs": {
+  "Q_graph": [
+   1.0527400556337068,
+   1.1703158202092299
+  ],
+  "Q_eager": [
+   1.018121431054522,
+   1.1285538773856834
+  ]
+ },
+ "Q1": "STEP-CONFIRMS",
+ "Q2": "SHIFT-MATCHES"
+}

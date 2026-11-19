@@ -1,0 +1,12 @@
+{
+ "source": "hub",
+ "revision": "740312add88f781978c0658806c59bc2815b9866",
+ "tokenizer": "/workspace/cache/hf/hub/models--google--gemma-4-E2B-it/snapshots/3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+ "n": 1319,
+ "instruction": "Please reason step by step, and put your final answer within \\boxed{}.",
+ "sha256": {
+  "gsm8k.json": "9b31c25aba5cb56ef2205655cecdd53b182339523cf8fe29bda33e3d51ab6feb",
+  "prompts.json": "1d36aa1819f815bced9fe169bad1cc9d2ed5ccb91f9c80ac6912a3445795ae5d",
+  "prefill.json": "97dea8f720468155343e3b7115802f151a1afcf0bab3f387600cee05d2a20c1e"
+ }
+}

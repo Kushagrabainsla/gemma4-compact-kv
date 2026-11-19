@@ -1,0 +1,188 @@
+{
+ "pool": 6143,
+ "warmup": 2000,
+ "horizon": 22000,
+ "max_len": 144000,
+ "cells": [
+  {
+   "depth": 2,
+   "seed": 0,
+   "r_step": 1.3638388968855721,
+   "Q_graph": 1.324576575245639,
+   "Q_eager": 1.2759533229618492,
+   "preempt_stock": 3,
+   "preempt_compact": 3,
+   "step_ms_stock": 53.886245416539445,
+   "step_ms_compact": 55.50115923690831
+  },
+  {
+   "depth": 2,
+   "seed": 1,
+   "r_step": 1.3595763237634533,
+   "Q_graph": 1.3156038281112314,
+   "Q_eager": 1.267998784056813,
+   "preempt_stock": 5,
+   "preempt_compact": 6,
+   "step_ms_stock": 53.857827954565465,
+   "step_ms_compact": 55.65588674714822
+  },
+  {
+   "depth": 2,
+   "seed": 2,
+   "r_step": 1.3284456154915087,
+   "Q_graph": 1.2928571924174566,
+   "Q_eager": 1.2460544530161095,
+   "preempt_stock": 3,
+   "preempt_compact": 8,
+   "step_ms_stock": 54.17467354119279,
+   "step_ms_compact": 55.655974195746076
+  },
+  {
+   "depth": 2,
+   "seed": 3,
+   "r_step": 1.3083199944324588,
+   "Q_graph": 1.2716493631092172,
+   "Q_eager": 1.2253286421454668,
+   "preempt_stock": 6,
+   "preempt_compact": 7,
+   "step_ms_stock": 54.03102129197747,
+   "step_ms_compact": 55.592130265019684
+  },
+  {
+   "depth": 2,
+   "seed": 4,
+   "r_step": 1.3532197699613748,
+   "Q_graph": 1.3074881253440245,
+   "Q_eager": 1.2598092408836195,
+   "preempt_stock": 6,
+   "preempt_compact": 6,
+   "step_ms_stock": 53.61397664847565,
+   "step_ms_compact": 55.5004887578028
+  },
+  {
+   "depth": 3,
+   "seed": 0,
+   "r_step": 1.3637955535182213,
+   "Q_graph": 1.324536124811982,
+   "Q_eager": 1.2759143018939412,
+   "preempt_stock": 3,
+   "preempt_compact": 3,
+   "step_ms_stock": 53.88629659294517,
+   "step_ms_compact": 55.501142982076914
+  },
+  {
+   "depth": 3,
+   "seed": 1,
+   "r_step": 1.3595640993364382,
+   "Q_graph": 1.3156298404547493,
+   "Q_eager": 1.268021725191889,
+   "preempt_stock": 5,
+   "preempt_compact": 6,
+   "step_ms_stock": 53.85798356788532,
+   "step_ms_compact": 55.654446044024915
+  },
+  {
+   "depth": 3,
+   "seed": 2,
+   "r_step": 1.328466758102938,
+   "Q_graph": 1.292879772319785,
+   "Q_eager": 1.2460761247716712,
+   "preempt_stock": 3,
+   "preempt_compact": 7,
+   "step_ms_stock": 54.17487877623885,
+   "step_ms_compact": 55.65610533361017
+  },
+  {
+   "depth": 3,
+   "seed": 3,
+   "r_step": 1.3083682044768459,
+   "Q_graph": 1.2718624116125852,
+   "Q_eager": 1.2253598913055472,
+   "preempt_stock": 6,
+   "preempt_compact": 6,
+   "step_ms_stock": 54.0307079696857,
+   "step_ms_compact": 55.59246843734753
+  },
+  {
+   "depth": 3,
+   "seed": 4,
+   "r_step": 1.3532454630319537,
+   "Q_graph": 1.3075129397013014,
+   "Q_eager": 1.2598333264942612,
+   "preempt_stock": 6,
+   "preempt_compact": 6,
+   "step_ms_stock": 53.61418720397777,
+   "step_ms_compact": 55.50070712053545
+  },
+  {
+   "depth": 8,
+   "seed": 0,
+   "r_step": 1.3637805526523277,
+   "Q_graph": 1.324527166766309,
+   "Q_eager": 1.2759053190315042,
+   "preempt_stock": 3,
+   "preempt_compact": 3,
+   "step_ms_stock": 53.88627680972415,
+   "step_ms_compact": 55.500887456332755
+  },
+  {
+   "depth": 8,
+   "seed": 1,
+   "r_step": 1.3594979275123855,
+   "Q_graph": 1.3154469550870496,
+   "Q_eager": 1.2679724504178431,
+   "preempt_stock": 4,
+   "preempt_compact": 6,
+   "step_ms_stock": 53.8579347591482,
+   "step_ms_compact": 55.653811316347806
+  },
+  {
+   "depth": 8,
+   "seed": 2,
+   "r_step": 1.328511874684184,
+   "Q_graph": 1.2930978784109999,
+   "Q_eager": 1.2461211952991504,
+   "preempt_stock": 3,
+   "preempt_compact": 5,
+   "step_ms_stock": 54.17493920246412,
+   "step_ms_compact": 55.65603866768125
+  },
+  {
+   "depth": 8,
+   "seed": 3,
+   "r_step": 1.3084927740509689,
+   "Q_graph": 1.2718437856762974,
+   "Q_eager": 1.2254383477367021,
+   "preempt_stock": 6,
+   "preempt_compact": 7,
+   "step_ms_stock": 54.02975453927048,
+   "step_ms_compact": 55.593299164056525
+  },
+  {
+   "depth": 8,
+   "seed": 4,
+   "r_step": 1.3532666415430472,
+   "Q_graph": 1.3075356243639753,
+   "Q_eager": 1.2598548206052584,
+   "preempt_stock": 6,
+   "preempt_compact": 6,
+   "step_ms_stock": 53.613910644394835,
+   "step_ms_compact": 55.50032652985547
+  }
+ ],
+ "r_step_interval": [
+  1.3083199944324588,
+  1.3638388968855721
+ ],
+ "r_step_seed0_depth3": 1.3637955535182213,
+ "Q_graph_interval": [
+  1.2716493631092172,
+  1.324576575245639
+ ],
+ "Q_graph_seed0_depth3": 1.324536124811982,
+ "Q_eager_interval": [
+  1.2253286421454668,
+  1.2759533229618492
+ ],
+ "Q_eager_seed0_depth3": 1.2759143018939412
+}

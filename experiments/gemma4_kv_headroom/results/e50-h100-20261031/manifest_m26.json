@@ -1,0 +1,122 @@
+{
+ "run_id": "E-50-H100-20261031-m26",
+ "experiment": "E-50",
+ "idea": "I-182",
+ "status": "ok",
+ "label": "E-50-H100-20261031",
+ "design_commit": "5eb82c2",
+ "config": {
+  "model": "google/gemma-4-26B-A4B-it",
+  "revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+  "kv_cache_dtype": "auto",
+  "cells": "2048:8,8192:8,32768:8,65536:8,65536:8:1,32768:8:1",
+  "pair_cells": "",
+  "profile_cells": "2048:8,32768:8,65536:8",
+  "auto_frac": "0.85",
+  "max_num_batched_tokens": "2048",
+  "max_model_len": "67584",
+  "max_num_seqs": "32",
+  "gpu_memory_utilization": "0.92",
+  "steps_per_block": "32",
+  "text_only": true
+ },
+ "started_at": "2026-10-31T06:43:49Z",
+ "finished_at": "2026-10-31T06:50:24Z",
+ "hardware": {
+  "gpu_name": "NVIDIA H100 80GB HBM3",
+  "gpu_count": 1,
+  "driver": "595.91.07",
+  "cuda": "13.2",
+  "gpu_uuid": "69045460-a76b-3ead-a339-bdae729447ad",
+  "pod_id": "<pod-id>",
+  "data_center": "US-NE-1",
+  "price_per_hour": 3.99
+ },
+ "software": {
+  "vllm": "0.33.0rc1.dev229+g3966924d5",
+  "torch": "2.14.0+cu130",
+  "image": "vllm/vllm-openai@sha256:f255c4fad2f30ff5ee80db14d3a03afe9ae0f10d3470339864ff04745fe44cb3",
+  "engine_lines": [
+   "(MainProcess pid=3074) INFO 10-31 06:43:53 [model.py:971] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.",
+   "(MainProcess pid=3074) INFO 10-31 06:43:53 [model.py:1028] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.",
+   "(MainProcess pid=3074) INFO 10-31 06:43:53 [config.py:349] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.",
+   "(MainProcess pid=3074) INFO 10-31 06:43:59 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='google/gemma-4-26B-A4B-it', speculative_config=None, tokenizer='google/gemma-4-26B-A4B-it', skip_tokeni",
+   "(MainProcess pid=3074) INFO 10-31 06:43:59 [parallel_state.py:1931] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_c68d6ca63596419097efc5b9169c72b6 backend=nccl",
+   "(MainProcess pid=3074) INFO 10-31 06:44:01 [cuda.py:512] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].",
+   "(MainProcess pid=3074) INFO 10-31 06:44:01 [flash_attn.py:1122] Using FlashAttention version 4",
+   "(MainProcess pid=3074) INFO 10-31 06:44:01 [unquantized.py:365] Using TRITON Unquantized MoE backend out of potential backends: ['TRITON', 'BATCHED_TRITON', 'FlashInfer TRTLLM', 'FlashInfer CUTLASS']."
+  ]
+ },
+ "metrics": {
+  "step_ms_2048_8_B8": {
+   "values": [
+    8.9964,
+    9.06,
+    9.0794
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_8192_8_B8": {
+   "values": [
+    9.6584,
+    9.5687,
+    9.6399
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_32768_8_B8": {
+   "values": [
+    10.7851,
+    10.862,
+    10.814
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_65536_8_B8": {
+   "values": [
+    12.4763,
+    12.5699,
+    12.6343
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_65536_8_1_B8": {
+   "values": [
+    12.5632,
+    12.5624,
+    12.4395
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_32768_8_1_B8": {
+   "values": [
+    10.7715,
+    10.7966,
+    10.9559
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "engine_init_s": {
+   "values": [
+    312.1
+   ],
+   "unit": "s",
+   "higher_is_better": false
+  },
+  "gsm8k_accuracy": {
+   "values": [
+    0.9688
+   ],
+   "unit": "fraction",
+   "higher_is_better": true
+  }
+ },
+ "results_path": "experiments/gemma4_kv_headroom/results/e50-h100-20261031/",
+ "notes": "S6 session: 1 x H100 SXM, three arms in one Pod; frozen decision GO. Session cost about 2.90 USD (time x price; billing not posted yet). free_blocks_idle=38887; valid=True; why=[]; groups={}"
+}

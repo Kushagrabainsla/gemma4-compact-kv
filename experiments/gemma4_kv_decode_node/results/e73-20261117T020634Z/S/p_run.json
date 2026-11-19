@@ -1,0 +1,1249 @@
+{
+ "role": "p",
+ "arm": "S",
+ "layout_kind": "stock",
+ "status": "ok",
+ "started_at": "2026-11-17T02:09:56Z",
+ "plan": {
+  "warmup": 2000,
+  "window": 20000,
+  "kv_bytes": 16106127360,
+  "cpu_bytes": 68719476736,
+  "max_model_len": 144000,
+  "p_budget": 1024,
+  "d_budget": 2048,
+  "watchdog": 2050,
+  "pool_blocks": 6144
+ },
+ "manifest_ok": true,
+ "gpu": "NVIDIA A100-SXM4-80GB",
+ "engine_kwargs": {
+  "seed": 0,
+  "enforce_eager": true,
+  "kv_cache_dtype": "auto",
+  "enable_prefix_caching": false,
+  "limit_mm_per_prompt": {
+   "image": 0,
+   "audio": 0,
+   "video": 0
+  },
+  "kv_cache_memory_bytes": 16106127360,
+  "max_model_len": 144000,
+  "max_num_seqs": 4,
+  "max_num_batched_tokens": 1024,
+  "kv_transfer_config": {
+   "kv_connector": "NixlConnector",
+   "kv_role": "kv_both",
+   "kv_connector_extra_config": {
+    "ucx_backend_params": {
+     "ucx_error_handling_mode": "none"
+    },
+    "kv_lease_duration": 600
+   }
+  }
+ },
+ "spec": null,
+ "patched": 0,
+ "engine_seconds": 121.1,
+ "kv": {
+  "num_blocks": 6144,
+  "pool_blocks": 6144,
+  "free_blocks": 6143,
+  "groups": [
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 10,
+    "first_layer": "language_model.model.layers.0.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 262144,
+    "real_page_bytes": 262144,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 16,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 10,
+    "first_layer": "language_model.model.layers.1.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 262144,
+    "real_page_bytes": 262144,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 16,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 10,
+    "first_layer": "language_model.model.layers.2.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 262144,
+    "real_page_bytes": 262144,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 16,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 10,
+    "first_layer": "language_model.model.layers.3.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 262144,
+    "real_page_bytes": 262144,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 16,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 10,
+    "first_layer": "language_model.model.layers.4.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 262144,
+    "real_page_bytes": 262144,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 16,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "FullAttentionSpec",
+    "layers": 10,
+    "first_layer": "language_model.model.layers.5.self_attn.attn",
+    "block_size": 32,
+    "page_bytes": 262144,
+    "real_page_bytes": 262144,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "sliding_window": null
+   }
+  ],
+  "bytes_per_block": 2621440,
+  "layout": "LBHNC",
+  "tensors": 6
+ },
+ "hooks": {
+  "hooked": [
+   {
+    "layer": 5,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0615234375,
+    "w_unrot_max": 0.0615234375,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 11,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.060302734375,
+    "w_unrot_max": 0.060302734375,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 17,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.060546875,
+    "w_unrot_max": 0.060546875,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 23,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.064453125,
+    "w_unrot_max": 0.064453125,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 29,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0625,
+    "w_unrot_max": 0.0625,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 35,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0654296875,
+    "w_unrot_max": 0.0654296875,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 41,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.06494140625,
+    "w_unrot_max": 0.06494140625,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 47,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0634765625,
+    "w_unrot_max": 0.0634765625,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 53,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.06298828125,
+    "w_unrot_max": 0.06298828125,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 59,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.06005859375,
+    "w_unrot_max": 0.06005859375,
+    "impl": "TritonAttentionImpl"
+   }
+  ],
+  "problems": []
+ },
+ "mode": "OFF",
+ "produced": 81,
+ "prefill_tokens": 837586,
+ "prefill_seconds": 1515.4,
+ "prefill_tok_s": 552.7117135584051,
+ "depth_log": [
+  [
+   428.6,
+   30,
+   2
+  ],
+  [
+   428.6,
+   30,
+   2
+  ],
+  [
+   428.6,
+   30,
+   2
+  ],
+  [
+   428.6,
+   30,
+   2
+  ],
+  [
+   428.6,
+   30,
+   2
+  ],
+  [
+   428.6,
+   30,
+   2
+  ],
+  [
+   428.6,
+   30,
+   2
+  ],
+  [
+   428.7,
+   30,
+   2
+  ],
+  [
+   428.7,
+   30,
+   2
+  ],
+  [
+   428.7,
+   30,
+   2
+  ],
+  [
+   428.7,
+   30,
+   2
+  ],
+  [
+   428.7,
+   30,
+   2
+  ],
+  [
+   428.7,
+   30,
+   2
+  ],
+  [
+   428.7,
+   30,
+   2
+  ],
+  [
+   428.7,
+   30,
+   2
+  ],
+  [
+   428.8,
+   30,
+   2
+  ],
+  [
+   428.8,
+   30,
+   2
+  ],
+  [
+   428.8,
+   30,
+   2
+  ],
+  [
+   428.8,
+   30,
+   2
+  ],
+  [
+   428.8,
+   30,
+   2
+  ],
+  [
+   428.8,
+   30,
+   2
+  ],
+  [
+   428.8,
+   30,
+   2
+  ],
+  [
+   428.8,
+   30,
+   2
+  ],
+  [
+   428.8,
+   30,
+   2
+  ],
+  [
+   428.9,
+   30,
+   2
+  ],
+  [
+   428.9,
+   30,
+   2
+  ],
+  [
+   428.9,
+   30,
+   2
+  ],
+  [
+   428.9,
+   30,
+   2
+  ],
+  [
+   428.9,
+   30,
+   2
+  ],
+  [
+   428.9,
+   30,
+   2
+  ],
+  [
+   428.9,
+   30,
+   2
+  ],
+  [
+   428.9,
+   30,
+   2
+  ],
+  [
+   429.0,
+   30,
+   2
+  ],
+  [
+   429.0,
+   30,
+   2
+  ],
+  [
+   429.0,
+   30,
+   2
+  ],
+  [
+   429.0,
+   30,
+   2
+  ],
+  [
+   429.0,
+   30,
+   2
+  ],
+  [
+   429.0,
+   30,
+   2
+  ],
+  [
+   429.0,
+   30,
+   2
+  ],
+  [
+   429.0,
+   30,
+   2
+  ],
+  [
+   429.0,
+   30,
+   2
+  ],
+  [
+   429.1,
+   30,
+   2
+  ],
+  [
+   429.1,
+   30,
+   2
+  ],
+  [
+   429.1,
+   30,
+   2
+  ],
+  [
+   429.1,
+   30,
+   2
+  ],
+  [
+   429.1,
+   30,
+   2
+  ],
+  [
+   429.1,
+   30,
+   2
+  ],
+  [
+   429.1,
+   30,
+   2
+  ],
+  [
+   429.1,
+   30,
+   2
+  ],
+  [
+   429.2,
+   30,
+   2
+  ],
+  [
+   429.2,
+   30,
+   2
+  ],
+  [
+   429.2,
+   30,
+   2
+  ],
+  [
+   429.2,
+   30,
+   2
+  ],
+  [
+   429.2,
+   30,
+   2
+  ],
+  [
+   429.2,
+   30,
+   2
+  ],
+  [
+   429.2,
+   30,
+   2
+  ],
+  [
+   429.2,
+   30,
+   2
+  ],
+  [
+   429.2,
+   30,
+   2
+  ],
+  [
+   429.3,
+   30,
+   2
+  ],
+  [
+   429.3,
+   30,
+   2
+  ],
+  [
+   429.3,
+   30,
+   2
+  ],
+  [
+   429.3,
+   30,
+   2
+  ],
+  [
+   429.3,
+   30,
+   2
+  ],
+  [
+   429.3,
+   30,
+   2
+  ],
+  [
+   429.3,
+   30,
+   2
+  ],
+  [
+   429.3,
+   30,
+   2
+  ],
+  [
+   429.4,
+   30,
+   2
+  ],
+  [
+   429.4,
+   30,
+   2
+  ],
+  [
+   429.4,
+   30,
+   2
+  ],
+  [
+   429.4,
+   30,
+   2
+  ],
+  [
+   429.4,
+   30,
+   2
+  ],
+  [
+   429.4,
+   30,
+   2
+  ],
+  [
+   429.4,
+   30,
+   2
+  ],
+  [
+   429.4,
+   30,
+   2
+  ],
+  [
+   429.4,
+   30,
+   2
+  ],
+  [
+   429.5,
+   30,
+   2
+  ],
+  [
+   429.5,
+   30,
+   2
+  ],
+  [
+   429.5,
+   30,
+   2
+  ],
+  [
+   429.5,
+   30,
+   2
+  ],
+  [
+   429.5,
+   30,
+   2
+  ],
+  [
+   429.5,
+   30,
+   2
+  ],
+  [
+   429.5,
+   30,
+   2
+  ],
+  [
+   429.5,
+   30,
+   2
+  ],
+  [
+   429.6,
+   30,
+   2
+  ],
+  [
+   429.6,
+   30,
+   2
+  ],
+  [
+   429.6,
+   30,
+   2
+  ],
+  [
+   429.6,
+   30,
+   2
+  ],
+  [
+   429.6,
+   30,
+   2
+  ],
+  [
+   429.6,
+   30,
+   2
+  ],
+  [
+   429.6,
+   30,
+   2
+  ],
+  [
+   429.6,
+   30,
+   2
+  ],
+  [
+   429.6,
+   30,
+   2
+  ],
+  [
+   429.7,
+   30,
+   2
+  ],
+  [
+   429.7,
+   30,
+   2
+  ],
+  [
+   429.7,
+   30,
+   2
+  ],
+  [
+   429.7,
+   30,
+   2
+  ],
+  [
+   429.7,
+   30,
+   2
+  ],
+  [
+   429.7,
+   30,
+   2
+  ],
+  [
+   429.7,
+   30,
+   2
+  ],
+  [
+   429.7,
+   30,
+   2
+  ],
+  [
+   429.8,
+   30,
+   2
+  ],
+  [
+   429.8,
+   30,
+   2
+  ],
+  [
+   429.8,
+   30,
+   2
+  ],
+  [
+   429.8,
+   30,
+   2
+  ],
+  [
+   429.8,
+   30,
+   2
+  ],
+  [
+   429.8,
+   30,
+   2
+  ],
+  [
+   429.8,
+   30,
+   2
+  ],
+  [
+   429.8,
+   30,
+   2
+  ],
+  [
+   429.8,
+   30,
+   2
+  ],
+  [
+   429.9,
+   30,
+   2
+  ],
+  [
+   429.9,
+   30,
+   2
+  ],
+  [
+   429.9,
+   30,
+   2
+  ],
+  [
+   429.9,
+   30,
+   2
+  ],
+  [
+   429.9,
+   30,
+   2
+  ],
+  [
+   429.9,
+   30,
+   2
+  ],
+  [
+   429.9,
+   30,
+   2
+  ],
+  [
+   429.9,
+   30,
+   2
+  ],
+  [
+   430.0,
+   30,
+   2
+  ],
+  [
+   430.0,
+   30,
+   2
+  ],
+  [
+   430.0,
+   30,
+   2
+  ],
+  [
+   430.0,
+   30,
+   2
+  ],
+  [
+   430.0,
+   30,
+   2
+  ],
+  [
+   430.1,
+   30,
+   2
+  ],
+  [
+   430.4,
+   30,
+   2
+  ],
+  [
+   430.7,
+   30,
+   2
+  ],
+  [
+   431.1,
+   30,
+   2
+  ],
+  [
+   431.4,
+   30,
+   2
+  ],
+  [
+   431.8,
+   30,
+   2
+  ],
+  [
+   432.2,
+   30,
+   2
+  ],
+  [
+   432.6,
+   30,
+   2
+  ],
+  [
+   433.1,
+   30,
+   2
+  ],
+  [
+   433.5,
+   30,
+   2
+  ],
+  [
+   434.0,
+   30,
+   2
+  ],
+  [
+   434.5,
+   30,
+   2
+  ],
+  [
+   435.0,
+   30,
+   2
+  ],
+  [
+   435.5,
+   30,
+   2
+  ],
+  [
+   436.1,
+   30,
+   2
+  ],
+  [
+   436.6,
+   30,
+   2
+  ],
+  [
+   437.2,
+   30,
+   2
+  ],
+  [
+   437.8,
+   30,
+   2
+  ],
+  [
+   438.4,
+   30,
+   2
+  ],
+  [
+   439.0,
+   30,
+   2
+  ],
+  [
+   439.7,
+   30,
+   2
+  ],
+  [
+   440.3,
+   30,
+   2
+  ],
+  [
+   441.0,
+   30,
+   2
+  ],
+  [
+   441.7,
+   30,
+   2
+  ],
+  [
+   442.4,
+   30,
+   2
+  ],
+  [
+   443.1,
+   30,
+   2
+  ],
+  [
+   443.9,
+   30,
+   2
+  ],
+  [
+   444.7,
+   30,
+   2
+  ],
+  [
+   445.4,
+   30,
+   2
+  ],
+  [
+   446.3,
+   30,
+   2
+  ],
+  [
+   710.4,
+   40,
+   2
+  ],
+  [
+   710.4,
+   40,
+   2
+  ],
+  [
+   710.4,
+   40,
+   2
+  ],
+  [
+   710.4,
+   40,
+   2
+  ],
+  [
+   710.4,
+   40,
+   2
+  ],
+  [
+   710.5,
+   40,
+   2
+  ],
+  [
+   710.5,
+   40,
+   2
+  ],
+  [
+   710.5,
+   40,
+   2
+  ],
+  [
+   710.5,
+   40,
+   2
+  ],
+  [
+   710.5,
+   40,
+   2
+  ],
+  [
+   710.5,
+   40,
+   2
+  ],
+  [
+   710.5,
+   40,
+   2
+  ],
+  [
+   710.5,
+   40,
+   2
+  ],
+  [
+   710.5,
+   40,
+   2
+  ],
+  [
+   710.6,
+   40,
+   2
+  ],
+  [
+   710.6,
+   40,
+   2
+  ],
+  [
+   710.6,
+   40,
+   2
+  ],
+  [
+   710.6,
+   40,
+   2
+  ],
+  [
+   710.6,
+   40,
+   2
+  ],
+  [
+   710.6,
+   40,
+   2
+  ],
+  [
+   710.6,
+   40,
+   2
+  ],
+  [
+   710.6,
+   40,
+   2
+  ],
+  [
+   710.7,
+   40,
+   2
+  ],
+  [
+   710.7,
+   40,
+   2
+  ],
+  [
+   710.7,
+   40,
+   2
+  ],
+  [
+   710.7,
+   40,
+   2
+  ],
+  [
+   710.7,
+   40,
+   2
+  ],
+  [
+   710.7,
+   40,
+   2
+  ],
+  [
+   710.7,
+   40,
+   2
+  ],
+  [
+   710.7,
+   40,
+   2
+  ],
+  [
+   710.7,
+   40,
+   2
+  ],
+  [
+   710.8,
+   40,
+   2
+  ],
+  [
+   710.8,
+   40,
+   2
+  ],
+  [
+   710.8,
+   40,
+   2
+  ],
+  [
+   710.8,
+   40,
+   2
+  ],
+  [
+   710.8,
+   40,
+   2
+  ],
+  [
+   710.8,
+   40,
+   2
+  ],
+  [
+   710.8,
+   40,
+   2
+  ],
+  [
+   710.8,
+   40,
+   2
+  ],
+  [
+   710.9,
+   40,
+   2
+  ],
+  [
+   710.9,
+   40,
+   2
+  ],
+  [
+   710.9,
+   40,
+   2
+  ],
+  [
+   710.9,
+   40,
+   2
+  ],
+  [
+   710.9,
+   40,
+   2
+  ],
+  [
+   710.9,
+   40,
+   2
+  ],
+  [
+   710.9,
+   40,
+   2
+  ],
+  [
+   710.9,
+   40,
+   2
+  ],
+  [
+   710.9,
+   40,
+   2
+  ]
+ ],
+ "finished_at": "2026-11-17T02:37:52Z"
+}

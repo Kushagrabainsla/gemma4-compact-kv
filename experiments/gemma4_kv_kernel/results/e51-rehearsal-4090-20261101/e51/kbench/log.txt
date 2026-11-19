@@ -1,0 +1,197 @@
+{"kernel": "stock_fp8_s32", "batch": 19, "context": 2048, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "stock_fp8_auto", "batch": 19, "context": 2048, "config": {"num_splits": 0}, "us": null, "status": "error"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 4, "warps": 4, "tile": 32}, "us": 199.07, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 4, "warps": 4, "tile": 64}, "us": 200.14, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 4, "warps": 8, "tile": 32}, "us": 214.43, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 4, "warps": 8, "tile": 64}, "us": 186.41, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 8, "warps": 4, "tile": 32}, "us": 195.53, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 8, "warps": 4, "tile": 64}, "us": 195.94, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 8, "warps": 8, "tile": 32}, "us": 196.97, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 193.79, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 210.06, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 16, "warps": 4, "tile": 64}, "us": 212.63, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 210.84, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 16, "warps": 8, "tile": 64}, "us": 210.41, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 248.42, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 32, "warps": 4, "tile": 64}, "us": 252.98, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 249.14, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 32, "warps": 8, "tile": 64}, "us": 249.7, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 4, "warps": 4, "tile": 32}, "us": 135.17, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 4, "warps": 4, "tile": 64}, "us": 150.63, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 4, "warps": 8, "tile": 32}, "us": 146.27, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 4, "warps": 8, "tile": 64}, "us": 139.51, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 8, "warps": 4, "tile": 32}, "us": 125.11, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 8, "warps": 4, "tile": 64}, "us": 143.77, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 8, "warps": 8, "tile": 32}, "us": 132.4, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 133.17, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 143.0, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 16, "warps": 4, "tile": 64}, "us": 160.55, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 149.91, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 16, "warps": 8, "tile": 64}, "us": 149.96, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 166.96, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 32, "warps": 4, "tile": 64}, "us": 211.25, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 180.89, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 32, "warps": 8, "tile": 64}, "us": 174.32, "status": "ok"}
+{"kernel": "stock_bf16_auto", "batch": 19, "context": 2048, "config": {"num_splits": 0}, "us": null, "status": "error"}
+{"kernel": "stock_bf16_s32", "batch": 19, "context": 2048, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "triton_std_bf16", "batch": 19, "context": 2048, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 387.68, "status": "ok"}
+{"kernel": "triton_std_bf16", "batch": 19, "context": 2048, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 387.48, "status": "ok"}
+{"kernel": "triton_std_bf16", "batch": 19, "context": 2048, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 425.42, "status": "ok"}
+{"kernel": "triton_std_bf16", "batch": 19, "context": 2048, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 425.62, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 19, "context": 2048, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 257.02, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 19, "context": 2048, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 259.58, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 19, "context": 2048, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 296.09, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 19, "context": 2048, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 300.32, "status": "ok"}
+{"kernel": "stock_fp8_s32", "batch": 19, "context": 32768, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "stock_fp8_auto", "batch": 19, "context": 32768, "config": {"num_splits": 0}, "us": null, "status": "error"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 4, "warps": 4, "tile": 32}, "us": 2937.94, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 4, "warps": 4, "tile": 64}, "us": 2908.26, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 4, "warps": 8, "tile": 32}, "us": 3142.03, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 4, "warps": 8, "tile": 64}, "us": 2718.29, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 8, "warps": 4, "tile": 32}, "us": 2749.43, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 8, "warps": 4, "tile": 64}, "us": 2758.91, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 8, "warps": 8, "tile": 32}, "us": 2802.94, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 2725.99, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 2769.18, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 16, "warps": 4, "tile": 64}, "us": 2832.18, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 2774.72, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 16, "warps": 8, "tile": 64}, "us": 2765.36, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 2835.2, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 32, "warps": 4, "tile": 64}, "us": 2859.01, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 2847.74, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 32, "warps": 8, "tile": 64}, "us": 2835.66, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 4, "warps": 4, "tile": 32}, "us": 2005.91, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 4, "warps": 4, "tile": 64}, "us": 2060.79, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 4, "warps": 8, "tile": 32}, "us": 2186.9, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 4, "warps": 8, "tile": 64}, "us": 1989.79, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 8, "warps": 4, "tile": 32}, "us": 1747.56, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 8, "warps": 4, "tile": 64}, "us": 1806.64, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 8, "warps": 8, "tile": 32}, "us": 1861.79, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 1738.19, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 1807.45, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 16, "warps": 4, "tile": 64}, "us": 1854.09, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 1896.96, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 16, "warps": 8, "tile": 64}, "us": 1802.09, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 1825.93, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 32, "warps": 4, "tile": 64}, "us": 1872.13, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 1876.72, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 32, "warps": 8, "tile": 64}, "us": 1834.12, "status": "ok"}
+{"kernel": "stock_bf16_auto", "batch": 19, "context": 32768, "config": {"num_splits": 0}, "us": null, "status": "error"}
+{"kernel": "stock_bf16_s32", "batch": 19, "context": 32768, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "triton_std_bf16", "batch": 19, "context": 32768, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 5434.15, "status": "ok"}
+{"kernel": "triton_std_bf16", "batch": 19, "context": 32768, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 5434.83, "status": "ok"}
+{"kernel": "triton_std_bf16", "batch": 19, "context": 32768, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 5515.62, "status": "ok"}
+{"kernel": "triton_std_bf16", "batch": 19, "context": 32768, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 5519.92, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 19, "context": 32768, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 3459.69, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 19, "context": 32768, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 3491.84, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 19, "context": 32768, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 3498.24, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 19, "context": 32768, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 3505.25, "status": "ok"}
+{"kernel": "stock_fp8_s32", "batch": 11, "context": 2048, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "stock_fp8_auto", "batch": 11, "context": 2048, "config": {"num_splits": 0}, "us": null, "status": "error"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 4, "warps": 4, "tile": 32}, "us": 116.89, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 4, "warps": 4, "tile": 64}, "us": 126.57, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 4, "warps": 8, "tile": 32}, "us": 111.97, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 4, "warps": 8, "tile": 64}, "us": 106.85, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 8, "warps": 4, "tile": 32}, "us": 111.0, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 8, "warps": 4, "tile": 64}, "us": 110.79, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 8, "warps": 8, "tile": 32}, "us": 112.58, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 108.44, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 114.79, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 16, "warps": 4, "tile": 64}, "us": 117.18, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 115.81, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 16, "warps": 8, "tile": 64}, "us": 114.33, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 132.1, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 32, "warps": 4, "tile": 64}, "us": 137.11, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 133.02, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 32, "warps": 8, "tile": 64}, "us": 133.17, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 4, "warps": 4, "tile": 32}, "us": 72.33, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 4, "warps": 4, "tile": 64}, "us": 86.31, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 4, "warps": 8, "tile": 32}, "us": 87.19, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 4, "warps": 8, "tile": 64}, "us": 66.34, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 8, "warps": 4, "tile": 32}, "us": 57.6, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 8, "warps": 4, "tile": 64}, "us": 76.85, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 8, "warps": 8, "tile": 32}, "us": 68.79, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 54.53, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 62.05, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 16, "warps": 4, "tile": 64}, "us": 86.1, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 73.22, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 16, "warps": 8, "tile": 64}, "us": 58.42, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 74.65, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 32, "warps": 4, "tile": 64}, "us": 112.59, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 83.96, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 32, "warps": 8, "tile": 64}, "us": 76.75, "status": "ok"}
+{"kernel": "stock_bf16_auto", "batch": 11, "context": 2048, "config": {"num_splits": 0}, "us": null, "status": "error"}
+{"kernel": "stock_bf16_s32", "batch": 11, "context": 2048, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "triton_std_bf16", "batch": 11, "context": 2048, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 222.62, "status": "ok"}
+{"kernel": "triton_std_bf16", "batch": 11, "context": 2048, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 222.92, "status": "ok"}
+{"kernel": "triton_std_bf16", "batch": 11, "context": 2048, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 243.5, "status": "ok"}
+{"kernel": "triton_std_bf16", "batch": 11, "context": 2048, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 243.75, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 11, "context": 2048, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 145.8, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 11, "context": 2048, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 150.53, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 11, "context": 2048, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 166.29, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 11, "context": 2048, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 169.97, "status": "ok"}
+{"kernel": "stock_fp8_s32", "batch": 11, "context": 65536, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "stock_fp8_auto", "batch": 11, "context": 65536, "config": {"num_splits": 0}, "us": null, "status": "error"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 4, "warps": 4, "tile": 32}, "us": 3144.64, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 4, "warps": 4, "tile": 64}, "us": 3502.22, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 4, "warps": 8, "tile": 32}, "us": 3185.87, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 4, "warps": 8, "tile": 64}, "us": 3157.4, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 8, "warps": 4, "tile": 32}, "us": 3177.82, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 8, "warps": 4, "tile": 64}, "us": 3163.96, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 8, "warps": 8, "tile": 32}, "us": 3266.61, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 3121.51, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 3177.22, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 16, "warps": 4, "tile": 64}, "us": 3242.65, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 3189.65, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 16, "warps": 8, "tile": 64}, "us": 3155.8, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 3200.4, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 32, "warps": 4, "tile": 64}, "us": 3233.95, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 3217.72, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 32, "warps": 8, "tile": 64}, "us": 3195.34, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 4, "warps": 4, "tile": 32}, "us": 2585.8, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 4, "warps": 4, "tile": 64}, "us": 2664.39, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 4, "warps": 8, "tile": 32}, "us": 2877.75, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 4, "warps": 8, "tile": 64}, "us": 2560.46, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 8, "warps": 4, "tile": 32}, "us": 2032.49, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 8, "warps": 4, "tile": 64}, "us": 2124.13, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 8, "warps": 8, "tile": 32}, "us": 2204.45, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 2006.93, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 2095.16, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 16, "warps": 4, "tile": 64}, "us": 2150.35, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 2228.43, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 16, "warps": 8, "tile": 64}, "us": 2080.87, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 2032.54, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 32, "warps": 4, "tile": 64}, "us": 2087.97, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 2122.5, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 32, "warps": 8, "tile": 64}, "us": 2035.3, "status": "ok"}
+{"kernel": "stock_bf16_auto", "batch": 11, "context": 65536, "config": {"num_splits": 0}, "us": null, "status": "error"}
+{"kernel": "stock_bf16_s32", "batch": 11, "context": 65536, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "triton_std_bf16", "batch": 11, "context": 65536, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 6219.26, "status": "ok"}
+{"kernel": "triton_std_bf16", "batch": 11, "context": 65536, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 6225.46, "status": "ok"}
+{"kernel": "triton_std_bf16", "batch": 11, "context": 65536, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 6280.58, "status": "ok"}
+{"kernel": "triton_std_bf16", "batch": 11, "context": 65536, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 6292.79, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 11, "context": 65536, "config": {"splits": 16, "warps": 4, "tile": 32}, "us": 3996.62, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 11, "context": 65536, "config": {"splits": 16, "warps": 8, "tile": 32}, "us": 4057.48, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 11, "context": 65536, "config": {"splits": 32, "warps": 4, "tile": 32}, "us": 3954.43, "status": "ok"}
+{"kernel": "triton_cmp_bf16", "batch": 11, "context": 65536, "config": {"splits": 32, "warps": 8, "tile": 32}, "us": 3960.93, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 2048, "config": {"splits": 4, "warps": 8, "tile": 64}, "us": 186.2, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 19, "context": 32768, "config": {"splits": 4, "warps": 8, "tile": 64}, "us": 2721.64, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 2048, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 133.32, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 19, "context": 32768, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 1738.29, "status": "ok"}
+{"kernel": "stock_fp8_s32", "batch": 19, "context": 2048, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "stock_fp8_s32_alias", "batch": 19, "context": 2048, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "triton_std_fp8_alias", "batch": 19, "context": 2048, "config": {"splits": 4, "warps": 8, "tile": 64}, "us": 105.97, "status": "ok"}
+{"kernel": "stock_fp8_s32", "batch": 19, "context": 32768, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "stock_fp8_s32_alias", "batch": 19, "context": 32768, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "triton_std_fp8_alias", "batch": 19, "context": 32768, "config": {"splits": 4, "warps": 8, "tile": 64}, "us": 1519.67, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 2048, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 108.44, "status": "ok"}
+{"kernel": "triton_std_fp8", "batch": 11, "context": 65536, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 3134.92, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 2048, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 54.35, "status": "ok"}
+{"kernel": "triton_cmp_fp8", "batch": 11, "context": 65536, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 2007.4, "status": "ok"}
+{"kernel": "stock_fp8_s32", "batch": 11, "context": 2048, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "stock_fp8_s32_alias", "batch": 11, "context": 2048, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "triton_std_fp8_alias", "batch": 11, "context": 2048, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 45.36, "status": "ok"}
+{"kernel": "stock_fp8_s32", "batch": 11, "context": 65536, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "stock_fp8_s32_alias", "batch": 11, "context": 65536, "config": {"num_splits": 32}, "us": null, "status": "error"}
+{"kernel": "triton_std_fp8_alias", "batch": 11, "context": 65536, "config": {"splits": 8, "warps": 8, "tile": 64}, "us": 1572.29, "status": "ok"}
+{"status": "ok", "errors": 28}

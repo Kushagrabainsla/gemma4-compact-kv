@@ -1,0 +1,62 @@
+{
+ "run_id": "e69-reh-20261113T084436Z",
+ "stage": "reh",
+ "started_at": "2026-11-13T08:44:47Z",
+ "env": {
+  "MODAL_CLOUD_PROVIDER": "CLOUD_PROVIDER_AWS",
+  "MODAL_REGION": "us-east",
+  "MODAL_TASK_ID": "ta-01M7A191FAX8Q5HSRBX1WJTM2R",
+  "MODAL_IMAGE_ID": "im-fB0BiHeiQzJNWXeG5yLwb3",
+  "MODAL_ENVIRONMENT": "main",
+  "NVIDIA_VISIBLE_DEVICES": "GPU-79af5fbe-bea3-0cdd-9cc3-47d20557b700",
+  "CUDA_VERSION": "13.0.2"
+ },
+ "launcher_sha": {
+  "modal_e69.py": "5fccd2eb476283904109c7462dacfb4bd3d8c04ca0c5ae97cb1d7f7383eee8cb",
+  "e69_stage.py": "20674562b9a78b5cd7ccb4b0f56eabf55f0d17549d3c5ef963b2d67b8be3eb88"
+ },
+ "arms": {
+  "S-C": {
+   "exit": 1,
+   "seconds": 116.8,
+   "try": 1,
+   "line": "E-69 S-C: failed | preemptions None | reload 0 checked, 0 bad | coverage None | RuntimeError: Failed to reset KV cache even when all the running requests are preempted and moved to the waiting queue. This is likely due to the presence of running requests waiting for remote KV transfer, which is not supported yet."
+  }
+ },
+ "manifest_ok": true,
+ "probe": {
+  "versions": {
+   "vllm": "0.33.0rc1.dev229+g3966924d5",
+   "torch": "2.14.0+cu130",
+   "triton": "3.8.0"
+  },
+  "dev_shm": {
+   "total_gib": 372.2206153869629,
+   "free_gib": 372.2206153869629
+  },
+  "cgroup_memory": "359701954560",
+  "memlock": [
+   42949672960,
+   42949672960
+  ],
+  "cpus": 21,
+  "mem_total_gib": 334.99855041503906,
+  "hooks": {
+   "Scheduler.make_stats": true,
+   "Scheduler._preempt_request": true,
+   "Scheduler._update_waiting_for_remote_kv": true,
+   "Scheduler.schedule": true,
+   "KVCacheManager.get_block_ids": true,
+   "KVCacheManager.allocate_slots": true,
+   "OffloadingConnectorWorker.register_kv_caches": true,
+   "GPUModelRunner.get_kv_cache_spec": true
+  },
+  "hooks_ok": true
+ },
+ "snapshot": "/__modal/volumes/vo-D6JSYsmqdCQL1RQ3aMNeyx/hub/models--google--gemma-4-12B-it/snapshots/43c9d014b231474fa7212dbb48a762566c2b255d",
+ "download_s": 25.9,
+ "stop": "S-C failed; the connector fails without the compact layout",
+ "decision": "E-69: REHEARSAL | INVALID (S-C did not complete, CODE; CONNECTOR-FAILS-STOCK, exploratory) | checks {'V1': False, 'V2': False, 'V3': False, 'V4': False, 'V5': False, 'V6': False} | C-C None | S-C None | verify {all_pass: False}",
+ "ok": true,
+ "seconds": 144.3
+}

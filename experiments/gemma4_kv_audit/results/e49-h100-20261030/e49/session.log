@@ -1,0 +1,9 @@
+20:06:50 setup done after 348 s; versions: vllm 0.33.0rc1.dev229+g3966924d5 torch 2.14.0+cu130 VLLM_BUILD_COMMIT=unset 
+20:14:20 m31: exit 0 after 798 s
+20:14:20 GPU free (0 MiB in use)
+20:21:47 m26: exit 0 after 1245 s
+20:21:47 GPU free (0 MiB in use)
+20:21:51 decision: PIVOT (one model or one cell only; m31@32768 S=0.067 (low 0.065), m31@65536 S=0.113 (low 0.111), m26@32768 S=0.061 (low 0.046))
+20:21:51 done after 1249 s
+20:21:51 AUTO_STOP in 300 s; copy the results now
+20:26:51 AUTO_STOP (exit): 200

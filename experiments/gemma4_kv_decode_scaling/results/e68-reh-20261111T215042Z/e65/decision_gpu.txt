@@ -1,0 +1,1 @@
+E-65 GPU: REHEARSAL | Phi NA over 0 points | T_OTHER 28.28 ms | checks {'V1': True, 'V2': True, 'V3': False, 'V3_failed_points': [(32, 4096, 'H'), (4, 32768, 'SL'), (2, 65536, 'SL')], 'V5': True, 'V5_missing_core': [], 'extrapolated': [], 'V4_values_ms': [16.015, 12.174, 5.076, 4.582], 'V4': True, 'V6_report_ms': [0.314, 0.396], 'tie_status': None} | failed ['V3']

@@ -1,0 +1,7 @@
+16:52:12 setup done after 11 s; versions: vllm 0.33.0rc1.dev229+g3966924d5 torch 2.14.0+cu130 triton 3.8.0 VLLM_BUILD_COMMIT=unset 
+16:52:12 deadline in 727 s (session watchdog 900 s; boot watchdog end 1793898379, margin 120 s)
+16:53:32 bench: exit 0 after 91 s; {"status": "ok", "shapes": ["D32", "D64"], "errors": {"D32": [], "D64": []}}
+16:53:32 decision: E-58: REHEARSAL (the E-57 cache cost stays open) | D32 cache: CACHE-NONE (compact kernels faster) (views -4.15 ms, block +0.17, wrapper +0.14, kernels -3.80) | hooks: HOOK-CPU (explains E-57) (CPU +2.45 ms, GPU graph +0.31) | X hook: wall +0.66 CPU +2.68 graph +0.39; X cache: wall -4.00 GPU -4.02 CPU +0.12 graph -4.00 (E-57: hook +2.55, cache +2.09) | D64: views -6.59, block -0.00, kernels -6.60 | scratch guard: 1048576 values past the engine-size scratch changed | failed checks: none
+16:53:32 results: 81 KB in /workspace/results/e58
+16:53:32 done after 91 s
+16:53:32 AUTO_STOP in 240 s; copy RES now

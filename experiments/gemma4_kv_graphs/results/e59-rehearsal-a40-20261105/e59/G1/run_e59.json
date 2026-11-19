@@ -1,0 +1,294 @@
+{
+ "engine_name": "G1",
+ "layout": "stock",
+ "graphs": true,
+ "capture": "OFF",
+ "rows_plan": [
+  [
+   "STOCK",
+   3
+  ],
+  [
+   "STOCK",
+   3
+  ]
+ ],
+ "profile_rows": [
+  1
+ ],
+ "length": 16384,
+ "window": 32,
+ "skip": 3,
+ "min_window": 24,
+ "min_common": 24,
+ "rehearsal": true,
+ "stub": false,
+ "model_id": "google/gemma-4-12B-it",
+ "snapshot": "/root/hf/hub/models--google--gemma-4-12B-it/snapshots/43c9d014b231474fa7212dbb48a762566c2b255d",
+ "revision": "43c9d014b231474fa7212dbb48a762566c2b255d",
+ "started_at": "2026-11-05T20:04:35Z",
+ "status": "preflight",
+ "warm": [],
+ "rows": [],
+ "cut": [],
+ "errors": [],
+ "hooks": {
+  "hooked": [
+   {
+    "layer": 5,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.060546875,
+    "w_unrot_max": 0.060546875,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 11,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.061767578125,
+    "w_unrot_max": 0.061767578125,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 17,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.060546875,
+    "w_unrot_max": 0.060546875,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 23,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.06396484375,
+    "w_unrot_max": 0.06396484375,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 29,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0654296875,
+    "w_unrot_max": 0.0654296875,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 35,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0625,
+    "w_unrot_max": 0.0625,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 41,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.06396484375,
+    "w_unrot_max": 0.06396484375,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 47,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0615234375,
+    "w_unrot_max": 0.0615234375,
+    "impl": "TritonAttentionImpl"
+   }
+  ],
+  "problems": [],
+  "attached_at": "load_model"
+ },
+ "engine_seconds": 57.7,
+ "engine_kwargs": {
+  "seed": 0,
+  "enforce_eager": false,
+  "kv_cache_dtype": "auto",
+  "max_model_len": 16896,
+  "max_num_batched_tokens": 2048,
+  "max_num_seqs": 16,
+  "kv_cache_memory_bytes": 12884901888,
+  "enable_prefix_caching": false,
+  "limit_mm_per_prompt": {
+   "image": 0,
+   "audio": 0,
+   "video": 0
+  },
+  "compilation_config": "{'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': [], 'ir_enable_torch_wrap': None, 'splitting_ops': None, 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'cudagraph_decoder_replay': True, 'decoder_replay_cudagraph_capture_sizes': [], 'decoder_replay_trim_threshold': 768, 'compile_sizes': None, 'compile_ranges_endpoints': None, 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_DECODE_ONLY: (2, 0)>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [1, 2, 3, 4, 8], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': None, 'pass_config': {}, 'max_cudagraph_capture_size': None, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': None, 'static_all_moe_layers': []}"
+ },
+ "gpu": "NVIDIA A40",
+ "engine": {
+  "vllm": "0.33.0rc1.dev229+g3966924d5",
+  "max_model_len": 16896,
+  "kv_cache_dtype": "auto",
+  "prefix_caching": false,
+  "max_num_batched_tokens": 2048,
+  "compilation_mode": "0",
+  "cudagraph_mode": "FULL_DECODE_ONLY",
+  "use_v2_model_runner": true,
+  "multiprocessing_env": "0"
+ },
+ "compilation": {
+  "mode": "NONE",
+  "cudagraph_mode": "FULL_DECODE_ONLY",
+  "capture_sizes": [
+   1,
+   2,
+   3,
+   4,
+   8
+  ]
+ },
+ "spec": null,
+ "kv": {
+  "num_blocks": 12288,
+  "pool_blocks": 12288,
+  "free_blocks": 12287,
+  "groups": [
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.0.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.1.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.2.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.3.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.4.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "FullAttentionSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.5.self_attn.attn",
+    "block_size": 64,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "sliding_window": null
+   }
+  ],
+  "bytes_per_block": 1048576,
+  "layout": "LBNHC",
+  "tensors": 6
+ },
+ "tensors": {
+  "global": {
+   "layer": 5,
+   "shape": [
+    12288,
+    1,
+    64,
+    1024
+   ],
+   "stride": [
+    65536,
+    1024,
+    1024,
+    1
+   ],
+   "dtype": "torch.bfloat16"
+  },
+  "sliding": {
+   "name": "language_model.model.layers.0.self_attn.attn",
+   "shape": [
+    12288,
+    8,
+    16,
+    512
+   ],
+   "stride": [
+    65536,
+    512,
+    4096,
+    1
+   ],
+   "dtype": "torch.bfloat16"
+  }
+ },
+ "scratch": [],
+ "scratch_widened": 0,
+ "memory": {
+  "after_start_free_gib": 9.119,
+  "total_gib": 44.424,
+  "max_reserved_gib": 35.178
+ },
+ "preflight": [
+  "no Triton metadata builder found"
+ ]
+}

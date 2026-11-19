@@ -1,0 +1,5 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 9 files:  11%|█         | 1/9 [00:00<00:03,  2.29it/s]Fetching 9 files:  78%|███████▊  | 7/9 [00:00<00:00,  9.96it/s]Fetching 9 files: 100%|██████████| 9/9 [00:14<00:00,  2.19s/it]Fetching 9 files: 100%|██████████| 9/9 [00:14<00:00,  1.67s/it]
+google/gemma-4-E2B-it 3e22461f65e89153144f8adb70e3b8c2cc9845a7 /workspace/cache/hf/hub/models--google--gemma-4-E2B-it/snapshots/3e22461f65e89153144f8adb70e3b8c2cc9845a7
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 237.47it/s]
+google/gemma-4-E2B-it 3e22461f65e89153144f8adb70e3b8c2cc9845a7 /workspace/cache/hf/hub/models--google--gemma-4-E2B-it/snapshots/3e22461f65e89153144f8adb70e3b8c2cc9845a7

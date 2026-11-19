@@ -1,0 +1,146 @@
+{
+ "run_id": "e69-reh-20261113T085417Z",
+ "stage": "reh",
+ "started_at": "2026-11-13T08:54:27Z",
+ "env": {
+  "MODAL_CLOUD_PROVIDER": "CLOUD_PROVIDER_AWS",
+  "MODAL_REGION": "us-east",
+  "MODAL_TASK_ID": "ta-01M7A1TZ8T5NK19DS9HVNT257R",
+  "MODAL_IMAGE_ID": "im-fB0BiHeiQzJNWXeG5yLwb3",
+  "MODAL_ENVIRONMENT": "main",
+  "NVIDIA_VISIBLE_DEVICES": "GPU-82d0e4db-08ff-879b-915b-580e4bad8066",
+  "CUDA_VERSION": "13.0.2"
+ },
+ "launcher_sha": {
+  "modal_e69.py": "5fccd2eb476283904109c7462dacfb4bd3d8c04ca0c5ae97cb1d7f7383eee8cb",
+  "e69_stage.py": "bb40e52f47c0302cb7300ef58d7bc25c45c527a1ff3b399d153d9c76a5e96d75"
+ },
+ "arms": {
+  "S-C": {
+   "exit": 0,
+   "seconds": 207.1,
+   "try": 1,
+   "line": "E-69 S-C: ok | preemptions 49 | reload 24 checked, 165 bad | coverage {'preempted_events': 48, 'decode_events': 36, 'median_c': 0.9620029565405455, 'min_c': 0.9214659685863874, 'max_c': 0.9896907216494846, 'zero_hit_events': 0, 'hit_rate_tokens': 0.9917007381332346} | ",
+   "verify_lines": [
+    "(MainProcess pid=62) INFO 11-13 08:56:11 [utils.py:397] Using LBHNC KV cache layout.",
+    "(MainProcess pid=62) INFO 11-13 08:56:15 [shared_offload_region.py:177] Created mmap file /dev/shm/vllm_offload_42a2f887-c097-477e-a347-77aada2355d0.mmap (17.18 GB)",
+    "(MainProcess pid=62) INFO 11-13 08:56:15 [shared_offload_region.py:198] Unlinked mmap file /dev/shm/vllm_offload_42a2f887-c097-477e-a347-77aada2355d0.mmap",
+    "(MainProcess pid=62) WARNING 11-13 08:56:15 [shared_offload_region.py:79] MADV_POPULATE_WRITE is not supported; falling back to per-page writes for mmap pre-population. Startup may be slower.",
+    "(MainProcess pid=62) INFO 11-13 08:56:17 [gpu_worker.py:232] Registering full CPU offload region rank=0 (row=1048576, slot=1048576 bytes): less than 3145728 bytes saved per row"
+   ]
+  },
+  "C-C": {
+   "exit": 0,
+   "seconds": 187.3,
+   "try": 1,
+   "line": "E-69 C-C: ok | preemptions 49 | reload 24 checked, 185 bad | coverage {'preempted_events': 48, 'decode_events': 36, 'median_c': 0.9606005104879823, 'min_c': 0.9041372351160444, 'max_c': 0.998992950654582, 'zero_hit_events': 0, 'hit_rate_tokens': 0.9912136211807192} | ",
+   "verify_lines": [
+    "(MainProcess pid=250) INFO 11-13 08:59:15 [utils.py:397] Using LBHNC KV cache layout.",
+    "(MainProcess pid=250) INFO 11-13 08:59:16 [shared_offload_region.py:177] Created mmap file /dev/shm/vllm_offload_6f460234-af61-4130-aa92-f1f7aca53a26.mmap (17.18 GB)",
+    "(MainProcess pid=250) INFO 11-13 08:59:16 [shared_offload_region.py:198] Unlinked mmap file /dev/shm/vllm_offload_6f460234-af61-4130-aa92-f1f7aca53a26.mmap",
+    "(MainProcess pid=250) WARNING 11-13 08:59:16 [shared_offload_region.py:79] MADV_POPULATE_WRITE is not supported; falling back to per-page writes for mmap pre-population. Startup may be slower.",
+    "(MainProcess pid=250) INFO 11-13 08:59:18 [gpu_worker.py:232] Registering full CPU offload region rank=0 (row=1048576, slot=1048576 bytes): less than 3145728 bytes saved per row"
+   ]
+  },
+  "C-C0": {
+   "exit": 0,
+   "seconds": 186.3,
+   "try": 1,
+   "line": "E-69 C-C0: ok | preemptions 49 | reload 24 checked, 0 bad | coverage {'preempted_events': 48, 'decode_events': 36, 'median_c': 0.0, 'min_c': 0.0, 'max_c': 0.0, 'zero_hit_events': 0, 'hit_rate_tokens': 0.8122447780487089} | ",
+   "verify_lines": [
+    "(MainProcess pid=385) INFO 11-13 09:02:23 [utils.py:397] Using LBHNC KV cache layout.",
+    "(MainProcess pid=385) INFO 11-13 09:02:25 [shared_offload_region.py:177] Created mmap file /dev/shm/vllm_offload_2cee8002-7762-4e73-9be6-6cc92b256200.mmap (17.18 GB)",
+    "(MainProcess pid=385) INFO 11-13 09:02:25 [shared_offload_region.py:198] Unlinked mmap file /dev/shm/vllm_offload_2cee8002-7762-4e73-9be6-6cc92b256200.mmap",
+    "(MainProcess pid=385) WARNING 11-13 09:02:25 [shared_offload_region.py:79] MADV_POPULATE_WRITE is not supported; falling back to per-page writes for mmap pre-population. Startup may be slower.",
+    "(MainProcess pid=385) INFO 11-13 09:02:29 [gpu_worker.py:232] Registering full CPU offload region rank=0 (row=1048576, slot=1048576 bytes): less than 3145728 bytes saved per row"
+   ]
+  },
+  "C-CX": {
+   "exit": 0,
+   "seconds": 177.6,
+   "try": 1,
+   "line": "E-69 C-CX: ok | preemptions 49 | reload 24 checked, 121 bad | coverage {'preempted_events': 48, 'decode_events': 36, 'median_c': 0.9509742231053706, 'min_c': 0.8421052631578947, 'max_c': 0.9979879275653923, 'zero_hit_events': 0, 'hit_rate_tokens': 0.990336325963963} | ",
+   "verify_lines": [
+    "(MainProcess pid=513) INFO 11-13 09:05:30 [utils.py:397] Using LBHNC KV cache layout.",
+    "(MainProcess pid=513) INFO 11-13 09:05:31 [shared_offload_region.py:177] Created mmap file /dev/shm/vllm_offload_b2eb829a-2dd7-471c-b2cb-4a856aaf8c1e.mmap (17.18 GB)",
+    "(MainProcess pid=513) INFO 11-13 09:05:31 [shared_offload_region.py:198] Unlinked mmap file /dev/shm/vllm_offload_b2eb829a-2dd7-471c-b2cb-4a856aaf8c1e.mmap",
+    "(MainProcess pid=513) WARNING 11-13 09:05:31 [shared_offload_region.py:79] MADV_POPULATE_WRITE is not supported; falling back to per-page writes for mmap pre-population. Startup may be slower.",
+    "(MainProcess pid=513) INFO 11-13 09:05:33 [gpu_worker.py:232] Registering full CPU offload region rank=0 (row=1048576, slot=1048576 bytes): less than 3145728 bytes saved per row"
+   ]
+  },
+  "C-C64": {
+   "exit": 0,
+   "seconds": 85.0,
+   "try": 1,
+   "line": "E-69 C-C64: ok | preemptions 0 | reload 0 checked, 0 bad | coverage None | ",
+   "verify_lines": [
+    "(MainProcess pid=641) INFO 11-13 09:08:29 [utils.py:397] Using LBHNC KV cache layout.",
+    "(MainProcess pid=641) INFO 11-13 09:08:31 [shared_offload_region.py:177] Created mmap file /dev/shm/vllm_offload_c930e2ab-4ded-4b31-957f-5479ac29d3c7.mmap (68.72 GB)",
+    "(MainProcess pid=641) INFO 11-13 09:08:31 [shared_offload_region.py:198] Unlinked mmap file /dev/shm/vllm_offload_c930e2ab-4ded-4b31-957f-5479ac29d3c7.mmap",
+    "(MainProcess pid=641) WARNING 11-13 09:08:31 [shared_offload_region.py:79] MADV_POPULATE_WRITE is not supported; falling back to per-page writes for mmap pre-population. Startup may be slower.",
+    "(MainProcess pid=641) INFO 11-13 09:08:49 [gpu_worker.py:232] Registering full CPU offload region rank=0 (row=1048576, slot=1048576 bytes): less than 3145728 bytes saved per row"
+   ]
+  }
+ },
+ "manifest_ok": true,
+ "probe": {
+  "versions": {
+   "vllm": "0.33.0rc1.dev229+g3966924d5",
+   "torch": "2.14.0+cu130",
+   "triton": "3.8.0"
+  },
+  "dev_shm": {
+   "total_gib": 372.2206230163574,
+   "free_gib": 372.2206230163574
+  },
+  "cgroup_memory": "359701962752",
+  "memlock": [
+   42949672960,
+   42949672960
+  ],
+  "cpus": 21,
+  "mem_total_gib": 334.9985580444336,
+  "hooks": {
+   "Scheduler.make_stats": true,
+   "Scheduler._preempt_request": true,
+   "Scheduler._update_waiting_for_remote_kv": true,
+   "Scheduler.schedule": true,
+   "KVCacheManager.get_block_ids": true,
+   "KVCacheManager.allocate_slots": true,
+   "OffloadingConnectorWorker.register_kv_caches": true,
+   "GPUModelRunner.get_kv_cache_spec": true
+  },
+  "hooks_ok": true
+ },
+ "snapshot": "/__modal/volumes/vo-D6JSYsmqdCQL1RQ3aMNeyx/hub/models--google--gemma-4-12B-it/snapshots/43c9d014b231474fa7212dbb48a762566c2b255d",
+ "download_s": 25.2,
+ "decision": "E-69: REHEARSAL | CONNECTOR-FAILS | checks {'V1': True, 'V2': True, 'V3': True, 'V4': True, 'V5': True, 'V6': True} | C-C {'coverage': {'preempted_events': 48, 'decode_events': 36, 'median_c': 0.9606005104879823, 'min_c': 0.9041372351160444, 'max_c': 0.998992950654582, 'zero_hit_events': 0, 'hit_rate_tokens': 0.9912136211807192}, 'mismatched_blocks': 185, 'checked_reloads': 24, 'same_id_share': 0.0, 'load_gb_per_s': 13.324933884433872} | S-C {'coverage': {'preempted_events': 48, 'decode_events': 36, 'median_c': 0.9620029565405455, 'min_c': 0.9214659685863874, 'max_c': 0.9896907216494846, 'zero_hit_events': 0, 'hit_rate_tokens': 0.9917007381332346}, 'mismatched_blocks': 165, 'checked_reloads': 24, 'same_id_share': 0.0002185792349726776, 'load_gb_per_s': 13.328457989815774} | verify {all_pass: True}",
+ "ok": true,
+ "seconds": 874.6,
+ "sha256": {
+  "C-C/run_e69.json": "4e817133a97aae2d88a5f9c0d02d57324c69c2ea8876166ecdbc772b9aa0a289",
+  "C-C/stdout.txt": "924bb60f6678f63cb94cef9d329c312f57cd133e684c0067dc3ba6d3183d000c",
+  "C-C/w_tokens.json": "24353e6871a9ccf3689a1dffb3ffe15158bec243a0d7618bdcac5a1a2756d1da",
+  "C-C0/run_e69.json": "a9e05fdc554543f74794b326dafad402ab9bc6433cb9e3378f70123379e1c4ba",
+  "C-C0/stdout.txt": "49c51e84919d192c705bb4dfeec34e46a7382d59f41413f84681f5b267962f6e",
+  "C-C0/w_tokens.json": "ed0bb2d9fe69c7656ff8ccca83b94504bc77255e1020f4ae630151b80f6b58d0",
+  "C-C64/run_e69.json": "f50b5971464a39dc67bfcdc7b8efbefd1a47c36163823621560ab7473885f184",
+  "C-C64/stdout.txt": "1d64cf52209396e6a9d32589fc3fd5448782506983108e9e1b1383c02da2b1d1",
+  "C-CX/run_e69.json": "1983af54a51de7bb85fa3010cde6237ad95d2cc98faaebf9990982d66f28c6dd",
+  "C-CX/stdout.txt": "01cc678af57534223507ccbd3f4df85f75779786ac8722f25a08deb1942b068e",
+  "C-CX/w_tokens.json": "6f8cef74dfb1825efd2308d4af758ba86202bb3c27881415ea6b2b3b18348d6e",
+  "S-C/run_e69.json": "51d323d6f3c8fa43fec2a1a18974ff032d0110c4d44c24b1b29ba38a8c9c828c",
+  "S-C/stdout.txt": "1aefc4c657f395a94aa40a41356377a5dd841a53c95f57fbd0e1852b0c82beee",
+  "S-C/w_tokens.json": "7e0a4f3e5e9548af0365a4b14c8aabf7fa75ac95b54e7739136d71fd607c9352",
+  "download.txt": "075da88548341ccc5e5f577a3f9104b9cb4b9c251dba1c4ba59848e11d53eec8",
+  "manifest_check.txt": "453186a062c517844248df6a23ec664ae4dcd6d3b6d4b61376ce8a247cd36e45",
+  "modal_record.json": "ec86c83c79e4be0669a3c20a7fd9259364b93645a6b8da60bbf3fc24344c23f7",
+  "nvidia-smi.txt": "e326b1371e6de974810f5de6ddd3923c120d83af933bb9420642b9c0f6e890ae",
+  "probe.txt": "2a184a622785857f4e12769cc8d6d29037fdaeeaa3d05c419503e18f24fb48e3",
+  "started.txt": "a876f51496f3c6cdf47b103eb513367892aea4f9b4822fab4f6b058eaca7376a",
+  "summary.json": "6b3b8cb1ddc9e0b034760e7ab18143427be4ba5b9d95600b11a389bfd77aae98",
+  "telemetry.csv": "946817138a0fd5e874aad378ed4160d136dc65da6c6d7c6ed5a8f2c2867bd404"
+ },
+ "launcher_sha_match": true,
+ "wall_s_local": 885.7601442337036
+}

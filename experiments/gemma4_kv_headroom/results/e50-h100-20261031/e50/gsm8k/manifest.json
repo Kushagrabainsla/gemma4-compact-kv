@@ -1,0 +1,12 @@
+{
+ "source": "hub",
+ "revision": "740312add88f781978c0658806c59bc2815b9866",
+ "tokenizer": "/workspace/cache/hf/hub/models--RedHatAI--gemma-4-31B-it-FP8-dynamic/snapshots/d4ab4f579dd3516f97d8a6a4c98d0653480bad15",
+ "n": 1319,
+ "instruction": "Please reason step by step, and put your final answer within \\boxed{}.",
+ "sha256": {
+  "gsm8k.json": "bd85ce9ac62e0d79e0bc2268094fd5623a0a27e8059a7c6a9f54cb06b1525641",
+  "prompts.json": "c2ec3c2479566b848c0d34d1f1f9cd4afef2b5e371e34162411003ce900f69f9",
+  "prefill.json": "2bd854aaff727db55a960bd352400ba062c918ab1daaceb2781ed214f23cbf4a"
+ }
+}

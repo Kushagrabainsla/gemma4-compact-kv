@@ -1,0 +1,7 @@
+{
+ "recorded_at": "2026-11-01T02:28:32Z",
+ "gpu": "NVIDIA GeForce RTX 4090",
+ "bf16_gemm_tflops_median": 163.1,
+ "copy_gb_per_s_median": 920.1,
+ "status": "ok"
+}

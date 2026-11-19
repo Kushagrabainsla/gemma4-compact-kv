@@ -1,0 +1,3 @@
+V1: graph: COMPACT against EMULV: prompt 2: tokens differ from position 3
+V1: eager: COMPACT against EMULV: prompt 2: tokens differ from position 3
+E-59: INVALID | OG -0.41% (band +2.00%; S_g 50.7333 ms, C_g 50.52495 ms) | graph HG +0.65% KG -1.06% process and drift p_g +0.13% | eager HE +9.06% KE -7.21% p_e +6.67% | HOOK-NOREPRO CACHE-NOREPRO (process effect >= 2%) | GS -6.00% | TG 1.249 | failed checks: V1

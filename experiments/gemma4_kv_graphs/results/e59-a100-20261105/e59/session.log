@@ -1,0 +1,40 @@
+21:06:49 disk before the download: overlay         120G   92M  120G   1% /
+21:10:10 download: /root/hf/hub/models--google--gemma-4-31B-it/snapshots/842da3794eaa0b77d5f08bae87a17459d91ff475 after 215 s; overlay         120G   59G   62G  49% /
+21:10:10 setup done after 215 s; versions: vllm 0.33.0rc1.dev229+g3966924d5 torch 2.14.0+cu130 transformers 5.20.2 VLLM_BUILD_COMMIT=unset 
+21:10:10 deadline in 2513 s (session watchdog 3300 s; boot watchdog end 1793915763, margin 240 s)
+21:13:29 G1 engine: (MainProcess pid=1379) INFO 11-05 21:10:22 [startup.py:96] non-default args: {'tokenizer': '/root/hf/hub/models--google--gemma-4-31B-it/snapshots/842da3794eaa0b77d5f08bae87a17459d91ff475', 'max_model_
+21:13:29 G1 engine: (MainProcess pid=1379) INFO 11-05 21:10:42 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='/root/hf/hub/models--google--gemma-4-31B-it/snapshots/842da3794
+21:13:29 G1 engine: (MainProcess pid=1379) INFO 11-05 21:10:59 [kv_cache_utils.py:1147] GPU KV cache size: 110,602 tokens, Maximum concurrency for 66,048 tokens per request: 1.67x
+21:13:29 G1 engine: Capturing CUDA graphs (FULL):   0%|          | 0/5 [00:00<?, ?it/s]Capturing CUDA graphs (FULL):  20%|██        | 1/5 [00:00<00:00,  8.88it/s]Capturing CUDA graphs (FULL):  40%|████    
+21:13:29 G1: exit 0 after 414 s; {"engine": "G1", "status": "ok", "rows": 2, "medians_ms": [50.7333, 50.6893], "cut": 0}
+21:16:25 G2 engine: (MainProcess pid=2341) INFO 11-05 21:13:40 [startup.py:96] non-default args: {'tokenizer': '/root/hf/hub/models--google--gemma-4-31B-it/snapshots/842da3794eaa0b77d5f08bae87a17459d91ff475', 'max_model_
+21:16:25 G2 engine: (MainProcess pid=2341) INFO 11-05 21:13:49 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='/root/hf/hub/models--google--gemma-4-31B-it/snapshots/842da3794
+21:16:25 G2 engine: (MainProcess pid=2341) INFO 11-05 21:14:05 [kv_cache_utils.py:1147] GPU KV cache size: 110,602 tokens, Maximum concurrency for 66,048 tokens per request: 1.67x
+21:16:25 G2 engine: Capturing CUDA graphs (FULL):   0%|          | 0/5 [00:00<?, ?it/s]Capturing CUDA graphs (FULL):  20%|██        | 1/5 [00:00<00:00,  7.98it/s]Capturing CUDA graphs (FULL):  40%|████    
+21:16:25 G2: exit 0 after 590 s; {"engine": "G2", "status": "ok", "rows": 2, "medians_ms": [51.0607, 51.0676], "cut": 0}
+21:20:58 G3 engine: (MainProcess pid=3042) INFO 11-05 21:16:37 [startup.py:96] non-default args: {'tokenizer': '/root/hf/hub/models--google--gemma-4-31B-it/snapshots/842da3794eaa0b77d5f08bae87a17459d91ff475', 'max_model_
+21:20:58 G3 engine: (MainProcess pid=3042) INFO 11-05 21:16:46 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='/root/hf/hub/models--google--gemma-4-31B-it/snapshots/842da3794
+21:20:58 G3 engine: (MainProcess pid=3042) INFO 11-05 21:17:02 [kv_cache_utils.py:1147] GPU KV cache size: 136,128 tokens, Maximum concurrency for 66,048 tokens per request: 2.06x
+21:20:58 G3 engine: Capturing CUDA graphs (FULL):   0%|          | 0/5 [00:00<?, ?it/s]Capturing CUDA graphs (FULL):  20%|██        | 1/5 [00:00<00:00,  7.53it/s]Capturing CUDA graphs (FULL):  40%|████    
+21:20:58 G3: exit 0 after 863 s; {"engine": "G3", "status": "ok", "rows": 3, "medians_ms": [50.5129, 50.537, 54.1718], "cut": 0}
+21:22:46 G4 engine: (MainProcess pid=3833) INFO 11-05 21:21:10 [startup.py:96] non-default args: {'tokenizer': '/root/hf/hub/models--google--gemma-4-31B-it/snapshots/842da3794eaa0b77d5f08bae87a17459d91ff475', 'max_model_
+21:22:46 G4 engine: (MainProcess pid=3833) INFO 11-05 21:21:19 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='/root/hf/hub/models--google--gemma-4-31B-it/snapshots/842da3794
+21:22:46 G4 engine: (MainProcess pid=3833) INFO 11-05 21:21:32 [kv_cache_utils.py:1147] GPU KV cache size: 110,602 tokens, Maximum concurrency for 66,048 tokens per request: 1.67x
+21:22:46 G4 engine: Capturing CUDA graphs (FULL):   0%|          | 0/5 [00:00<?, ?it/s]Capturing CUDA graphs (FULL):  20%|██        | 1/5 [00:00<00:00,  8.14it/s]Capturing CUDA graphs (FULL):  40%|████    
+21:22:46 G4: exit 0 after 971 s; {"engine": "G4", "status": "ok", "rows": 1, "medians_ms": [50.7777], "cut": 0}
+21:26:50 E1 engine: (MainProcess pid=4481) WARNING 11-05 21:23:01 [vllm.py:1794] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mo
+21:26:50 E1 engine: (MainProcess pid=4481) INFO 11-05 21:23:07 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='/root/hf/hub/models--google--gemma-4-31B-it/snapshots/842da3794
+21:26:50 E1 engine: (MainProcess pid=4481) INFO 11-05 21:23:21 [kv_cache_utils.py:1147] GPU KV cache size: 110,602 tokens, Maximum concurrency for 66,048 tokens per request: 1.67x
+21:26:50 E1: exit 0 after 1215 s; {"engine": "E1", "status": "ok", "rows": 3, "medians_ms": [52.581, 63.245, 59.0777], "cut": 0}
+21:29:48 E2 engine: (MainProcess pid=5227) WARNING 11-05 21:27:04 [vllm.py:1794] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mo
+21:29:48 E2 engine: (MainProcess pid=5227) INFO 11-05 21:27:11 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='/root/hf/hub/models--google--gemma-4-31B-it/snapshots/842da3794
+21:29:48 E2 engine: (MainProcess pid=5227) INFO 11-05 21:27:26 [kv_cache_utils.py:1147] GPU KV cache size: 136,128 tokens, Maximum concurrency for 66,048 tokens per request: 2.06x
+21:29:48 E2: exit 0 after 1393 s; {"engine": "E2", "status": "ok", "rows": 2, "medians_ms": [54.7794, 54.5928], "cut": 0}
+21:33:47 E3 engine: (MainProcess pid=5936) WARNING 11-05 21:30:02 [vllm.py:1794] Enforce eager set, disabling torch.compile, CUDAGraphs, and JIT kernel warmup. This is equivalent to setting -cc.mode=none -cc.cudagraph_mo
+21:33:47 E3 engine: (MainProcess pid=5936) INFO 11-05 21:30:09 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='/root/hf/hub/models--google--gemma-4-31B-it/snapshots/842da3794
+21:33:47 E3 engine: (MainProcess pid=5936) INFO 11-05 21:30:25 [kv_cache_utils.py:1147] GPU KV cache size: 110,602 tokens, Maximum concurrency for 66,048 tokens per request: 1.67x
+21:33:47 E3: exit 0 after 1632 s; {"engine": "E3", "status": "ok", "rows": 3, "medians_ms": [51.9999, 54.6248, 52.2168], "cut": 0}
+21:33:47 decision: E-59: INVALID | OG -0.41% (band +2.00%; S_g 50.7333 ms, C_g 50.52495 ms) | graph HG +0.65% KG -1.06% process and drift p_g +0.13% | eager HE +9.06% KE -7.21% p_e +6.67% | HOOK-NOREPRO CACHE-NOREPRO (process effect >= 2%) | GS -6.00% | TG 1.249 | failed checks: V1
+21:33:47 results: 14171 KB in /workspace/results/e59; disk: mfs#us-md-1.runpod.net:9421  404T  319T   86T  79% /workspace
+21:33:47 done after 1632 s
+21:33:47 AUTO_STOP in 240 s; copy RES now

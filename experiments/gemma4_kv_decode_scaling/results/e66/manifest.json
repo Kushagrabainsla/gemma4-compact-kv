@@ -1,0 +1,95 @@
+{
+ "note": "Written after the run (R-104 finding 1). It does not prove the code was frozen; the modification times do that.",
+ "files": [
+  {
+   "path": "gemma4_kv_capacity_model/poolsim.py",
+   "sha256": "1f4a28f909a59eb819df588633841b7fdc49d7873979fe9527f94947d67af226",
+   "bytes": 16987,
+   "mtime_utc": "2026-11-11T00:49:24+00:00"
+  },
+  {
+   "path": "gemma4_kv_capacity_model/e64.py",
+   "sha256": "bcc7f63a85ae2b8ac603c5ff7dc5060da6973716c15f2f7a9e5828bf22808205",
+   "bytes": 8257,
+   "mtime_utc": "2026-11-10T18:59:02+00:00"
+  },
+  {
+   "path": "gemma4_kv_decode_scaling/e66.py",
+   "sha256": "8bb432ceb05ebd551af3f212885611bd5c3e534bd6c1938a9de06ebcc6e6a960",
+   "bytes": 4162,
+   "mtime_utc": "2026-11-11T00:47:38+00:00"
+  },
+  {
+   "path": "gemma4_kv_decode_scaling/test_e66.py",
+   "sha256": "7570e89c3343b046160491cfaf20488f7313811b07c11947c27787dad8c68f17",
+   "bytes": 6085,
+   "mtime_utc": "2026-11-11T01:00:42+00:00"
+  },
+  {
+   "path": "gemma4_kv_decode_scaling/refsim.py",
+   "sha256": "4feb647af2aa542fed46283969d3aee6678b8ef613501b6061f43fd7c2bbc381",
+   "bytes": 10395,
+   "mtime_utc": "2026-11-11T01:17:13+00:00"
+  },
+  {
+   "path": "gemma4_kv_decode_scaling/e65_model.py",
+   "sha256": "51949874720664e986e7aec9421234d78f53ff13b80407984a4032e8f35a26dd",
+   "bytes": 6195,
+   "mtime_utc": "2026-11-10T20:55:01+00:00"
+  },
+  {
+   "path": "gemma4_kv_decode_scaling/analyze_e65.py",
+   "sha256": "e9c11b0ad7e343f6f039fa071463115fe47e614a613415d9d08a2b8fd1d89644",
+   "bytes": 9590,
+   "mtime_utc": "2026-11-10T20:57:23+00:00"
+  },
+  {
+   "path": "gemma4_kv_decode_scaling/run_e66.sh",
+   "sha256": "2963c1dc5210a734e785cf1e2737e5ddacf4e2e5b7a07037c072f11d446a9af5",
+   "bytes": 373,
+   "mtime_utc": "2026-11-11T01:37:45+00:00"
+  },
+  {
+   "path": "gemma4_kv_decode_scaling/prefill_fit.json",
+   "sha256": "a3601b67e5ec66b72c5972e1ae3976481f0a82023f20ff20efa864850541be23",
+   "bytes": 515,
+   "mtime_utc": "2026-11-10T20:12:24+00:00"
+  },
+  {
+   "path": "gemma4_kv_decode_scaling/results/bracket/fit_r1.0.json",
+   "sha256": "e01898b1b1be3faebf103db5f12f2222cad1a8f76d0da0347da4cc504d286da1",
+   "bytes": 5074,
+   "mtime_utc": "2026-11-10T20:55:47+00:00"
+  },
+  {
+   "path": "gemma4_kv_decode_scaling/results/bracket/fit_r0.625.json",
+   "sha256": "7783ffaaf5b36d7a382a499ec1441e0dc1847a96fa4081ea1dc8a28c0fab717d",
+   "bytes": 5003,
+   "mtime_utc": "2026-11-10T21:25:33+00:00"
+  },
+  {
+   "path": "gemma4_kv_decode_scaling/results/e66/refsim.json",
+   "sha256": "532eddbff85207958d3838c27e7e2563729b7532371d7f1dca27f227a0420f41",
+   "bytes": 4323,
+   "mtime_utc": "2026-11-11T01:37:34+00:00"
+  },
+  {
+   "path": "gemma4_kv_decode_scaling/results/e66/e66_engine.json",
+   "sha256": "aac6db57ffdff26b702c24f7489ca9c83308c6ddcc154a084951db734225bf03",
+   "bytes": 562580,
+   "mtime_utc": "2026-11-11T02:30:28+00:00"
+  },
+  {
+   "path": "gemma4_kv_decode_scaling/results/e66/e66_global.json",
+   "sha256": "fa0007a63ba07cd916532b6ff27b446eff8de2e9538637289f40e57c485f0965",
+   "bytes": 563617,
+   "mtime_utc": "2026-11-11T03:25:56+00:00"
+  },
+  {
+   "path": "gemma4_kv_decode_scaling/results/e66/e66_perfect.json",
+   "sha256": "305245435e8eb480f06626c7074d2162883a0b11821bf3ca818dfa84718f2ba5",
+   "bytes": 560565,
+   "mtime_utc": "2026-11-11T04:20:54+00:00"
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+ "model": "google/gemma-4-31B-it",
+ "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+ "snapshot": "/__modal/volumes/vo-D6JSYsmqdCQL1RQ3aMNeyx/hub/models--google--gemma-4-31B-it/snapshots/842da3794eaa0b77d5f08bae87a17459d91ff475",
+ "seconds": 282.8,
+ "log": "/__modal/volumes/vo-D6JSYsmqdCQL1RQ3aMNeyx/hub/models--google--gemma-4-31B-it/snapshots/842da3794eaa0b77d5f08bae87a17459d91ff475\n\nFetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n\nFetching 12 files:   8%|\u258a         | 1/12 [00:00<00:02,  5.13it/s]\nFetching 12 files:  58%|\u2588\u2588\u2588\u2588\u2588\u258a    | 7/12 [00:00<00:00, 25.66it/s]\nFetching 12 files:  83%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258e | 10/12 [00:20<00:00, 25.66it/s]\nFetching 12 files:  92%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f| 11/12 [02:24<00:16, 16.64s/it]\nFetching 12 files: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 12/12 [03:43<00:00, 25.38s/it]\nFetching 12 files: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 12/12 [03:43<00:00, 18.61s/it]\n"
+}

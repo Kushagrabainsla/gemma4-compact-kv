@@ -1,0 +1,317 @@
+{
+ "role": "p",
+ "arm": "C2",
+ "layout_kind": "compact",
+ "status": "ok",
+ "started_at": "2026-11-17T00:49:48Z",
+ "plan": {
+  "warmup": 2000,
+  "window": 20000,
+  "kv_bytes": 16106127360,
+  "cpu_bytes": 68719476736,
+  "max_model_len": 144000,
+  "p_budget": 1024,
+  "d_budget": 2048,
+  "watchdog": 2100,
+  "pool_blocks": 6144
+ },
+ "lease_s": 600,
+ "manifest_ok": true,
+ "gpu": "NVIDIA A100-SXM4-80GB",
+ "engine_kwargs": {
+  "seed": 0,
+  "enforce_eager": true,
+  "kv_cache_dtype": "auto",
+  "enable_prefix_caching": false,
+  "limit_mm_per_prompt": {
+   "image": 0,
+   "audio": 0,
+   "video": 0
+  },
+  "kv_cache_memory_bytes": 16106127360,
+  "max_model_len": 144000,
+  "max_num_seqs": 4,
+  "max_num_batched_tokens": 1024,
+  "kv_transfer_config": {
+   "kv_connector": "NixlConnector",
+   "kv_role": "kv_both",
+   "kv_connector_extra_config": {
+    "ucx_backend_params": {
+     "ucx_error_handling_mode": "none"
+    },
+    "kv_lease_duration": 600
+   }
+  }
+ },
+ "spec": {
+  "applied": true,
+  "layers": [
+   "language_model.model.layers.5.self_attn.attn",
+   "language_model.model.layers.11.self_attn.attn",
+   "language_model.model.layers.17.self_attn.attn",
+   "language_model.model.layers.23.self_attn.attn",
+   "language_model.model.layers.29.self_attn.attn",
+   "language_model.model.layers.35.self_attn.attn",
+   "language_model.model.layers.41.self_attn.attn",
+   "language_model.model.layers.47.self_attn.attn",
+   "language_model.model.layers.53.self_attn.attn",
+   "language_model.model.layers.59.self_attn.attn"
+  ],
+  "k_eq_v": true,
+  "block": 48,
+  "kv_heads": 4,
+  "dtype_bytes": 2,
+  "stock_block": 16,
+  "sliding_page": 262144,
+  "compact_page": 245760
+ },
+ "patched": 10,
+ "engine_seconds": 75.1,
+ "kv": {
+  "num_blocks": 6144,
+  "pool_blocks": 6144,
+  "free_blocks": 6143,
+  "groups": [
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 10,
+    "first_layer": "language_model.model.layers.0.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 262144,
+    "real_page_bytes": 262144,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 16,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 10,
+    "first_layer": "language_model.model.layers.1.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 262144,
+    "real_page_bytes": 262144,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 16,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 10,
+    "first_layer": "language_model.model.layers.2.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 262144,
+    "real_page_bytes": 262144,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 16,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 10,
+    "first_layer": "language_model.model.layers.3.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 262144,
+    "real_page_bytes": 262144,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 16,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 10,
+    "first_layer": "language_model.model.layers.4.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 262144,
+    "real_page_bytes": 262144,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 16,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "FullAttentionSpec",
+    "layers": 10,
+    "first_layer": "language_model.model.layers.5.self_attn.attn",
+    "block_size": 48,
+    "page_bytes": 262144,
+    "real_page_bytes": 245760,
+    "page_size_padded": 262144,
+    "state_content_bytes": 1280,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "sliding_window": null
+   }
+  ],
+  "bytes_per_block": 2621440,
+  "layout": "LBHNC",
+  "tensors": 6
+ },
+ "hooks": {
+  "hooked": [
+   {
+    "layer": 5,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0615234375,
+    "w_unrot_max": 0.0615234375,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 11,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.060302734375,
+    "w_unrot_max": 0.060302734375,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 17,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.060546875,
+    "w_unrot_max": 0.060546875,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 23,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.064453125,
+    "w_unrot_max": 0.064453125,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 29,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0625,
+    "w_unrot_max": 0.0625,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 35,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0654296875,
+    "w_unrot_max": 0.0654296875,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 41,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.06494140625,
+    "w_unrot_max": 0.06494140625,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 47,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0634765625,
+    "w_unrot_max": 0.0634765625,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 53,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.06298828125,
+    "w_unrot_max": 0.06298828125,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 59,
+    "num_heads": 32,
+    "num_kv_heads": 4,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.06005859375,
+    "w_unrot_max": 0.06005859375,
+    "impl": "TritonAttentionImpl"
+   }
+  ],
+  "problems": []
+ },
+ "mode": "VIEWS",
+ "produced": 80,
+ "workload_seconds": 1665.2,
+ "probe_p": [
+  {
+   "k": 0,
+   "first_token": [
+    1963
+   ]
+  },
+  {
+   "k": 1,
+   "first_token": [
+    236751
+   ]
+  },
+  {
+   "k": 2,
+   "first_token": [
+    236767
+   ]
+  },
+  {
+   "k": 3,
+   "first_token": [
+    100904
+   ]
+  },
+  {
+   "k": 4,
+   "first_token": [
+    16132
+   ]
+  },
+  {
+   "k": 5,
+   "first_token": [
+    87875
+   ]
+  },
+  {
+   "k": 6,
+   "first_token": [
+    635
+   ]
+  },
+  {
+   "k": 7,
+   "first_token": [
+    236635
+   ]
+  }
+ ],
+ "finished_at": "2026-11-17T01:19:52Z"
+}

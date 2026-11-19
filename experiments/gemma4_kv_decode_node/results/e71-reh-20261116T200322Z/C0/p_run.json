@@ -1,0 +1,306 @@
+{
+ "role": "p",
+ "arm": "C0",
+ "layout_kind": "compact",
+ "status": "ok",
+ "started_at": "2026-11-16T20:09:03Z",
+ "plan": {
+  "warmup": 50,
+  "window": 300,
+  "kv_bytes": 6442450944,
+  "cpu_bytes": 17179869184,
+  "max_model_len": 32768,
+  "p_budget": 1024,
+  "d_budget": 2048,
+  "watchdog": 150,
+  "pool_blocks": null
+ },
+ "manifest_ok": true,
+ "gpu": "NVIDIA A100-SXM4-80GB",
+ "engine_kwargs": {
+  "seed": 0,
+  "enforce_eager": true,
+  "kv_cache_dtype": "auto",
+  "enable_prefix_caching": false,
+  "limit_mm_per_prompt": {
+   "image": 0,
+   "audio": 0,
+   "video": 0
+  },
+  "kv_cache_memory_bytes": 6442450944,
+  "max_model_len": 32768,
+  "max_num_seqs": 4,
+  "max_num_batched_tokens": 1024,
+  "kv_transfer_config": {
+   "kv_connector": "NixlConnector",
+   "kv_role": "kv_both",
+   "kv_connector_extra_config": {
+    "ucx_backend_params": {
+     "ucx_error_handling_mode": "none"
+    }
+   }
+  }
+ },
+ "spec": {
+  "applied": true,
+  "layers": [
+   "language_model.model.layers.5.self_attn.attn",
+   "language_model.model.layers.11.self_attn.attn",
+   "language_model.model.layers.17.self_attn.attn",
+   "language_model.model.layers.23.self_attn.attn",
+   "language_model.model.layers.29.self_attn.attn",
+   "language_model.model.layers.35.self_attn.attn",
+   "language_model.model.layers.41.self_attn.attn",
+   "language_model.model.layers.47.self_attn.attn"
+  ],
+  "k_eq_v": true,
+  "block": 96,
+  "kv_heads": 1,
+  "dtype_bytes": 2,
+  "stock_block": 16,
+  "sliding_page": 131072,
+  "compact_page": 122880
+ },
+ "patched": 8,
+ "engine_seconds": 99.2,
+ "kv": {
+  "num_blocks": 6144,
+  "pool_blocks": 6144,
+  "free_blocks": 6143,
+  "groups": [
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.0.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.1.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.2.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.3.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.4.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "FullAttentionSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.5.self_attn.attn",
+    "block_size": 96,
+    "page_bytes": 131072,
+    "real_page_bytes": 122880,
+    "page_size_padded": 131072,
+    "state_content_bytes": 1280,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "sliding_window": null
+   }
+  ],
+  "bytes_per_block": 1048576,
+  "layout": "LBHNC",
+  "tensors": 6
+ },
+ "hooks": {
+  "hooked": [
+   {
+    "layer": 5,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.060546875,
+    "w_unrot_max": 0.060546875,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 11,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.061767578125,
+    "w_unrot_max": 0.061767578125,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 17,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.060546875,
+    "w_unrot_max": 0.060546875,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 23,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.06396484375,
+    "w_unrot_max": 0.06396484375,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 29,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0654296875,
+    "w_unrot_max": 0.0654296875,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 35,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0625,
+    "w_unrot_max": 0.0625,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 41,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.06396484375,
+    "w_unrot_max": 0.06396484375,
+    "impl": "TritonAttentionImpl"
+   },
+   {
+    "layer": 47,
+    "num_heads": 16,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "w_unrot_unique": 1,
+    "w_unrot_min": 0.0615234375,
+    "w_unrot_max": 0.0615234375,
+    "impl": "TritonAttentionImpl"
+   }
+  ],
+  "problems": []
+ },
+ "produced": 14,
+ "prefill_tokens": 178605,
+ "prefill_seconds": 40.8,
+ "prefill_tok_s": 4378.52611333076,
+ "depth_log": [
+  [
+   31.4,
+   10,
+   2
+  ],
+  [
+   31.5,
+   10,
+   2
+  ],
+  [
+   31.7,
+   10,
+   2
+  ],
+  [
+   31.8,
+   10,
+   2
+  ],
+  [
+   32.0,
+   10,
+   2
+  ],
+  [
+   32.1,
+   10,
+   2
+  ],
+  [
+   32.3,
+   10,
+   2
+  ],
+  [
+   32.5,
+   10,
+   2
+  ],
+  [
+   32.7,
+   10,
+   2
+  ],
+  [
+   32.9,
+   10,
+   2
+  ],
+  [
+   33.1,
+   10,
+   2
+  ],
+  [
+   33.3,
+   10,
+   2
+  ]
+ ],
+ "finished_at": "2026-11-16T20:12:00Z"
+}

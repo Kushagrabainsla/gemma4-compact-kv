@@ -1,0 +1,1065 @@
+{
+ "models": {
+  "m31": {
+   "status": "ok",
+   "valid": true,
+   "why": [],
+   "checks": {
+    "V1": true,
+    "V2": true,
+    "V3": true,
+    "V4a": true,
+    "V5": true,
+    "V6": true,
+    "V7": true,
+    "V9": true
+   },
+   "fit": {
+    "b": 0.00010438718986112433,
+    "c": 15.821769758601025,
+    "b_low": 0.00010256695813556257,
+    "b_up": 0.00010620742158668609,
+    "se_b": 8.537672258732424e-07,
+    "r2": 0.9997324971912062,
+    "n": 6,
+    "df": 4
+   },
+   "fit_blocks": {
+    "b": 0.00010406096056674904,
+    "c": 15.830221960337072,
+    "b_low": 0.00010323155276925709,
+    "b_up": 0.000104890368364241,
+    "se_b": 4.7503310280181114e-07,
+    "r2": 0.9996666908067332,
+    "n": 18,
+    "df": 16
+   },
+   "median_ms": {
+    "2048": 15.9862,
+    "8192": 16.6673,
+    "32768": 19.29855,
+    "65536": 22.63615
+   },
+   "residuals": {
+    "2048": -0.0031,
+    "8192": -0.0006,
+    "32768": 0.0029,
+    "65536": -0.0012
+   },
+   "local_slope_ratio": 0.9757,
+   "spread": {
+    "2048:4": 0.0015,
+    "8192:4": 0.0042,
+    "32768:4": 0.0036,
+    "65536:4": 0.0037,
+    "65536:4:1": 0.0013,
+    "32768:4:1": 0.0034
+   },
+   "preempted": [],
+   "attribution": {
+    "V4a": true,
+    "V4b": true,
+    "V4c": true,
+    "split": {
+     "2048": {
+      "ok": true,
+      "groups": 480,
+      "match": 1.0,
+      "sliding_ms": 1.6993,
+      "global_ms": 0.3753
+     },
+     "32768": {
+      "ok": true,
+      "groups": 480,
+      "match": 1.0,
+      "sliding_ms": 1.6641,
+      "global_ms": 3.5602
+     },
+     "65536": {
+      "ok": true,
+      "groups": 480,
+      "match": 1.0,
+      "sliding_ms": 1.6404,
+      "global_ms": 6.9073
+     }
+    },
+    "device_growth_ms": 3.1951,
+    "wall_growth_ms": 3.3123,
+    "attention_growth_ms": 3.1497,
+    "top_growth": [
+     [
+      "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o811121081_tens",
+      3.1803
+     ],
+     [
+      "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+      0.0194
+     ],
+     [
+      "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_t, vllm::c3x::Scaled",
+      0.0178
+     ],
+     [
+      "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemal",
+      0.0045
+     ],
+     [
+      "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+      0.0021
+     ]
+    ],
+    "sliding_change": {
+     "32768": -0.0207,
+     "65536": -0.0347
+    }
+   },
+   "V4b": true,
+   "V4c": true,
+   "M1": true,
+   "M2": true,
+   "bw_global_gbps": 3139.1,
+   "copy_gbps": 3044.5,
+   "decide": {
+    "32768": {
+     "T_ms": 19.2985,
+     "S": 0.0665,
+     "S_low": 0.0653,
+     "S_up": 0.0676,
+     "S_block_low": 0.0657,
+     "S_prof": 0.0692,
+     "S_prof_gap": false
+    },
+    "65536": {
+     "T_ms": 22.6362,
+     "S": 0.1133,
+     "S_low": 0.1114,
+     "S_up": 0.1153,
+     "S_block_low": 0.1121,
+     "S_prof": 0.1144,
+     "S_prof_gap": false
+    }
+   },
+   "exploratory": {
+    "16384:8": {
+     "T_ms": 20.5305,
+     "S_est": 0.0625
+    }
+   },
+   "gsm8k": {
+    "n": 32,
+    "correct": 28,
+    "accuracy": 0.875,
+    "bos_removed": true
+   },
+   "kv": {
+    "num_gpu_blocks": 16096,
+    "block_size": 16,
+    "cache_dtype": "auto",
+    "num_blocks": 16096,
+    "groups": [
+     {
+      "layers": 10,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 262144
+     },
+     {
+      "layers": 10,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 262144
+     },
+     {
+      "layers": 10,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 262144
+     },
+     {
+      "layers": 10,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 262144
+     },
+     {
+      "layers": 10,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 262144
+     },
+     {
+      "layers": 10,
+      "spec": "FullAttentionSpec",
+      "block_size": 32,
+      "page_bytes": 262144
+     }
+    ]
+   },
+   "model": {
+    "layer_types": [
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention"
+    ],
+    "is_multimodal_model": true,
+    "is_mm_prefix_lm": false,
+    "mm_limits": "{'image': ImageDummyOptions(count=0, width=None, height=None), 'audio': AudioDummyOptions(count=0, length=None), 'video': VideoDummyOptions(count=0, num_frames=None, width=None, height=None)}"
+   },
+   "kv_tokens_logged": 289754,
+   "max_concurrency_logged": 4.39,
+   "engine_lines": [
+    "(MainProcess pid=2067) INFO 10-30 20:07:12 [model.py:971] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.",
+    "(MainProcess pid=2067) INFO 10-30 20:07:12 [model.py:1028] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.",
+    "(MainProcess pid=2067) INFO 10-30 20:07:13 [config.py:349] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.",
+    "(MainProcess pid=2067) INFO 10-30 20:07:19 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='RedHatAI/gemma-4-31B-it-FP8-dynamic', speculative_config=None, tokenizer='RedHatAI/gemma-4-31B-it-FP8-d",
+    "(MainProcess pid=2067) INFO 10-30 20:07:19 [parallel_state.py:1931] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_37ccd44b4cf1494fbe5e97dff7cc5bc1 backend=nccl",
+    "(MainProcess pid=2067) INFO 10-30 20:07:20 [cuda.py:512] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].",
+    "(MainProcess pid=2067) INFO 10-30 20:07:20 [flash_attn.py:1122] Using FlashAttention version 4",
+    "(MainProcess pid=2067) INFO 10-30 20:10:19 [backends.py:1125] [backbone] Using cache directory: /workspace/cache/vllm/torch_compile_cache/3d98359813/rank_0_0/backbone for vLLM's torch.compile",
+    "(MainProcess pid=2067) INFO 10-30 20:10:19 [backends.py:1187] [backbone] Dynamo bytecode transform time: 24.37 s",
+    "(MainProcess pid=2067) INFO 10-30 20:10:37 [backends.py:417] [backbone] Compiling a graph for compile range (1, 2048) takes 17.57 s",
+    "(MainProcess pid=2067) INFO 10-30 20:10:52 [backends.py:948] collected artifacts: 61 entries, 5 artifacts, 21083643 bytes total",
+    "Capturing CUDA graphs (PIECEWISE):   0%|          | 0/11 [00:00<?, ?it/s]/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be converted ",
+    "JIT kernel warmup (5 compile keys):   0%|          | 0/1 [00:00<?, ?kernel/s]/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be conver",
+    "JIT kernel warmup (5 compile keys): 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 1/1 [00:06<00:00,  6.08s/kernel, FA4DenseAttentionKernel (5 keys)]",
+    "Capturing CUDA graphs (FULL):  43%|\u2588\u2588\u2588\u2588\u258e     | 3/7 [00:00<00:00,  5.61it/s]/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be converte",
+    "(MainProcess pid=2067) WARNING 10-30 20:11:34 [jit_monitor.py:140] CuTeDSL JIT compilation during inference: FlashAttentionForwardSm90. This causes a latency spike; consider extending warmup to cover this shape/config.",
+    "/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncutefl"
+   ],
+   "waste": {
+    "2048:4": {
+     "classes": {
+      "gemm": 0.8302,
+      "attention": 0.1289,
+      "norm_act_rope": 0.0281,
+      "copy_cache": 0.0089,
+      "logits_sampling": 0.0021,
+      "other": 0.0018
+     },
+     "device_ms_per_step": 16.096,
+     "wall_ms_per_step": 15.986,
+     "idle_share": -0.0069,
+     "profile_wall_ms_per_step": 30.589,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.65046
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.09713
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.0579
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.04476
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.04208
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.02786
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.02135
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+       0.01191
+      ]
+     ]
+    },
+    "32768:4": {
+     "classes": {
+      "gemm": 0.695,
+      "attention": 0.2708,
+      "norm_act_rope": 0.0236,
+      "copy_cache": 0.0074,
+      "logits_sampling": 0.0017,
+      "other": 0.0015
+     },
+     "device_ms_per_step": 19.291,
+     "wall_ms_per_step": 19.301,
+     "idle_share": 0.0005,
+     "profile_wall_ms_per_step": 31.641,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.54365
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.18267
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.07924
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.04842
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.03744
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.03612
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.02334
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+       0.01004
+      ]
+     ]
+    },
+    "65536:4": {
+     "classes": {
+      "gemm": 0.5928,
+      "attention": 0.378,
+      "norm_act_rope": 0.0202,
+      "copy_cache": 0.0063,
+      "logits_sampling": 0.0015,
+      "other": 0.0013
+     },
+     "device_ms_per_step": 22.615,
+     "wall_ms_per_step": 22.651,
+     "idle_share": 0.0016,
+     "profile_wall_ms_per_step": 35.078,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.46388
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.30384
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.06654
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.04123
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.0319
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.03083
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.01985
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+       0.00858
+      ]
+     ]
+    },
+    "1024:1": {
+     "classes": {
+      "gemm": 0.8921,
+      "attention": 0.0642,
+      "norm_act_rope": 0.0294,
+      "copy_cache": 0.0095,
+      "logits_sampling": 0.0029,
+      "other": 0.0019
+     },
+     "device_ms_per_step": 14.896,
+     "wall_ms_per_step": 14.915,
+     "idle_share": 0.0013,
+     "profile_wall_ms_per_step": 26.99,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.69903
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.06245
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.04873
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.04557
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.04383
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.03028
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+       0.0119
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_5",
+       0.01136
+      ]
+     ]
+    },
+    "1024:8": {
+     "classes": {
+      "gemm": 0.7834,
+      "attention": 0.1745,
+      "norm_act_rope": 0.0279,
+      "copy_cache": 0.0088,
+      "logits_sampling": 0.0036,
+      "other": 0.0018
+     },
+     "device_ms_per_step": 17.329,
+     "wall_ms_per_step": 17.311,
+     "idle_share": -0.0011,
+     "profile_wall_ms_per_step": 28.657,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.60882
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.15135
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.05408
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.04427
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.04222
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.02648
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.02128
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+       0.01164
+      ]
+     ]
+    },
+    "1024:32": {
+     "classes": {
+      "gemm": 0.5536,
+      "attention": 0.4157,
+      "norm_act_rope": 0.0189,
+      "copy_cache": 0.006,
+      "logits_sampling": 0.0038,
+      "other": 0.002
+     },
+     "device_ms_per_step": 26.212,
+     "wall_ms_per_step": 26.104,
+     "idle_share": -0.0041,
+     "profile_wall_ms_per_step": 37.185,
+     "top": [
+      [
+       "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_",
+       0.43931
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.37438
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.04128
+      ],
+      [
+       "nvjet_sm90_tst_512x32_64x3_2x1_v_bz_TNT",
+       0.03649
+      ],
+      [
+       "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+       0.02926
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.02603
+      ],
+      [
+       "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze",
+       0.01686
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+       0.00789
+      ]
+     ]
+    }
+   }
+  },
+  "m26": {
+   "status": "ok",
+   "valid": true,
+   "why": [],
+   "checks": {
+    "V1": true,
+    "V2": true,
+    "V3": true,
+    "V4a": true,
+    "V5": true,
+    "V6": true,
+    "V7": true,
+    "V9": true
+   },
+   "fit": {
+    "b": 5.356151167168677e-05,
+    "c": 9.063880722891566,
+    "b_low": 4.011620208513724e-05,
+    "b_up": 6.70068212582363e-05,
+    "se_b": 4.604558077585456e-06,
+    "r2": 0.9854344134126377,
+    "n": 4,
+    "df": 2
+   },
+   "fit_blocks": {
+    "b": 5.5013151564591705e-05,
+    "c": 9.041547523427042,
+    "b_low": 5.0931683731717285e-05,
+    "b_up": 5.9094619397466125e-05,
+    "se_b": 2.2524656914318e-06,
+    "r2": 0.9835121865724498,
+    "n": 12,
+    "df": 10
+   },
+   "median_ms": {
+    "2048": 9.0605,
+    "8192": 9.644,
+    "32768": 10.80485
+   },
+   "residuals": {
+    "2048": -0.0125,
+    "8192": 0.0147,
+    "32768": -0.0013
+   },
+   "local_slope_ratio": null,
+   "spread": {
+    "2048:8": 0.0093,
+    "8192:8": 0.01,
+    "32768:8": 0.008,
+    "32768:8:1": 0.0178
+   },
+   "preempted": [
+    "65536:8",
+    "65536:8:1"
+   ],
+   "attribution": {
+    "V4a": true,
+    "V4b": true,
+    "V4c": true,
+    "split": {
+     "2048": {
+      "ok": true,
+      "groups": 240,
+      "match": 1.0,
+      "sliding_ms": 0.8592,
+      "global_ms": 0.1974
+     },
+     "32768": {
+      "ok": true,
+      "groups": 240,
+      "match": 1.0,
+      "sliding_ms": 0.8372,
+      "global_ms": 1.786
+     }
+    },
+    "device_growth_ms": 1.9477,
+    "wall_growth_ms": 1.7444,
+    "attention_growth_ms": 1.5666,
+    "top_growth": [
+     [
+      "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o811121081_tens",
+      1.586
+     ],
+     [
+      "fused_moe_kernel",
+      0.3796
+     ],
+     [
+      "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemal",
+      0.0025
+     ],
+     [
+      "nvjet_sm90_tst_64x8_64x16_2x1_v_bz_TNT",
+      0.0018
+     ],
+     [
+      "triton_red_fused_add_mul_rms_norm_2",
+      0.0016
+     ]
+    ],
+    "sliding_change": {
+     "32768": -0.0256
+    }
+   },
+   "V4b": true,
+   "V4c": true,
+   "M1": true,
+   "M2": true,
+   "bw_global_gbps": 3058.9,
+   "copy_gbps": 3044.5,
+   "decide": {
+    "32768": {
+     "T_ms": 10.8049,
+     "S": 0.0609,
+     "S_low": 0.0456,
+     "S_up": 0.0762,
+     "S_block_low": 0.0579,
+     "S_prof": 0.062,
+     "S_prof_gap": false
+    }
+   },
+   "exploratory": {
+    "16384:16": {
+     "T_ms": 12.9914,
+     "S_est": 0.0507
+    }
+   },
+   "gsm8k": {
+    "n": 32,
+    "correct": 31,
+    "accuracy": 0.9688,
+    "bos_removed": true
+   },
+   "kv": {
+    "num_gpu_blocks": 38888,
+    "block_size": 16,
+    "cache_dtype": "auto",
+    "num_blocks": 38888,
+    "groups": [
+     {
+      "layers": 5,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 131072
+     },
+     {
+      "layers": 5,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 131072
+     },
+     {
+      "layers": 5,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 131072
+     },
+     {
+      "layers": 5,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 131072
+     },
+     {
+      "layers": 5,
+      "spec": "SlidingWindowSpec",
+      "block_size": 16,
+      "page_bytes": 131072
+     },
+     {
+      "layers": 5,
+      "spec": "FullAttentionSpec",
+      "block_size": 32,
+      "page_bytes": 131072
+     }
+    ]
+   },
+   "model": {
+    "layer_types": [
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention"
+    ],
+    "is_multimodal_model": true,
+    "is_mm_prefix_lm": false,
+    "mm_limits": "{'image': ImageDummyOptions(count=0, width=None, height=None), 'audio': AudioDummyOptions(count=0, length=None), 'video': VideoDummyOptions(count=0, num_frames=None, width=None, height=None)}"
+   },
+   "kv_tokens_logged": 700047,
+   "max_concurrency_logged": 10.6,
+   "engine_lines": [
+    "(MainProcess pid=2952) INFO 10-30 20:14:32 [model.py:971] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.",
+    "(MainProcess pid=2952) INFO 10-30 20:14:32 [model.py:1028] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.",
+    "(MainProcess pid=2952) INFO 10-30 20:14:32 [config.py:349] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.",
+    "(MainProcess pid=2952) INFO 10-30 20:14:38 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='google/gemma-4-26B-A4B-it', speculative_config=None, tokenizer='google/gemma-4-26B-A4B-it', skip_tokeni",
+    "(MainProcess pid=2952) INFO 10-30 20:14:39 [parallel_state.py:1931] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_e72eaf10c0d84256bf9434fa8d55cf77 backend=nccl",
+    "(MainProcess pid=2952) INFO 10-30 20:14:41 [cuda.py:512] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].",
+    "(MainProcess pid=2952) INFO 10-30 20:14:41 [flash_attn.py:1122] Using FlashAttention version 4",
+    "(MainProcess pid=2952) INFO 10-30 20:14:41 [unquantized.py:365] Using TRITON Unquantized MoE backend out of potential backends: ['TRITON', 'BATCHED_TRITON', 'FlashInfer TRTLLM', 'FlashInfer CUTLASS'].",
+    "(MainProcess pid=2952) INFO 10-30 20:18:55 [unquantized.py:530] Using TritonExperts MoE backend",
+    "(MainProcess pid=2952) INFO 10-30 20:19:07 [backends.py:1125] [backbone] Using cache directory: /workspace/cache/vllm/torch_compile_cache/79bd1ea91e/rank_0_0/backbone for vLLM's torch.compile",
+    "(MainProcess pid=2952) INFO 10-30 20:19:07 [backends.py:1187] [backbone] Dynamo bytecode transform time: 9.27 s",
+    "(MainProcess pid=2952) INFO 10-30 20:19:21 [backends.py:417] [backbone] Compiling a graph for compile range (1, 2048) takes 14.18 s",
+    "(MainProcess pid=2952) INFO 10-30 20:19:25 [backends.py:948] collected artifacts: 31 entries, 5 artifacts, 18269836 bytes total",
+    "Capturing CUDA graphs (PIECEWISE):   0%|          | 0/11 [00:00<?, ?it/s]/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be converted ",
+    "Capturing CUDA graphs (FULL):   0%|          | 0/2 [00:00<?, ?it/s]/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be converted to a J",
+    "JIT kernel warmup (5 compile keys): 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 1/1 [00:01<00:00,  1.77s/kernel, FA4DenseAttentionKernel (5 keys)]",
+    "(MainProcess pid=2952) WARNING 10-30 20:20:08 [jit_monitor.py:140] CuTeDSL JIT compilation during inference: FlashAttentionForwardSm90. This causes a latency spike; consider extending warmup to cover this shape/config.",
+    "/usr/local/lib/python3.12/dist-packages/nvidia_cutlass_dsl/dsl_packages/cutlass/base_dsl/dsl.py:2300: UserWarning: Argument aux_data (position 18) cannot be converted to a JitArgument for function 'cutlass___call___vllmvllm_flash_attncutefl"
+   ],
+   "waste": {
+    "2048:8": {
+     "classes": {
+      "moe": 0.5165,
+      "gemm": 0.2624,
+      "attention": 0.1254,
+      "norm_act_rope": 0.0763,
+      "copy_cache": 0.009,
+      "logits_sampling": 0.0064,
+      "other": 0.0039
+     },
+     "device_ms_per_step": 8.423,
+     "wall_ms_per_step": 9.06,
+     "idle_share": 0.0704,
+     "profile_wall_ms_per_step": 21.711,
+     "top": [
+      [
+       "fused_moe_kernel",
+       0.46662
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.09417
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_TNT",
+       0.06227
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.05848
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_2x1_v_bz_TNT",
+       0.05339
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_2",
+       0.037
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_splitK_TNT",
+       0.02936
+      ],
+      [
+       "triton_red_fused_add_moe_forward_mul_rms_norm_0",
+       0.02644
+      ]
+     ]
+    },
+    "32768:8": {
+     "classes": {
+      "moe": 0.4561,
+      "attention": 0.2529,
+      "gemm": 0.2132,
+      "norm_act_rope": 0.0622,
+      "copy_cache": 0.0074,
+      "logits_sampling": 0.0052,
+      "other": 0.003
+     },
+     "device_ms_per_step": 10.371,
+     "wall_ms_per_step": 10.81,
+     "idle_share": 0.0406,
+     "profile_wall_ms_per_step": 18.198,
+     "top": [
+      [
+       "fused_moe_kernel",
+       0.41559
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.17048
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.07436
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_TNT",
+       0.05049
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.04747
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_2x1_v_bz_TNT",
+       0.04353
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_2",
+       0.03021
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_splitK_TNT",
+       0.02381
+      ]
+     ]
+    },
+    "1024:1": {
+     "classes": {
+      "gemm": 0.4537,
+      "moe": 0.3,
+      "norm_act_rope": 0.1255,
+      "attention": 0.0861,
+      "copy_cache": 0.015,
+      "other": 0.0115,
+      "logits_sampling": 0.0082
+     },
+     "device_ms_per_step": 4.803,
+     "wall_ms_per_step": 5.136,
+     "idle_share": 0.0649,
+     "profile_wall_ms_per_step": 10.816,
+     "top": [
+      [
+       "fused_moe_kernel",
+       0.24388
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_TNT",
+       0.10845
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.10103
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_2x1_v_bz_TNT",
+       0.09175
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_2",
+       0.06452
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.05725
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_splitK_TNT",
+       0.05095
+      ],
+      [
+       "triton_red_fused_add_moe_forward_mul_rms_norm_0",
+       0.04588
+      ]
+     ]
+    },
+    "1024:8": {
+     "classes": {
+      "moe": 0.5368,
+      "gemm": 0.2557,
+      "attention": 0.1148,
+      "norm_act_rope": 0.0744,
+      "copy_cache": 0.0089,
+      "logits_sampling": 0.0059,
+      "other": 0.0035
+     },
+     "device_ms_per_step": 8.648,
+     "wall_ms_per_step": 8.996,
+     "idle_share": 0.0386,
+     "profile_wall_ms_per_step": 16.488,
+     "top": [
+      [
+       "fused_moe_kernel",
+       0.48814
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.09149
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_TNT",
+       0.06062
+      ],
+      [
+       "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+       0.05693
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_2x1_v_bz_TNT",
+       0.05197
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_2",
+       0.03611
+      ],
+      [
+       "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_splitK_TNT",
+       0.02857
+      ],
+      [
+       "triton_red_fused_add_moe_forward_mul_rms_norm_0",
+       0.02575
+      ]
+     ]
+    },
+    "1024:32": {
+     "classes": {
+      "moe": 0.5667,
+      "attention": 0.2049,
+      "gemm": 0.1651,
+      "norm_act_rope": 0.0473,
+      "logits_sampling": 0.0064,
+      "copy_cache": 0.0058,
+      "other": 0.0037
+     },
+     "device_ms_per_step": 13.886,
+     "wall_ms_per_step": 14.148,
+     "idle_share": 0.0185,
+     "profile_wall_ms_per_step": 21.762,
+     "top": [
+      [
+       "fused_moe_kernel",
+       0.53642
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.18212
+      ],
+      [
+       "nvjet_sm90_tst_512x32_64x3_2x1_v_bz_TNT",
+       0.03606
+      ],
+      [
+       "nvjet_sm90_tst_64x32_64x16_2x1_v_bz_TNT",
+       0.03363
+      ],
+      [
+       "nvjet_sm90_tst_64x16_64x16_1x2_h_bz_TNT",
+       0.02394
+      ],
+      [
+       "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tens",
+       0.02173
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_2",
+       0.02172
+      ],
+      [
+       "nvjet_sm90_tst_64x32_64x16_4x1_v_bz_splitK_TNT",
+       0.01821
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "V8": true,
+ "copy_gbps": 3044.5,
+ "decision": "PIVOT (one model or one cell only; m31@32768 S=0.067 (low 0.065), m31@65536 S=0.113 (low 0.111), m26@32768 S=0.061 (low 0.046))"
+}

@@ -1,0 +1,67 @@
+{
+ "checks": {
+  "W1": true,
+  "W2": true,
+  "W3c": true,
+  "W3": true,
+  "W4": true,
+  "W5": true,
+  "W6": true,
+  "W7": true,
+  "W8": true
+ },
+ "c2_window": {
+  "work_steps": 20000,
+  "seconds": 1490.08,
+  "decode_tokens": 150277,
+  "decode_tok_s": 100.85133912381697,
+  "tokens_per_step": 7.51385,
+  "running_per_step": 7.51545,
+  "saturated_share": 0.9999,
+  "preemptions": 6,
+  "all_steps": 32949,
+  "added": 79,
+  "early_finishes": 0,
+  "completed": 62,
+  "q_depth_mean": 1.26
+ },
+ "lease_lines": {
+  "EV": 0,
+  "C2": 0
+ },
+ "d": 0.00062590306492738,
+ "Q1": "REPEATS",
+ "R_clean": 1.3765663930822218,
+ "Q2": "STEP-CONFIRMS-CLEAN",
+ "probe_same": 8,
+ "probe_first_diff": {},
+ "gold": {
+  "EV": 8,
+  "C2": 8
+ },
+ "logprobs_equal": 8,
+ "tokens_compared": 512,
+ "num_cached_tokens": {
+  "EV": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "C2": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "Q3": "EXACT"
+}

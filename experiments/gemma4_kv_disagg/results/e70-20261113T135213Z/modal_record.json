@@ -1,0 +1,57 @@
+{
+ "run_id": "e70-20261113T135213Z",
+ "started_at": "2026-11-13T14:00:08Z",
+ "env": {
+  "MODAL_CLOUD_PROVIDER": "CLOUD_PROVIDER_AWS",
+  "MODAL_REGION": "us-east",
+  "MODAL_TASK_ID": "ta-01M7AKAHZXXMSA903FJC8ZXNMR",
+  "MODAL_IMAGE_ID": "im-fB0BiHeiQzJNWXeG5yLwb3",
+  "NVIDIA_VISIBLE_DEVICES": "GPU-173c7cef-5bd6-7235-528f-efb1b18ac981,GPU-951ed82e-29c3-2919-fca7-ce8ca86055c8",
+  "CUDA_VERSION": "13.0.2"
+ },
+ "launcher_sha": {
+  "modal_e70.py": "c77b0389853aa831b253757f8bb24af704677160411299a2a65fa1d4037a2970",
+  "e70_stage.py": "1d9b8bea09ffe768c355a26b25fa665f1224dd10ddfe4dae4bf9fab03897613f"
+ },
+ "pairs": {
+  "STOCK": {
+   "p": 0,
+   "d": 0,
+   "seconds": 137.6,
+   "status": {
+    "p": "ok",
+    "d": "ok"
+   },
+   "env": {}
+  },
+  "COMPACT-NOPATCH": {
+   "p": 1,
+   "d": 1,
+   "seconds": 62.5,
+   "status": {
+    "p": "failed",
+    "d": "failed"
+   },
+   "env": {}
+  },
+  "COMPACT": {
+   "p": 0,
+   "d": 0,
+   "seconds": 107.9,
+   "status": {
+    "p": "ok",
+    "d": "ok"
+   },
+   "env": {}
+  }
+ },
+ "manifest_ok": true,
+ "gpus": [
+  "GPU 0: NVIDIA L40S (UUID: GPU-173c7cef-5bd6-7235-528f-efb1b18ac981)",
+  "GPU 1: NVIDIA L40S (UUID: GPU-951ed82e-29c3-2919-fca7-ce8ca86055c8)"
+ ],
+ "snapshot": "/__modal/volumes/vo-D6JSYsmqdCQL1RQ3aMNeyx/hub/models--google--gemma-4-12B-it/snapshots/43c9d014b231474fa7212dbb48a762566c2b255d",
+ "decision": "E-70: PATCH-WORKS | GAP-CONFIRMED | checks {'V1': True, 'V2': True, 'V3': True, 'V4': True} | {'STOCK': {'p': 'ok', 'd': 'ok', 'checked': 3512, 'mismatch': 0, 'global': 952, 'sliding': 2560, 'complete': 8, 'p_gold': 8, 'd_gold': 8}, 'COMPACT-NOPATCH': {'p': 'failed', 'd': 'failed'}, 'COMPACT': {'p': 'ok', 'd': 'ok', 'checked': 3192, 'mismatch': 0, 'global': 632, 'sliding': 2560, 'complete': 8, 'p_gold': 8, 'd_gold': 8}}",
+ "ok": true,
+ "seconds": 316.5
+}

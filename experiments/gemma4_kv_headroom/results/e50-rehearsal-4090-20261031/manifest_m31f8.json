@@ -1,0 +1,167 @@
+{
+ "run_id": "E-50-rehearsal-4090-20261031-m31f8",
+ "experiment": "E-50",
+ "idea": "I-182",
+ "status": "ok",
+ "label": "E-50-rehearsal-4090-20261031",
+ "design_commit": "5eb82c2",
+ "config": {
+  "model": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "kv_cache_dtype": "fp8",
+  "cells": "2048:4,8192:4,32768:4,65536:4,65536:4:1,32768:4:1",
+  "pair_cells": "2048:a65536,8192:a65536,32768:a65536,65536:a65536,65536:a65536:1",
+  "profile_cells": "2048:4,32768:4,65536:4,2048:a32768,32768:a32768,2048:a65536,65536:a65536",
+  "auto_frac": "0.85",
+  "max_num_batched_tokens": "2048",
+  "max_model_len": "67584",
+  "max_num_seqs": "64",
+  "gpu_memory_utilization": "0.92",
+  "steps_per_block": "32",
+  "text_only": true
+ },
+ "started_at": "2026-10-31T06:00:12Z",
+ "finished_at": "2026-10-31T06:09:13Z",
+ "hardware": {
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "gpu_count": 1,
+  "driver": "595.91.07",
+  "cuda": "13.2",
+  "gpu_uuid": "53cefbc3-fbd9-62a9-0095-ee39866bee53",
+  "pod_id": "<pod-id>",
+  "data_center": "EU-RO-1",
+  "price_per_hour": 0.89
+ },
+ "software": {
+  "vllm": "0.33.0rc1.dev229+g3966924d5",
+  "torch": "2.14.0+cu130",
+  "image": "vllm/vllm-openai@sha256:f255c4fad2f30ff5ee80db14d3a03afe9ae0f10d3470339864ff04745fe44cb3",
+  "engine_lines": [
+   "(MainProcess pid=1356) INFO 10-31 06:00:22 [model.py:971] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.",
+   "(MainProcess pid=1356) INFO 10-31 06:00:22 [model.py:1028] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.",
+   "(MainProcess pid=1356) INFO 10-31 06:00:22 [config.py:362] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. FA4 not available, forcing TRITON_ATTN backend.",
+   "(MainProcess pid=1356) INFO 10-31 06:00:27 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='google/gemma-4-E2B-it', speculative_config=None, tokenizer='google/gemma-4-E2B-it', skip_tokenizer_init",
+   "(MainProcess pid=1356) INFO 10-31 06:00:28 [parallel_state.py:1931] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_0df882fe3eaf4a1a93cbc355a5a65cf3 backend=nccl",
+   "(MainProcess pid=1356) INFO 10-31 06:00:29 [cuda.py:452] Using AttentionBackendEnum.TRITON_ATTN backend.",
+   "(MainProcess pid=1356) INFO 10-31 06:00:39 [backends.py:1125] [backbone] Using cache directory: /workspace/cache/vllm/torch_compile_cache/9a2c6ba776/rank_0_0/backbone for vLLM's torch.compile",
+   "(MainProcess pid=1356) INFO 10-31 06:00:39 [backends.py:1187] [backbone] Dynamo bytecode transform time: 5.19 s"
+  ]
+ },
+ "metrics": {
+  "step_ms_2048_4_B4": {
+   "values": [
+    7.1171,
+    7.1203,
+    7.1215
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_8192_4_B4": {
+   "values": [
+    7.6699,
+    7.6228,
+    7.586
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_32768_4_B4": {
+   "values": [
+    8.4982,
+    8.4859,
+    8.5012
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_65536_4_B4": {
+   "values": [
+    9.5296,
+    9.5259,
+    9.5223
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_65536_4_1_B4": {
+   "values": [
+    9.523,
+    9.5236,
+    9.5247
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_32768_4_1_B4": {
+   "values": [
+    8.4982,
+    8.4996,
+    8.4936
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_2048_a65536_B35": {
+   "values": [
+    8.0701,
+    8.0712,
+    8.095
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_8192_a65536_B35": {
+   "values": [
+    10.2044,
+    10.1472,
+    10.1047
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_32768_a65536_B35": {
+   "values": [
+    17.0556,
+    17.0601,
+    17.0683
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_65536_a65536_B35": {
+   "values": [
+    26.1735,
+    26.1877,
+    26.1611
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_65536_a65536_1_B35": {
+   "values": [
+    26.2254,
+    26.2425,
+    26.2489
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "engine_init_s": {
+   "values": [
+    91.1
+   ],
+   "unit": "s",
+   "higher_is_better": false
+  },
+  "gsm8k_accuracy": {
+   "values": [
+    0.5938
+   ],
+   "unit": "fraction",
+   "higher_is_better": true
+  }
+ },
+ "results_path": "experiments/gemma4_kv_headroom/results/e50-rehearsal-4090-20261031/",
+ "notes": "S5 rehearsal: Gemma 4 E2B on 1 x RTX 4090, FP8 KV cache on Triton (SM89), only the 64K pair group, max_num_seqs 64; not a decision run (INVALID as expected: V1, V5, V11). Cost about 0.23 USD (time x price; billing not posted yet). free_blocks_idle=175214; valid=False; why=['V1', 'V5', 'V11']; groups={\"65536\": {\"batch\": 35, \"S\": 0.2656, \"S_low\": 0.26, \"S_up\": 0.2712, \"usable\": false, \"pool_share\": 0.834}}"
+}

@@ -1,0 +1,294 @@
+{
+ "note": "exploratory sizing for E-73; window [2,000, 22,000); depth 3; seeds 0 to 4",
+ "mode": "all69",
+ "calibration": {
+  "step": {
+   "stock": 1.3048843855546894,
+   "compact": 1.33619214068215
+  },
+  "prefill_per_decode_D3H": 8.0,
+  "p_capacity": 1800.0
+ },
+ "points": [
+  {
+   "pool": 6144,
+   "gib": 15.0,
+   "workload": "D3Q",
+   "max_len": 144000,
+   "r_step": {
+    "median": 1.2145288427087066,
+    "min": 1.1693969178497754,
+    "max": 1.2285270772570445,
+    "seed0": 1.2285270772570445
+   },
+   "Q_graph_median": 1.160714130852972,
+   "Q_eager_median": 1.1186711575518775,
+   "running": {
+    "stock": 8.373,
+    "compact": 10.13025
+   },
+   "preemptions_window": {
+    "stock": 14,
+    "compact": 10
+   },
+   "engine_step_ms": {
+    "stock": 69.15547180571716,
+    "compact": 74.9808397998363
+   },
+   "engine_arm_s": {
+    "stock": 1521.4203797257771,
+    "compact": 1649.5784755963984
+   },
+   "prefill_needed_tok_s": 570.7357803250173,
+   "feedable": true,
+   "cost_two_arms_usd": 7.152057485093252,
+   "cells": [
+    {
+     "seed": 0,
+     "r_step": 1.2285270772570445,
+     "Q_graph": 1.170277383512293,
+     "Q_eager": 1.1285157705359006,
+     "running_stock": 8.24585,
+     "running_compact": 10.13025,
+     "preempt_stock": 8,
+     "preempt_compact": 9,
+     "step_ms_stock": 52.99739392338583,
+     "step_ms_compact": 55.62706110347896,
+     "dps_compact": 182.11010610744717,
+     "readmits": {
+      "stock": 7,
+      "compact": 9
+     },
+     "hits": {
+      "stock": 7,
+      "compact": 9
+     }
+    },
+    {
+     "seed": 1,
+     "r_step": 1.2145288427087066,
+     "Q_graph": 1.1700390015709774,
+     "Q_eager": 1.1273644490915549,
+     "running_stock": 8.373,
+     "running_compact": 10.16925,
+     "preempt_stock": 16,
+     "preempt_compact": 7,
+     "step_ms_stock": 54.02248302093901,
+     "step_ms_compact": 56.11531269863423,
+     "dps_compact": 181.2205886584591,
+     "readmits": {
+      "stock": 16,
+      "compact": 7
+     },
+     "hits": {
+      "stock": 12,
+      "compact": 6
+     }
+    },
+    {
+     "seed": 2,
+     "r_step": 1.2211965346141183,
+     "Q_graph": 1.160714130852972,
+     "Q_eager": 1.1186711575518775,
+     "running_stock": 8.8071,
+     "running_compact": 10.7552,
+     "preempt_stock": 14,
+     "preempt_compact": 10,
+     "step_ms_stock": 52.96626227452173,
+     "step_ms_compact": 55.75805458021301,
+     "dps_compact": 192.8905174503115,
+     "readmits": {
+      "stock": 13,
+      "compact": 10
+     },
+     "hits": {
+      "stock": 13,
+      "compact": 10
+     }
+    },
+    {
+     "seed": 3,
+     "r_step": 1.1949147604032453,
+     "Q_graph": 1.0792417047924607,
+     "Q_eager": 1.0438918867255367,
+     "running_stock": 7.72235,
+     "running_compact": 9.22755,
+     "preempt_stock": 8,
+     "preempt_compact": 26,
+     "step_ms_stock": 53.132830466669844,
+     "step_ms_compact": 58.83672085909787,
+     "dps_compact": 156.8331794373471,
+     "readmits": {
+      "stock": 8,
+      "compact": 26
+     },
+     "hits": {
+      "stock": 8,
+      "compact": 9
+     }
+    },
+    {
+     "seed": 4,
+     "r_step": 1.1693969178497754,
+     "Q_graph": 1.0527378997761363,
+     "Q_eager": 1.0181195208708071,
+     "running_stock": 8.65305,
+     "running_compact": 10.11885,
+     "preempt_stock": 14,
+     "preempt_compact": 23,
+     "step_ms_stock": 52.885769088414754,
+     "step_ms_compact": 58.766684355963804,
+     "dps_compact": 172.18684550429487,
+     "readmits": {
+      "stock": 14,
+      "compact": 23
+     },
+     "hits": {
+      "stock": 14,
+      "compact": 12
+     }
+    }
+   ]
+  },
+  {
+   "pool": 6144,
+   "gib": 15.0,
+   "workload": "D3H",
+   "max_len": 144000,
+   "r_step": {
+    "median": 1.3532454630319537,
+    "min": 1.3083682044768459,
+    "max": 1.3637955535182213,
+    "seed0": 1.3637955535182213
+   },
+   "Q_graph_median": 1.30749748413925,
+   "Q_eager_median": 1.2598202163355858,
+   "running": {
+    "stock": 5.5609,
+    "compact": 7.51965
+   },
+   "preemptions_window": {
+    "stock": 5,
+    "compact": 6
+   },
+   "engine_step_ms": {
+    "stock": 70.31678661123986,
+    "compact": 74.28362770059073
+   },
+   "engine_arm_s": {
+    "stock": 1546.969305447277,
+    "compact": 1634.239809412996
+   },
+   "prefill_needed_tok_s": 851.9831273241567,
+   "feedable": true,
+   "cost_two_arms_usd": 7.170921960615841,
+   "cells": [
+    {
+     "seed": 0,
+     "r_step": 1.3637955535182213,
+     "Q_graph": 1.3245396401285112,
+     "Q_eager": 1.2759183840910564,
+     "running_stock": 5.45375,
+     "running_compact": 7.4378,
+     "preempt_stock": 3,
+     "preempt_compact": 3,
+     "step_ms_stock": 53.88736917205819,
+     "step_ms_compact": 55.50210002439659,
+     "dps_compact": 134.00934373168997,
+     "readmits": {
+      "stock": 3,
+      "compact": 2
+     },
+     "hits": {
+      "stock": 3,
+      "compact": 2
+     }
+    },
+    {
+     "seed": 1,
+     "r_step": 1.3595640993364382,
+     "Q_graph": 1.3156374418929622,
+     "Q_eager": 1.2680292944597982,
+     "running_stock": 5.5609,
+     "running_compact": 7.5604,
+     "preempt_stock": 5,
+     "preempt_compact": 6,
+     "step_ms_stock": 53.858824055969485,
+     "step_ms_compact": 55.654992898679176,
+     "dps_compact": 135.8440565029598,
+     "readmits": {
+      "stock": 5,
+      "compact": 6
+     },
+     "hits": {
+      "stock": 5,
+      "compact": 6
+     }
+    },
+    {
+     "seed": 2,
+     "r_step": 1.328466758102938,
+     "Q_graph": 1.292884232779352,
+     "Q_eager": 1.2460807575027566,
+     "running_stock": 5.5412,
+     "running_compact": 7.3613,
+     "preempt_stock": 3,
+     "preempt_compact": 7,
+     "step_ms_stock": 54.17561885218203,
+     "step_ms_compact": 55.65667366388127,
+     "dps_compact": 132.26266529070637,
+     "readmits": {
+      "stock": 3,
+      "compact": 7
+     },
+     "hits": {
+      "stock": 3,
+      "compact": 7
+     }
+    },
+    {
+     "seed": 3,
+     "r_step": 1.3083682044768459,
+     "Q_graph": 1.2718596972276066,
+     "Q_eager": 1.2253581713896442,
+     "running_stock": 5.74735,
+     "running_compact": 7.51965,
+     "preempt_stock": 6,
+     "preempt_compact": 6,
+     "step_ms_stock": 54.03161711805699,
+     "step_ms_compact": 55.593522397660266,
+     "dps_compact": 135.26126202639168,
+     "readmits": {
+      "stock": 6,
+      "compact": 6
+     },
+     "hits": {
+      "stock": 6,
+      "compact": 6
+     }
+    },
+    {
+     "seed": 4,
+     "r_step": 1.3532454630319537,
+     "Q_graph": 1.30749748413925,
+     "Q_eager": 1.2598202163355858,
+     "running_stock": 5.83815,
+     "running_compact": 7.90045,
+     "preempt_stock": 6,
+     "preempt_compact": 6,
+     "step_ms_stock": 53.615216620922354,
+     "step_ms_compact": 55.502428941193465,
+     "dps_compact": 142.3442207974496,
+     "readmits": {
+      "stock": 6,
+      "compact": 6
+     },
+     "hits": {
+      "stock": 6,
+      "compact": 6
+     }
+    }
+   ]
+  }
+ ]
+}

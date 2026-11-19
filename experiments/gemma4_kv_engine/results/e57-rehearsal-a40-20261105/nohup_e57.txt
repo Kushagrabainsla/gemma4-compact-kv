@@ -1,0 +1,15 @@
+04:35:04 disk before the download: mfs#eu-se-1.runpod.net:9421  700T  439T  261T  63% /workspace
+04:35:55 setup done after 64 s; versions: vllm 0.33.0rc1.dev229+g3966924d5 torch 2.14.0+cu130 transformers 5.20.2 VLLM_BUILD_COMMIT=unset 
+04:35:55 deadline in 1436 s (session watchdog 1500 s; boot watchdog end 1793855039, margin 240 s)
+04:45:59 stock engine: (MainProcess pid=1232) INFO 11-05 04:36:40 [kv_cache_utils.py:1147] GPU KV cache size: 111,085 tokens, Maximum concurrency for 16,896 tokens per request: 6.57x
+04:45:59 stock engine: (MainProcess pid=1232) INFO 11-05 04:36:40 [kv_cache_utils.py:865] kv cache group sizes (16, 16, 16, 16, 16, 64)
+04:45:59 stock engine: (MainProcess pid=1232) INFO 11-05 04:36:40 [kv_cache_utils.py:866] kv lcm block sizes 64
+04:45:59 stock: exit 0 after 668 s; {"layout": "stock", "status": "ok", "arms": ["STOCK", "EMULV", "DET"], "cut": ["capacity 16384 EMULV"], "step_errors": [], "errors": []}
+04:54:28 compact engine: (MainProcess pid=2367) INFO 11-05 04:46:28 [kv_cache_utils.py:1147] GPU KV cache size: 116,573 tokens, Maximum concurrency for 16,896 tokens per request: 6.90x
+04:54:28 compact engine: (MainProcess pid=2367) INFO 11-05 04:46:28 [kv_cache_utils.py:865] kv cache group sizes (16, 16, 16, 16, 16, 96)
+04:54:28 compact engine: (MainProcess pid=2367) INFO 11-05 04:46:28 [kv_cache_utils.py:866] kv lcm block sizes 96
+04:54:28 compact: exit 0 after 1177 s; {"layout": "compact", "status": "ok", "arms": ["COMPACT", "GROSS", "NAIVE"], "cut": [], "step_errors": [], "errors": []}
+04:54:30 decision: E-57: REHEARSAL | EQ EXACT | INCONCLUSIVE1 change +0.0000 [-0.0338, +0.0338] | PARTIAL-CAP R8K 1.102 R16K 1.171 | TPUT-NONE T8K 1.013 (16->16) T16K 1.032 (16->16) | OVH-OK O8K 0.987 O16K 0.969 | failed checks: V9
+04:54:30 results: 15625 KB in /workspace/results/e57; disk: mfs#eu-se-1.runpod.net:9421  700T  439T  261T  63% /workspace
+04:54:30 done after 1179 s
+04:54:30 AUTO_STOP in 300 s; copy RES now

@@ -1,0 +1,570 @@
+[
+ {
+  "context": 2048,
+  "batch": 4,
+  "rep": 0,
+  "max_tokens": 210,
+  "steps_per_block": 32,
+  "step_ms": [
+   16.3135,
+   16.3722,
+   16.3873
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 0.567,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 14530,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 5,
+  "budget_left": 205,
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 14523,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "slope",
+  "blocks_per_request": 391.2
+ },
+ {
+  "context": 8192,
+  "batch": 4,
+  "rep": 0,
+  "max_tokens": 219,
+  "steps_per_block": 32,
+  "step_ms": [
+   17.0061,
+   17.0358,
+   17.0614
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 2.424,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 13757,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 14,
+  "budget_left": 205,
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 13755,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "slope",
+  "blocks_per_request": 584.5
+ },
+ {
+  "context": 32768,
+  "batch": 4,
+  "rep": 0,
+  "max_tokens": 255,
+  "steps_per_block": 32,
+  "step_ms": [
+   19.5845,
+   19.6417,
+   19.6367
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 13.367,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 10663,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 50,
+  "budget_left": 205,
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 10681,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "slope",
+  "blocks_per_request": 1358.0
+ },
+ {
+  "context": 65536,
+  "batch": 4,
+  "rep": 0,
+  "max_tokens": 303,
+  "steps_per_block": 32,
+  "step_ms": [
+   22.9036,
+   22.9628,
+   22.9657
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 36.887,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 6533,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 98,
+  "budget_left": 205,
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 6581,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "slope",
+  "blocks_per_request": 2390.5
+ },
+ {
+  "context": 2048,
+  "batch": 10,
+  "rep": 0,
+  "max_tokens": 222,
+  "steps_per_block": 32,
+  "step_ms": [
+   19.3384,
+   19.4313,
+   19.4472
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 1.395,
+  "sched": {
+   "running": 10,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 12180,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 11,
+  "budget_left": 211,
+  "sched_after": {
+   "running": 10,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 12165,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "pair",
+  "spec": "2048:a32768",
+  "auto_for": 32768
+ },
+ {
+  "context": 8192,
+  "batch": 10,
+  "rep": 0,
+  "max_tokens": 249,
+  "steps_per_block": 32,
+  "step_ms": [
+   21.4257,
+   21.4801,
+   21.5337
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 6.122,
+  "sched": {
+   "running": 10,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 10218,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 38,
+  "budget_left": 211,
+  "sched_after": {
+   "running": 10,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 10242,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "pair",
+  "spec": "8192:a32768",
+  "auto_for": 32768
+ },
+ {
+  "context": 32768,
+  "batch": 10,
+  "rep": 0,
+  "max_tokens": 357,
+  "steps_per_block": 32,
+  "step_ms": [
+   29.4439,
+   29.5525,
+   29.5749
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 34.12,
+  "sched": {
+   "running": 10,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 2350,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 146,
+  "budget_left": 211,
+  "sched_after": {
+   "running": 10,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 2545,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "pair",
+  "spec": "32768:a32768",
+  "auto_for": 32768
+ },
+ {
+  "context": 2048,
+  "batch": 5,
+  "rep": 0,
+  "max_tokens": 212,
+  "steps_per_block": 32,
+  "step_ms": [
+   16.892,
+   16.9602,
+   16.9367
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 0.704,
+  "sched": {
+   "running": 5,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 14140,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 6,
+  "budget_left": 206,
+  "sched_after": {
+   "running": 5,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 14130,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "pair",
+  "spec": "2048:a65536",
+  "auto_for": 65536
+ },
+ {
+  "context": 8192,
+  "batch": 5,
+  "rep": 0,
+  "max_tokens": 224,
+  "steps_per_block": 32,
+  "step_ms": [
+   17.9113,
+   17.9795,
+   17.9663
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 3.055,
+  "sched": {
+   "running": 5,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 13170,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 18,
+  "budget_left": 206,
+  "sched_after": {
+   "running": 5,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 13170,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "pair",
+  "spec": "8192:a65536",
+  "auto_for": 65536
+ },
+ {
+  "context": 32768,
+  "batch": 5,
+  "rep": 0,
+  "max_tokens": 272,
+  "steps_per_block": 32,
+  "step_ms": [
+   21.7874,
+   21.8587,
+   21.8464
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 16.808,
+  "sched": {
+   "running": 5,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 9291,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 66,
+  "budget_left": 206,
+  "sched_after": {
+   "running": 5,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 9326,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "pair",
+  "spec": "32768:a65536",
+  "auto_for": 65536
+ },
+ {
+  "context": 65536,
+  "batch": 5,
+  "rep": 0,
+  "max_tokens": 336,
+  "steps_per_block": 32,
+  "step_ms": [
+   27.0748,
+   27.1266,
+   27.1202
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "prefill_s": 46.271,
+  "sched": {
+   "running": 5,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 4115,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "tokens_at_start": 130,
+  "budget_left": 206,
+  "sched_after": {
+   "running": 5,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 4200,
+   "request_preemptions": {},
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "finished": {},
+  "kind": "pair",
+  "spec": "65536:a65536",
+  "auto_for": 65536
+ }
+]

@@ -1,0 +1,2 @@
+GPU 0: NVIDIA A40 (UUID: GPU-7776502a-bd84-f44d-1a44-a930248945cf)
+NVML: Unable to retrieve Nvlink information as all links are inActive

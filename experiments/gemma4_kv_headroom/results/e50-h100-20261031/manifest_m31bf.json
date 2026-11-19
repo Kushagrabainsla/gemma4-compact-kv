@@ -1,0 +1,167 @@
+{
+ "run_id": "E-50-H100-20261031-m31bf",
+ "experiment": "E-50",
+ "idea": "I-182",
+ "status": "ok",
+ "label": "E-50-H100-20261031",
+ "design_commit": "5eb82c2",
+ "config": {
+  "model": "RedHatAI/gemma-4-31B-it-FP8-dynamic",
+  "revision": "d4ab4f579dd3516f97d8a6a4c98d0653480bad15",
+  "kv_cache_dtype": "auto",
+  "cells": "2048:4,8192:4,32768:4,65536:4",
+  "pair_cells": "2048:a32768,8192:a32768,32768:a32768,2048:a65536,8192:a65536,32768:a65536,65536:a65536",
+  "profile_cells": "2048:4,32768:4,65536:4,2048:a32768,32768:a32768,2048:a65536,65536:a65536",
+  "auto_frac": "0.85",
+  "max_num_batched_tokens": "2048",
+  "max_model_len": "67584",
+  "max_num_seqs": "32",
+  "gpu_memory_utilization": "0.92",
+  "steps_per_block": "32",
+  "text_only": true
+ },
+ "started_at": "2026-10-31T06:50:36Z",
+ "finished_at": "2026-10-31T06:56:56Z",
+ "hardware": {
+  "gpu_name": "NVIDIA H100 80GB HBM3",
+  "gpu_count": 1,
+  "driver": "595.91.07",
+  "cuda": "13.2",
+  "gpu_uuid": "69045460-a76b-3ead-a339-bdae729447ad",
+  "pod_id": "<pod-id>",
+  "data_center": "US-NE-1",
+  "price_per_hour": 3.99
+ },
+ "software": {
+  "vllm": "0.33.0rc1.dev229+g3966924d5",
+  "torch": "2.14.0+cu130",
+  "image": "vllm/vllm-openai@sha256:f255c4fad2f30ff5ee80db14d3a03afe9ae0f10d3470339864ff04745fe44cb3",
+  "engine_lines": [
+   "(MainProcess pid=3840) INFO 10-31 06:50:40 [model.py:971] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.",
+   "(MainProcess pid=3840) INFO 10-31 06:50:40 [model.py:1028] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.",
+   "(MainProcess pid=3840) INFO 10-31 06:50:41 [config.py:349] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. Using FA4 for all layers to avoid mixed FA3/FA4 penalty.",
+   "(MainProcess pid=3840) INFO 10-31 06:50:46 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='RedHatAI/gemma-4-31B-it-FP8-dynamic', speculative_config=None, tokenizer='RedHatAI/gemma-4-31B-it-FP8-d",
+   "(MainProcess pid=3840) INFO 10-31 06:50:46 [parallel_state.py:1931] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_dcaed1491f504fe491a45f67dbbbb15e backend=nccl",
+   "(MainProcess pid=3840) INFO 10-31 06:50:48 [cuda.py:512] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].",
+   "(MainProcess pid=3840) INFO 10-31 06:50:48 [flash_attn.py:1122] Using FlashAttention version 4",
+   "(MainProcess pid=3840) INFO 10-31 06:52:20 [backends.py:1125] [backbone] Using cache directory: /workspace/cache/vllm/torch_compile_cache/fe6d633951/rank_0_0/backbone for vLLM's torch.compile"
+  ]
+ },
+ "metrics": {
+  "step_ms_2048_4_B4": {
+   "values": [
+    16.3135,
+    16.3722,
+    16.3873
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_8192_4_B4": {
+   "values": [
+    17.0061,
+    17.0358,
+    17.0614
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_32768_4_B4": {
+   "values": [
+    19.5845,
+    19.6417,
+    19.6367
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_65536_4_B4": {
+   "values": [
+    22.9036,
+    22.9628,
+    22.9657
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_2048_a32768_B10": {
+   "values": [
+    19.3384,
+    19.4313,
+    19.4472
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_8192_a32768_B10": {
+   "values": [
+    21.4257,
+    21.4801,
+    21.5337
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_32768_a32768_B10": {
+   "values": [
+    29.4439,
+    29.5525,
+    29.5749
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_2048_a65536_B5": {
+   "values": [
+    16.892,
+    16.9602,
+    16.9367
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_8192_a65536_B5": {
+   "values": [
+    17.9113,
+    17.9795,
+    17.9663
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_32768_a65536_B5": {
+   "values": [
+    21.7874,
+    21.8587,
+    21.8464
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_65536_a65536_B5": {
+   "values": [
+    27.0748,
+    27.1266,
+    27.1202
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "engine_init_s": {
+   "values": [
+    165.4
+   ],
+   "unit": "s",
+   "higher_is_better": false
+  },
+  "gsm8k_accuracy": {
+   "values": [
+    0.875
+   ],
+   "unit": "fraction",
+   "higher_is_better": true
+  }
+ },
+ "results_path": "experiments/gemma4_kv_headroom/results/e50-h100-20261031/",
+ "notes": "S6 session: 1 x H100 SXM, three arms in one Pod; frozen decision GO. Session cost about 2.90 USD (time x price; billing not posted yet). free_blocks_idle=16095; valid=True; why=[]; groups={\"32768\": {\"batch\": 10, \"S\": 0.1369, \"S_low\": 0.1347, \"S_up\": 0.139, \"usable\": true, \"pool_share\": 0.844}, \"65536\": {\"batch\": 5, \"S\": 0.145, \"S_low\": 0.1435, \"S_up\": 0.1466, \"usable\": true, \"pool_share\": 0.743}}"
+}

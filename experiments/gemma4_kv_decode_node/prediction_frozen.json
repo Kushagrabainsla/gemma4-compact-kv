@@ -1,0 +1,28 @@
+{
+ "workload": "D3H",
+ "seed": 0,
+ "pool": 6144,
+ "warmup": 2000,
+ "horizon": 22000,
+ "Q_pred": 1.3241947081362542,
+ "band": [
+  1.2741947081362541,
+  1.3741947081362542
+ ],
+ "r_step": 1.3633864257042836,
+ "included": true,
+ "Q_pred_gemm": 1.3169780744259874,
+ "Q_pred_max": 1.3031611289437097,
+ "preemptions": {
+  "stock": 3,
+  "compact": 3
+ },
+ "decode_per_step": {
+  "stock": 5.4559,
+  "compact": 7.4385
+ },
+ "decode_tok_s": {
+  "stock": 101.24116668913297,
+  "compact": 134.02038926838304
+ }
+}

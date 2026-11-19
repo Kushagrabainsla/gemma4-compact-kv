@@ -1,0 +1,383 @@
+{
+ "word": "BUILD-PIVOT",
+ "eq": "EXACT",
+ "eq_detail": {
+  "ids": [
+   432,
+   432
+  ],
+  "arrays": [
+   1264,
+   1264
+  ],
+  "probe": true,
+  "final_changes": 0,
+  "nll_change": 0.0,
+  "nll_ci": [
+   0.0,
+   0.0
+  ],
+  "schedule_match": {
+   "score": true,
+   "gsm8k": true,
+   "needle": true
+  }
+ },
+ "det": {
+  "ids": [
+   32,
+   32
+  ],
+  "arrays": [
+   96,
+   96
+  ],
+  "ok": true
+ },
+ "h1": "GO1",
+ "answers": {
+  "COMPACT": {
+   "acc": 0.9768518518518519,
+   "acc_stock": 0.9722222222222222,
+   "acc_change": 0.004629629629629629,
+   "acc_ci": [
+    -0.003201701697850852,
+    0.012418291559602005
+   ],
+   "final_changes": 2,
+   "text_changes": 88,
+   "nll_change": [
+    3.7020081465952915e-05,
+    [
+     -0.0006776516379014722,
+     0.0007516918008333781
+    ]
+   ]
+  },
+  "EMULV": {
+   "acc": 0.9768518518518519,
+   "acc_stock": 0.9722222222222222,
+   "acc_change": 0.004629629629629629,
+   "acc_ci": [
+    -0.003201701697850852,
+    0.012418291559602005
+   ],
+   "final_changes": 2,
+   "text_changes": 88,
+   "nll_change": [
+    3.7020081465952915e-05,
+    [
+     -0.0006776516379014722,
+     0.0007516918008333781
+    ]
+   ]
+  }
+ },
+ "cap": {
+  "32768": {
+   "footprint": [
+    1349.0,
+    1008.0
+   ],
+   "ratio": 1.3382936507936507,
+   "peak": [
+    2602,
+    2262
+   ],
+   "ratio_peak": 1.1503094606542883,
+   "concurrency": [
+    3.624907338769459,
+    4.850198412698413
+   ],
+   "ratio_concurrency": 1.338019971110462,
+   "batch": 3,
+   "batch_compact": 4,
+   "limit": [
+    "probe refused",
+    "probe refused"
+   ],
+   "tps": [
+    56.021,
+    69.654
+   ],
+   "tput": 1.243355170382535,
+   "ovh": 1.0867397434221582,
+   "hook": 1.0476928535414838,
+   "cache": 1.0372694055788254,
+   "aa": -0.000597561203338981,
+   "ovh_line": 1.05,
+   "alloc_fail": [
+    1,
+    1
+   ]
+  },
+  "65536": {
+   "footprint": [
+    2373.0,
+    1690.0
+   ],
+   "ratio": 1.4041420118343195,
+   "peak": [
+    3626,
+    2944
+   ],
+   "ratio_peak": 1.231657608695652,
+   "concurrency": [
+    2.0606826801517064,
+    2.8928994082840234
+   ],
+   "ratio_concurrency": 1.4038548662286274,
+   "batch": 2,
+   "batch_compact": 2,
+   "limit": [
+    "probe refused",
+    "probe refused"
+   ],
+   "tps": [
+    36.321,
+    34.839
+   ],
+   "tput": 0.9591971586685388,
+   "ovh": 1.0425686473921256,
+   "hook": null,
+   "cache": null,
+   "aa": -1.8160685747448113e-05,
+   "ovh_line": 1.05,
+   "alloc_fail": [
+    2,
+    0
+   ]
+  }
+ },
+ "cap_word": "GO-CAP",
+ "tput_word": "TPUT-PARTIAL",
+ "ovh_word": "OVH-HIGH",
+ "gross": null,
+ "validity": {
+  "V1": [],
+  "V2": [],
+  "V3": [],
+  "V4": [],
+  "V5": [],
+  "V6": [],
+  "V7": [],
+  "V8": [],
+  "V9": []
+ },
+ "rehearsal": false,
+ "spec": {
+  "applied": true,
+  "layers": [
+   "language_model.model.layers.5.self_attn.attn",
+   "language_model.model.layers.11.self_attn.attn",
+   "language_model.model.layers.17.self_attn.attn",
+   "language_model.model.layers.23.self_attn.attn",
+   "language_model.model.layers.29.self_attn.attn",
+   "language_model.model.layers.35.self_attn.attn",
+   "language_model.model.layers.41.self_attn.attn",
+   "language_model.model.layers.47.self_attn.attn",
+   "language_model.model.layers.53.self_attn.attn",
+   "language_model.model.layers.59.self_attn.attn"
+  ],
+  "k_eq_v": true,
+  "block": 48,
+  "kv_heads": 4,
+  "dtype_bytes": 2,
+  "stock_block": 16,
+  "sliding_page": 262144,
+  "compact_page": 245760
+ },
+ "kv": {
+  "stock": {
+   "num_blocks": 6144,
+   "pool_blocks": 6144,
+   "free_blocks": 6143,
+   "groups": [
+    {
+     "type": "SlidingWindowSpec",
+     "layers": 10,
+     "first_layer": "language_model.model.layers.0.self_attn.attn",
+     "block_size": 16,
+     "page_bytes": 262144,
+     "real_page_bytes": 262144,
+     "page_size_padded": null,
+     "state_content_bytes": null,
+     "num_kv_heads": 16,
+     "head_size": 256,
+     "sliding_window": 1024
+    },
+    {
+     "type": "SlidingWindowSpec",
+     "layers": 10,
+     "first_layer": "language_model.model.layers.1.self_attn.attn",
+     "block_size": 16,
+     "page_bytes": 262144,
+     "real_page_bytes": 262144,
+     "page_size_padded": null,
+     "state_content_bytes": null,
+     "num_kv_heads": 16,
+     "head_size": 256,
+     "sliding_window": 1024
+    },
+    {
+     "type": "SlidingWindowSpec",
+     "layers": 10,
+     "first_layer": "language_model.model.layers.2.self_attn.attn",
+     "block_size": 16,
+     "page_bytes": 262144,
+     "real_page_bytes": 262144,
+     "page_size_padded": null,
+     "state_content_bytes": null,
+     "num_kv_heads": 16,
+     "head_size": 256,
+     "sliding_window": 1024
+    },
+    {
+     "type": "SlidingWindowSpec",
+     "layers": 10,
+     "first_layer": "language_model.model.layers.3.self_attn.attn",
+     "block_size": 16,
+     "page_bytes": 262144,
+     "real_page_bytes": 262144,
+     "page_size_padded": null,
+     "state_content_bytes": null,
+     "num_kv_heads": 16,
+     "head_size": 256,
+     "sliding_window": 1024
+    },
+    {
+     "type": "SlidingWindowSpec",
+     "layers": 10,
+     "first_layer": "language_model.model.layers.4.self_attn.attn",
+     "block_size": 16,
+     "page_bytes": 262144,
+     "real_page_bytes": 262144,
+     "page_size_padded": null,
+     "state_content_bytes": null,
+     "num_kv_heads": 16,
+     "head_size": 256,
+     "sliding_window": 1024
+    },
+    {
+     "type": "FullAttentionSpec",
+     "layers": 10,
+     "first_layer": "language_model.model.layers.5.self_attn.attn",
+     "block_size": 32,
+     "page_bytes": 262144,
+     "real_page_bytes": 262144,
+     "page_size_padded": null,
+     "state_content_bytes": null,
+     "num_kv_heads": 4,
+     "head_size": 512,
+     "sliding_window": null
+    }
+   ],
+   "bytes_per_block": 2621440,
+   "layout": "LBNHC",
+   "tensors": 6
+  },
+  "compact": {
+   "num_blocks": 6144,
+   "pool_blocks": 6144,
+   "free_blocks": 6143,
+   "groups": [
+    {
+     "type": "SlidingWindowSpec",
+     "layers": 10,
+     "first_layer": "language_model.model.layers.0.self_attn.attn",
+     "block_size": 16,
+     "page_bytes": 262144,
+     "real_page_bytes": 262144,
+     "page_size_padded": null,
+     "state_content_bytes": null,
+     "num_kv_heads": 16,
+     "head_size": 256,
+     "sliding_window": 1024
+    },
+    {
+     "type": "SlidingWindowSpec",
+     "layers": 10,
+     "first_layer": "language_model.model.layers.1.self_attn.attn",
+     "block_size": 16,
+     "page_bytes": 262144,
+     "real_page_bytes": 262144,
+     "page_size_padded": null,
+     "state_content_bytes": null,
+     "num_kv_heads": 16,
+     "head_size": 256,
+     "sliding_window": 1024
+    },
+    {
+     "type": "SlidingWindowSpec",
+     "layers": 10,
+     "first_layer": "language_model.model.layers.2.self_attn.attn",
+     "block_size": 16,
+     "page_bytes": 262144,
+     "real_page_bytes": 262144,
+     "page_size_padded": null,
+     "state_content_bytes": null,
+     "num_kv_heads": 16,
+     "head_size": 256,
+     "sliding_window": 1024
+    },
+    {
+     "type": "SlidingWindowSpec",
+     "layers": 10,
+     "first_layer": "language_model.model.layers.3.self_attn.attn",
+     "block_size": 16,
+     "page_bytes": 262144,
+     "real_page_bytes": 262144,
+     "page_size_padded": null,
+     "state_content_bytes": null,
+     "num_kv_heads": 16,
+     "head_size": 256,
+     "sliding_window": 1024
+    },
+    {
+     "type": "SlidingWindowSpec",
+     "layers": 10,
+     "first_layer": "language_model.model.layers.4.self_attn.attn",
+     "block_size": 16,
+     "page_bytes": 262144,
+     "real_page_bytes": 262144,
+     "page_size_padded": null,
+     "state_content_bytes": null,
+     "num_kv_heads": 16,
+     "head_size": 256,
+     "sliding_window": 1024
+    },
+    {
+     "type": "FullAttentionSpec",
+     "layers": 10,
+     "first_layer": "language_model.model.layers.5.self_attn.attn",
+     "block_size": 48,
+     "page_bytes": 262144,
+     "real_page_bytes": 245760,
+     "page_size_padded": 262144,
+     "state_content_bytes": 1280,
+     "num_kv_heads": 4,
+     "head_size": 512,
+     "sliding_window": null
+    }
+   ],
+   "bytes_per_block": 2621440,
+   "layout": "LBNHC",
+   "tensors": 6
+  }
+ },
+ "log_concurrency": {
+  "stock": {
+   "tokens": 66048,
+   "x": 1.67
+  },
+  "compact": {
+   "tokens": 66048,
+   "x": 2.06
+  },
+  "ratio": 1.2335329341317367
+ },
+ "predicted_ratio": {
+  "32768": 1.3382936507936507,
+  "65536": 1.4033116499112952
+ }
+}

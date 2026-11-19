@@ -1,0 +1,1 @@
+PIVOT (one model or one cell only; m31@32768 S=0.067 (low 0.065), m31@65536 S=0.113 (low 0.111), m26@32768 S=0.061 (low 0.046))

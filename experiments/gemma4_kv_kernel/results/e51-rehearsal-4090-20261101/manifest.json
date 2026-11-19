@@ -1,0 +1,217 @@
+{
+ "run_id": "e51-rehearsal-4090-20261101",
+ "experiment": "E-51",
+ "idea": "I-182",
+ "status": "ok",
+ "label": "e51-rehearsal-4090-20261101",
+ "design_commit": "a429b4e",
+ "config": {
+  "cells": "19:2048,19:32768,11:2048,11:65536",
+  "stages": "2",
+  "stages_bf16": "1",
+  "fail_fast": "off",
+  "calls": 20,
+  "replays": 15,
+  "repeats": 5
+ },
+ "started_at": "2026-11-01T02:28:37Z",
+ "finished_at": "2026-11-01T02:31:19Z",
+ "hardware": {
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "gpu_count": 1,
+  "driver": "595.91.07",
+  "cuda": "13.2",
+  "capability": "8.9",
+  "gpu_uuid": "f217c83c-55d0-43aa-40e0-71aeb6907b70",
+  "pod_id": "<pod-id>",
+  "data_center": "EU-RO-1",
+  "price_per_hour": 0.89,
+  "copy_gbps": 919.6500000000001
+ },
+ "software": {
+  "torch": "2.14.0+cu130",
+  "triton": "3.8.0",
+  "vllm": "0.33.0rc1.dev229+g3966924d5",
+  "image": "vllm/vllm-openai@sha256:f255c4fad2f30ff5ee80db14d3a03afe9ae0f10d3470339864ff04745fe44cb3"
+ },
+ "metrics": {
+  "us_triton_std_fp8_4_8_64_B19_L2048": {
+   "values": [
+    196.51,
+    186.2,
+    186.15,
+    186.21,
+    186.15
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_4_8_64_B19_L32768": {
+   "values": [
+    2721.33,
+    2721.64,
+    2721.69,
+    2721.95,
+    2721.64
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmp_fp8_8_8_64_B19_L2048": {
+   "values": [
+    133.27,
+    133.32,
+    133.32,
+    133.12,
+    133.32
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmp_fp8_8_8_64_B19_L32768": {
+   "values": [
+    1738.14,
+    1738.24,
+    1738.43,
+    1738.39,
+    1738.29
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_alias_4_8_64_B19_L2048": {
+   "values": [
+    105.83,
+    105.98,
+    105.97,
+    105.97,
+    105.93
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_alias_4_8_64_B19_L32768": {
+   "values": [
+    1519.56,
+    1519.62,
+    1519.67,
+    1519.67,
+    1519.77
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_8_8_64_B11_L2048": {
+   "values": [
+    108.39,
+    108.44,
+    108.44,
+    108.43,
+    108.44
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_8_8_64_B11_L65536": {
+   "values": [
+    3135.54,
+    3134.72,
+    3134.87,
+    3134.92,
+    3135.13
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmp_fp8_8_8_64_B11_L2048": {
+   "values": [
+    54.35,
+    54.32,
+    54.32,
+    54.37,
+    54.37
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmp_fp8_8_8_64_B11_L65536": {
+   "values": [
+    2007.45,
+    2007.65,
+    2007.3,
+    2007.3,
+    2007.4
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_alias_8_8_64_B11_L2048": {
+   "values": [
+    45.31,
+    46.44,
+    45.36,
+    46.39,
+    45.36
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_alias_8_8_64_B11_L65536": {
+   "values": [
+    1572.29,
+    1574.76,
+    1572.15,
+    1574.76,
+    1572.1
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_std_fp8_X32768": {
+   "values": [
+    2524.82,
+    2535.44,
+    2535.54,
+    2535.74,
+    2535.49
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_cmp_fp8_X32768": {
+   "values": [
+    1604.87,
+    1604.92,
+    1605.11,
+    1605.27,
+    1604.97
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_std_fp8_X65536": {
+   "values": [
+    3027.15,
+    3026.28,
+    3026.43,
+    3026.49,
+    3026.69
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_cmp_fp8_X65536": {
+   "values": [
+    1953.1,
+    1953.33,
+    1952.98,
+    1952.93,
+    1953.03
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  }
+ },
+ "results_path": "experiments/gemma4_kv_kernel/results/e51-rehearsal-4090-20261101/",
+ "notes": "S5 rehearsal (RTX 4090, Triton only; the stock FA4 FP8 path needs SM90). sigma_layout 0.367 (32K) and 0.355 (64K) on the Triton pair at about 1.0 x copy; e_triton 0.885 and 0.991. On-Pod analysis (A1): INVALID (V1, V2, V3, V5); under A2: INVALID (V1, V2, V3). decision=INVALID (V1, V2, V3, V5)"
+}

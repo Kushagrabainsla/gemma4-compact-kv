@@ -1,0 +1,1805 @@
+{
+ "2048:4": {
+  "total_device_us": 128664.7,
+  "kernels": [
+   {
+    "name": "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_t, vllm::c3x::ScaledEpilogue, cute::tuple<cute::C<64>, cute::C<16>, cute::C<256> >, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cutlass::gemm::KernelTmaWarpSpecializedFP8FastAccum, cutlass::epil",
+    "count": 1920,
+    "device_us": 83942.5,
+    "share": 0.65241
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o211121021_tensorptrbf16gmemalign16oi64div81i64div8i64div8_tensorptrbf16gmemalign1_0",
+    "count": 400,
+    "device_us": 12510.2,
+    "share": 0.09723
+   },
+   {
+    "name": "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+    "count": 8,
+    "device_us": 7456.8,
+    "share": 0.05796
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze_3",
+    "count": 472,
+    "device_us": 5759.1,
+    "share": 0.04476
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+    "count": 480,
+    "device_us": 5385.0,
+    "share": 0.04185
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze_1",
+    "count": 480,
+    "device_us": 3551.4,
+    "share": 0.0276
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o811121081_tensorptrbf16gmemalign16oi64div81i64div8i64div8_tensorptrbf16gmemalign1_0",
+    "count": 80,
+    "device_us": 2760.5,
+    "share": 0.02145
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+    "count": 472,
+    "device_us": 1471.1,
+    "share": 0.01143
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_5",
+    "count": 472,
+    "device_us": 1392.9,
+    "share": 0.01083
+   },
+   {
+    "name": "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, __nv_bfloat16, (vllm::Fp8KVCacheDataType)0>(__nv_bfloat16 const*, __nv_bfloat16 const*, __nv_bfloat16*, __nv_bfloat16*, long const*, long, long, long, long, long, int, int, int, float const*, float const*, int)",
+    "count": 480,
+    "device_us": 1074.9,
+    "share": 0.00835
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemalign16o256i64div41i64div4i64div4_tensorptrf32gmemo1i64i64_tensorptrb_0",
+    "count": 400,
+    "device_us": 997.6,
+    "share": 0.00775
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_unsqueeze_view_0",
+    "count": 480,
+    "device_us": 842.1,
+    "share": 0.00654
+   },
+   {
+    "name": "triton_per_fused_rms_norm_split_with_sizes_view_6",
+    "count": 472,
+    "device_us": 607.4,
+    "share": 0.00472
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemalign16o512i64div41i64div4i64div4_tensorptrf32gmemo1i64i64_tensorptrb_0",
+    "count": 80,
+    "device_us": 239.7,
+    "share": 0.00186
+   },
+   {
+    "name": "_gumbel_sample_kernel",
+    "count": 8,
+    "device_us": 120.3,
+    "share": 0.00093
+   },
+   {
+    "name": "triton_red_fused_add_mul_rms_norm_3",
+    "count": 8,
+    "device_us": 60.7,
+    "share": 0.00047
+   },
+   {
+    "name": "Memcpy DtoH (Device -> Pinned)",
+    "count": 16,
+    "device_us": 37.3,
+    "share": 0.00029
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_embedding_mul_reciprocal_rms_norm_unsqueeze_0",
+    "count": 8,
+    "device_us": 34.1,
+    "share": 0.00027
+   },
+   {
+    "name": "_gather_block_tables_kernel",
+    "count": 8,
+    "device_us": 30.7,
+    "share": 0.00024
+   },
+   {
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4> >(at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4>)",
+    "count": 8,
+    "device_us": 30.6,
+    "share": 0.00024
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_1",
+    "count": 8,
+    "device_us": 28.2,
+    "share": 0.00022
+   },
+   {
+    "name": "_post_update_kernel",
+    "count": 8,
+    "device_us": 27.8,
+    "share": 0.00022
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_2",
+    "count": 8,
+    "device_us": 25.4,
+    "share": 0.0002
+   },
+   {
+    "name": "_combine_sampled_and_draft_tokens_kernel",
+    "count": 8,
+    "device_us": 24.9,
+    "share": 0.00019
+   },
+   {
+    "name": "_compute_slot_mappings_kernel",
+    "count": 8,
+    "device_us": 23.3,
+    "share": 0.00018
+   },
+   {
+    "name": "_get_num_sampled_and_rejected_kernel",
+    "count": 8,
+    "device_us": 21.8,
+    "share": 0.00017
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::BUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>, false>(int, at::native::BUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_int",
+    "count": 8,
+    "device_us": 19.6,
+    "share": 0.00015
+   },
+   {
+    "name": "Memcpy HtoD (Pinned -> Device)",
+    "count": 16,
+    "device_us": 18.4,
+    "share": 0.00014
+   },
+   {
+    "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayR",
+    "count": 8,
+    "device_us": 18.4,
+    "share": 0.00014
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::tanh_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#4}::operator()() const::{lambda(c10::BFloat16)#1}, std::array<char*, 2ul>, false>(int, at::native::tanh_kernel_cuda(at::TensorIteratorBase&)::{lambda()",
+    "count": 8,
+    "device_us": 18.0,
+    "share": 0.00014
+   },
+   {
+    "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<4> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayR",
+    "count": 8,
+    "device_us": 15.9,
+    "share": 0.00012
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<int>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<int>, std::array<char*, 1ul>)",
+    "count": 16,
+    "device_us": 15.6,
+    "share": 0.00012
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::AUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>, false>(int, at::native::AUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_int",
+    "count": 8,
+    "device_us": 15.2,
+    "share": 0.00012
+   },
+   {
+    "name": "void at::native::_scatter_gather_elementwise_kernel<128, 8, at::native::_cuda_scatter_gather_internal_kernel<false, at::native::OpaqueType<8>, long>::operator()<at::native::TensorAssign>(at::TensorIterator&, long, long, long, at::native::TensorAssign const&)::{lambda(int)#1}>(int, at::native::_cuda_",
+    "count": 8,
+    "device_us": 14.2,
+    "share": 0.00011
+   },
+   {
+    "name": "void at::native::vectorized_gather_kernel<16, long>(char*, char*, long*, int, long, long, long, long, bool)",
+    "count": 8,
+    "device_us": 13.1,
+    "share": 0.0001
+   },
+   {
+    "name": "_prepare_pos_seq_lens_kernel",
+    "count": 8,
+    "device_us": 11.3,
+    "share": 9e-05
+   },
+   {
+    "name": "memcpy32_post",
+    "count": 8,
+    "device_us": 10.8,
+    "share": 8e-05
+   },
+   {
+    "name": "triton_per_fused_rms_norm_split_with_sizes_view_3",
+    "count": 8,
+    "device_us": 10.5,
+    "share": 8e-05
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::FillFunctor<bool>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<bool>, std::array<char*, 1ul>)",
+    "count": 8,
+    "device_us": 8.3,
+    "share": 6e-05
+   },
+   {
+    "name": "void (anonymous namespace)::elementwise_kernel_with_index<int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#3}::operator()() const::{lambda(long)#1}>(int, at::native::arange_cuda_out(c10::Scalar cons",
+    "count": 8,
+    "device_us": 7.5,
+    "share": 6e-05
+   },
+   {
+    "name": "Memset (Device)",
+    "count": 8,
+    "device_us": 7.0,
+    "share": 5e-05
+   },
+   {
+    "name": "_apply_write_kernel",
+    "count": 1,
+    "device_us": 4.6,
+    "share": 4e-05
+   }
+  ],
+  "steps": 8,
+  "wall_ms": 271.11,
+  "events": "events_2048_4.json",
+  "events_n": 6897
+ },
+ "32768:4": {
+  "total_device_us": 154070.5,
+  "kernels": [
+   {
+    "name": "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_t, vllm::c3x::ScaledEpilogue, cute::tuple<cute::C<64>, cute::C<16>, cute::C<256> >, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cutlass::gemm::KernelTmaWarpSpecializedFP8FastAccum, cutlass::epil",
+    "count": 1920,
+    "device_us": 83996.9,
+    "share": 0.54518
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o811121081_tensorptrbf16gmemalign16oi64div81i64div8i64div8_tensorptrbf16gmemalign1_0",
+    "count": 80,
+    "device_us": 28196.2,
+    "share": 0.18301
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o211121021_tensorptrbf16gmemalign16oi64div81i64div8i64div8_tensorptrbf16gmemalign1_0",
+    "count": 400,
+    "device_us": 12180.3,
+    "share": 0.07906
+   },
+   {
+    "name": "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+    "count": 8,
+    "device_us": 7455.7,
+    "share": 0.04839
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze_3",
+    "count": 472,
+    "device_us": 5770.0,
+    "share": 0.03745
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+    "count": 480,
+    "device_us": 5539.9,
+    "share": 0.03596
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze_1",
+    "count": 480,
+    "device_us": 3569.2,
+    "share": 0.02317
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+    "count": 472,
+    "device_us": 1483.7,
+    "share": 0.00963
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_5",
+    "count": 472,
+    "device_us": 1389.4,
+    "share": 0.00902
+   },
+   {
+    "name": "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, __nv_bfloat16, (vllm::Fp8KVCacheDataType)0>(__nv_bfloat16 const*, __nv_bfloat16 const*, __nv_bfloat16*, __nv_bfloat16*, long const*, long, long, long, long, long, int, int, int, float const*, float const*, int)",
+    "count": 480,
+    "device_us": 1073.6,
+    "share": 0.00697
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemalign16o256i64div41i64div4i64div4_tensorptrf32gmemo1i64i64_tensorptrb_0",
+    "count": 400,
+    "device_us": 1021.4,
+    "share": 0.00663
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_unsqueeze_view_0",
+    "count": 480,
+    "device_us": 839.7,
+    "share": 0.00545
+   },
+   {
+    "name": "triton_per_fused_rms_norm_split_with_sizes_view_6",
+    "count": 472,
+    "device_us": 605.5,
+    "share": 0.00393
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemalign16o512i64div41i64div4i64div4_tensorptrf32gmemo1i64i64_tensorptrb_0",
+    "count": 80,
+    "device_us": 274.5,
+    "share": 0.00178
+   },
+   {
+    "name": "_gumbel_sample_kernel",
+    "count": 8,
+    "device_us": 127.7,
+    "share": 0.00083
+   },
+   {
+    "name": "triton_red_fused_add_mul_rms_norm_3",
+    "count": 8,
+    "device_us": 58.7,
+    "share": 0.00038
+   },
+   {
+    "name": "Memcpy DtoH (Device -> Pinned)",
+    "count": 16,
+    "device_us": 35.7,
+    "share": 0.00023
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_embedding_mul_reciprocal_rms_norm_unsqueeze_0",
+    "count": 8,
+    "device_us": 34.1,
+    "share": 0.00022
+   },
+   {
+    "name": "_gather_block_tables_kernel",
+    "count": 8,
+    "device_us": 32.7,
+    "share": 0.00021
+   },
+   {
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4> >(at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4>)",
+    "count": 8,
+    "device_us": 31.3,
+    "share": 0.0002
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_1",
+    "count": 8,
+    "device_us": 27.6,
+    "share": 0.00018
+   },
+   {
+    "name": "_post_update_kernel",
+    "count": 8,
+    "device_us": 27.5,
+    "share": 0.00018
+   },
+   {
+    "name": "_combine_sampled_and_draft_tokens_kernel",
+    "count": 8,
+    "device_us": 25.6,
+    "share": 0.00017
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_2",
+    "count": 8,
+    "device_us": 25.5,
+    "share": 0.00017
+   },
+   {
+    "name": "_compute_slot_mappings_kernel",
+    "count": 8,
+    "device_us": 22.5,
+    "share": 0.00015
+   },
+   {
+    "name": "_get_num_sampled_and_rejected_kernel",
+    "count": 8,
+    "device_us": 21.8,
+    "share": 0.00014
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::BUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>, false>(int, at::native::BUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_int",
+    "count": 8,
+    "device_us": 19.6,
+    "share": 0.00013
+   },
+   {
+    "name": "Memcpy HtoD (Pinned -> Device)",
+    "count": 16,
+    "device_us": 18.3,
+    "share": 0.00012
+   },
+   {
+    "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayR",
+    "count": 8,
+    "device_us": 18.1,
+    "share": 0.00012
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::tanh_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#4}::operator()() const::{lambda(c10::BFloat16)#1}, std::array<char*, 2ul>, false>(int, at::native::tanh_kernel_cuda(at::TensorIteratorBase&)::{lambda()",
+    "count": 8,
+    "device_us": 17.7,
+    "share": 0.00011
+   },
+   {
+    "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<4> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayR",
+    "count": 8,
+    "device_us": 16.1,
+    "share": 0.0001
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<int>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<int>, std::array<char*, 1ul>)",
+    "count": 16,
+    "device_us": 15.4,
+    "share": 0.0001
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::AUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>, false>(int, at::native::AUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_int",
+    "count": 8,
+    "device_us": 15.4,
+    "share": 0.0001
+   },
+   {
+    "name": "void at::native::_scatter_gather_elementwise_kernel<128, 8, at::native::_cuda_scatter_gather_internal_kernel<false, at::native::OpaqueType<8>, long>::operator()<at::native::TensorAssign>(at::TensorIterator&, long, long, long, at::native::TensorAssign const&)::{lambda(int)#1}>(int, at::native::_cuda_",
+    "count": 8,
+    "device_us": 14.6,
+    "share": 9e-05
+   },
+   {
+    "name": "void at::native::vectorized_gather_kernel<16, long>(char*, char*, long*, int, long, long, long, long, bool)",
+    "count": 8,
+    "device_us": 12.6,
+    "share": 8e-05
+   },
+   {
+    "name": "_prepare_pos_seq_lens_kernel",
+    "count": 8,
+    "device_us": 11.4,
+    "share": 7e-05
+   },
+   {
+    "name": "triton_per_fused_rms_norm_split_with_sizes_view_3",
+    "count": 8,
+    "device_us": 11.3,
+    "share": 7e-05
+   },
+   {
+    "name": "memcpy32_post",
+    "count": 8,
+    "device_us": 10.8,
+    "share": 7e-05
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::FillFunctor<bool>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<bool>, std::array<char*, 1ul>)",
+    "count": 8,
+    "device_us": 8.3,
+    "share": 5e-05
+   },
+   {
+    "name": "void (anonymous namespace)::elementwise_kernel_with_index<int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#3}::operator()() const::{lambda(long)#1}>(int, at::native::arange_cuda_out(c10::Scalar cons",
+    "count": 8,
+    "device_us": 7.5,
+    "share": 5e-05
+   },
+   {
+    "name": "Memset (Device)",
+    "count": 8,
+    "device_us": 6.7,
+    "share": 4e-05
+   }
+  ],
+  "steps": 8,
+  "wall_ms": 253.84,
+  "events": "events_32768_4.json",
+  "events_n": 6896
+ },
+ "65536:4": {
+  "total_device_us": 180817.6,
+  "kernels": [
+   {
+    "name": "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_t, vllm::c3x::ScaledEpilogue, cute::tuple<cute::C<64>, cute::C<16>, cute::C<256> >, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cutlass::gemm::KernelTmaWarpSpecializedFP8FastAccum, cutlass::epil",
+    "count": 1920,
+    "device_us": 84086.9,
+    "share": 0.46504
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o811121081_tensorptrbf16gmemalign16oi64div81i64div8i64div8_tensorptrbf16gmemalign1_0",
+    "count": 80,
+    "device_us": 55066.5,
+    "share": 0.30454
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o211121021_tensorptrbf16gmemalign16oi64div81i64div8i64div8_tensorptrbf16gmemalign1_0",
+    "count": 400,
+    "device_us": 12011.8,
+    "share": 0.06643
+   },
+   {
+    "name": "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+    "count": 8,
+    "device_us": 7446.9,
+    "share": 0.04118
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze_3",
+    "count": 472,
+    "device_us": 5763.6,
+    "share": 0.03188
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+    "count": 480,
+    "device_us": 5525.4,
+    "share": 0.03056
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze_1",
+    "count": 480,
+    "device_us": 3559.8,
+    "share": 0.01969
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+    "count": 472,
+    "device_us": 1481.1,
+    "share": 0.00819
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_5",
+    "count": 472,
+    "device_us": 1387.9,
+    "share": 0.00768
+   },
+   {
+    "name": "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, __nv_bfloat16, (vllm::Fp8KVCacheDataType)0>(__nv_bfloat16 const*, __nv_bfloat16 const*, __nv_bfloat16*, __nv_bfloat16*, long const*, long, long, long, long, long, int, int, int, float const*, float const*, int)",
+    "count": 480,
+    "device_us": 1073.4,
+    "share": 0.00594
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemalign16o256i64div41i64div4i64div4_tensorptrf32gmemo1i64i64_tensorptrb_0",
+    "count": 400,
+    "device_us": 1019.9,
+    "share": 0.00564
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_unsqueeze_view_0",
+    "count": 480,
+    "device_us": 839.0,
+    "share": 0.00464
+   },
+   {
+    "name": "triton_per_fused_rms_norm_split_with_sizes_view_6",
+    "count": 472,
+    "device_us": 604.3,
+    "share": 0.00334
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemalign16o512i64div41i64div4i64div4_tensorptrf32gmemo1i64i64_tensorptrb_0",
+    "count": 80,
+    "device_us": 275.8,
+    "share": 0.00153
+   },
+   {
+    "name": "_gumbel_sample_kernel",
+    "count": 8,
+    "device_us": 116.3,
+    "share": 0.00064
+   },
+   {
+    "name": "triton_red_fused_add_mul_rms_norm_3",
+    "count": 8,
+    "device_us": 59.6,
+    "share": 0.00033
+   },
+   {
+    "name": "_gather_block_tables_kernel",
+    "count": 8,
+    "device_us": 38.5,
+    "share": 0.00021
+   },
+   {
+    "name": "Memcpy DtoH (Device -> Pinned)",
+    "count": 16,
+    "device_us": 36.3,
+    "share": 0.0002
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_embedding_mul_reciprocal_rms_norm_unsqueeze_0",
+    "count": 8,
+    "device_us": 34.2,
+    "share": 0.00019
+   },
+   {
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4> >(at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4>)",
+    "count": 8,
+    "device_us": 30.6,
+    "share": 0.00017
+   },
+   {
+    "name": "_post_update_kernel",
+    "count": 8,
+    "device_us": 30.2,
+    "share": 0.00017
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_1",
+    "count": 8,
+    "device_us": 28.1,
+    "share": 0.00016
+   },
+   {
+    "name": "_combine_sampled_and_draft_tokens_kernel",
+    "count": 8,
+    "device_us": 26.0,
+    "share": 0.00014
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_2",
+    "count": 8,
+    "device_us": 25.4,
+    "share": 0.00014
+   },
+   {
+    "name": "_compute_slot_mappings_kernel",
+    "count": 8,
+    "device_us": 23.5,
+    "share": 0.00013
+   },
+   {
+    "name": "_get_num_sampled_and_rejected_kernel",
+    "count": 8,
+    "device_us": 23.4,
+    "share": 0.00013
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::BUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>, false>(int, at::native::BUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_int",
+    "count": 8,
+    "device_us": 19.0,
+    "share": 0.00011
+   },
+   {
+    "name": "Memcpy HtoD (Pinned -> Device)",
+    "count": 16,
+    "device_us": 18.8,
+    "share": 0.0001
+   },
+   {
+    "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayR",
+    "count": 8,
+    "device_us": 18.0,
+    "share": 0.0001
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::tanh_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#4}::operator()() const::{lambda(c10::BFloat16)#1}, std::array<char*, 2ul>, false>(int, at::native::tanh_kernel_cuda(at::TensorIteratorBase&)::{lambda()",
+    "count": 8,
+    "device_us": 17.8,
+    "share": 0.0001
+   },
+   {
+    "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<4> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayR",
+    "count": 8,
+    "device_us": 16.0,
+    "share": 9e-05
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<int>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<int>, std::array<char*, 1ul>)",
+    "count": 16,
+    "device_us": 15.5,
+    "share": 9e-05
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::AUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>, false>(int, at::native::AUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_int",
+    "count": 8,
+    "device_us": 15.4,
+    "share": 9e-05
+   },
+   {
+    "name": "void at::native::_scatter_gather_elementwise_kernel<128, 8, at::native::_cuda_scatter_gather_internal_kernel<false, at::native::OpaqueType<8>, long>::operator()<at::native::TensorAssign>(at::TensorIterator&, long, long, long, at::native::TensorAssign const&)::{lambda(int)#1}>(int, at::native::_cuda_",
+    "count": 8,
+    "device_us": 14.5,
+    "share": 8e-05
+   },
+   {
+    "name": "void at::native::vectorized_gather_kernel<16, long>(char*, char*, long*, int, long, long, long, long, bool)",
+    "count": 8,
+    "device_us": 12.6,
+    "share": 7e-05
+   },
+   {
+    "name": "_prepare_pos_seq_lens_kernel",
+    "count": 8,
+    "device_us": 11.2,
+    "share": 6e-05
+   },
+   {
+    "name": "memcpy32_post",
+    "count": 8,
+    "device_us": 10.9,
+    "share": 6e-05
+   },
+   {
+    "name": "triton_per_fused_rms_norm_split_with_sizes_view_3",
+    "count": 8,
+    "device_us": 10.7,
+    "share": 6e-05
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::FillFunctor<bool>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<bool>, std::array<char*, 1ul>)",
+    "count": 8,
+    "device_us": 8.3,
+    "share": 5e-05
+   },
+   {
+    "name": "void (anonymous namespace)::elementwise_kernel_with_index<int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#3}::operator()() const::{lambda(long)#1}>(int, at::native::arange_cuda_out(c10::Scalar cons",
+    "count": 8,
+    "device_us": 7.5,
+    "share": 4e-05
+   },
+   {
+    "name": "Memset (Device)",
+    "count": 8,
+    "device_us": 7.0,
+    "share": 4e-05
+   }
+  ],
+  "steps": 8,
+  "wall_ms": 281.24,
+  "events": "events_65536_4.json",
+  "events_n": 6896
+ },
+ "2048:a32768": {
+  "total_device_us": 153247.6,
+  "kernels": [
+   {
+    "name": "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_t, vllm::c3x::ScaledEpilogue, cute::tuple<cute::C<64>, cute::C<16>, cute::C<256> >, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cutlass::gemm::KernelTmaWarpSpecializedFP8FastAccum, cutlass::epil",
+    "count": 1920,
+    "device_us": 84413.4,
+    "share": 0.55083
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o211121021_tensorptrbf16gmemalign16oi64div81i64div8i64div8_tensorptrbf16gmemalign1_0",
+    "count": 400,
+    "device_us": 33333.8,
+    "share": 0.21752
+   },
+   {
+    "name": "nvjet_sm90_tst_512x16_64x3_2x1_v_bz_TNT",
+    "count": 8,
+    "device_us": 7540.4,
+    "share": 0.0492
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o811121081_tensorptrbf16gmemalign16oi64div81i64div8i64div8_tensorptrbf16gmemalign1_0",
+    "count": 80,
+    "device_us": 6737.2,
+    "share": 0.04396
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+    "count": 480,
+    "device_us": 5466.3,
+    "share": 0.03567
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze_3",
+    "count": 472,
+    "device_us": 5348.0,
+    "share": 0.0349
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze_1",
+    "count": 480,
+    "device_us": 3399.0,
+    "share": 0.02218
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+    "count": 472,
+    "device_us": 1539.5,
+    "share": 0.01005
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_5",
+    "count": 472,
+    "device_us": 1498.3,
+    "share": 0.00978
+   },
+   {
+    "name": "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, __nv_bfloat16, (vllm::Fp8KVCacheDataType)0>(__nv_bfloat16 const*, __nv_bfloat16 const*, __nv_bfloat16*, __nv_bfloat16*, long const*, long, long, long, long, long, int, int, int, float const*, float const*, int)",
+    "count": 480,
+    "device_us": 1137.4,
+    "share": 0.00742
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_unsqueeze_view_0",
+    "count": 480,
+    "device_us": 976.6,
+    "share": 0.00637
+   },
+   {
+    "name": "triton_per_fused_rms_norm_split_with_sizes_view_6",
+    "count": 472,
+    "device_us": 685.2,
+    "share": 0.00447
+   },
+   {
+    "name": "_gumbel_sample_kernel",
+    "count": 8,
+    "device_us": 318.4,
+    "share": 0.00208
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemalign16o512i64div41i64div4i64div4_tensorptrf32gmemo1i64i64_tensorptrb_0",
+    "count": 80,
+    "device_us": 217.9,
+    "share": 0.00142
+   },
+   {
+    "name": "triton_red_fused_add_mul_rms_norm_3",
+    "count": 8,
+    "device_us": 56.8,
+    "share": 0.00037
+   },
+   {
+    "name": "Memcpy DtoH (Device -> Pinned)",
+    "count": 16,
+    "device_us": 35.3,
+    "share": 0.00023
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_embedding_mul_reciprocal_rms_norm_unsqueeze_0",
+    "count": 8,
+    "device_us": 34.1,
+    "share": 0.00022
+   },
+   {
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4> >(at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4>)",
+    "count": 8,
+    "device_us": 33.0,
+    "share": 0.00022
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::BUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>, false>(int, at::native::BUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_int",
+    "count": 8,
+    "device_us": 32.7,
+    "share": 0.00021
+   },
+   {
+    "name": "_gather_block_tables_kernel",
+    "count": 8,
+    "device_us": 31.2,
+    "share": 0.0002
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_1",
+    "count": 8,
+    "device_us": 29.2,
+    "share": 0.00019
+   },
+   {
+    "name": "_post_update_kernel",
+    "count": 8,
+    "device_us": 28.5,
+    "share": 0.00019
+   },
+   {
+    "name": "_apply_write_kernel",
+    "count": 6,
+    "device_us": 28.5,
+    "share": 0.00019
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_2",
+    "count": 8,
+    "device_us": 27.9,
+    "share": 0.00018
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::tanh_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#4}::operator()() const::{lambda(c10::BFloat16)#1}, std::array<char*, 2ul>, false>(int, at::native::tanh_kernel_cuda(at::TensorIteratorBase&)::{lambda()",
+    "count": 8,
+    "device_us": 27.9,
+    "share": 0.00018
+   },
+   {
+    "name": "_combine_sampled_and_draft_tokens_kernel",
+    "count": 8,
+    "device_us": 27.7,
+    "share": 0.00018
+   },
+   {
+    "name": "_get_num_sampled_and_rejected_kernel",
+    "count": 8,
+    "device_us": 27.3,
+    "share": 0.00018
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::AUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>, false>(int, at::native::AUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_int",
+    "count": 8,
+    "device_us": 26.4,
+    "share": 0.00017
+   },
+   {
+    "name": "_compute_slot_mappings_kernel",
+    "count": 8,
+    "device_us": 24.1,
+    "share": 0.00016
+   },
+   {
+    "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayR",
+    "count": 8,
+    "device_us": 18.8,
+    "share": 0.00012
+   },
+   {
+    "name": "Memcpy HtoD (Pinned -> Device)",
+    "count": 16,
+    "device_us": 18.5,
+    "share": 0.00012
+   },
+   {
+    "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<4> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayR",
+    "count": 8,
+    "device_us": 16.7,
+    "share": 0.00011
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<int>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<int>, std::array<char*, 1ul>)",
+    "count": 16,
+    "device_us": 15.9,
+    "share": 0.0001
+   },
+   {
+    "name": "void at::native::_scatter_gather_elementwise_kernel<128, 8, at::native::_cuda_scatter_gather_internal_kernel<false, at::native::OpaqueType<8>, long>::operator()<at::native::TensorAssign>(at::TensorIterator&, long, long, long, at::native::TensorAssign const&)::{lambda(int)#1}>(int, at::native::_cuda_",
+    "count": 8,
+    "device_us": 15.4,
+    "share": 0.0001
+   },
+   {
+    "name": "void at::native::vectorized_gather_kernel<16, long>(char*, char*, long*, int, long, long, long, long, bool)",
+    "count": 8,
+    "device_us": 13.5,
+    "share": 9e-05
+   },
+   {
+    "name": "_prepare_pos_seq_lens_kernel",
+    "count": 8,
+    "device_us": 12.8,
+    "share": 8e-05
+   },
+   {
+    "name": "memcpy32_post",
+    "count": 8,
+    "device_us": 11.8,
+    "share": 8e-05
+   },
+   {
+    "name": "triton_per_fused_rms_norm_split_with_sizes_view_3",
+    "count": 8,
+    "device_us": 11.6,
+    "share": 8e-05
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::FillFunctor<bool>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<bool>, std::array<char*, 1ul>)",
+    "count": 8,
+    "device_us": 8.5,
+    "share": 6e-05
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<2, at::native::FillFunctor<bool>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<bool>, std::array<char*, 1ul>)",
+    "count": 8,
+    "device_us": 8.5,
+    "share": 6e-05
+   },
+   {
+    "name": "void (anonymous namespace)::elementwise_kernel_with_index<int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#3}::operator()() const::{lambda(long)#1}>(int, at::native::arange_cuda_out(c10::Scalar cons",
+    "count": 8,
+    "device_us": 7.6,
+    "share": 5e-05
+   },
+   {
+    "name": "Memset (Device)",
+    "count": 8,
+    "device_us": 6.0,
+    "share": 4e-05
+   }
+  ],
+  "steps": 8,
+  "wall_ms": 252.56,
+  "events": "events_2048_a32768.json",
+  "events_n": 6510
+ },
+ "32768:a32768": {
+  "total_device_us": 233970.8,
+  "kernels": [
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o811121081_tensorptrbf16gmemalign16oi64div81i64div8i64div8_tensorptrbf16gmemalign1_0",
+    "count": 80,
+    "device_us": 87224.0,
+    "share": 0.3728
+   },
+   {
+    "name": "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_t, vllm::c3x::ScaledEpilogue, cute::tuple<cute::C<64>, cute::C<16>, cute::C<256> >, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cutlass::gemm::KernelTmaWarpSpecializedFP8FastAccum, cutlass::epil",
+    "count": 1920,
+    "device_us": 84682.1,
+    "share": 0.36193
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o211121021_tensorptrbf16gmemalign16oi64div81i64div8i64div8_tensorptrbf16gmemalign1_0",
+    "count": 400,
+    "device_us": 33169.8,
+    "share": 0.14177
+   },
+   {
+    "name": "nvjet_sm90_tst_512x16_64x3_2x1_v_bz_TNT",
+    "count": 8,
+    "device_us": 7497.5,
+    "share": 0.03204
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+    "count": 480,
+    "device_us": 5614.3,
+    "share": 0.024
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze_3",
+    "count": 472,
+    "device_us": 5366.1,
+    "share": 0.02293
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze_1",
+    "count": 480,
+    "device_us": 3422.7,
+    "share": 0.01463
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+    "count": 472,
+    "device_us": 1550.1,
+    "share": 0.00663
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_5",
+    "count": 472,
+    "device_us": 1501.0,
+    "share": 0.00642
+   },
+   {
+    "name": "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, __nv_bfloat16, (vllm::Fp8KVCacheDataType)0>(__nv_bfloat16 const*, __nv_bfloat16 const*, __nv_bfloat16*, __nv_bfloat16*, long const*, long, long, long, long, long, int, int, int, float const*, float const*, int)",
+    "count": 480,
+    "device_us": 1140.1,
+    "share": 0.00487
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_unsqueeze_view_0",
+    "count": 480,
+    "device_us": 993.9,
+    "share": 0.00425
+   },
+   {
+    "name": "triton_per_fused_rms_norm_split_with_sizes_view_6",
+    "count": 472,
+    "device_us": 680.9,
+    "share": 0.00291
+   },
+   {
+    "name": "_gumbel_sample_kernel",
+    "count": 8,
+    "device_us": 300.4,
+    "share": 0.00128
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemalign16o512i64div41i64div4i64div4_tensorptrf32gmemo1i64i64_tensorptrb_0",
+    "count": 80,
+    "device_us": 218.0,
+    "share": 0.00093
+   },
+   {
+    "name": "triton_red_fused_add_mul_rms_norm_3",
+    "count": 8,
+    "device_us": 56.1,
+    "share": 0.00024
+   },
+   {
+    "name": "Memcpy DtoH (Device -> Pinned)",
+    "count": 16,
+    "device_us": 36.1,
+    "share": 0.00015
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_embedding_mul_reciprocal_rms_norm_unsqueeze_0",
+    "count": 8,
+    "device_us": 34.3,
+    "share": 0.00015
+   },
+   {
+    "name": "_gather_block_tables_kernel",
+    "count": 8,
+    "device_us": 33.7,
+    "share": 0.00014
+   },
+   {
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4> >(at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4>)",
+    "count": 8,
+    "device_us": 33.1,
+    "share": 0.00014
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::BUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>, false>(int, at::native::BUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_int",
+    "count": 8,
+    "device_us": 32.8,
+    "share": 0.00014
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_1",
+    "count": 8,
+    "device_us": 28.7,
+    "share": 0.00012
+   },
+   {
+    "name": "_combine_sampled_and_draft_tokens_kernel",
+    "count": 8,
+    "device_us": 28.4,
+    "share": 0.00012
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_2",
+    "count": 8,
+    "device_us": 28.3,
+    "share": 0.00012
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::tanh_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#4}::operator()() const::{lambda(c10::BFloat16)#1}, std::array<char*, 2ul>, false>(int, at::native::tanh_kernel_cuda(at::TensorIteratorBase&)::{lambda()",
+    "count": 8,
+    "device_us": 27.8,
+    "share": 0.00012
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::AUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>, false>(int, at::native::AUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_int",
+    "count": 8,
+    "device_us": 27.0,
+    "share": 0.00012
+   },
+   {
+    "name": "_post_update_kernel",
+    "count": 8,
+    "device_us": 26.6,
+    "share": 0.00011
+   },
+   {
+    "name": "_get_num_sampled_and_rejected_kernel",
+    "count": 8,
+    "device_us": 25.7,
+    "share": 0.00011
+   },
+   {
+    "name": "_compute_slot_mappings_kernel",
+    "count": 8,
+    "device_us": 24.9,
+    "share": 0.00011
+   },
+   {
+    "name": "Memcpy HtoD (Pinned -> Device)",
+    "count": 16,
+    "device_us": 18.4,
+    "share": 8e-05
+   },
+   {
+    "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayR",
+    "count": 8,
+    "device_us": 18.3,
+    "share": 8e-05
+   },
+   {
+    "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<4> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayR",
+    "count": 8,
+    "device_us": 16.6,
+    "share": 7e-05
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<int>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<int>, std::array<char*, 1ul>)",
+    "count": 16,
+    "device_us": 15.9,
+    "share": 7e-05
+   },
+   {
+    "name": "void at::native::_scatter_gather_elementwise_kernel<128, 8, at::native::_cuda_scatter_gather_internal_kernel<false, at::native::OpaqueType<8>, long>::operator()<at::native::TensorAssign>(at::TensorIterator&, long, long, long, at::native::TensorAssign const&)::{lambda(int)#1}>(int, at::native::_cuda_",
+    "count": 8,
+    "device_us": 15.3,
+    "share": 7e-05
+   },
+   {
+    "name": "void at::native::vectorized_gather_kernel<16, long>(char*, char*, long*, int, long, long, long, long, bool)",
+    "count": 8,
+    "device_us": 13.5,
+    "share": 6e-05
+   },
+   {
+    "name": "_prepare_pos_seq_lens_kernel",
+    "count": 8,
+    "device_us": 13.0,
+    "share": 6e-05
+   },
+   {
+    "name": "triton_per_fused_rms_norm_split_with_sizes_view_3",
+    "count": 8,
+    "device_us": 12.0,
+    "share": 5e-05
+   },
+   {
+    "name": "memcpy32_post",
+    "count": 8,
+    "device_us": 11.8,
+    "share": 5e-05
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::FillFunctor<bool>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<bool>, std::array<char*, 1ul>)",
+    "count": 8,
+    "device_us": 8.6,
+    "share": 4e-05
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<2, at::native::FillFunctor<bool>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<bool>, std::array<char*, 1ul>)",
+    "count": 8,
+    "device_us": 8.6,
+    "share": 4e-05
+   },
+   {
+    "name": "void (anonymous namespace)::elementwise_kernel_with_index<int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#3}::operator()() const::{lambda(long)#1}>(int, at::native::arange_cuda_out(c10::Scalar cons",
+    "count": 8,
+    "device_us": 7.6,
+    "share": 3e-05
+   },
+   {
+    "name": "Memset (Device)",
+    "count": 8,
+    "device_us": 6.8,
+    "share": 3e-05
+   }
+  ],
+  "steps": 8,
+  "wall_ms": 339.58,
+  "events": "events_32768_a32768.json",
+  "events_n": 6504
+ },
+ "2048:a65536": {
+  "total_device_us": 132856.2,
+  "kernels": [
+   {
+    "name": "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_t, vllm::c3x::ScaledEpilogue, cute::tuple<cute::C<64>, cute::C<16>, cute::C<256> >, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cutlass::gemm::KernelTmaWarpSpecializedFP8FastAccum, cutlass::epil",
+    "count": 1920,
+    "device_us": 84031.4,
+    "share": 0.6325
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o211121021_tensorptrbf16gmemalign16oi64div81i64div8i64div8_tensorptrbf16gmemalign1_0",
+    "count": 400,
+    "device_us": 15818.7,
+    "share": 0.11907
+   },
+   {
+    "name": "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+    "count": 8,
+    "device_us": 7484.7,
+    "share": 0.05634
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+    "count": 480,
+    "device_us": 5776.6,
+    "share": 0.04348
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze_3",
+    "count": 472,
+    "device_us": 5743.8,
+    "share": 0.04323
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o811121081_tensorptrbf16gmemalign16oi64div81i64div8i64div8_tensorptrbf16gmemalign1_0",
+    "count": 80,
+    "device_us": 3800.6,
+    "share": 0.02861
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze_1",
+    "count": 480,
+    "device_us": 3542.4,
+    "share": 0.02666
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+    "count": 472,
+    "device_us": 1479.5,
+    "share": 0.01114
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_5",
+    "count": 472,
+    "device_us": 1437.7,
+    "share": 0.01082
+   },
+   {
+    "name": "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, __nv_bfloat16, (vllm::Fp8KVCacheDataType)0>(__nv_bfloat16 const*, __nv_bfloat16 const*, __nv_bfloat16*, __nv_bfloat16*, long const*, long, long, long, long, long, int, int, int, float const*, float const*, int)",
+    "count": 480,
+    "device_us": 1078.7,
+    "share": 0.00812
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_unsqueeze_view_0",
+    "count": 480,
+    "device_us": 901.7,
+    "share": 0.00679
+   },
+   {
+    "name": "triton_per_fused_rms_norm_split_with_sizes_view_6",
+    "count": 472,
+    "device_us": 686.3,
+    "share": 0.00517
+   },
+   {
+    "name": "_gumbel_sample_kernel",
+    "count": 8,
+    "device_us": 298.6,
+    "share": 0.00225
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemalign16o512i64div41i64div4i64div4_tensorptrf32gmemo1i64i64_tensorptrb_0",
+    "count": 80,
+    "device_us": 207.3,
+    "share": 0.00156
+   },
+   {
+    "name": "triton_red_fused_add_mul_rms_norm_3",
+    "count": 8,
+    "device_us": 60.0,
+    "share": 0.00045
+   },
+   {
+    "name": "Memcpy DtoH (Device -> Pinned)",
+    "count": 16,
+    "device_us": 35.7,
+    "share": 0.00027
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_embedding_mul_reciprocal_rms_norm_unsqueeze_0",
+    "count": 8,
+    "device_us": 34.1,
+    "share": 0.00026
+   },
+   {
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4> >(at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4>)",
+    "count": 8,
+    "device_us": 31.1,
+    "share": 0.00023
+   },
+   {
+    "name": "_gather_block_tables_kernel",
+    "count": 8,
+    "device_us": 29.4,
+    "share": 0.00022
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_1",
+    "count": 8,
+    "device_us": 27.3,
+    "share": 0.00021
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_2",
+    "count": 8,
+    "device_us": 27.1,
+    "share": 0.0002
+   },
+   {
+    "name": "_post_update_kernel",
+    "count": 8,
+    "device_us": 27.0,
+    "share": 0.0002
+   },
+   {
+    "name": "_combine_sampled_and_draft_tokens_kernel",
+    "count": 8,
+    "device_us": 26.5,
+    "share": 0.0002
+   },
+   {
+    "name": "_get_num_sampled_and_rejected_kernel",
+    "count": 8,
+    "device_us": 23.6,
+    "share": 0.00018
+   },
+   {
+    "name": "_compute_slot_mappings_kernel",
+    "count": 8,
+    "device_us": 22.9,
+    "share": 0.00017
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::BUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>, false>(int, at::native::BUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_int",
+    "count": 8,
+    "device_us": 21.6,
+    "share": 0.00016
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::tanh_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#4}::operator()() const::{lambda(c10::BFloat16)#1}, std::array<char*, 2ul>, false>(int, at::native::tanh_kernel_cuda(at::TensorIteratorBase&)::{lambda()",
+    "count": 8,
+    "device_us": 19.8,
+    "share": 0.00015
+   },
+   {
+    "name": "Memcpy HtoD (Pinned -> Device)",
+    "count": 16,
+    "device_us": 18.5,
+    "share": 0.00014
+   },
+   {
+    "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayR",
+    "count": 8,
+    "device_us": 17.8,
+    "share": 0.00013
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::AUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>, false>(int, at::native::AUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_int",
+    "count": 8,
+    "device_us": 16.9,
+    "share": 0.00013
+   },
+   {
+    "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<4> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayR",
+    "count": 8,
+    "device_us": 16.3,
+    "share": 0.00012
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<int>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<int>, std::array<char*, 1ul>)",
+    "count": 16,
+    "device_us": 15.4,
+    "share": 0.00012
+   },
+   {
+    "name": "void at::native::_scatter_gather_elementwise_kernel<128, 8, at::native::_cuda_scatter_gather_internal_kernel<false, at::native::OpaqueType<8>, long>::operator()<at::native::TensorAssign>(at::TensorIterator&, long, long, long, at::native::TensorAssign const&)::{lambda(int)#1}>(int, at::native::_cuda_",
+    "count": 8,
+    "device_us": 15.1,
+    "share": 0.00011
+   },
+   {
+    "name": "void at::native::vectorized_gather_kernel<16, long>(char*, char*, long*, int, long, long, long, long, bool)",
+    "count": 8,
+    "device_us": 13.0,
+    "share": 0.0001
+   },
+   {
+    "name": "triton_per_fused_rms_norm_split_with_sizes_view_3",
+    "count": 8,
+    "device_us": 12.1,
+    "share": 9e-05
+   },
+   {
+    "name": "_prepare_pos_seq_lens_kernel",
+    "count": 8,
+    "device_us": 12.0,
+    "share": 9e-05
+   },
+   {
+    "name": "memcpy32_post",
+    "count": 8,
+    "device_us": 11.0,
+    "share": 8e-05
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::FillFunctor<bool>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<bool>, std::array<char*, 1ul>)",
+    "count": 8,
+    "device_us": 8.3,
+    "share": 6e-05
+   },
+   {
+    "name": "void at::native::unrolled_elementwise_kernel<at::native::FillFunctor<bool>, std::array<char*, 1ul>, 4, TrivialOffsetCalculator<0, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithoutCast, at::native::memory::StoreWithoutCast>(int, at::native::FillFunctor<bool>, st",
+    "count": 8,
+    "device_us": 7.4,
+    "share": 6e-05
+   },
+   {
+    "name": "void (anonymous namespace)::elementwise_kernel_with_index<int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#3}::operator()() const::{lambda(long)#1}>(int, at::native::arange_cuda_out(c10::Scalar cons",
+    "count": 8,
+    "device_us": 7.3,
+    "share": 5e-05
+   },
+   {
+    "name": "Memset (Device)",
+    "count": 8,
+    "device_us": 6.4,
+    "share": 5e-05
+   },
+   {
+    "name": "_apply_write_kernel",
+    "count": 1,
+    "device_us": 4.6,
+    "share": 3e-05
+   }
+  ],
+  "steps": 8,
+  "wall_ms": 233.04,
+  "events": "events_2048_a65536.json",
+  "events_n": 6505
+ },
+ "65536:a65536": {
+  "total_device_us": 214127.8,
+  "kernels": [
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o811121081_tensorptrbf16gmemalign16oi64div81i64div8i64div8_tensorptrbf16gmemalign1_0",
+    "count": 80,
+    "device_us": 85296.1,
+    "share": 0.39834
+   },
+   {
+    "name": "void cutlass::device_kernel<vllm::cutlass_3x_gemm_sm90_fp8<cutlass::float_e4m3_t, cutlass::bfloat16_t, vllm::c3x::ScaledEpilogue, cute::tuple<cute::C<64>, cute::C<16>, cute::C<256> >, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cutlass::gemm::KernelTmaWarpSpecializedFP8FastAccum, cutlass::epil",
+    "count": 1920,
+    "device_us": 84092.3,
+    "share": 0.39272
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_sm90FlashAttentionForwardSm90_object_at__tensor000o211121021_tensorptrbf16gmemalign16oi64div81i64div8i64div8_tensorptrbf16gmemalign1_0",
+    "count": 400,
+    "device_us": 15438.6,
+    "share": 0.0721
+   },
+   {
+    "name": "nvjet_sm90_tst_512x8_64x3_2x1_v_bz_TNT",
+    "count": 8,
+    "device_us": 7455.1,
+    "share": 0.03482
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_gelu_mul_reciprocal_slice_unsqueeze_2",
+    "count": 480,
+    "device_us": 5840.4,
+    "share": 0.02728
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze_3",
+    "count": 472,
+    "device_us": 5753.3,
+    "share": 0.02687
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_add_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_rms_norm_unsqueeze_1",
+    "count": 480,
+    "device_us": 3562.2,
+    "share": 0.01664
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_4",
+    "count": 472,
+    "device_us": 1486.2,
+    "share": 0.00694
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_5",
+    "count": 472,
+    "device_us": 1440.7,
+    "share": 0.00673
+   },
+   {
+    "name": "void vllm::reshape_and_cache_flash_kernel<__nv_bfloat16, __nv_bfloat16, (vllm::Fp8KVCacheDataType)0>(__nv_bfloat16 const*, __nv_bfloat16 const*, __nv_bfloat16*, __nv_bfloat16*, long const*, long, long, long, long, long, int, int, int, float const*, float const*, int)",
+    "count": 480,
+    "device_us": 1083.0,
+    "share": 0.00506
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_mul_reciprocal_unsqueeze_view_0",
+    "count": 480,
+    "device_us": 922.2,
+    "share": 0.00431
+   },
+   {
+    "name": "triton_per_fused_rms_norm_split_with_sizes_view_6",
+    "count": 472,
+    "device_us": 682.0,
+    "share": 0.00319
+   },
+   {
+    "name": "_gumbel_sample_kernel",
+    "count": 8,
+    "device_us": 285.4,
+    "share": 0.00133
+   },
+   {
+    "name": "kernel_cutlass_kernel_vllmvllm_flash_attncuteflash_fwd_combineFlashAttentionForwardCombine_object_at__tensorptrf32gmemalign16o512i64div41i64div4i64div4_tensorptrf32gmemo1i64i64_tensorptrb_0",
+    "count": 80,
+    "device_us": 218.9,
+    "share": 0.00102
+   },
+   {
+    "name": "triton_red_fused_add_mul_rms_norm_3",
+    "count": 8,
+    "device_us": 59.1,
+    "share": 0.00028
+   },
+   {
+    "name": "Memcpy DtoH (Device -> Pinned)",
+    "count": 16,
+    "device_us": 36.8,
+    "share": 0.00017
+   },
+   {
+    "name": "_gather_block_tables_kernel",
+    "count": 8,
+    "device_us": 36.6,
+    "share": 0.00017
+   },
+   {
+    "name": "triton_red_fused__to_copy_abs_amax_clamp_cutlass_scaled_mm_div_embedding_mul_reciprocal_rms_norm_unsqueeze_0",
+    "count": 8,
+    "device_us": 34.3,
+    "share": 0.00016
+   },
+   {
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4> >(at::native::ReduceOp<float, at::native::ArgMaxOps<float>, unsigned int, long, 4, 4>)",
+    "count": 8,
+    "device_us": 31.3,
+    "share": 0.00015
+   },
+   {
+    "name": "_post_update_kernel",
+    "count": 8,
+    "device_us": 28.1,
+    "share": 0.00013
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_1",
+    "count": 8,
+    "device_us": 27.7,
+    "share": 0.00013
+   },
+   {
+    "name": "_combine_sampled_and_draft_tokens_kernel",
+    "count": 8,
+    "device_us": 27.0,
+    "share": 0.00013
+   },
+   {
+    "name": "triton_per_fused_add_cat_index_select_mul_rms_norm_split_split_with_sizes_sub_unsqueeze_view_2",
+    "count": 8,
+    "device_us": 26.5,
+    "share": 0.00012
+   },
+   {
+    "name": "_compute_slot_mappings_kernel",
+    "count": 8,
+    "device_us": 22.8,
+    "share": 0.00011
+   },
+   {
+    "name": "_get_num_sampled_and_rejected_kernel",
+    "count": 8,
+    "device_us": 22.8,
+    "share": 0.00011
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::BUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>, false>(int, at::native::BUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_int",
+    "count": 8,
+    "device_us": 21.6,
+    "share": 0.0001
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::tanh_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#4}::operator()() const::{lambda(c10::BFloat16)#1}, std::array<char*, 2ul>, false>(int, at::native::tanh_kernel_cuda(at::TensorIteratorBase&)::{lambda()",
+    "count": 8,
+    "device_us": 19.7,
+    "share": 9e-05
+   },
+   {
+    "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<8> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayR",
+    "count": 8,
+    "device_us": 18.3,
+    "share": 9e-05
+   },
+   {
+    "name": "Memcpy HtoD (Pinned -> Device)",
+    "count": 16,
+    "device_us": 17.7,
+    "share": 8e-05
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::AUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>, false>(int, at::native::AUnaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_int",
+    "count": 8,
+    "device_us": 16.8,
+    "share": 8e-05
+   },
+   {
+    "name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_kernel_impl<at::native::OpaqueType<4> >(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayR",
+    "count": 8,
+    "device_us": 16.3,
+    "share": 8e-05
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<int>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<int>, std::array<char*, 1ul>)",
+    "count": 16,
+    "device_us": 15.5,
+    "share": 7e-05
+   },
+   {
+    "name": "void at::native::_scatter_gather_elementwise_kernel<128, 8, at::native::_cuda_scatter_gather_internal_kernel<false, at::native::OpaqueType<8>, long>::operator()<at::native::TensorAssign>(at::TensorIterator&, long, long, long, at::native::TensorAssign const&)::{lambda(int)#1}>(int, at::native::_cuda_",
+    "count": 8,
+    "device_us": 15.0,
+    "share": 7e-05
+   },
+   {
+    "name": "void at::native::vectorized_gather_kernel<16, long>(char*, char*, long*, int, long, long, long, long, bool)",
+    "count": 8,
+    "device_us": 13.2,
+    "share": 6e-05
+   },
+   {
+    "name": "triton_per_fused_rms_norm_split_with_sizes_view_3",
+    "count": 8,
+    "device_us": 12.0,
+    "share": 6e-05
+   },
+   {
+    "name": "_prepare_pos_seq_lens_kernel",
+    "count": 8,
+    "device_us": 11.6,
+    "share": 5e-05
+   },
+   {
+    "name": "memcpy32_post",
+    "count": 8,
+    "device_us": 11.1,
+    "share": 5e-05
+   },
+   {
+    "name": "void at::native::vectorized_elementwise_kernel<8, at::native::FillFunctor<bool>, std::array<char*, 1ul>, false>(int, at::native::FillFunctor<bool>, std::array<char*, 1ul>)",
+    "count": 8,
+    "device_us": 8.2,
+    "share": 4e-05
+   },
+   {
+    "name": "void at::native::unrolled_elementwise_kernel<at::native::FillFunctor<bool>, std::array<char*, 1ul>, 4, TrivialOffsetCalculator<0, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithoutCast, at::native::memory::StoreWithoutCast>(int, at::native::FillFunctor<bool>, st",
+    "count": 8,
+    "device_us": 7.5,
+    "share": 4e-05
+   },
+   {
+    "name": "void (anonymous namespace)::elementwise_kernel_with_index<int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#3}::operator()() const::{lambda(long)#1}>(int, at::native::arange_cuda_out(c10::Scalar cons",
+    "count": 8,
+    "device_us": 7.4,
+    "share": 3e-05
+   },
+   {
+    "name": "Memset (Device)",
+    "count": 8,
+    "device_us": 6.5,
+    "share": 3e-05
+   }
+  ],
+  "steps": 8,
+  "wall_ms": 319.68,
+  "events": "events_65536_a65536.json",
+  "events_n": 6504
+ }
+}

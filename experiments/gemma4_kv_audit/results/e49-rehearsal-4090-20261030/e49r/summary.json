@@ -1,0 +1,553 @@
+{
+ "models": {
+  "m31": {
+   "status": "ok",
+   "valid": false,
+   "why": [
+    "V1",
+    "V5"
+   ],
+   "checks": {
+    "V1": false,
+    "V2": true,
+    "V3": true,
+    "V4a": true,
+    "V5": false,
+    "V6": true,
+    "V7": true,
+    "V9": true
+   },
+   "fit": {
+    "b": 6.935385011761072e-05,
+    "c": 7.284149135145411,
+    "b_low": 6.188570687950843e-05,
+    "b_up": 7.682199335571301e-05,
+    "se_b": 3.5028814437627977e-06,
+    "r2": 0.9898990867502527,
+    "n": 6,
+    "df": 4
+   },
+   "fit_blocks": {
+    "b": 6.923452547836279e-05,
+    "c": 7.283851701197492,
+    "b_low": 6.622435182494236e-05,
+    "b_up": 7.224469913178322e-05,
+    "se_b": 1.7240398931388502e-06,
+    "r2": 0.9901761521656464,
+    "n": 18,
+    "df": 16
+   },
+   "median_ms": {
+    "2048": 7.1584,
+    "8192": 7.9151,
+    "32768": 9.7612,
+    "65536": 11.72735
+   },
+   "residuals": {
+    "2048": -0.0374,
+    "8192": 0.0079,
+    "32768": 0.0209,
+    "65536": -0.0087
+   },
+   "local_slope_ratio": 0.8652,
+   "spread": {
+    "2048:4": 0.0022,
+    "8192:4": 0.0142,
+    "32768:4": 0.0045,
+    "65536:4": 0.0009,
+    "65536:4:1": 0.0021,
+    "32768:4:1": 0.0024
+   },
+   "preempted": [],
+   "attribution": {
+    "V4a": true,
+    "V4b": true,
+    "V4c": false,
+    "split": {
+     "2048": {
+      "ok": true,
+      "groups": 280,
+      "match": 1.0,
+      "sliding_ms": 0.3929,
+      "global_ms": 0.1777
+     },
+     "32768": {
+      "ok": true,
+      "groups": 280,
+      "match": 1.0,
+      "sliding_ms": 1.0885,
+      "global_ms": 2.0417
+     },
+     "65536": {
+      "ok": true,
+      "groups": 280,
+      "match": 1.0,
+      "sliding_ms": 1.0882,
+      "global_ms": 4.0043
+     }
+    },
+    "device_growth_ms": 2.5804,
+    "wall_growth_ms": 2.6028,
+    "attention_growth_ms": 2.5596,
+    "top_growth": [
+     [
+      "kernel_unified_attention",
+      2.5608
+     ],
+     [
+      "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x2_tn_align8>(cutlass_80_wmma_tensorop_bf1",
+      0.0125
+     ],
+     [
+      "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x1_tn_align8>(cutlass_80_wmma_tensorop_bf1",
+      0.0025
+     ],
+     [
+      "triton_red_fused_add_rms_norm_0",
+      0.0017
+     ],
+     [
+      "triton_red_fused_add_mul_rms_norm_4",
+      0.0009
+     ]
+    ],
+    "sliding_change": {
+     "32768": 1.7704,
+     "65536": 1.7697
+    }
+   },
+   "V4b": true,
+   "V4c": false,
+   "M1": true,
+   "M2": true,
+   "bw_global_gbps": 4724.8,
+   "copy_gbps": 918.8,
+   "decide": {
+    "32768": {
+     "T_ms": 9.7612,
+     "S": 0.0873,
+     "S_low": 0.0779,
+     "S_up": 0.0967,
+     "S_block_low": 0.0834,
+     "S_prof": 0.0784,
+     "S_prof_gap": false
+    },
+    "65536": {
+     "T_ms": 11.7273,
+     "S": 0.1453,
+     "S_low": 0.1297,
+     "S_up": 0.161,
+     "S_block_low": 0.1388,
+     "S_prof": 0.128,
+     "S_prof_gap": false
+    }
+   },
+   "exploratory": {
+    "16384:8": {
+     "T_ms": 9.7114,
+     "S_est": 0.0878
+    }
+   },
+   "gsm8k": {
+    "n": 32,
+    "correct": 19,
+    "accuracy": 0.5938,
+    "bos_removed": true
+   },
+   "kv": {
+    "num_gpu_blocks": 88781,
+    "block_size": 16,
+    "cache_dtype": "auto",
+    "num_blocks": 88781,
+    "groups": [
+     {
+      "layers": 3,
+      "spec": "SlidingWindowSpec",
+      "block_size": 32,
+      "page_bytes": 32768
+     },
+     {
+      "layers": 3,
+      "spec": "SlidingWindowSpec",
+      "block_size": 32,
+      "page_bytes": 32768
+     },
+     {
+      "layers": 3,
+      "spec": "SlidingWindowSpec",
+      "block_size": 32,
+      "page_bytes": 32768
+     },
+     {
+      "layers": 3,
+      "spec": "SlidingWindowSpec",
+      "block_size": 32,
+      "page_bytes": 32768
+     },
+     {
+      "layers": 3,
+      "spec": "FullAttentionSpec",
+      "block_size": 16,
+      "page_bytes": 32768
+     }
+    ]
+   },
+   "model": {
+    "layer_types": [
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention"
+    ],
+    "is_multimodal_model": true,
+    "is_mm_prefix_lm": false,
+    "mm_limits": "{'image': ImageDummyOptions(count=0, width=None, height=None), 'audio': AudioDummyOptions(count=0, length=None), 'video': VideoDummyOptions(count=0, num_frames=None, width=None, height=None)}"
+   },
+   "kv_tokens_logged": 1245498,
+   "max_concurrency_logged": 18.86,
+   "engine_lines": [
+    "(MainProcess pid=1385) INFO 10-30 19:13:19 [model.py:971] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.",
+    "(MainProcess pid=1385) INFO 10-30 19:13:19 [model.py:1028] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.",
+    "(MainProcess pid=1385) INFO 10-30 19:13:19 [config.py:362] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. FA4 not available, forcing TRITON_ATTN backend.",
+    "(MainProcess pid=1385) INFO 10-30 19:13:25 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='google/gemma-4-E2B-it', speculative_config=None, tokenizer='google/gemma-4-E2B-it', skip_tokenizer_init",
+    "(MainProcess pid=1385) INFO 10-30 19:13:26 [parallel_state.py:1931] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_5bfb96954d154d4e8629949b504bff0e backend=nccl",
+    "(MainProcess pid=1385) INFO 10-30 19:13:27 [cuda.py:452] Using AttentionBackendEnum.TRITON_ATTN backend.",
+    "(MainProcess pid=1385) INFO 10-30 19:13:52 [backends.py:1125] [backbone] Using cache directory: /workspace/cache/vllm/torch_compile_cache/120e6ee159/rank_0_0/backbone for vLLM's torch.compile",
+    "(MainProcess pid=1385) INFO 10-30 19:13:52 [backends.py:1187] [backbone] Dynamo bytecode transform time: 7.12 s",
+    "(MainProcess pid=1385) INFO 10-30 19:14:42 [backends.py:417] [backbone] Compiling a graph for compile range (1, 2048) takes 49.58 s",
+    "(MainProcess pid=1385) INFO 10-30 19:14:46 [backends.py:948] collected artifacts: 36 entries, 9 artifacts, 32667707 bytes total"
+   ],
+   "waste": {
+    "2048:4": {
+     "classes": {
+      "gemm": 0.8432,
+      "attention": 0.0801,
+      "norm_act_rope": 0.0659,
+      "logits_sampling": 0.0039,
+      "other": 0.0038,
+      "copy_cache": 0.0031
+     },
+     "device_ms_per_step": 7.121,
+     "wall_ms_per_step": 7.158,
+     "idle_share": 0.0052,
+     "profile_wall_ms_per_step": 14.35,
+     "top": [
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x2_tn_align8>(cutlass_",
+       0.65976
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x1_tn_align8>(cutlass_",
+       0.17995
+      ],
+      [
+       "kernel_unified_attention",
+       0.07004
+      ],
+      [
+       "triton_red_fused_add_rms_norm_0",
+       0.01243
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_4",
+       0.01134
+      ],
+      [
+       "reduce_segments",
+       0.0101
+      ],
+      [
+       "triton_red_fused_add_rms_norm_2",
+       0.00838
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_sub_unsqueeze_view_5",
+       0.00729
+      ]
+     ]
+    },
+    "32768:4": {
+     "classes": {
+      "gemm": 0.6205,
+      "attention": 0.3227,
+      "norm_act_rope": 0.0489,
+      "other": 0.0028,
+      "logits_sampling": 0.0028,
+      "copy_cache": 0.0024
+     },
+     "device_ms_per_step": 9.702,
+     "wall_ms_per_step": 9.753,
+     "idle_share": 0.0053,
+     "profile_wall_ms_per_step": 14.652,
+     "top": [
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x2_tn_align8>(cutlass_",
+       0.48557
+      ],
+      [
+       "kernel_unified_attention",
+       0.31537
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x1_tn_align8>(cutlass_",
+       0.13234
+      ],
+      [
+       "triton_red_fused_add_rms_norm_0",
+       0.0093
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_4",
+       0.00842
+      ],
+      [
+       "reduce_segments",
+       0.00729
+      ],
+      [
+       "triton_red_fused_add_rms_norm_2",
+       0.00624
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_sub_unsqueeze_view_5",
+       0.00539
+      ]
+     ]
+    },
+    "65536:4": {
+     "classes": {
+      "gemm": 0.516,
+      "attention": 0.4366,
+      "norm_act_rope": 0.0407,
+      "other": 0.0024,
+      "logits_sampling": 0.0024,
+      "copy_cache": 0.0019
+     },
+     "device_ms_per_step": 11.663,
+     "wall_ms_per_step": 11.715,
+     "idle_share": 0.0044,
+     "profile_wall_ms_per_step": 17.961,
+     "top": [
+      [
+       "kernel_unified_attention",
+       0.43055
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x2_tn_align8>(cutlass_",
+       0.4039
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x1_tn_align8>(cutlass_",
+       0.10996
+      ],
+      [
+       "triton_red_fused_add_rms_norm_0",
+       0.00774
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_4",
+       0.00701
+      ],
+      [
+       "reduce_segments",
+       0.00607
+      ],
+      [
+       "triton_red_fused_add_rms_norm_2",
+       0.00519
+      ],
+      [
+       "triton_per_fused_add_cat_index_select_mul_rms_norm_split_sub_unsqueeze_view_5",
+       0.00448
+      ]
+     ]
+    },
+    "1024:1": {
+     "classes": {
+      "gemm": 0.8637,
+      "norm_act_rope": 0.0717,
+      "attention": 0.053,
+      "other": 0.0041,
+      "logits_sampling": 0.0038,
+      "copy_cache": 0.0037
+     },
+     "device_ms_per_step": 6.157,
+     "wall_ms_per_step": 6.203,
+     "idle_share": 0.0074,
+     "profile_wall_ms_per_step": 11.069,
+     "top": [
+      [
+       "std::enable_if<!(false), void>::type internal::gemvx::kernel<int, int, __nv_bfloat16, __nv_bfloat16,",
+       0.62644
+      ],
+      [
+       "std::enable_if<!(false), void>::type internal::gemvx::kernel<int, int, __nv_bfloat16, float, float, ",
+       0.14592
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x1_tn_align8>(cutlass_",
+       0.0539
+      ],
+      [
+       "kernel_unified_attention",
+       0.04222
+      ],
+      [
+       "std::enable_if<!(false), void>::type internal::gemvx::kernel<int, int, __nv_bfloat16, __nv_bfloat16,",
+       0.01524
+      ],
+      [
+       "std::enable_if<!(false), void>::type internal::gemvx::kernel<int, int, __nv_bfloat16, __nv_bfloat16,",
+       0.01516
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_4",
+       0.01226
+      ],
+      [
+       "triton_red_fused_add_rms_norm_0",
+       0.01164
+      ]
+     ]
+    },
+    "1024:8": {
+     "classes": {
+      "gemm": 0.8475,
+      "attention": 0.0717,
+      "norm_act_rope": 0.0676,
+      "logits_sampling": 0.0053,
+      "other": 0.0044,
+      "copy_cache": 0.0035
+     },
+     "device_ms_per_step": 6.992,
+     "wall_ms_per_step": 7.021,
+     "idle_share": 0.0041,
+     "profile_wall_ms_per_step": 11.023,
+     "top": [
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x2_tn_align8>(cutlass_",
+       0.71444
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x1_tn_align8>(cutlass_",
+       0.12381
+      ],
+      [
+       "kernel_unified_attention",
+       0.06053
+      ],
+      [
+       "triton_red_fused_add_rms_norm_0",
+       0.01268
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_4",
+       0.01159
+      ],
+      [
+       "reduce_segments",
+       0.01114
+      ],
+      [
+       "void cublasLt::splitKreduce_kernel<32, 16, int, __nv_bfloat16, __nv_bfloat16, float, __nv_bfloat16, ",
+       0.00929
+      ],
+      [
+       "triton_red_fused_add_rms_norm_2",
+       0.00857
+      ]
+     ]
+    },
+    "1024:32": {
+     "classes": {
+      "gemm": 0.7432,
+      "attention": 0.1768,
+      "norm_act_rope": 0.0623,
+      "other": 0.0069,
+      "logits_sampling": 0.0069,
+      "copy_cache": 0.004
+     },
+     "device_ms_per_step": 7.956,
+     "wall_ms_per_step": 7.983,
+     "idle_share": 0.0034,
+     "profile_wall_ms_per_step": 11.967,
+     "top": [
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_32x1_tn_align8>(cutlass_8",
+       0.23285
+      ],
+      [
+       "kernel_unified_attention",
+       0.16329
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x64_32x6_tn_align8>(cutlass_80",
+       0.15313
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_128x2_tn_align8>(cutlass_",
+       0.15272
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_64x2_tn_align8>(cutlass_8",
+       0.08577
+      ],
+      [
+       "ampere_bf16_s16816gemm_bf16_64x64_ldg8_f2f_stages_64x5_tn",
+       0.04862
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_64x1_tn_align8>(cutlass_8",
+       0.03383
+      ],
+      [
+       "void cublasLt::splitKreduce_kernel<32, 16, int, __nv_bfloat16, __nv_bfloat16, float, __nv_bfloat16, ",
+       0.02205
+      ]
+     ]
+    }
+   }
+  },
+  "m26": {
+   "status": "missing",
+   "valid": false,
+   "why": [
+    "run not ok"
+   ]
+  }
+ },
+ "V8": true,
+ "copy_gbps": 918.8,
+ "decision": "INVALID (m31: V1, V5; m26: run not ok)"
+}

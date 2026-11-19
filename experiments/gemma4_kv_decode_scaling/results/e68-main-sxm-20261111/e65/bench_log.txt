@@ -1,0 +1,4 @@
+W1111 23:17:45.481000 1498 torch/_opaque_base.py:6] torch._opaque_base is deprecated, use torch._custom_class_base instead
+W1111 23:17:45.482000 1498 torch/_library/opaque_object.py:288] register_opaque_type is deprecated, use register_custom_class instead
+W1111 23:17:45.483000 1498 torch/_library/opaque_object.py:211] typ='value' is deprecated, use typ='constant' instead
+{"status": "ok", "points": 35, "errors": []}

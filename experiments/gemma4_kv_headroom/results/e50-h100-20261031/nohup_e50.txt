@@ -1,0 +1,10 @@
+06:31:59 setup done after 354 s; versions: vllm 0.33.0rc1.dev229+g3966924d5 torch 2.14.0+cu130 vllm_flash_attn unknown VLLM_BUILD_COMMIT=unset 
+06:43:42 m31f8: exit 0 after 1057 s
+06:43:42 GPU free (0 MiB in use)
+06:50:29 m26: exit 0 after 1464 s
+06:50:29 GPU free (0 MiB in use)
+06:57:01 m31bf: exit 0 after 1856 s
+06:57:01 GPU free (0 MiB in use)
+06:57:06 decision: GO (32768: S 0.121 (low 0.120, up 0.122) at B=19; 65536: S 0.150 (low 0.149, up 0.151) at B=11)
+06:57:06 done after 1861 s
+06:57:06 AUTO_STOP in 180 s; copy the results now

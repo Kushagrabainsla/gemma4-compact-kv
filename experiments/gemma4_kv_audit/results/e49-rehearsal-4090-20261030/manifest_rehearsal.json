@@ -1,0 +1,148 @@
+{
+ "run_id": "E-49-rehearsal-4090-m31-20261030",
+ "experiment": "E-49",
+ "idea": "I-182",
+ "status": "ok",
+ "label": "rehearsal-4090",
+ "design_commit": "8edb552",
+ "config": {
+  "model": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "cells": "2048:4,8192:4,32768:4,65536:4,65536:4:1,32768:4:1",
+  "waste_cells": "1024:1,1024:8,1024:32,16384:8",
+  "profile_cells": "2048:4,32768:4,65536:4,1024:1,1024:8,1024:32",
+  "max_num_batched_tokens": 2048,
+  "max_model_len": 66048,
+  "max_num_seqs": 32,
+  "gpu_memory_utilization": 0.92,
+  "steps_per_block": 32,
+  "text_only": true
+ },
+ "started_at": "2026-10-30T19:13:05Z",
+ "finished_at": "2026-10-30T19:17:06Z",
+ "hardware": {
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "gpu_count": 1,
+  "driver": "595.91.07",
+  "cuda": "13.2",
+  "gpu_uuid": "5a439b64-8614-7244-eda0-49686f66bf24",
+  "pod_id": "<pod-id>",
+  "data_center": "EU-RO-1",
+  "price_per_hour": 0.89
+ },
+ "software": {
+  "vllm": "0.33.0rc1.dev229+g3966924d5",
+  "torch": "2.14.0+cu130",
+  "image": "vllm/vllm-openai@sha256:f255c4fad2f30ff5ee80db14d3a03afe9ae0f10d3470339864ff04745fe44cb3",
+  "attention_backend": "TRITON_ATTN"
+ },
+ "metrics": {
+  "step_ms_L2048_B4": {
+   "values": [
+    7.1722,
+    7.1584,
+    7.1564
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L8192_B4": {
+   "values": [
+    7.8611,
+    7.9151,
+    7.9725
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L32768_B4": {
+   "values": [
+    9.7092,
+    9.7532,
+    9.7529
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L65536_B4": {
+   "values": [
+    11.7058,
+    11.715,
+    11.7169
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L65536_B4_r1": {
+   "values": [
+    11.7155,
+    11.7405,
+    11.7397
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L32768_B4_r1": {
+   "values": [
+    9.7475,
+    9.7695,
+    9.771
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L1024_B1": {
+   "values": [
+    6.1915,
+    6.2032,
+    6.2053
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L1024_B8": {
+   "values": [
+    7.0157,
+    7.021,
+    7.0271
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L1024_B32": {
+   "values": [
+    7.9612,
+    7.9831,
+    8.0135
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "step_ms_L16384_B8": {
+   "values": [
+    9.7103,
+    9.7114,
+    9.7172
+   ],
+   "unit": "ms",
+   "higher_is_better": false
+  },
+  "engine_init_s": {
+   "values": [
+    137.6
+   ],
+   "unit": "s",
+   "higher_is_better": false
+  },
+  "gsm8k_accuracy": {
+   "values": [
+    0.5938
+   ],
+   "unit": "fraction",
+   "higher_is_better": true
+  }
+ },
+ "results_path": "experiments/gemma4_kv_audit/results/e49-rehearsal-4090-20261030/",
+ "cost_usd": 0.21,
+ "notes": "S5 rehearsal (mechanics only, not a decision run): E2B has no K=V layers; INVALID by design (V1 not H100; V5 uses the 31B byte constants). Every VERIFY item passed. Layer split ok (280 groups). Exploratory: on Triton the sliding-layer attention grows from 0.39 to 1.09 ms per step between 2K and 32K (V4c false)."
+}

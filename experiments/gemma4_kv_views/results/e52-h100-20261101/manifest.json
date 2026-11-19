@@ -1,0 +1,678 @@
+{
+ "run_id": "e52-h100-20261101",
+ "experiment": "E-52",
+ "idea": "I-182",
+ "status": "ok",
+ "label": "e52-h100-20261101",
+ "design_commit": "3130fcd",
+ "config": {
+  "cells": "19:2048,19:32768,11:2048,11:65536,19:8192,11:8192,4:2048,4:32768",
+  "fail_fast": "on",
+  "calls": 20,
+  "replays": 30,
+  "central": 20,
+  "repeats": 5
+ },
+ "started_at": "2026-11-01T10:10:59Z",
+ "finished_at": "2026-11-01T10:20:11Z",
+ "hardware": {
+  "gpu_name": "NVIDIA H100 80GB HBM3",
+  "gpu_count": 1,
+  "driver": "595.91.07",
+  "cuda": "13.2",
+  "capability": "9.0",
+  "gpu_uuid": "05d343a2-23fa-c679-0960-431ddaf0826e",
+  "pod_id": "<pod-id>",
+  "data_center": "EUR-NO-2",
+  "price_per_hour": 3.99,
+  "copy_gbps": 3024.95
+ },
+ "software": {
+  "torch": "2.14.0+cu130",
+  "triton": "3.8.0",
+  "vllm": "0.33.0rc1.dev229+g3966924d5",
+  "image": "vllm/vllm-openai@sha256:f255c4fad2f30ff5ee80db14d3a03afe9ae0f10d3470339864ff04745fe44cb3"
+ },
+ "metrics": {
+  "us_stock_fp8_s32_s32_B19_L2048": {
+   "values": [
+    202.84,
+    199.15,
+    197.79,
+    199.33,
+    197.33
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_s32_B19_L32768": {
+   "values": [
+    1388.06,
+    1394.38,
+    1392.27,
+    1392.77,
+    1388.22
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_16_4_32_2_B19_L2048": {
+   "values": [
+    90.17,
+    88.14,
+    89.48,
+    88.06,
+    89.35
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_16_4_32_2_B19_L32768": {
+   "values": [
+    999.7,
+    998.12,
+    1000.24,
+    998.5,
+    998.83
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_16_4_32_2_B19_L2048": {
+   "values": [
+    81.65,
+    81.21,
+    81.64,
+    81.59,
+    81.65
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_16_4_32_2_B19_L32768": {
+   "values": [
+    953.28,
+    947.36,
+    953.02,
+    953.21,
+    953.3
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_32_4_32_2_B19_L2048": {
+   "values": [
+    101.18,
+    100.71,
+    100.95,
+    100.85,
+    101.11
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_32_4_32_2_B19_L32768": {
+   "values": [
+    931.92,
+    926.26,
+    931.9,
+    926.03,
+    931.69
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_views_s32_B19_L2048": {
+   "values": [
+    203.85,
+    198.5,
+    203.04,
+    198.56,
+    203.14
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_alias_s32_B19_L2048": {
+   "values": [
+    199.36,
+    198.83,
+    200.39,
+    199.14,
+    200.05
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_pool_s32_B19_L2048": {
+   "values": [
+    192.91,
+    193.17,
+    192.52,
+    192.97,
+    192.05
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_alias_16_4_32_2_B19_L2048": {
+   "values": [
+    76.2,
+    76.17,
+    75.77,
+    76.29,
+    75.81
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_pool_16_4_32_2_B19_L2048": {
+   "values": [
+    66.8,
+    66.79,
+    66.39,
+    66.79,
+    66.35
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_pool_16_4_32_2_B19_L2048": {
+   "values": [
+    66.74,
+    66.75,
+    66.37,
+    66.77,
+    66.34
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_16_4_32_3_B19_L2048": {
+   "values": [
+    88.77,
+    88.88,
+    88.57,
+    89.45,
+    88.51
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_16_4_32_2_B19_L2048": {
+   "values": [
+    95.65,
+    95.96,
+    95.42,
+    96.39,
+    95.43
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_16_4_32_3_B19_L2048": {
+   "values": [
+    96.54,
+    97.62,
+    96.15,
+    99.3,
+    96.17
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_views_s32_B19_L32768": {
+   "values": [
+    1277.47,
+    1295.61,
+    1269.33,
+    1293.84,
+    1282.47
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_alias_s32_B19_L32768": {
+   "values": [
+    1251.89,
+    1270.92,
+    1260.64,
+    1274.98,
+    1248.16
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_pool_s32_B19_L32768": {
+   "values": [
+    1125.86,
+    1121.12,
+    1121.73,
+    1133.54,
+    1122.51
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_alias_16_4_32_2_B19_L32768": {
+   "values": [
+    886.37,
+    887.6,
+    892.68,
+    887.81,
+    893.36
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_pool_16_4_32_2_B19_L32768": {
+   "values": [
+    818.47,
+    827.09,
+    818.69,
+    826.92,
+    818.75
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_pool_16_4_32_2_B19_L32768": {
+   "values": [
+    816.25,
+    823.42,
+    817.16,
+    823.1,
+    816.86
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_16_4_32_3_B19_L32768": {
+   "values": [
+    1019.27,
+    1019.56,
+    1014.6,
+    1019.65,
+    1014.7
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_16_4_32_2_B19_L32768": {
+   "values": [
+    1157.08,
+    1157.08,
+    1150.18,
+    1157.1,
+    1149.77
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_16_4_32_3_B19_L32768": {
+   "values": [
+    1182.71,
+    1183.42,
+    1175.02,
+    1183.24,
+    1182.26
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_auto_s0_B11_L2048": {
+   "values": [
+    61.77,
+    63.34,
+    61.59,
+    62.8,
+    61.77
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_auto_s0_B11_L65536": {
+   "values": [
+    1481.34,
+    1456.7,
+    1467.31,
+    1455.95,
+    1478.13
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_64_4_32_2_B11_L2048": {
+   "values": [
+    87.78,
+    86.58,
+    88.99,
+    86.4,
+    86.66
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_64_4_32_2_B11_L65536": {
+   "values": [
+    1140.64,
+    1139.66,
+    1140.97,
+    1143.16,
+    1138.77
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_64_4_32_2_B11_L2048": {
+   "values": [
+    83.39,
+    82.2,
+    83.6,
+    82.35,
+    82.65
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_64_4_32_2_B11_L65536": {
+   "values": [
+    1067.14,
+    1066.11,
+    1072.3,
+    1066.7,
+    1066.75
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_s32_B11_L2048": {
+   "values": [
+    123.49,
+    119.99,
+    123.29,
+    120.08,
+    121.04
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_views_s32_B11_L2048": {
+   "values": [
+    120.57,
+    119.71,
+    121.0,
+    119.79,
+    120.12
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_alias_s32_B11_L2048": {
+   "values": [
+    119.74,
+    119.48,
+    119.6,
+    119.48,
+    119.29
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_pool_s32_B11_L2048": {
+   "values": [
+    113.64,
+    113.77,
+    113.66,
+    113.82,
+    113.4
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_alias_64_4_32_2_B11_L2048": {
+   "values": [
+    78.62,
+    78.67,
+    78.73,
+    78.64,
+    78.33
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_pool_64_4_32_2_B11_L2048": {
+   "values": [
+    77.5,
+    77.36,
+    77.35,
+    77.39,
+    77.06
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_pool_64_4_32_2_B11_L2048": {
+   "values": [
+    77.68,
+    77.55,
+    77.56,
+    77.67,
+    77.47
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_64_4_32_3_B11_L2048": {
+   "values": [
+    86.25,
+    86.3,
+    86.38,
+    86.47,
+    86.15
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_64_4_32_2_B11_L2048": {
+   "values": [
+    89.23,
+    89.33,
+    89.24,
+    89.57,
+    88.86
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_64_4_32_3_B11_L2048": {
+   "values": [
+    90.48,
+    91.19,
+    90.43,
+    91.45,
+    90.23
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_s32_B11_L65536": {
+   "values": [
+    1507.58,
+    1532.36,
+    1490.69,
+    1526.06,
+    1511.69
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_views_s32_B11_L65536": {
+   "values": [
+    1419.05,
+    1418.37,
+    1402.57,
+    1429.93,
+    1416.52
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_alias_s32_B11_L65536": {
+   "values": [
+    1388.65,
+    1387.71,
+    1381.92,
+    1382.39,
+    1380.55
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_pool_s32_B11_L65536": {
+   "values": [
+    1224.26,
+    1223.97,
+    1224.38,
+    1224.35,
+    1224.16
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_alias_64_4_32_2_B11_L65536": {
+   "values": [
+    1005.37,
+    991.72,
+    1006.06,
+    991.91,
+    1005.92
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_pool_64_4_32_2_B11_L65536": {
+   "values": [
+    916.09,
+    915.49,
+    916.0,
+    914.9,
+    916.07
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmpv_fp8h_pool_64_4_32_2_B11_L65536": {
+   "values": [
+    914.31,
+    914.96,
+    914.48,
+    914.81,
+    913.49
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8h_64_4_32_3_B11_L65536": {
+   "values": [
+    1166.3,
+    1167.66,
+    1167.32,
+    1167.42,
+    1165.97
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_64_4_32_2_B11_L65536": {
+   "values": [
+    1294.53,
+    1293.98,
+    1294.86,
+    1293.97,
+    1301.51
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_64_4_32_3_B11_L65536": {
+   "values": [
+    1314.38,
+    1313.97,
+    1314.2,
+    1313.72,
+    1314.04
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_stock_fp8_X32768": {
+   "values": [
+    1185.22,
+    1195.23,
+    1194.48,
+    1193.44,
+    1190.89
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_std_fp8_X32768": {
+   "values": [
+    909.53,
+    909.98,
+    910.76,
+    910.44,
+    909.48
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_cmp_fp8_X32768": {
+   "values": [
+    871.63,
+    866.15,
+    871.38,
+    871.62,
+    871.65
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_stock_fp8_X65536": {
+   "values": [
+    1419.57,
+    1393.36,
+    1405.72,
+    1393.15,
+    1416.36
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_std_fp8_X65536": {
+   "values": [
+    1052.86,
+    1053.08,
+    1051.98,
+    1056.76,
+    1052.11
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_cmp_fp8_X65536": {
+   "values": [
+    983.75,
+    983.91,
+    988.7,
+    984.35,
+    984.1
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  }
+ },
+ "results_path": "experiments/gemma4_kv_views/results/e52-h100-20261101/",
+ "notes": "E-52 S6 H100 session; frozen decision INVALID (V4: one 2K row under the power cap); exploratory KILL (byte route only). decision=INVALID (V4)"
+}

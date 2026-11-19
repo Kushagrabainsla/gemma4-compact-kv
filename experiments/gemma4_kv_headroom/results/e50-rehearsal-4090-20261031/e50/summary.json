@@ -1,0 +1,650 @@
+{
+ "arms": {
+  "m31f8": {
+   "status": "ok",
+   "valid": false,
+   "why": [
+    "V1",
+    "V5",
+    "V11"
+   ],
+   "checks": {
+    "V1": false,
+    "V2": true,
+    "V3": true,
+    "V4a": true,
+    "V5": false,
+    "V7": true,
+    "V9": true,
+    "V11": false
+   },
+   "fit": {
+    "b": 3.574526884147501e-05,
+    "c": 7.232527105113096,
+    "b_low": 3.1203056741953366e-05,
+    "b_up": 4.028748094099666e-05,
+    "se_b": 2.1304934800758186e-06,
+    "r2": 0.9859894385977401,
+    "n": 6,
+    "df": 4
+   },
+   "fit_blocks": {
+    "b": 3.573023338006082e-05,
+    "c": 7.23284544763353,
+    "b_low": 3.385127744443321e-05,
+    "b_up": 3.760918931568843e-05,
+    "se_b": 1.0761488749299018e-06,
+    "r2": 0.9856934518687059,
+    "n": 18,
+    "df": 16
+   },
+   "median_ms": {
+    "2048": 7.1203,
+    "8192": 7.6228,
+    "32768": 8.4982,
+    "65536": 9.524750000000001
+   },
+   "residuals": {
+    "2048": -0.026,
+    "8192": 0.0128,
+    "32768": 0.0111,
+    "65536": -0.0053
+   },
+   "local_slope_ratio": 0.8764,
+   "spread": {
+    "2048:4": 0.0006,
+    "8192:4": 0.0111,
+    "32768:4": 0.0018,
+    "65536:4": 0.0008,
+    "65536:4:1": 0.0002,
+    "32768:4:1": 0.0007
+   },
+   "preempted": [],
+   "attribution": {
+    "V4a": true,
+    "V4b": true,
+    "V4c": false,
+    "split": {
+     "2048": {
+      "ok": true,
+      "groups": 280,
+      "match": 1.0,
+      "sliding_ms": 0.3103,
+      "global_ms": 0.1407
+     },
+     "32768": {
+      "ok": true,
+      "groups": 280,
+      "match": 1.0,
+      "sliding_ms": 0.7302,
+      "global_ms": 1.0804
+     },
+     "65536": {
+      "ok": true,
+      "groups": 280,
+      "match": 1.0,
+      "sliding_ms": 0.7336,
+      "global_ms": 2.0872
+     }
+    },
+    "device_growth_ms": 1.3476,
+    "wall_growth_ms": 1.3779,
+    "attention_growth_ms": 1.3596,
+    "top_growth": [
+     [
+      "kernel_unified_attention",
+      1.3603
+     ],
+     [
+      "triton_red_fused_add_mul_rms_norm_4",
+      0.0027
+     ],
+     [
+      "triton_red_fused_add_rms_norm_0",
+      0.0014
+     ],
+     [
+      "_gather_block_tables_kernel",
+      0.0006
+     ],
+     [
+      "triton_red_fused_add_rms_norm_2",
+      0.0005
+     ]
+    ],
+    "sliding_change": {
+     "32768": 1.3532,
+     "65536": 1.3642
+    }
+   },
+   "V4b": true,
+   "V4c": false,
+   "M1": true,
+   "M2": true,
+   "bw_global_gbps": 4583.5,
+   "copy_gbps": 919.65,
+   "decide": {
+    "32768": {
+     "T_ms": 8.4982,
+     "S": 0.0517,
+     "S_low": 0.0451,
+     "S_up": 0.0583,
+     "S_block_low": 0.0489,
+     "S_prof": 0.0477,
+     "S_prof_gap": false
+    },
+    "65536": {
+     "T_ms": 9.5248,
+     "S": 0.0922,
+     "S_low": 0.0805,
+     "S_up": 0.104,
+     "S_block_low": 0.0873,
+     "S_prof": 0.0822,
+     "S_prof_gap": false
+    }
+   },
+   "exploratory": {},
+   "gsm8k": {
+    "n": 32,
+    "correct": 19,
+    "accuracy": 0.5938,
+    "bos_removed": true
+   },
+   "kv": {
+    "num_gpu_blocks": 175215,
+    "block_size": 16,
+    "cache_dtype": "fp8",
+    "num_blocks": 175215,
+    "groups": [
+     {
+      "layers": 3,
+      "spec": "SlidingWindowSpec",
+      "block_size": 32,
+      "page_bytes": 16384
+     },
+     {
+      "layers": 3,
+      "spec": "SlidingWindowSpec",
+      "block_size": 32,
+      "page_bytes": 16384
+     },
+     {
+      "layers": 3,
+      "spec": "SlidingWindowSpec",
+      "block_size": 32,
+      "page_bytes": 16384
+     },
+     {
+      "layers": 3,
+      "spec": "SlidingWindowSpec",
+      "block_size": 32,
+      "page_bytes": 16384
+     },
+     {
+      "layers": 3,
+      "spec": "FullAttentionSpec",
+      "block_size": 16,
+      "page_bytes": 16384
+     }
+    ]
+   },
+   "model": {
+    "layer_types": [
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "sliding_attention",
+     "full_attention"
+    ],
+    "is_multimodal_model": true,
+    "is_mm_prefix_lm": false,
+    "mm_limits": "{'image': ImageDummyOptions(count=0, width=None, height=None), 'audio': AudioDummyOptions(count=0, length=None), 'video': VideoDummyOptions(count=0, num_frames=None, width=None, height=None)}",
+    "cudagraph_sizes": [
+     1,
+     2,
+     4,
+     8,
+     16,
+     24,
+     32,
+     40,
+     48,
+     56,
+     64,
+     72,
+     80,
+     88,
+     96,
+     104,
+     112,
+     120,
+     128
+    ]
+   },
+   "kv_tokens_logged": 2464973,
+   "max_concurrency_logged": 36.47,
+   "engine_lines": [
+    "(MainProcess pid=1356) INFO 10-31 06:00:22 [model.py:971] All limits of multimodal modalities supported by the model are set to 0, running in text-only mode.",
+    "(MainProcess pid=1356) INFO 10-31 06:00:22 [model.py:1028] Disabled mm_prefix attention mode because multimodal inputs are configuration-disabled. Attention backends without mm_prefix support may now be selected.",
+    "(MainProcess pid=1356) INFO 10-31 06:00:22 [config.py:362] Gemma4 model has heterogeneous head dimensions {'sliding_attention': 256, 'full_attention': 512}. FA4 not available, forcing TRITON_ATTN backend.",
+    "(MainProcess pid=1356) INFO 10-31 06:00:27 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='google/gemma-4-E2B-it', speculative_config=None, tokenizer='google/gemma-4-E2B-it', skip_tokenizer_init",
+    "(MainProcess pid=1356) INFO 10-31 06:00:28 [parallel_state.py:1931] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_0df882fe3eaf4a1a93cbc355a5a65cf3 backend=nccl",
+    "(MainProcess pid=1356) INFO 10-31 06:00:29 [cuda.py:452] Using AttentionBackendEnum.TRITON_ATTN backend.",
+    "(MainProcess pid=1356) INFO 10-31 06:00:39 [backends.py:1125] [backbone] Using cache directory: /workspace/cache/vllm/torch_compile_cache/9a2c6ba776/rank_0_0/backbone for vLLM's torch.compile",
+    "(MainProcess pid=1356) INFO 10-31 06:00:39 [backends.py:1187] [backbone] Dynamo bytecode transform time: 5.19 s",
+    "(MainProcess pid=1356) INFO 10-31 06:01:12 [backends.py:417] [backbone] Compiling a graph for compile range (1, 2048) takes 33.51 s",
+    "(MainProcess pid=1356) INFO 10-31 06:01:15 [backends.py:948] collected artifacts: 36 entries, 9 artifacts, 34189213 bytes total"
+   ],
+   "waste": {
+    "2048:4": {
+     "classes": {
+      "gemm": 0.8498,
+      "norm_act_rope": 0.0749,
+      "attention": 0.0632,
+      "logits_sampling": 0.0051,
+      "other": 0.0038,
+      "copy_cache": 0.0032
+     },
+     "device_ms_per_step": 7.134,
+     "wall_ms_per_step": 7.12,
+     "idle_share": -0.0019,
+     "profile_wall_ms_per_step": 12.221,
+     "top": [
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x2_tn_align8>(cutlass_",
+       0.66458
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x1_tn_align8>(cutlass_",
+       0.18156
+      ],
+      [
+       "kernel_unified_attention",
+       0.0529
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_4",
+       0.01843
+      ],
+      [
+       "triton_red_fused_add_rms_norm_0",
+       0.01279
+      ],
+      [
+       "reduce_segments",
+       0.01033
+      ],
+      [
+       "triton_red_fused_add_rms_norm_2",
+       0.00869
+      ],
+      [
+       "triton_per_fused__to_copy_add_cat_clamp_index_select_mul_reciprocal_rms_norm_split_sub_unsqueeze_vie",
+       0.00804
+      ]
+     ]
+    },
+    "32768:4": {
+     "classes": {
+      "gemm": 0.7129,
+      "attention": 0.2135,
+      "norm_act_rope": 0.0635,
+      "logits_sampling": 0.0042,
+      "other": 0.0032,
+      "copy_cache": 0.0027
+     },
+     "device_ms_per_step": 8.481,
+     "wall_ms_per_step": 8.498,
+     "idle_share": 0.002,
+     "profile_wall_ms_per_step": 10.386,
+     "top": [
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x2_tn_align8>(cutlass_",
+       0.55736
+      ],
+      [
+       "kernel_unified_attention",
+       0.20488
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x1_tn_align8>(cutlass_",
+       0.15247
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_4",
+       0.01582
+      ],
+      [
+       "triton_red_fused_add_rms_norm_0",
+       0.01092
+      ],
+      [
+       "reduce_segments",
+       0.0086
+      ],
+      [
+       "triton_red_fused_add_rms_norm_2",
+       0.00737
+      ],
+      [
+       "triton_per_fused__to_copy_add_cat_clamp_index_select_mul_reciprocal_rms_norm_split_sub_unsqueeze_vie",
+       0.00666
+      ]
+     ]
+    },
+    "65536:4": {
+     "classes": {
+      "gemm": 0.6376,
+      "attention": 0.2963,
+      "norm_act_rope": 0.0569,
+      "logits_sampling": 0.0038,
+      "other": 0.0029,
+      "copy_cache": 0.0024
+     },
+     "device_ms_per_step": 9.521,
+     "wall_ms_per_step": 9.526,
+     "idle_share": 0.0005,
+     "profile_wall_ms_per_step": 11.736,
+     "top": [
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x2_tn_align8>(cutlass_",
+       0.49874
+      ],
+      [
+       "kernel_unified_attention",
+       0.28856
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x1_tn_align8>(cutlass_",
+       0.1361
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_4",
+       0.01418
+      ],
+      [
+       "triton_red_fused_add_rms_norm_0",
+       0.00979
+      ],
+      [
+       "reduce_segments",
+       0.00771
+      ],
+      [
+       "triton_red_fused_add_rms_norm_2",
+       0.00662
+      ],
+      [
+       "triton_per_fused__to_copy_add_cat_clamp_index_select_mul_reciprocal_rms_norm_split_sub_unsqueeze_vie",
+       0.00597
+      ]
+     ]
+    },
+    "2048:a65536": {
+     "classes": {
+      "gemm": 0.7567,
+      "attention": 0.1555,
+      "norm_act_rope": 0.0704,
+      "other": 0.007,
+      "logits_sampling": 0.007,
+      "copy_cache": 0.0034
+     },
+     "device_ms_per_step": 8.071,
+     "wall_ms_per_step": null,
+     "idle_share": null,
+     "profile_wall_ms_per_step": 10.79,
+     "top": [
+      [
+       "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x64_32x6_tn_align8>(cutlass_80",
+       0.41159
+      ],
+      [
+       "ampere_bf16_s16816gemm_bf16_64x64_ldg8_f2f_stages_64x5_tn",
+       0.20505
+      ],
+      [
+       "kernel_unified_attention",
+       0.14158
+      ],
+      [
+       "ampere_bf16_s16816gemm_bf16_128x64_ldg8_f2f_stages_32x6_tn",
+       0.08807
+      ],
+      [
+       "void cublasLt::splitKreduce_kernel<32, 16, int, __nv_bfloat16, __nv_bfloat16, float, __nv_bfloat16, ",
+       0.02237
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_4",
+       0.01667
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x1_tn_align8>(cutlass_",
+       0.01507
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_64x2_tn_align8>(cutlass_8",
+       0.01455
+      ]
+     ]
+    },
+    "65536:a65536": {
+     "classes": {
+      "attention": 0.7409,
+      "gemm": 0.2319,
+      "norm_act_rope": 0.0217,
+      "other": 0.0022,
+      "logits_sampling": 0.0022,
+      "copy_cache": 0.001
+     },
+     "device_ms_per_step": 26.166,
+     "wall_ms_per_step": null,
+     "idle_share": null,
+     "profile_wall_ms_per_step": 29.079,
+     "top": [
+      [
+       "kernel_unified_attention",
+       0.73451
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x64_32x6_tn_align8>(cutlass_80",
+       0.12605
+      ],
+      [
+       "ampere_bf16_s16816gemm_bf16_64x64_ldg8_f2f_stages_64x5_tn",
+       0.06272
+      ],
+      [
+       "ampere_bf16_s16816gemm_bf16_128x64_ldg8_f2f_stages_32x6_tn",
+       0.02715
+      ],
+      [
+       "void cublasLt::splitKreduce_kernel<32, 16, int, __nv_bfloat16, __nv_bfloat16, float, __nv_bfloat16, ",
+       0.00691
+      ],
+      [
+       "reduce_segments",
+       0.00641
+      ],
+      [
+       "triton_red_fused_add_mul_rms_norm_4",
+       0.00515
+      ],
+      [
+       "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_16x16_128x1_tn_align8>(cutlass_",
+       0.00463
+      ]
+     ]
+    }
+   },
+   "triton_kernels": [
+    "kernel_unified_attention"
+   ],
+   "accuracy_caveat": false,
+   "groups": {
+    "65536": {
+     "lost": [],
+     "cells": 5,
+     "usable": false,
+     "finished": {},
+     "ok": true,
+     "batch": 35,
+     "B_max_est": 41.98,
+     "pool_share": 0.834,
+     "fit": {
+      "b": 0.00028322937847816783,
+      "c": 7.677985958904108,
+      "b_low": 0.0002772259415206979,
+      "b_up": 0.00028923281543563774,
+      "se_b": 2.5513969220016533e-06,
+      "r2": 0.9997566143343204,
+      "n": 5,
+      "df": 3
+     },
+     "median_ms": {
+      "2048": 8.0712,
+      "8192": 10.1472,
+      "32768": 17.0601,
+      "65536": 26.208
+     },
+     "residuals": {
+      "2048": -0.0231,
+      "8192": 0.0147,
+      "32768": 0.0059,
+      "65536": -0.0012
+     },
+     "spread": {
+      "2048:a65536": 0.0031,
+      "8192:a65536": 0.0099,
+      "32768:a65536": 0.0007,
+      "65536:a65536": 0.001,
+      "65536:a65536:1": 0.0009
+     },
+     "checks": {
+      "V2": true,
+      "V3": true,
+      "V4a": true,
+      "V5": false,
+      "V7": true,
+      "profiles": true
+     },
+     "why": [
+      "V5"
+     ],
+     "local_slope_ratio": 0.9857,
+     "M1": true,
+     "M2": true,
+     "bw_global_gbps": 5061.6,
+     "attribution": {
+      "V4a": true,
+      "V4b": true,
+      "V4c": false,
+      "device_growth_ms": 18.0952,
+      "wall_growth_ms": 18.1023,
+      "attention_growth_ms": 18.1315,
+      "split": {
+       "2048": {
+        "ok": true,
+        "groups": 280,
+        "match": 1.0,
+        "sliding_ms": 0.5758,
+        "global_ms": 0.6795,
+        "method": "order"
+       },
+       "65536": {
+        "ok": true,
+        "groups": 280,
+        "match": 1.0,
+        "sliding_ms": 1.0114,
+        "global_ms": 18.3755,
+        "method": "order"
+       }
+      },
+      "sliding_change": 0.7565
+     },
+     "V4b": true,
+     "V4c": false,
+     "T_ms": 26.208,
+     "S": 0.2656,
+     "S_low": 0.26,
+     "S_up": 0.2712,
+     "S_att": 0.2614,
+     "S_att_gap": false,
+     "b_per_seq_ratio": 0.9055
+    }
+   },
+   "status_cells": {
+    "2048:4": "ok",
+    "8192:4": "ok",
+    "32768:4": "ok",
+    "65536:4": "ok",
+    "65536:4:1": "ok",
+    "32768:4:1": "ok",
+    "2048:a65536": "ok",
+    "8192:a65536": "ok",
+    "32768:a65536": "ok",
+    "65536:a65536": "ok",
+    "65536:a65536:1": "ok"
+   },
+   "jit_during_inference": [
+    "(MainProcess pid=1356) WARNING 10-31 06:01:44 [jit_monitor.py:140] Triton kernel JIT compilation during inference: kernel_unified_attention. This causes a laten"
+   ],
+   "e49_pass": {
+    "32768": false,
+    "65536": false
+   }
+  },
+  "m31bf": {
+   "status": "missing",
+   "valid": false,
+   "why": [
+    "run not ok"
+   ],
+   "error": "",
+   "groups": {}
+  },
+  "m26": {
+   "status": "missing",
+   "valid": false,
+   "why": [
+    "run not ok"
+   ],
+   "error": "",
+   "groups": {}
+  }
+ },
+ "V8": true,
+ "copy_gbps": 919.65,
+ "fp8_saving_B4": {},
+ "decision": "INVALID (m31f8: V1, V5, V11)"
+}

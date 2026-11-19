@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv
+.env
+.env.*
+# captured activations and model files are large and are not part of the release
+*.pt
+*.safetensors

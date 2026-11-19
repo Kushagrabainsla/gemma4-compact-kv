@@ -1,0 +1,8 @@
+09:31:59 setup done after 8 s; versions: vllm 0.33.0rc1.dev229+g3966924d5 torch 2.14.0+cu130 triton 3.8.0 pynvml present VLLM_BUILD_COMMIT=unset flashinfer-cubin                         0.7.2.post1 flashinfer-jit-cache                     0.7.2.post1+cu130 flashinfer-jit-cache-sm100a              0.7.2.post1+cu130 flashinfer-jit-cache-sm103a              0.7.2.post1+cu130 flashinfer-jit-cache-sm120f              0.7.2.post1+cu130 flashinfer-jit-cache-sm80                0.7.2.post1+cu130 flashinfer-jit-cache-sm89                0.7.2.post1+cu130 flashinfer-jit-cache-sm90a               0.7.2.post1+cu130 flashinfer-python                        0.7.2.post1 nvidia-cutlass-dsl                       4.8.0 nvidia-cutlass-dsl-libs-base             4.8.0 nvidia-cutlass-dsl-libs-core             4.8.0 nvidia-cutlass-dsl-libs-cu12             4.8.0 nvidia-cutlass-dsl-libs-cu13             4.8.0 nvidia-ml-py                             13.615.71 quack-kernels                            0.6.5 triton                                   3.8.0 
+09:33:06 compile check: {"ok": 124, "error": 0, "crashed": 0} after 75 s
+09:46:16 kbench: exit 0 after 865 s
+09:46:16 dram probe: ncu not found
+09:46:23 sass counts: exit 0
+09:46:28 decision: INVALID (V1, V2, V3)
+09:46:28 done after 877 s
+09:46:28 AUTO_STOP in 180 s; copy the results now

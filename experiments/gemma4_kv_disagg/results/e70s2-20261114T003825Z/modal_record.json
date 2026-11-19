@@ -1,0 +1,48 @@
+{
+ "run_id": "e70s2-20261114T003825Z",
+ "started_at": "2026-11-14T00:38:30Z",
+ "env": {
+  "MODAL_CLOUD_PROVIDER": "CLOUD_PROVIDER_OCI",
+  "MODAL_REGION": "eu-west",
+  "MODAL_TASK_ID": "ta-01M7BQVGNB16TRSEXPY74VRS4R",
+  "MODAL_IMAGE_ID": "im-fB0BiHeiQzJNWXeG5yLwb3",
+  "NVIDIA_VISIBLE_DEVICES": "GPU-e81501f8-e7a8-b143-b326-cb095f207f4f,GPU-9303efb6-9df8-e409-1e8b-b6dfc99d061d",
+  "CUDA_VERSION": "13.0.2"
+ },
+ "launcher_sha": {
+  "modal_e70.py": "8ad692abddb36f1fcd8e15fae776de0dd1dd1a255bd868ad506ab8c54657a9de",
+  "e70_stage.py": "f7513121dca43d16b8e05b1e3a8c96e8c25fbb9451ba7db5abee9e09565139dc"
+ },
+ "pairs": {
+  "STOCK2": {
+   "d": 0,
+   "p": 0,
+   "seconds": 195.3,
+   "status": {
+    "p": "ok",
+    "d": "ok"
+   },
+   "env": {}
+  },
+  "COMPACT2": {
+   "d": 0,
+   "p": 0,
+   "seconds": 160.8,
+   "status": {
+    "p": "ok",
+    "d": "ok"
+   },
+   "env": {}
+  }
+ },
+ "manifest_ok": true,
+ "gpus": [
+  "GPU 0: NVIDIA L40S (UUID: GPU-e81501f8-e7a8-b143-b326-cb095f207f4f)",
+  "GPU 1: NVIDIA L40S (UUID: GPU-9303efb6-9df8-e409-1e8b-b6dfc99d061d)"
+ ],
+ "snapshot": "/__modal/volumes/vo-D6JSYsmqdCQL1RQ3aMNeyx/hub/models--google--gemma-4-12B-it/snapshots/43c9d014b231474fa7212dbb48a762566c2b255d",
+ "stage": 2,
+ "decision": "E-70 stage 2: RELOAD-WORKS | checks {'V1': True, 'V2': True, 'V3': True, 'V4': True} | {'STOCK2': {'p': 'ok', 'd': 'ok', 'error': '', 'nixl_checked': 3512, 'nixl_mismatch': 0, 'nixl_compared': 8, 'median_c': 0.9393471414728682, 'min_c': 0.8953488372093024, 'zero_hit_events': 0, 'decode_events': 32, 'checked_reloads': 24, 'mismatched_blocks': 0, 'a1_strict_mismatch': 240, 'recomputed_first_version': 240, 'preemptions': 40, 'load_gb_per_s': 24.731764128172856, 'complete': 8, 'gold': 8}, 'COMPACT2': {'p': 'ok', 'd': 'ok', 'error': '', 'nixl_checked': 3192, 'nixl_mismatch': 0, 'nixl_compared': 8, 'median_c': 0.9533422237669246, 'min_c': 0.8851612903225806, 'zero_hit_events': 0, 'decode_events': 32, 'checked_reloads': 24, 'mismatched_blocks': 0, 'a1_strict_mismatch': 160, 'recomputed_first_version': 160, 'preemptions': 40, 'load_gb_per_s': 24.70890898897861, 'complete': 8, 'gold': 8}}",
+ "ok": true,
+ "seconds": 364.2
+}

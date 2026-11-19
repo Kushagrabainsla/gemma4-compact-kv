@@ -1,0 +1,52 @@
+{
+ "run_id": "e70-20261113T134046Z",
+ "started_at": "2026-11-13T13:48:05Z",
+ "env": {
+  "MODAL_CLOUD_PROVIDER": "CLOUD_PROVIDER_AWS",
+  "MODAL_REGION": "us-east",
+  "MODAL_TASK_ID": "ta-01M7AJMGHS80STCSCPRYGKCH1R",
+  "MODAL_IMAGE_ID": "im-fB0BiHeiQzJNWXeG5yLwb3",
+  "NVIDIA_VISIBLE_DEVICES": "GPU-b6f7a01e-099a-c653-181e-11f8c79cb51d,GPU-64585e1b-0976-50cc-9b23-5b2ef25abdf1",
+  "CUDA_VERSION": "13.0.2"
+ },
+ "launcher_sha": {
+  "modal_e70.py": "c77b0389853aa831b253757f8bb24af704677160411299a2a65fa1d4037a2970",
+  "e70_stage.py": "233ebac4e36ca438fcffcb853958e10bff0730b4b91fba6bbf4840aecd710d21"
+ },
+ "pairs": {
+  "STOCK": {
+   "p": 1,
+   "d": 1,
+   "seconds": 95.2,
+   "status": {
+    "p": "failed",
+    "d": "failed"
+   },
+   "env": {}
+  },
+  "STOCK-retry": {
+   "p": 1,
+   "d": 1,
+   "seconds": 63.3,
+   "status": {
+    "p": "failed",
+    "d": "failed"
+   },
+   "env": {
+    "UCX_TLS": "cuda_copy,tcp"
+   }
+  }
+ },
+ "manifest_ok": true,
+ "gpus": [
+  "GPU 0: NVIDIA L40S (UUID: GPU-b6f7a01e-099a-c653-181e-11f8c79cb51d)",
+  "GPU 1: NVIDIA L40S (UUID: GPU-64585e1b-0976-50cc-9b23-5b2ef25abdf1)"
+ ],
+ "snapshot": "/__modal/volumes/vo-D6JSYsmqdCQL1RQ3aMNeyx/hub/models--google--gemma-4-12B-it/snapshots/43c9d014b231474fa7212dbb48a762566c2b255d",
+ "stop": "the stock pair failed (transport or container); the compact pairs are not run",
+ "decision": "E-70: INVALID (ENV: the stock pair did not transfer byte for byte) | GAP-UNCLEAR | checks {'V1': True, 'V2': True, 'V3': False, 'V4': True} | {'STOCK': {'p': 'failed', 'd': 'failed'}, 'COMPACT-NOPATCH': {'p': 'not run', 'd': 'not run'}, 'COMPACT': {'p': 'not run', 'd': 'not run'}}",
+ "ok": true,
+ "seconds": 163.4,
+ "launcher_sha_match": true,
+ "wall_s_local": 602.8724510669708
+}

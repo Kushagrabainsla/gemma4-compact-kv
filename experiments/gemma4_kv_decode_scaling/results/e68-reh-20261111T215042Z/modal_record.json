@@ -1,0 +1,24 @@
+{
+ "run_id": "e68-reh-20261111T215042Z",
+ "stage": "reh",
+ "started_at": "2026-11-11T21:50:51Z",
+ "env": {
+  "MODAL_CLOUD_PROVIDER": "CLOUD_PROVIDER_OCI",
+  "MODAL_REGION": "eu-west",
+  "MODAL_TASK_ID": "ta-01M769F2GWAK160HZ23W31BYER",
+  "MODAL_IMAGE_ID": "im-fB0BiHeiQzJNWXeG5yLwb3",
+  "MODAL_ENVIRONMENT": "main",
+  "NVIDIA_VISIBLE_DEVICES": "GPU-3a0f6a9a-20e1-98ae-b63d-8fef71d8d11a",
+  "CUDA_VERSION": "13.0.2"
+ },
+ "launcher_sha": {
+  "modal_e68.py": "d29ef5e363ab6b789b62eaaf342b7205b45a575f0a00b97a91ee3c4593a4226f",
+  "e68_stage.py": "693ba53e31c3757f8273733898e2d3de55e9ddb5c223d69792010dd544f29368"
+ },
+ "manifest_ok": true,
+ "session_exit": 0,
+ "decision": "E-65 GPU: REHEARSAL | Phi NA over 0 points | T_OTHER 28.28 ms | checks {'V1': True, 'V2': True, 'V3': False, 'V3_failed_points': [(32, 4096, 'H'), (4, 32768, 'SL'), (2, 65536, 'SL')], 'V5': True, 'V5_missing_core': [], 'extrapolated': [], 'V4_values_ms': [16.015, 12.174, 5.076, 4.582], 'V4': True, 'V6_report_ms': [0.314, 0.396], 'tie_status': None} | failed ['V3']",
+ "bench_line": "21:51:55 bench: exit 0 after 62 s; {\"status\": \"ok\", \"points\": 8, \"errors\": []}",
+ "ok": true,
+ "seconds": 64.67079663276672
+}

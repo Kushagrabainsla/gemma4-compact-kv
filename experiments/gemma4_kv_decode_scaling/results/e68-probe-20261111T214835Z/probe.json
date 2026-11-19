@@ -1,0 +1,30 @@
+{
+ "python": {
+  "exit": 0,
+  "out": "Python 3.12.3\n"
+ },
+ "pip": {
+  "exit": 0,
+  "out": "/usr/local/bin/pip\npip 26.2.2 from /usr/local/lib/python3.12/dist-packages/pip (python 3.12)\n"
+ },
+ "versions": {
+  "exit": 0,
+  "out": "vllm 0.33.0rc1.dev229+g3966924d5\ntorch 2.14.0+cu130\ntriton 3.8.0\n"
+ },
+ "manifest": {
+  "exit": 0,
+  "out": "ok  analyze_e65.py e9c11b0ad7e343f6f039fa071463115fe47e614a613415d9d08a2b8fd1d89644\nok  bench_e58.py 554167efc696647225ebf7993c42f6f2f45f877052ccdafd40a88708cc39a312\nok  bench_e65.py f48d7a45ad00d2116d09f4aec708ee890b1b3a07b1ee8661a8542006b19b894f\nok  boot_end.py 5f76818505c92584359add0c7aac7b45d22f7c02434610471ee606616cd3a5d2\nok  compact_engine.py d64be122c94044984ec4ff02784a3d6cbe89435b2872be2b761951dc81ec0343\nok  compact_layout.py 06c0dd8b6d6ed106cbeab5049d0b1af36bbde4585c6ed6277b8f19159b7f2b83\nok  e64.py bcc7f63a85ae2b8ac603c5ff7dc5060da6973716c15f2f7a9e5828bf22808205\nok  poolsim.py 488c2c23d4373bb51d28dfecafa919f3691e56df04f8daa0d25298baef37ed5b\nok  session_e65.sh ba199ebf717b9a805bf0fcb34ff2d238c0848a4a258a5be0850e086c0a6ed65f\nok  splice_e55.py 6d805d76f26ada2cda4c39ca97d05ec9429c714b5167b23ae77a1f90f4bdd3d5\nok  stop_pod.py e0f2195e1ad803ee6086944d41f2b5961f1bbfc823b91d7c9457bac9469ad8a3\nok  sweep.py faac886d6a7b5af59130632c33bc10b2088c26d1b81ff987ed2a2767f28719b4\nok  versions.py b45cb8521a3e68b10ba516155f0532273cb76cbfd287b7d47e2b412241e18feb\nmanifest: 13 of 13 match\n"
+ },
+ "tools": {
+  "exit": 0,
+  "out": "/usr/bin/timeout\n"
+ },
+ "versions_ok": true,
+ "python_ok": true,
+ "manifest_ok": true,
+ "launcher_sha": {
+  "modal_e68.py": "d29ef5e363ab6b789b62eaaf342b7205b45a575f0a00b97a91ee3c4593a4226f",
+  "e68_stage.py": "693ba53e31c3757f8273733898e2d3de55e9ddb5c223d69792010dd544f29368"
+ },
+ "launcher_sha_match": true
+}

@@ -1,0 +1,215 @@
+{
+ "arm": "C-C64",
+ "layout_kind": "compact",
+ "connector": true,
+ "corrupt": false,
+ "start_only": true,
+ "status": "ok",
+ "started_at": "2026-11-13T09:07:37Z",
+ "tries": 1,
+ "plan": {
+  "prompts": 6,
+  "prompt_len": 4096,
+  "max_tokens": 1536,
+  "kv_bytes": 4294967296,
+  "cpu_bytes": 17179869184,
+  "max_model_len": 8192
+ },
+ "eq": {
+  "prompts": 8,
+  "prompt_len": 2048,
+  "max_tokens": 128
+ },
+ "e2e": {
+  "prompt_len": 2048,
+  "max_tokens": 512,
+  "event_step": 384
+ },
+ "event_every": 256,
+ "prompt_len": 4096,
+ "engine_kwargs": {
+  "seed": 0,
+  "enforce_eager": true,
+  "kv_cache_dtype": "auto",
+  "max_num_batched_tokens": 2048,
+  "max_num_seqs": 16,
+  "enable_prefix_caching": false,
+  "disable_log_stats": false,
+  "limit_mm_per_prompt": {
+   "image": 0,
+   "audio": 0,
+   "video": 0
+  },
+  "kv_cache_memory_bytes": 4294967296,
+  "max_model_len": 8192,
+  "kv_transfer_config": {
+   "kv_connector": "OffloadingConnector",
+   "kv_role": "kv_both",
+   "kv_connector_extra_config": {
+    "cpu_bytes_to_use": 68719476736,
+    "offload_prompt_only": false
+   }
+  },
+  "prefix_cache_retention_interval": null
+ },
+ "manifest_ok": true,
+ "engine_seconds": 65.4,
+ "gpu": "NVIDIA L40S",
+ "kv": {
+  "num_blocks": 4096,
+  "pool_blocks": 4096,
+  "free_blocks": 4095,
+  "groups": [
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.0.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.1.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.2.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.3.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "SlidingWindowSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.4.self_attn.attn",
+    "block_size": 16,
+    "page_bytes": 131072,
+    "real_page_bytes": 131072,
+    "page_size_padded": null,
+    "state_content_bytes": null,
+    "num_kv_heads": 8,
+    "head_size": 256,
+    "sliding_window": 1024
+   },
+   {
+    "type": "FullAttentionSpec",
+    "layers": 8,
+    "first_layer": "language_model.model.layers.5.self_attn.attn",
+    "block_size": 96,
+    "page_bytes": 131072,
+    "real_page_bytes": 122880,
+    "page_size_padded": 131072,
+    "state_content_bytes": 1280,
+    "num_kv_heads": 1,
+    "head_size": 512,
+    "sliding_window": null
+   }
+  ],
+  "bytes_per_block": 1048576,
+  "layout": "LBHNC",
+  "tensors": 6
+ },
+ "spec": {
+  "applied": true,
+  "layers": [
+   "language_model.model.layers.5.self_attn.attn",
+   "language_model.model.layers.11.self_attn.attn",
+   "language_model.model.layers.17.self_attn.attn",
+   "language_model.model.layers.23.self_attn.attn",
+   "language_model.model.layers.29.self_attn.attn",
+   "language_model.model.layers.35.self_attn.attn",
+   "language_model.model.layers.41.self_attn.attn",
+   "language_model.model.layers.47.self_attn.attn"
+  ],
+  "k_eq_v": true,
+  "block": 96,
+  "kv_heads": 1,
+  "dtype_bytes": 2,
+  "stock_block": 16,
+  "sliding_page": 131072,
+  "compact_page": 122880
+ },
+ "runner": {
+  "attn_groups": "[[AttentionGroup(backend=<class 'vllm.v1.attention.backends.triton_attn.TritonAttentionBackend'>, layer_names=['language_model.model.layers.0.self_attn.attn', 'language_model.model.layers.6.self_attn.attn', 'language_model.model.layers.12.self_attn.attn', 'language_model.model.layers.18.self_attn.attn', 'language_model.model.layers.24.self_attn.attn', 'language_model.model.layers.30.self_attn.attn', 'language_model.model.layers.36.self_attn.attn', 'language_model.model.layers.42.self_attn.attn'], kv_cache_spec=SlidingWindowSpec(block_size=16, dcp_sharded=True, block_stride_alignment=None, is_draft=False, max_tp_shards=None, num_kv_heads=8, head_size=256, dtype=torch.bfloat16, head_size_v=256, kv_quant_mode=<KVQuantMode.NONE: 0>, page_size_padded=None, num_head_slots=None, state_content_bytes=None, tokens_per_state=1, sliding_window=1024, extra_retained_tokens=0), kv_cache_group_id=0, kernel_block_size=None, kernel_block_stride=0, kernel_block_table=None, kernel_block_offsets=None, metadata_builders=[<vllm.v1.attention.backends.triton_attn.TritonAttentionMetadataBuilder object at 0x2b2daf6b20c0>])], [AttentionGroup(backend=<class 'vllm.v1.attention.backends.triton_attn.TritonAttentionBackend'>, layer_names=['language_model.model.layers.1.self_attn.attn', 'language_model.model.layers.7.self_attn.attn', 'language_model.model.layers.13.self_attn.attn', 'language_model.model.layers.19.self_attn.attn', 'language_model.model.layers.25.self_attn.attn', 'language_model.model.layers.31",
+  "kernel_block_sizes": "[16, 16, 16, 16, 16, 96]",
+  "runner": "GPUModelRunner"
+ },
+ "connector_layers": 48,
+ "layout": "LBHNC",
+ "layout_lines": [],
+ "counters": {
+  "fix_reads": 0,
+  "fix_writes": 0,
+  "pass_reads": 0,
+  "pass_writes": 0,
+  "alloc_fail": 0,
+  "preemptions": 0
+ },
+ "stats": {
+  "steps": 0,
+  "none_steps": 0,
+  "prefix": {
+   "requests": 0,
+   "queries": 0,
+   "hits": 0,
+   "preempted_requests": 0,
+   "preempted_queries": 0,
+   "preempted_hits": 0
+  },
+  "kv": {},
+  "load_gb_per_s": null
+ },
+ "stats_preemptions": 0,
+ "reload": {
+  "checked_reloads": 0,
+  "invalid_reloads": 0,
+  "mismatched_blocks": 0,
+  "checked_blocks": 0,
+  "same_id_blocks": 0,
+  "same_id_share": null,
+  "preempt_seen": 0,
+  "loads_seen": 0,
+  "skipped_loads": 0,
+  "failed_loads": 0,
+  "pending_at_end": 0,
+  "results": []
+ },
+ "events": {},
+ "coverage": null,
+ "hook_errors": [],
+ "finished_at": "2026-11-13T09:08:56Z"
+}

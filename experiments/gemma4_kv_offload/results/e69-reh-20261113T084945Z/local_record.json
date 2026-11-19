@@ -1,0 +1,84 @@
+{
+ "run_id": "e69-reh-20261113T084945Z",
+ "stage": "reh",
+ "started_at": "2026-11-13T08:49:58Z",
+ "env": {
+  "MODAL_CLOUD_PROVIDER": "CLOUD_PROVIDER_AWS",
+  "MODAL_REGION": "us-east",
+  "MODAL_TASK_ID": "ta-01M7A1JJPPB4CCH16HEW5VA0ER",
+  "MODAL_IMAGE_ID": "im-fB0BiHeiQzJNWXeG5yLwb3",
+  "MODAL_ENVIRONMENT": "main",
+  "NVIDIA_VISIBLE_DEVICES": "GPU-4c24c4c9-fa2d-8954-512d-8b00a7ead3ce",
+  "CUDA_VERSION": "13.0.2"
+ },
+ "launcher_sha": {
+  "modal_e69.py": "5fccd2eb476283904109c7462dacfb4bd3d8c04ca0c5ae97cb1d7f7383eee8cb",
+  "e69_stage.py": "bb40e52f47c0302cb7300ef58d7bc25c45c527a1ff3b399d153d9c76a5e96d75"
+ },
+ "arms": {
+  "S-C": {
+   "exit": 1,
+   "seconds": 115.6,
+   "try": 1,
+   "line": "E-69 S-C: failed | preemptions None | reload 0 checked, 0 bad | coverage None | ValueError: unknown mode EMULV",
+   "verify_lines": [
+    "(MainProcess pid=62) INFO 11-13 08:51:46 [utils.py:397] Using LBHNC KV cache layout.",
+    "(MainProcess pid=62) INFO 11-13 08:51:50 [shared_offload_region.py:177] Created mmap file /dev/shm/vllm_offload_cb6b60db-c5ac-4e5e-b33d-632e80e5d0bd.mmap (17.18 GB)",
+    "(MainProcess pid=62) INFO 11-13 08:51:50 [shared_offload_region.py:198] Unlinked mmap file /dev/shm/vllm_offload_cb6b60db-c5ac-4e5e-b33d-632e80e5d0bd.mmap",
+    "(MainProcess pid=62) WARNING 11-13 08:51:50 [shared_offload_region.py:79] MADV_POPULATE_WRITE is not supported; falling back to per-page writes for mmap pre-population. Startup may be slower.",
+    "(MainProcess pid=62) INFO 11-13 08:51:52 [gpu_worker.py:232] Registering full CPU offload region rank=0 (row=1048576, slot=1048576 bytes): less than 3145728 bytes saved per row",
+    "E-69 S-C: failed | preemptions None | reload 0 checked, 0 bad | coverage None | ValueError: unknown mode EMULV"
+   ]
+  }
+ },
+ "manifest_ok": true,
+ "probe": {
+  "versions": {
+   "vllm": "0.33.0rc1.dev229+g3966924d5",
+   "torch": "2.14.0+cu130",
+   "triton": "3.8.0"
+  },
+  "dev_shm": {
+   "total_gib": 372.2206230163574,
+   "free_gib": 372.2206230163574
+  },
+  "cgroup_memory": "359701962752",
+  "memlock": [
+   42949672960,
+   42949672960
+  ],
+  "cpus": 21,
+  "mem_total_gib": 334.9985580444336,
+  "hooks": {
+   "Scheduler.make_stats": true,
+   "Scheduler._preempt_request": true,
+   "Scheduler._update_waiting_for_remote_kv": true,
+   "Scheduler.schedule": true,
+   "KVCacheManager.get_block_ids": true,
+   "KVCacheManager.allocate_slots": true,
+   "OffloadingConnectorWorker.register_kv_caches": true,
+   "GPUModelRunner.get_kv_cache_spec": true
+  },
+  "hooks_ok": true
+ },
+ "snapshot": "/__modal/volumes/vo-D6JSYsmqdCQL1RQ3aMNeyx/hub/models--google--gemma-4-12B-it/snapshots/43c9d014b231474fa7212dbb48a762566c2b255d",
+ "download_s": 31.2,
+ "stop": "S-C failed; the connector fails without the compact layout",
+ "decision": "E-69: REHEARSAL | INVALID (S-C did not complete, CODE; CONNECTOR-FAILS-STOCK, exploratory) | checks {'V1': False, 'V2': False, 'V3': False, 'V4': False, 'V5': False, 'V6': False} | C-C None | S-C None | verify {all_pass: False}",
+ "ok": true,
+ "seconds": 148.5,
+ "sha256": {
+  "S-C/run_e69.json": "2f8443924da5b2efa0b6a0fd23e9a574476cc7a9293bba989810bb0b8f996f6d",
+  "S-C/stdout.txt": "1887b72fb87f128b083dd0ccf693df5aa979f15d30cd60bfa7aecddded0e8ef4",
+  "download.txt": "936edf0c5cbc06bc4ecdba121058ffef0f274e7ee53ce4aa5142836f37bb36c5",
+  "manifest_check.txt": "d4da6367a95437ea4a60ab80870bffee1213d1b010b1febbc3ee0dea83c7e17c",
+  "modal_record.json": "773e2700766a2c6248e0e8f73e1e4c3be87cf795ba3edba42d94eb673912b2f1",
+  "nvidia-smi.txt": "e1927cf1ff6f000786016621346e78d913bf63f8d6871f646d3f460ef9874053",
+  "probe.txt": "5a1d8eaf3e550b0dbff5927e5cce1cd546c298e17c15398fa99d9e22d37c22d7",
+  "started.txt": "a0c7ad56ef24ee5e2736a474c86569b26f0f0aabfc1ad9896eff7372dcfda9d6",
+  "summary.json": "53e4202dd8b4ae90c0d055473f3f101922a051ca3b86ab489d41ca8c1fdbea5b",
+  "telemetry.csv": "2e7cac96243d1f5f962624135aa1fb5f6659ace906b5a8d7529585aa5b531c29"
+ },
+ "launcher_sha_match": true,
+ "wall_s_local": 161.58027386665344
+}

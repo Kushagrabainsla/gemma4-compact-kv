@@ -1,0 +1,74 @@
+{
+ "pairs": {
+  "STOCK": {
+   "p": "ok",
+   "d": "ok",
+   "p_error": "",
+   "d_error": "",
+   "requests": 8,
+   "compared": 8,
+   "missing": 0,
+   "checked": 3512,
+   "mismatch": 0,
+   "global": 952,
+   "sliding": 2560,
+   "per_request_ok": true,
+   "failed_loads": 0,
+   "complete": 8,
+   "p_gold": 8,
+   "d_gold": 8,
+   "first_divergence": [
+    21,
+    null,
+    27,
+    28,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "COMPACT-NOPATCH": {
+   "p": "failed",
+   "d": "failed",
+   "p_error": "AssertionError: KV cache view cannot be partitioned into NIXL regions: layer=language_model.model.layers.5.self_attn.attn, cache_nbytes=1006632960, num_blocks=8192, block_stride=131072, physical_page_size=131072, cache_shape=(8192, 1, 96, 640), cache_stride=(65536, 61440, 640, 1)",
+   "d_error": "AssertionError: KV cache view cannot be partitioned into NIXL regions: layer=language_model.model.layers.5.self_attn.attn, cache_nbytes=1006632960, num_blocks=8192, block_stride=131072, physical_page_size=131072, cache_shape=(8192, 1, 96, 640), cache_stride=(65536, 61440, 640, 1)"
+  },
+  "COMPACT": {
+   "p": "ok",
+   "d": "ok",
+   "p_error": "",
+   "d_error": "",
+   "requests": 8,
+   "compared": 8,
+   "missing": 0,
+   "checked": 3192,
+   "mismatch": 0,
+   "global": 632,
+   "sliding": 2560,
+   "per_request_ok": true,
+   "failed_loads": 0,
+   "complete": 8,
+   "p_gold": 8,
+   "d_gold": 8,
+   "first_divergence": [
+    null,
+    null,
+    27,
+    28,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ },
+ "checks": {
+  "V1": true,
+  "V2": true,
+  "V3": true,
+  "V4": true
+ },
+ "gap": "GAP-CONFIRMED",
+ "word": "PATCH-WORKS"
+}

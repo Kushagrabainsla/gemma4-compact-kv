@@ -1,0 +1,40 @@
+	[4mGPU0	NIC0	NIC1	NIC2	NIC3	NIC4	NIC5	NIC6	NIC7	NIC8	NIC9	NIC10	NIC11	CPU Affinity	NUMA Affinity	GPU NUMA ID[0m
+GPU0	 X 	SYS	SYS	SYS	SYS	SYS	SYS	PXB	PXB	SYS	SYS	SYS	SYS	80-95	5		N/A
+NIC0	SYS	 X 	PXB	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS				
+NIC1	SYS	PXB	 X 	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS				
+NIC2	SYS	SYS	SYS	 X 	PXB	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS				
+NIC3	SYS	SYS	SYS	PXB	 X 	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS				
+NIC4	SYS	SYS	SYS	SYS	SYS	 X 	PXB	SYS	SYS	SYS	SYS	SYS	SYS				
+NIC5	SYS	SYS	SYS	SYS	SYS	PXB	 X 	SYS	SYS	SYS	SYS	SYS	SYS				
+NIC6	PXB	SYS	SYS	SYS	SYS	SYS	SYS	 X 	PXB	SYS	SYS	SYS	SYS				
+NIC7	PXB	SYS	SYS	SYS	SYS	SYS	SYS	PXB	 X 	SYS	SYS	SYS	SYS				
+NIC8	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS	 X 	SYS	PIX	SYS				
+NIC9	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS	 X 	SYS	PIX				
+NIC10	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS	PIX	SYS	 X 	SYS				
+NIC11	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS	PIX	SYS	 X 				
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
+
+NIC Legend:
+
+  NIC0: ibp12s0
+  NIC1: ibp18s0
+  NIC2: ibp75s0
+  NIC3: ibp84s0
+  NIC4: ibp141s0
+  NIC5: ibp148s0
+  NIC6: ibp186s0
+  NIC7: ibp204s0
+  NIC8: ibp97s0f0
+  NIC9: ibp225s0f0
+  NIC10: rocep97s0f1
+  NIC11: rocep225s0f1
+

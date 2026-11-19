@@ -1,0 +1,20 @@
+20:03:57 disk before the download: overlay          60G   92M   60G   1% /
+20:04:33 download: /root/hf/hub/models--google--gemma-4-12B-it/snapshots/43c9d014b231474fa7212dbb48a762566c2b255d after 49 s; overlay          60G   23G   38G  38% /
+20:04:33 setup done after 49 s; versions: vllm 0.33.0rc1.dev229+g3966924d5 torch 2.14.0+cu130 transformers 5.20.2 VLLM_BUILD_COMMIT=unset 
+20:04:33 deadline in 2085 s (session watchdog 3300 s; boot watchdog end 1793911398, margin 240 s)
+20:05:46 G1: PREFLIGHT STOP; see /workspace/results/e59/G1/run_e59.json
+20:05:46 G1 engine: (MainProcess pid=1233) INFO 11-05 20:04:45 [startup.py:96] non-default args: {'tokenizer': '/root/hf/hub/models--google--gemma-4-12B-it/snapshots/43c9d014b231474fa7212dbb48a762566c2b255d', 'max_model_
+20:05:46 G1 engine: (MainProcess pid=1233) INFO 11-05 20:05:05 [core.py:146] Initializing a V1 LLM engine (v0.33.0rc1.dev229+g3966924d5) with config: model='/root/hf/hub/models--google--gemma-4-12B-it/snapshots/43c9d014b
+20:05:46 G1 engine: (MainProcess pid=1233) INFO 11-05 20:05:27 [kv_cache_utils.py:1147] GPU KV cache size: 111,085 tokens, Maximum concurrency for 16,896 tokens per request: 6.57x
+20:05:46 G1 engine: Capturing CUDA graphs (FULL):   0%|          | 0/5 [00:00<?, ?it/s]Capturing CUDA graphs (FULL):  20%|██        | 1/5 [00:00<00:00,  8.93it/s]Capturing CUDA graphs (FULL):  60%|█████�
+20:05:46 G1: exit 3 after 122 s; (MainProcess pid=1233) INFO 11-05 20:05:42 [hf.py:736] Detected the chat template content format to be 'openai'. You can set `--chat-template-content-format` to override this.
+20:05:46 G2: SKIPPED (G1 did not end ok)
+20:05:46 G3: SKIPPED (G1 did not end ok)
+20:05:46 G4: SKIPPED (G1 did not end ok)
+20:05:46 E1: SKIPPED (G1 did not end ok)
+20:05:46 E2: SKIPPED (G1 did not end ok)
+20:05:46 E3: SKIPPED (G1 did not end ok)
+20:05:46 decision: E-59: REHEARSAL | OG NA (band +2.00%; S_g None ms, C_g None ms) | graph HG NA KG NA process and drift p_g NA | eager HE NA KE NA p_e NA | NA NA | GS NA | TG NA | failed checks: V1, V3, V4, V5
+20:05:46 results: 83 KB in /workspace/results/e59; disk: ca-mtl-1-vast.runpod.net:/runpodfs/podvolumes/wcsabnl2bj1t/<pod-id>   19G  8.0M   19G   1% /workspace
+20:05:46 done after 122 s
+20:05:46 AUTO_STOP in 240 s; copy RES now

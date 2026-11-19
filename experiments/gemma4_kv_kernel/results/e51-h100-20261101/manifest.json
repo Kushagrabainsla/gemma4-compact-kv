@@ -1,0 +1,327 @@
+{
+ "run_id": "e51-h100-20261101",
+ "experiment": "E-51",
+ "idea": "I-182",
+ "status": "ok",
+ "label": "e51-h100-20261101",
+ "design_commit": "a1e8b13",
+ "config": {
+  "cells": "19:2048,19:32768,11:2048,11:65536,19:8192,11:8192,11:32768,4:2048,4:32768,4:65536",
+  "stages": "2",
+  "stages_bf16": "0",
+  "fail_fast": "on",
+  "calls": 20,
+  "replays": 15,
+  "repeats": 5
+ },
+ "started_at": "2026-11-01T03:29:21Z",
+ "finished_at": "2026-11-01T03:32:47Z",
+ "hardware": {
+  "gpu_name": "NVIDIA H100 80GB HBM3",
+  "gpu_count": 1,
+  "driver": "595.91.07",
+  "cuda": "13.2",
+  "capability": "9.0",
+  "gpu_uuid": "d51f23d5-09c6-8fae-d3e1-b81afe227b60",
+  "pod_id": "<pod-id>",
+  "data_center": "US-NE-1",
+  "price_per_hour": 3.99,
+  "copy_gbps": 3044.6
+ },
+ "software": {
+  "torch": "2.14.0+cu130",
+  "triton": "3.8.0",
+  "vllm": "0.33.0rc1.dev229+g3966924d5",
+  "image": "vllm/vllm-openai@sha256:f255c4fad2f30ff5ee80db14d3a03afe9ae0f10d3470339864ff04745fe44cb3"
+ },
+ "metrics": {
+  "us_stock_fp8_s32_s32_B19_L2048": {
+   "values": [
+    199.5,
+    199.36,
+    197.85,
+    200.53,
+    197.99
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_s32_B19_L32768": {
+   "values": [
+    1322.76,
+    1344.96,
+    1352.2,
+    1348.33,
+    1351.31
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_32_4_32_B19_L2048": {
+   "values": [
+    117.53,
+    113.95,
+    113.17,
+    113.78,
+    113.09
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_32_4_32_B19_L32768": {
+   "values": [
+    1136.48,
+    1122.59,
+    1128.75,
+    1122.7,
+    1128.88
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmp_fp8_32_4_32_B19_L2048": {
+   "values": [
+    131.86,
+    128.53,
+    130.87,
+    128.43,
+    131.11
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmp_fp8_32_4_32_B19_L32768": {
+   "values": [
+    1436.35,
+    1436.33,
+    1436.23,
+    1436.36,
+    1436.27
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_alias_s32_B19_L2048": {
+   "values": [
+    198.26,
+    203.28,
+    198.13,
+    203.92,
+    198.36
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_alias_32_4_32_B19_L2048": {
+   "values": [
+    105.94,
+    107.84,
+    105.92,
+    108.26,
+    105.92
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_alias_s32_B19_L32768": {
+   "values": [
+    1230.32,
+    1223.03,
+    1229.87,
+    1224.37,
+    1230.66
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_alias_32_4_32_B19_L32768": {
+   "values": [
+    1031.9,
+    1023.14,
+    1030.85,
+    1023.58,
+    1031.85
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_s32_B11_L2048": {
+   "values": [
+    123.59,
+    126.11,
+    123.64,
+    126.04,
+    123.46
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_s32_B11_L65536": {
+   "values": [
+    1468.52,
+    1468.75,
+    1467.77,
+    1477.2,
+    1469.32
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_32_4_32_B11_L2048": {
+   "values": [
+    70.23,
+    69.52,
+    69.98,
+    69.61,
+    70.64
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_32_4_32_B11_L65536": {
+   "values": [
+    1303.48,
+    1296.34,
+    1300.49,
+    1296.56,
+    1303.43
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmp_fp8_32_4_32_B11_L2048": {
+   "values": [
+    79.48,
+    77.28,
+    78.9,
+    77.27,
+    79.51
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_cmp_fp8_32_4_32_B11_L65536": {
+   "values": [
+    1664.77,
+    1664.57,
+    1664.57,
+    1664.31,
+    1664.29
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_alias_s32_B11_L2048": {
+   "values": [
+    119.75,
+    120.47,
+    119.87,
+    120.7,
+    119.74
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_alias_32_4_32_B11_L2048": {
+   "values": [
+    63.24,
+    64.37,
+    63.22,
+    64.2,
+    63.2
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_stock_fp8_s32_alias_s32_B11_L65536": {
+   "values": [
+    1353.51,
+    1352.94,
+    1353.67,
+    1354.28,
+    1354.67
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "us_triton_std_fp8_alias_32_4_32_B11_L65536": {
+   "values": [
+    1172.44,
+    1171.39,
+    1173.28,
+    1176.68,
+    1174.97
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_stock_fp8_X32768": {
+   "values": [
+    1123.26,
+    1145.6,
+    1154.35,
+    1147.8,
+    1153.32
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_std_fp8_X32768": {
+   "values": [
+    1018.95,
+    1008.64,
+    1015.58,
+    1008.92,
+    1015.79
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_cmp_fp8_X32768": {
+   "values": [
+    1304.49,
+    1307.8,
+    1305.36,
+    1307.93,
+    1305.16
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_stock_fp8_X65536": {
+   "values": [
+    1344.93,
+    1342.64,
+    1344.13,
+    1351.16,
+    1345.86
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_std_fp8_X65536": {
+   "values": [
+    1233.25,
+    1226.82,
+    1230.51,
+    1226.95,
+    1232.79
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  },
+  "dt_triton_cmp_fp8_X65536": {
+   "values": [
+    1585.29,
+    1587.29,
+    1585.67,
+    1587.04,
+    1584.78
+   ],
+   "unit": "us",
+   "higher_is_better": false
+  }
+ },
+ "results_path": "experiments/gemma4_kv_kernel/results/e51-h100-20261101/",
+ "notes": "S6 H100 session. Frozen decision INVALID (V3: the stock 2K time at B 19 is 0.837 x the in-engine time; V4: a 4.2% replay spread on the stock row at 19:32K). Exploratory: sigma_layout -0.285 and -0.289 (the compact Triton FP8 kernel at 0.37 x copy, the standard at 0.77 x copy, the stock FA4 FP8 at 0.68 x copy); e_stock 0.20 and 0.17; e_triton 0.18 and 0.20; BF16 sigma_layout 0.34 and 0.37. decision=INVALID (V3, V4)"
+}

@@ -1,0 +1,2 @@
+GPU 0: NVIDIA A10 (UUID: GPU-3a0f6a9a-20e1-98ae-b63d-8fef71d8d11a)
+Device does not have or support Nvlink

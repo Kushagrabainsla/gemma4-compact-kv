@@ -1,0 +1,442 @@
+[
+ {
+  "context": 2048,
+  "batch": 4,
+  "rep": 0,
+  "prefill_s": 2.296,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 87988,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   7.1722,
+   7.1584,
+   7.1564
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 87968,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "slope"
+ },
+ {
+  "context": 8192,
+  "batch": 4,
+  "rep": 0,
+  "prefill_s": 1.269,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 86452,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   7.8611,
+   7.9151,
+   7.9725
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 86431,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "slope"
+ },
+ {
+  "context": 32768,
+  "batch": 4,
+  "rep": 0,
+  "prefill_s": 8.718,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 80294,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   9.7092,
+   9.7532,
+   9.7529
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 80282,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "slope"
+ },
+ {
+  "context": 65536,
+  "batch": 4,
+  "rep": 0,
+  "prefill_s": 27.111,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 72084,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   11.7058,
+   11.715,
+   11.7169
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 72084,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "slope"
+ },
+ {
+  "context": 65536,
+  "batch": 4,
+  "rep": 1,
+  "prefill_s": 27.172,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 72084,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   11.7155,
+   11.7405,
+   11.7397
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 72084,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "slope"
+ },
+ {
+  "context": 32768,
+  "batch": 4,
+  "rep": 1,
+  "prefill_s": 8.809,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 80294,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   9.7475,
+   9.7695,
+   9.771
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 4,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 80282,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "slope"
+ },
+ {
+  "context": 1024,
+  "batch": 1,
+  "rep": 0,
+  "prefill_s": 0.055,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 1,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 88583,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   6.1915,
+   6.2032,
+   6.2053
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 1,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 88641,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "waste"
+ },
+ {
+  "context": 1024,
+  "batch": 8,
+  "rep": 0,
+  "prefill_s": 0.263,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 87712,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   7.0157,
+   7.021,
+   7.0271
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 87668,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "waste"
+ },
+ {
+  "context": 1024,
+  "batch": 32,
+  "rep": 0,
+  "prefill_s": 1.013,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 32,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 84490,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   7.9612,
+   7.9831,
+   8.0135
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 32,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 84323,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "waste"
+ },
+ {
+  "context": 16384,
+  "batch": 8,
+  "rep": 0,
+  "prefill_s": 6.361,
+  "steps_per_block": 32,
+  "sched": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 79996,
+   "known": true,
+   "ok": true
+  },
+  "step_ms": [
+   9.7103,
+   9.7114,
+   9.7172
+  ],
+  "advance_min_max": [
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    32,
+    32
+   ]
+  ],
+  "sched_after": {
+   "running": 8,
+   "waiting": 0,
+   "preemptions": 0,
+   "free_blocks": 79976,
+   "known": true,
+   "ok": true
+  },
+  "status": "ok",
+  "kind": "waste"
+ }
+]

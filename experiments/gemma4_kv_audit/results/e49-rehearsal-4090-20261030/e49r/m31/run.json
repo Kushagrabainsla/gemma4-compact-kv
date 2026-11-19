@@ -1,0 +1,134 @@
+{
+ "args": {
+  "model": "google/gemma-4-E2B-it",
+  "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+  "out": "/workspace/results/e49r/m31",
+  "gsm8k": "/workspace/results/e49r/gsm8k/gsm8k.json",
+  "cells": "2048:4,8192:4,32768:4,65536:4,65536:4:1,32768:4:1",
+  "waste_cells": "1024:1,1024:8,1024:32,16384:8",
+  "profile_cells": "2048:4,32768:4,65536:4,1024:1,1024:8,1024:32",
+  "steps": "32",
+  "min_blocks": "3",
+  "max_blocks": "5",
+  "block_spread": "0.02",
+  "profile_steps": "8",
+  "gsm8k_n": "32",
+  "max_model_len": "66048",
+  "max_num_seqs": "32",
+  "max_num_batched_tokens": "2048",
+  "gpu_memory_utilization": "0.92",
+  "stub": "False",
+  "stub_seed": "0",
+  "stub_c_ms": "15.0",
+  "stub_bw_gbps": "2500.0",
+  "stub_noise": "0.004",
+  "stub_cell_sd": "0.0",
+  "stub_curve": "0.0",
+  "stub_sliding_growth": "0.0",
+  "stub_profile_wall_ms": "0.0",
+  "stub_preempt": "",
+  "stub_accuracy": "0.9",
+  "stub_bad_advance": "False",
+  "stub_bad_attribution": "False",
+  "stub_opaque_names": "False",
+  "stub_multimodal": "False",
+  "stub_stop_after_slope": "False",
+  "stub_fail": "False"
+ },
+ "vllm_version": "0.33.0rc1.dev229+g3966924d5",
+ "started_at": "2026-10-30T19:13:05Z",
+ "status": "ok",
+ "gpu": {
+  "name": "NVIDIA GeForce RTX 4090",
+  "uuid": "5a439b64-8614-7244-eda0-49686f66bf24"
+ },
+ "init_seconds": 137.6,
+ "kv": {
+  "num_gpu_blocks": 88781,
+  "block_size": 16,
+  "cache_dtype": "auto",
+  "num_blocks": 88781,
+  "groups": [
+   {
+    "layers": 3,
+    "spec": "SlidingWindowSpec",
+    "block_size": 32,
+    "page_bytes": 32768
+   },
+   {
+    "layers": 3,
+    "spec": "SlidingWindowSpec",
+    "block_size": 32,
+    "page_bytes": 32768
+   },
+   {
+    "layers": 3,
+    "spec": "SlidingWindowSpec",
+    "block_size": 32,
+    "page_bytes": 32768
+   },
+   {
+    "layers": 3,
+    "spec": "SlidingWindowSpec",
+    "block_size": 32,
+    "page_bytes": 32768
+   },
+   {
+    "layers": 3,
+    "spec": "FullAttentionSpec",
+    "block_size": 16,
+    "page_bytes": 32768
+   }
+  ]
+ },
+ "model": {
+  "layer_types": [
+   "sliding_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "full_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "full_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "full_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "full_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "full_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "full_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "sliding_attention",
+   "full_attention"
+  ],
+  "is_multimodal_model": true,
+  "is_mm_prefix_lm": false,
+  "mm_limits": "{'image': ImageDummyOptions(count=0, width=None, height=None), 'audio': AudioDummyOptions(count=0, length=None), 'video': VideoDummyOptions(count=0, num_frames=None, width=None, height=None)}"
+ },
+ "gsm8k": {
+  "n": 32,
+  "correct": 19,
+  "accuracy": 0.5938,
+  "bos_removed": true
+ },
+ "slope_done_at": "2026-10-30T19:16:53Z",
+ "finished_at": "2026-10-30T19:17:06Z"
+}

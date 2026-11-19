@@ -1,0 +1,17 @@
+Filesystem      Size  Used Avail Use% Mounted on
+none            512G  4.1M  512G   1% /
+none            504G     0  504G   0% /dev
+none           1007G     0 1007G   0% /dev/shm
+none            504G     0  504G   0% /sys/fs/cgroup
+none            512G   76M  512G   1% /__modal/mounts
+none            202G  2.6M  202G   1% /run/modal.sock
+none            419G   19G  383G   5% /etc/resolv.conf
+none            512G   76M  512G   1% /__modal/volumes
+none            512G   76M  512G   1% /__modal/identity
+none            7.0T  135G  6.9T   2% /__modal/.debug_shell
+none            512G   76M  512G   1% /__modal/.task-startup
+none            4.0K     0  4.0K   0% /sys/devices/virtual/dmi
+none            512G   76M  512G   1% /__modal/.container-arguments
+none            419G   19G  383G   5% /etc/vulkan/icd.d/nvidia_icd.json
+none            419G   19G  383G   5% /usr/share/glvnd/egl_vendor.d/10_nvidia.json
+none            419G   19G  383G   5% /usr/share/egl/egl_external_platform.d/15_nvidia_gbm.json

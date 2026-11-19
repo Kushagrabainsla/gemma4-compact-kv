@@ -1,0 +1,31 @@
+{
+ "checks": {
+  "V1": false,
+  "V2": false,
+  "V3": false,
+  "V4": false,
+  "V5_pairs": {},
+  "V5": false,
+  "V6": false
+ },
+ "arms": {
+  "C-C": "not run",
+  "S-C": "failed",
+  "S-R": "not run",
+  "C-R": "not run",
+  "C-C0": "not run",
+  "C-CX": "not run",
+  "C-C64": "not run"
+ },
+ "verify": {
+  "C-C0_prompt_only": false,
+  "C-CX_mismatch_found": false,
+  "C-C64_start_s": null,
+  "C-C64_ok": false,
+  "load_bytes": false,
+  "layout_lines": [],
+  "kernel_block": null,
+  "all_pass": false
+ },
+ "word": "REHEARSAL | INVALID (S-C did not complete, CODE; CONNECTOR-FAILS-STOCK, exploratory)"
+}
